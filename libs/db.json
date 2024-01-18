@@ -1,0 +1,5388 @@
+{
+  "restaurants": [
+    {
+      "id": 1,
+      "name": "پیتزا شیلا (چهارراه ولیعصر)",
+      "restaurantCategory": [
+        "فست‌فود",
+        "پیتزا",
+        "ساندویچ",
+        "برگر"
+      ],
+      "restaurantCategoryId": [
+        2,
+        4,
+        5,
+        6
+      ],
+      "address": "خیابان انقلاب، ضلع شمال غربی چهار راه ولی عصر، پیتزا شیلا (چهارراه ولیعصر)",
+      "logo": "https://cdn.snappfood.ir/media/cache/vendor_logo/uploads/images/vendors/logos/5e425b4af195e.jpg",
+      "workingHours": "باز امروز از ساعت ۱۰:۳۰ تا ۲۲:۰۰",
+      "paymentMethod": "آنلاین",
+      "minimumCart": 140000,
+      "rate": 4.7,
+      "totalPoints": 84330,
+      "totalComments": 8328,
+      "discount": 30,
+      "proUsers": "",
+      "coupon": "",
+      "image": "https://cdn.snappfood.ir/300x200/uploads/images/vendors/covers/5e01b8d64c7b4.jpg",
+      "freeDelivery": false,
+      "delivery": {
+        "icon": "/images/icons/Home/courier.svg",
+        "type": "پیک فروشنده",
+        "price": 12400,
+        "snappfoodDelivery": false
+      },
+      "restaurantComments": [
+        {
+          "id": 1,
+          "name": "لیلا",
+          "date": "۱۷ دی ۱۴۰۲",
+          "rate": 5,
+          "comment": "مثل همیشه عالی ، خیلی هم سریع رسید مرررسی واقعااا",
+          "orderTags": [
+            "پیتزا مخلوط (۲۳ سانتی‌ متری)",
+            "پیتزا فیتکس پپرونی ۲۳*۱۰ سانتی متری",
+            "نوشابه خانواده کوکا کولا"
+          ],
+          "snappfoodAnswer": "",
+          "restaurantManagerAnswer": ""
+        },
+        {
+          "id": 2,
+          "name": "بهرام",
+          "date": "۱۶ دی ۱۴۰۲",
+          "rate": 5,
+          "comment": "عالی",
+          "orderTags": [
+            "سالاد سزار با مرغ گریل",
+            "استرامبولی رست بیف",
+            "نوشابه قوطی کوکا کولا"
+          ],
+          "snappfoodAnswer": "",
+          "restaurantManagerAnswer": ""
+        },
+        {
+          "id": 3,
+          "name": "سوده",
+          "date": "۱۶ دی ۱۴۰۲",
+          "rate": 5,
+          "comment": "طعم عالی، کیفیت خوب، ارسال به موقع.ممنون از شما",
+          "orderTags": [
+            "چیکن کریسپی",
+            "سالاد کلم",
+            "نوشابه قوطی کوکا کولا زیرو"
+          ],
+          "snappfoodAnswer": "",
+          "restaurantManagerAnswer": ""
+        },
+        {
+          "id": 4,
+          "name": "همراه",
+          "date": "۱۶ آبان ۱۴۰۲",
+          "rate": 4,
+          "comment": "کلا پیتزاش خوشمزه و تازه بود، سالاد سزار خوب بود ولی نه عالی، سیب زمینی کنار پیتزا خشک و خیلی چرب و مونده بود.",
+          "orderTags": [
+            "سالاد سزار با مرغ سوخاری پنیری",
+            "پیتزا فیتکس مرغ و شوید ۲۳*۱۰ سانتی متری"
+          ],
+          "snappfoodAnswer": "همراه معتقدی عزیز، از همراهی شما سپاس‌گزاریم و خوشحالیم که نظرتان را با ما در میان گذاشتید. مورد ذکرشده بررسی می‌شود.",
+          "restaurantManagerAnswer": ""
+        }
+      ],
+      "restCatsMenu": [
+        {
+          "id": 1,
+          "name": "آف‌ تایم"
+        },
+        {
+          "id": 2,
+          "name": "پر‌طرفدارها"
+        },
+        {
+          "id": 3,
+          "name": "کمبو"
+        },
+        {
+          "id": 4,
+          "name": "پیتزا فیتکس"
+        },
+        {
+          "id": 5,
+          "name": "پیتزا"
+        },
+        {
+          "id": 6,
+          "name": "استرامبولی"
+        },
+        {
+          "id": 7,
+          "name": "برگر"
+        },
+        {
+          "id": 8,
+          "name": "هات داگ"
+        },
+        {
+          "id": 9,
+          "name": "سوخاری"
+        },
+        {
+          "id": 10,
+          "name": "سالاد و پیش غذا"
+        },
+        {
+          "id": 11,
+          "name": "نوشیدنی"
+        }
+      ],
+      "foods": [
+        {
+          "id": 1,
+          "restaurantId": 1,
+          "name": "پیتزا فیتکس مخلوط",
+          "images": [
+            "https://cdn.snappfood.ir/641x641/cdn/93/50/product_image/zoodfood/64d244e7745f2.jpg"
+          ],
+          "price": 138000,
+          "discount": 30,
+          "rate": 4.7,
+          "desc": "ژامبون گوشت و مرغ، هات داگ فرانکفورتر، قارچ، زیتون، گوجه، فلفل دلمه ای، پنیر موزارلا، سس مخصوص، سیب زمینی سرخ شده",
+          "numberRemaining": 1,
+          "offTime": true,
+          "categoryId": [
+            2,
+            4,
+            1
+          ],
+          "foodsComments": [
+            {
+              "id": 1,
+              "name": "نگار",
+              "date": "۱۶ دی ۱۴۰۲",
+              "rate": 5,
+              "comment": "عالی بود خوشمزه تازه",
+              "orderTags": [
+                "پیتزا فیتکس مخلوط ۲۳*۱۰ سانتی متری",
+                "سیب زمینی سرخ شده",
+                "نوشابه خانواده کوکا کولا"
+              ],
+              "snappfoodAnswer": "",
+              "restaurantManagerAnswer": ""
+            },
+            {
+              "id": 2,
+              "name": "زکیه",
+              "date": "۱۲ دی ۱۴۰۲",
+              "rate": 5,
+              "comment": "عالی بود مثل همیشه",
+              "orderTags": [
+                "پیتزا فیتکس مخلوط ۲۳*۱۰ سانتی متری",
+                "ساندویچ هات داگ مکزیکن",
+                "فرش ماشروم برگر",
+                "آلفردو چیز فرایز"
+              ],
+              "snappfoodAnswer": "",
+              "restaurantManagerAnswer": ""
+            },
+            {
+              "id": 3,
+              "name": "سید علی",
+              "date": "۱۶ دی ۱۴۰۲",
+              "rate": 5,
+              "comment": "شیلا جان عاشقت شدم تو خیلی خوشمزه‌ای، تو زیباترین چیزی هستی که تا حالا خوردم",
+              "orderTags": [
+                "استرامبولی گوشت و پنیر",
+                "پیتزا فیتکس مخلوط ۲۳*۱۰ سانتی متری"
+              ],
+              "snappfoodAnswer": "",
+              "restaurantManagerAnswer": ""
+            },
+            {
+              "id": 4,
+              "name": "مهرناز",
+              "date": "۰۳ دی ۱۴۰۲",
+              "rate": 4,
+              "comment": "خوشمزه بود مرسی",
+              "orderTags": [
+                "پیتزا فیتکس گوشت و قارچ ۲۳*۱۰ سانتی متری",
+                "پیتزا فیتکس مخلوط ۲۳*۱۰ سانتی متری",
+                "پک کارد و چنگال",
+                "نوشابه قوطی اسپرایت"
+              ],
+              "snappfoodAnswer": "",
+              "restaurantManagerAnswer": ""
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "restaurantId": 1,
+          "name": "سوپر کمبو",
+          "images": [
+            "https://cdn.snappfood.ir/641x641/cdn/93/50/product_image/zoodfood/64d23faf886e4.jpg"
+          ],
+          "price": 618000,
+          "discount": "",
+          "rate": 4.8,
+          "desc": "پیتزا مخلوط ۲۳ سانتی متری، چیکن چیز ژامبو پلاس، استرامبولی استیک پنیری، ۳ عدد نوشابه قوطی",
+          "numberRemaining": "",
+          "categoryId": [
+            3
+          ],
+          "foodsComments": [
+            {
+              "id": 1,
+              "name": "فاطمه",
+              "date": "۱۴ دی ۱۴۰۲",
+              "rate": 5,
+              "comment": "سلام وقت بخیر، خسته نباشید،والا با شرایط این دوره و زمانه فوق العاده بود، سپاسگزارم.",
+              "orderTags": [
+                "نان سیر",
+                "سوپر کمبو",
+                "سیب زمینی سرخ شده"
+              ],
+              "snappfoodAnswer": "",
+              "restaurantManagerAnswer": ""
+            },
+            {
+              "id": 2,
+              "name": "ریبوار",
+              "date": "۱۰ آذر ۱۴۰۲",
+              "rate": 5,
+              "comment": "عالی",
+              "orderTags": [
+                "سوپر کمبو"
+              ],
+              "snappfoodAnswer": "",
+              "restaurantManagerAnswer": "دوست عزیز،ممنون از حسن انتخاب شما"
+            },
+            {
+              "id": 3,
+              "name": "آرمین",
+              "date": "۰۳ آذر ۱۴۰۲",
+              "rate": 5,
+              "comment": "مثل همیشه عالی",
+              "orderTags": [
+                "استرامبولی رست بیف",
+                "پک کارد و چنگال",
+                "سوپر کمبو"
+              ],
+              "snappfoodAnswer": "",
+              "restaurantManagerAnswer": "دوست عزیز،ممنون از حسن انتخاب شما"
+            },
+            {
+              "id": 4,
+              "name": "سعید",
+              "date": "۰۲ مرداد ۱۴۰۲",
+              "rate": 3.5,
+              "comment": "همه چی خوب و خوشمزه ، عالی تنها یکی از جعبه ها به خاطر سس غذا به کاغذ روغنی زیری چسبیده بود ، بقیه همه چی خوب",
+              "orderTags": [
+                "سوپر کمبو",
+                "سیب زمینی سرخ شده"
+              ],
+              "snappfoodAnswer": "",
+              "restaurantManagerAnswer": ""
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "restaurantId": 1,
+          "name": "کمبو شیلا",
+          "images": [
+            "https://cdn.snappfood.ir/641x641/cdn/93/50/product_image/zoodfood/64d23faebaf33.jpg"
+          ],
+          "price": 435000,
+          "discount": "",
+          "rate": 4.6,
+          "desc": "استرامبولی استیک پنیری، چیکن چیز ژامبو پلاس، ۲ عدد نوشابه قوطی",
+          "numberRemaining": "",
+          "categoryId": [
+            3
+          ],
+          "foodsComments": [
+            {
+              "id": 1,
+              "name": "eli",
+              "date": "۲۳ آذر ۱۴۰۲",
+              "rate": 5,
+              "comment": "سلام وقت بخیر، خسته نباشید،والا با شرایط این دوره و زمانه فوق العاده بود، سپاسگزارم.",
+              "orderTags": [
+                "کمبو شیلا"
+              ],
+              "snappfoodAnswer": "",
+              "restaurantManagerAnswer": "دوست عزیز،ممنون از حسن انتخاب شما"
+            },
+            {
+              "id": 2,
+              "name": "شیرین",
+              "date": "۲۱ دی ۱۴۰۱",
+              "rate": 4.5,
+              "comment": "سلام خوشمزه و تازه بود فقط غذا به کاغذ کف کارتون چسبیده بود",
+              "orderTags": [
+                "کمبو شیلا"
+              ],
+              "snappfoodAnswer": "",
+              "restaurantManagerAnswer": "سلام نوش جان حتما بررسی می شود و در سفارشات بعدی تکرار نمی شود."
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "restaurantId": 1,
+          "name": "پیتزا فیتکس گوشت و قارچ",
+          "images": [
+            "https://cdn.snappfood.ir/641x641/cdn/93/50/product_image/zoodfood/65000ce41f66e.jpeg"
+          ],
+          "price": 184000,
+          "discount": "",
+          "rate": 4.7,
+          "desc": "گوشت چرخ‌کرده طعم‌دار، قارچ، فلفل دلمه‌ای، پیاز، پنیر موزارلا، سس مخصوص، سیب‌زمینی سرخ‌شده",
+          "numberRemaining": "",
+          "categoryId": [
+            4
+          ],
+          "foodsComments": [
+            {
+              "id": 1,
+              "name": "علیرضا",
+              "date": "۱۱ دی ۱۴۰۲",
+              "rate": 5,
+              "comment": "عالی",
+              "orderTags": [
+                "پیتزا فیتکس گوشت و قارچ ۲۳*۱۰ سانتی متری",
+                "سالاد کلم",
+                "استرامبولی دونر استیک پنیری"
+              ],
+              "snappfoodAnswer": "",
+              "restaurantManagerAnswer": ""
+            },
+            {
+              "id": 2,
+              "name": "فاطمه",
+              "date": "۰۸ دی ۱۴۰۲",
+              "rate": 3,
+              "comment": "گوشت پیتزا شور بود",
+              "orderTags": [
+                "نوشابه قوطی کوکا کولا",
+                "پیتزا فیتکس گوشت و قارچ ۲۳*۱۰ سانتی متری"
+              ],
+              "snappfoodAnswer": "",
+              "restaurantManagerAnswer": ""
+            },
+            {
+              "id": 3,
+              "name": "غزل",
+              "date": "۳۰ آذر ۱۴۰۲",
+              "rate": 3.5,
+              "comment": "روی پیتزا پیاز داشت و فلفل دلمه ای خیلی زیاد از حد بود",
+              "orderTags": [
+                "پیتزا فیتکس گوشت و قارچ ۲۳*۱۰ سانتی متری"
+              ],
+              "snappfoodAnswer": "",
+              "restaurantManagerAnswer": ""
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "restaurantId": 1,
+          "name": "پیتزا چیکن استروگانف (۲۳ سانتی‌ متری)",
+          "images": [
+            "https://cdn.snappfood.ir/641x641/cdn/93/50/product_image/zoodfood/65000ce462af5.jpeg"
+          ],
+          "price": 232000,
+          "discount": 35,
+          "rate": 3.5,
+          "desc": "گوشت مرغ تنوری، سس آلفردو، پیاز سرخ شده، سس خامه، سس سیر، پنیر مخصوص",
+          "numberRemaining": 5,
+          "categoryId": [
+            5,
+            1
+          ],
+          "foodsComments": [
+            {
+              "id": 1,
+              "name": "علیرضا",
+              "date": "۱۱ دی ۱۴۰۲",
+              "rate": 5,
+              "comment": "عالی",
+              "orderTags": [
+                "پیتزا چیکن استروگانف (۲۳ سانتی‌ متری)",
+                "سالاد کلم",
+                "نوشابه خانواده کوکا کولا"
+              ],
+              "snappfoodAnswer": "",
+              "restaurantManagerAnswer": ""
+            },
+            {
+              "id": 2,
+              "name": "فاطمه",
+              "date": "۰۸ دی ۱۴۰۲",
+              "rate": 3,
+              "comment": "گوشت پیتزا شور بود",
+              "orderTags": [
+                "نوشابه قوطی کوکا کولا",
+                "پیتزا چیکن استروگانف (۲۳ سانتی‌ متری)"
+              ],
+              "snappfoodAnswer": "",
+              "restaurantManagerAnswer": ""
+            },
+            {
+              "id": 3,
+              "name": "غزل",
+              "date": "۳۰ آذر ۱۴۰۲",
+              "rate": 3.5,
+              "comment": "روی پیتزا پیاز داشت و فلفل دلمه ای خیلی زیاد از حد بود",
+              "orderTags": [
+                "پیتزا چیکن استروگانف (۲۳ سانتی‌ متری)"
+              ],
+              "snappfoodAnswer": "",
+              "restaurantManagerAnswer": ""
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "restaurantId": 1,
+          "name": "پیتزا سوجوک (۳۰ سانتی متری)",
+          "images": [
+            "https://cdn.snappfood.ir/641x641/cdn/93/50/product_image/zoodfood/64d24588366e3.jpg"
+          ],
+          "price": 232000,
+          "discount": "",
+          "rate": 4.8,
+          "desc": "دونر گوشت، کالباس سوجوک ۸۰%، قارچ، پنیر موزارلا، کنجد، سس مخصوص، سیب زمینی سرخ شده",
+          "numberRemaining": "",
+          "categoryId": [
+            5,
+            2
+          ],
+          "foodsComments": [
+            {
+              "id": 1,
+              "name": "سارینا",
+              "date": "۱۱ دی ۱۴۰۲",
+              "rate": 5,
+              "comment": "عالی",
+              "orderTags": [
+                "پیتزا گوشت و قارچ (۳۰ سانتی متری)",
+                "سالاد کلم",
+                "نوشابه خانواده کوکا کولا",
+                "پیتزا سوجوک (۳۰ سانتی متری)"
+              ],
+              "snappfoodAnswer": "",
+              "restaurantManagerAnswer": ""
+            },
+            {
+              "id": 2,
+              "name": "محمدرضا",
+              "date": "۰۸ دی ۱۴۰۲",
+              "rate": 4.5,
+              "comment": "خوب بود ولی کیفیت همیشگیو نداش",
+              "orderTags": [
+                "نوشابه قوطی کوکا کولا",
+                "پیتزا سوجوک (۳۰ سانتی متری)"
+              ],
+              "snappfoodAnswer": "",
+              "restaurantManagerAnswer": "دوست عزیز،ممنون از حسن انتخاب شما"
+            },
+            {
+              "id": 3,
+              "name": "زهرا",
+              "date": "۳۰ آذر ۱۴۰۲",
+              "rate": 5,
+              "comment": "تشکر بابت زحمات شما",
+              "orderTags": [
+                "پیتزا سوجوک (۳۰ سانتی متری)"
+              ],
+              "snappfoodAnswer": "",
+              "restaurantManagerAnswer": ""
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "restaurantId": 1,
+          "name": "استرامبولی دونر استیک پنیری",
+          "images": [
+            "https://cdn.snappfood.ir/641x641/cdn/93/50/product_image/zoodfood/64d24aa0b6ff1.jpg"
+          ],
+          "price": 222000,
+          "discount": "",
+          "rate": 4.4,
+          "desc": "دونر گوشت کبابی، سس آلفردو، پیاز سرخ شده، پنیر مخصوص، سیب زمینی سرخ شده",
+          "numberRemaining": "",
+          "categoryId": [
+            6
+          ],
+          "foodsComments": [
+            {
+              "id": 1,
+              "name": "sima",
+              "date": "۱۱ دی ۱۴۰۲",
+              "rate": 5,
+              "comment": "عالی",
+              "orderTags": [
+                "پیتزا گوشت و قارچ (۳۰ سانتی متری)",
+                "سالاد کلم",
+                "نوشابه خانواده کوکا کولا",
+                "استرامبولی دونر استیک پنیری"
+              ],
+              "snappfoodAnswer": "",
+              "restaurantManagerAnswer": ""
+            },
+            {
+              "id": 2,
+              "name": "علیرضا",
+              "date": "۰۸ دی ۱۴۰۲",
+              "rate": 4.5,
+              "comment": "خوب بود ولی کیفیت همیشگیو نداش",
+              "orderTags": [
+                "نوشابه قوطی کوکا کولا",
+                "استرامبولی دونر استیک پنیری",
+                "پک کارد و چنگال"
+              ],
+              "snappfoodAnswer": "",
+              "restaurantManagerAnswer": ""
+            },
+            {
+              "id": 3,
+              "name": "نگار",
+              "date": "۳۰ آذر ۱۴۰۲",
+              "rate": 5,
+              "comment": "تشکر بابت زحمات شما",
+              "orderTags": [
+                "استرامبولی دونر استیک پنیری",
+                "نوشابه قوطی اسپرایت"
+              ],
+              "snappfoodAnswer": "",
+              "restaurantManagerAnswer": "دوست عزیز،ممنون از حسن انتخاب شما"
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "restaurantId": 1,
+          "name": "استرامبولی چیکن آلفردو",
+          "images": [
+            "https://cdn.snappfood.ir/641x641/cdn/93/50/product_image/zoodfood/64d24aa054e21.jpg"
+          ],
+          "price": 208000,
+          "discount": "",
+          "rate": 4.8,
+          "desc": "مرغ تنوری، سس آلفردو، پنیر مخصوص، پیاز سرخ شده، سیب زمینی سرخ شده",
+          "numberRemaining": "",
+          "categoryId": [
+            6,
+            2
+          ],
+          "foodsComments": [
+            {
+              "id": 1,
+              "name": "رضانیا",
+              "date": "۱۱ دی ۱۴۰۲",
+              "rate": 5,
+              "comment": "لطفا وقتی سفارش بالا هست دستمال کاغذی و پک چنگال گذاشته بشه سیب زمینی کنار غذا بدون چنگال مناسب نیست من برای اساتید دانشگاه سفارش داده بودم و خیلی نبودن پک دستمال و چنگال نامناسب بود به غیر از این سفارش عالی بود",
+              "orderTags": [
+                "استرامبولی چیکن آلفردو",
+                "سالاد کلم",
+                "نوشابه خانواده کوکا کولا",
+                "استرامبولی دونر استیک پنیری"
+              ],
+              "snappfoodAnswer": "",
+              "restaurantManagerAnswer": ""
+            },
+            {
+              "id": 2,
+              "name": "لعيا",
+              "date": "۰۸ دی ۱۴۰۲",
+              "rate": 4.5,
+              "comment": "غذا عالی بود ولی سیب زمینی کنارش متاسفانه بیات و مونده بود!",
+              "orderTags": [
+                "نوشابه قوطی کوکا کولا",
+                "استرامبولی چیکن آلفردو",
+                "پک کارد و چنگال"
+              ],
+              "snappfoodAnswer": "",
+              "restaurantManagerAnswer": ""
+            },
+            {
+              "id": 3,
+              "name": "armita",
+              "date": "۳۰ آذر ۱۴۰۲",
+              "rate": 5,
+              "comment": "تشکر بابت زحمات شما",
+              "orderTags": [
+                "استرامبولی چیکن آلفردو",
+                "نوشابه قوطی اسپرایت"
+              ],
+              "snappfoodAnswer": "",
+              "restaurantManagerAnswer": "دوست عزیز،ممنون از حسن انتخاب شما"
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "restaurantId": 1,
+          "name": "همبرگر",
+          "images": [
+            "https://cdn.snappfood.ir/641x641/cdn/93/50/product_image/zoodfood/64d269420e750.jpg"
+          ],
+          "price": 232000,
+          "discount": "",
+          "rate": 4.8,
+          "desc": "همبرگر، گوجه، خیارشور، کاهو، سس مخصوص",
+          "numberRemaining": "",
+          "categoryId": [
+            7,
+            2
+          ],
+          "foodsComments": [
+            {
+              "id": 1,
+              "name": "علی",
+              "date": "۱۱ دی ۱۴۰۲",
+              "rate": 5,
+              "comment": "عالیییییی",
+              "orderTags": [
+                "همبرگر",
+                "سالاد کلم",
+                "نوشابه خانواده کوکا کولا",
+                "ساندویچ هات داگ مرگز با قارچ و پنیر"
+              ],
+              "snappfoodAnswer": "",
+              "restaurantManagerAnswer": ""
+            },
+            {
+              "id": 2,
+              "name": "لیلا",
+              "date": "۰۸ دی ۱۴۰۲",
+              "rate": 5,
+              "comment": "ميشه بي كيفيت بشيد يعني ؟ عالي هستين سالهاي سال",
+              "orderTags": [
+                "نوشابه قوطی کوکا کولا",
+                "همبرگر"
+              ],
+              "snappfoodAnswer": "",
+              "restaurantManagerAnswer": "دوست عزیز،ممنون از حسن انتخاب شما"
+            },
+            {
+              "id": 3,
+              "name": "معصومه",
+              "date": "۳۰ آذر ۱۴۰۲",
+              "rate": 5,
+              "comment": "تشکر بابت زحمات شما",
+              "orderTags": [
+                "همبرگر"
+              ],
+              "snappfoodAnswer": "",
+              "restaurantManagerAnswer": ""
+            }
+          ]
+        },
+        {
+          "id": 10,
+          "restaurantId": 1,
+          "name": "فرش ماشروم برگر",
+          "images": [
+            "https://cdn.snappfood.ir/641x641/cdn/93/50/product_image/zoodfood/64d26942cbfe6.jpg"
+          ],
+          "price": 194000,
+          "discount": "",
+          "rate": 4.5,
+          "desc": "همبرگر با گوشت تازه، قارچ طعم دار شده، پنیر دیپ گودا، پیاز سرخ شده، خیارشور، سس مخصوص",
+          "numberRemaining": "",
+          "categoryId": [
+            7
+          ],
+          "foodsComments": [
+            {
+              "id": 1,
+              "name": "سیاوش",
+              "date": "۱۱ دی ۱۴۰۲",
+              "rate": 5,
+              "comment": "واقعا لذیذ",
+              "orderTags": [
+                "فرش ماشروم برگر",
+                "سالاد کلم",
+                "نوشابه خانواده کوکا کولا",
+                "ساندویچ هات داگ مرگز با قارچ و پنیر"
+              ],
+              "snappfoodAnswer": "",
+              "restaurantManagerAnswer": ""
+            },
+            {
+              "id": 2,
+              "name": "sima",
+              "date": "۰۸ دی ۱۴۰۲",
+              "rate": 5,
+              "comment": "ميشه بي كيفيت بشيد يعني ؟ عالي هستين سالهاي سال",
+              "orderTags": [
+                "نوشابه قوطی کوکا کولا",
+                "فرش ماشروم برگر"
+              ],
+              "snappfoodAnswer": "",
+              "restaurantManagerAnswer": "دوست عزیز،ممنون از حسن انتخاب شما"
+            },
+            {
+              "id": 3,
+              "name": "متین",
+              "date": "۳۰ آذر ۱۴۰۲",
+              "rate": 5,
+              "comment": "تشکر بابت زحمات شما",
+              "orderTags": [
+                "فرش ماشروم برگر"
+              ],
+              "snappfoodAnswer": "",
+              "restaurantManagerAnswer": ""
+            }
+          ]
+        },
+        {
+          "id": 11,
+          "restaurantId": 1,
+          "name": "ساندویچ هات داگ کلاسیک",
+          "images": [
+            "https://cdn.snappfood.ir/641x641/cdn/93/50/product_image/zoodfood/64d26a75130a7.jpg"
+          ],
+          "price": 134000,
+          "discount": "",
+          "rate": 4.5,
+          "desc": "هات داگ گوشت ۷۰%، گوجه فرنگی، خیارشور، سس خردل، سبزیجات معطر",
+          "numberRemaining": "",
+          "categoryId": [
+            8,
+            2
+          ],
+          "foodsComments": [
+            {
+              "id": 1,
+              "name": "حسین",
+              "date": "۱۱ دی ۱۴۰۲",
+              "rate": 5,
+              "comment": "ممنون از پیک سریع و دقیقی که خیلی به موقع و داغ غذاهارو تحویل میدن، واقعا کارشون بیسته",
+              "orderTags": [
+                "ساندویچ هات داگ کلاسیک",
+                "سالاد کلم",
+                "نوشابه خانواده کوکا کولا",
+                "ساندویچ هات داگ مرگز با قارچ و پنیر"
+              ],
+              "snappfoodAnswer": "",
+              "restaurantManagerAnswer": ""
+            },
+            {
+              "id": 2,
+              "name": "یوسف",
+              "date": "۰۸ دی ۱۴۰۲",
+              "rate": 5,
+              "comment": "همه چیز عالی و سفارش هم خیلی زود تحویل داده شد.",
+              "orderTags": [
+                "نوشابه قوطی کوکا کولا",
+                "ساندویچ هات داگ کلاسیک"
+              ],
+              "snappfoodAnswer": "",
+              "restaurantManagerAnswer": "دوست عزیز،ممنون از حسن انتخاب شما"
+            },
+            {
+              "id": 3,
+              "name": "سمیه",
+              "date": "۳۰ آذر ۱۴۰۲",
+              "rate": 4.5,
+              "comment": "تشکر بابت زحمات شما",
+              "orderTags": [
+                "ساندویچ هات داگ کلاسیک"
+              ],
+              "snappfoodAnswer": "",
+              "restaurantManagerAnswer": ""
+            }
+          ]
+        },
+        {
+          "id": 12,
+          "restaurantId": 1,
+          "name": "ساندویچ هات داگ با پنیر گودا",
+          "images": [
+            "https://cdn.snappfood.ir/641x641/cdn/93/50/product_image/zoodfood/64d26a754e5e0.jpg"
+          ],
+          "price": 138000,
+          "discount": "",
+          "rate": 4.6,
+          "desc": "هات داگ مرغ، پنیر گودا، سس قارچ، سس خردل، خیارشور، گوجه فرنگی، سبزیجات معطر",
+          "numberRemaining": "",
+          "categoryId": [
+            8
+          ],
+          "foodsComments": [
+            {
+              "id": 1,
+              "name": "محمد",
+              "date": "۱۱ دی ۱۴۰۲",
+              "rate": 4.8,
+              "comment": "کیفیت عالی به موقع تحویل داده شد",
+              "orderTags": [
+                "ساندویچ هات داگ با پنیر گودا",
+                "سالاد کلم",
+                "نوشابه خانواده کوکا کولا",
+                "ساندویچ هات داگ مرگز با قارچ و پنیر"
+              ],
+              "snappfoodAnswer": "",
+              "restaurantManagerAnswer": ""
+            },
+            {
+              "id": 2,
+              "name": "معصومه",
+              "date": "۰۸ دی ۱۴۰۲",
+              "rate": 5,
+              "comment": "ميشه بي كيفيت بشيد يعني ؟ عالي هستين سالهاي سال",
+              "orderTags": [
+                "نوشابه قوطی کوکا کولا",
+                "ساندویچ هات داگ با پنیر گودا"
+              ],
+              "snappfoodAnswer": "",
+              "restaurantManagerAnswer": ""
+            },
+            {
+              "id": 3,
+              "name": "ایلیا",
+              "date": "۳۰ آذر ۱۴۰۲",
+              "rate": 5,
+              "comment": "حرف ندارن",
+              "orderTags": [
+                "ساندویچ هات داگ با پنیر گودا"
+              ],
+              "snappfoodAnswer": "",
+              "restaurantManagerAnswer": "دوست عزیز،ممنون از حسن انتخاب شما"
+            }
+          ]
+        },
+        {
+          "id": 13,
+          "restaurantId": 1,
+          "name": "چیکن استریپس",
+          "images": [
+            "https://cdn.snappfood.ir/641x641/cdn/93/50/product_image/zoodfood/64d26d7938624.jpg"
+          ],
+          "price": 246000,
+          "discount": "",
+          "rate": 4.8,
+          "desc": "۳ تکه فیله مرغ سوخاری، سس مخصوص سیر، سس مخصوص چیلی، سالاد کلم، سیب زمینی شرخ شده، نان بروتچن",
+          "numberRemaining": "",
+          "categoryId": [
+            9,
+            1
+          ],
+          "foodsComments": [
+            {
+              "id": 1,
+              "name": "علی",
+              "date": "۱۱ دی ۱۴۰۲",
+              "rate": 5,
+              "comment": "عالیییییی",
+              "orderTags": [
+                "چیکن استریپس",
+                "سالاد کلم",
+                "نوشابه خانواده کوکا کولا",
+                "ساندویچ هات داگ مرگز با قارچ و پنیر"
+              ],
+              "snappfoodAnswer": "",
+              "restaurantManagerAnswer": ""
+            },
+            {
+              "id": 2,
+              "name": "لیلا",
+              "date": "۰۸ دی ۱۴۰۲",
+              "rate": 5,
+              "comment": "ميشه بي كيفيت بشيد يعني ؟ عالي هستين سالهاي سال",
+              "orderTags": [
+                "نوشابه قوطی کوکا کولا",
+                "چیکن استریپس"
+              ],
+              "snappfoodAnswer": "",
+              "restaurantManagerAnswer": "دوست عزیز،ممنون از حسن انتخاب شما"
+            },
+            {
+              "id": 3,
+              "name": "معصومه",
+              "date": "۳۰ آذر ۱۴۰۲",
+              "rate": 5,
+              "comment": "تشکر بابت زحمات شما",
+              "orderTags": [
+                "چیکن استریپس"
+              ],
+              "snappfoodAnswer": "",
+              "restaurantManagerAnswer": ""
+            }
+          ]
+        },
+        {
+          "id": 14,
+          "restaurantId": 1,
+          "name": "چیکن چیز هات پلاس",
+          "images": [
+            "https://cdn.snappfood.ir/641x641/cdn/93/50/product_image/zoodfood/64d26d78b91a5.jpg"
+          ],
+          "price": 218000,
+          "discount": "",
+          "rate": 4.8,
+          "desc": "مرغ سوخاری، پنیر پیتزا، سیب زمینی سرخ شده، فلفل هالوپینو، سس مخصوص",
+          "numberRemaining": "",
+          "categoryId": [
+            9
+          ],
+          "foodsComments": [
+            {
+              "id": 1,
+              "name": "فريد",
+              "date": "۱۱ دی ۱۴۰۲",
+              "rate": 4.8,
+              "comment": "فقط کاش سس ها و چنگال رو دو تا میذاشتین ولی کیفیت عالی بود",
+              "orderTags": [
+                "چیکن چیز هات پلاس",
+                "سالاد کلم",
+                "نوشابه خانواده کوکا کولا",
+                "ساندویچ هات داگ مرگز با قارچ و پنیر"
+              ],
+              "snappfoodAnswer": "",
+              "restaurantManagerAnswer": ""
+            },
+            {
+              "id": 2,
+              "name": "بهرام",
+              "date": "۰۸ دی ۱۴۰۲",
+              "rate": 5,
+              "comment": "ميشه بي كيفيت بشيد يعني ؟ عالي هستين سالهاي سال",
+              "orderTags": [
+                "نوشابه قوطی کوکا کولا",
+                "چیکن چیز هات پلاس"
+              ],
+              "snappfoodAnswer": "",
+              "restaurantManagerAnswer": "دوست عزیز،ممنون از حسن انتخاب شما"
+            },
+            {
+              "id": 3,
+              "name": "MOHAMMAD",
+              "date": "۳۰ آذر ۱۴۰۲",
+              "rate": 5,
+              "comment": "تشکر بابت زحمات شما",
+              "orderTags": [
+                "چیکن چیز هات پلاس"
+              ],
+              "snappfoodAnswer": "",
+              "restaurantManagerAnswer": ""
+            }
+          ]
+        },
+        {
+          "id": 15,
+          "restaurantId": 1,
+          "name": "سالاد کلم",
+          "images": [
+            "https://cdn.snappfood.ir/641x641/cdn/93/50/product_image/zoodfood/64d248c7c9ead.jpg",
+            "https://cdn.snappfood.ir/641x641/cdn/93/50/product_image/vendor/5ef35314b1750.jpg"
+          ],
+          "price": 32000,
+          "discount": "",
+          "rate": 4.7,
+          "desc": "کلم، هویج، کشمش، سس مخصوص",
+          "numberRemaining": "",
+          "categoryId": [
+            10
+          ],
+          "foodsComments": [
+            {
+              "id": 1,
+              "name": "علی",
+              "date": "۱۱ دی ۱۴۰۲",
+              "rate": 4.7,
+              "comment": "طعم عالی، کیفیت خوب، ارسال به موقع.ممنون از شما",
+              "orderTags": [
+                "همبرگر",
+                "سالاد کلم",
+                "نوشابه خانواده کوکا کولا",
+                "ساندویچ هات داگ مرگز با قارچ و پنیر"
+              ],
+              "snappfoodAnswer": "",
+              "restaurantManagerAnswer": ""
+            },
+            {
+              "id": 2,
+              "name": "علیرضا",
+              "date": "۰۸ دی ۱۴۰۲",
+              "rate": 5,
+              "comment": "ميشه بي كيفيت بشيد يعني ؟ عالي هستين سالهاي سال",
+              "orderTags": [
+                "سالاد کلم",
+                "همبرگر"
+              ],
+              "snappfoodAnswer": "",
+              "restaurantManagerAnswer": "دوست عزیز،ممنون از حسن انتخاب شما"
+            },
+            {
+              "id": 3,
+              "name": "فواد",
+              "date": "۳۰ آذر ۱۴۰۲",
+              "rate": 5,
+              "comment": "تشکر بابت زحمات شما",
+              "orderTags": [
+                "همبرگر",
+                "سالاد کلم"
+              ],
+              "snappfoodAnswer": "",
+              "restaurantManagerAnswer": ""
+            }
+          ]
+        },
+        {
+          "id": 16,
+          "restaurantId": 1,
+          "name": "نوشابه خانواده",
+          "images": [
+            "https://cdn.snappfood.ir/641x641/cdn/93/50/product_image/zoodfood/64d2476217edc.jpg"
+          ],
+          "price": 27000,
+          "discount": "",
+          "rate": 4.5,
+          "desc": "۱.۵ لیتر",
+          "numberRemaining": "",
+          "categoryId": [
+            11
+          ],
+          "foodsComments": []
+        },
+        {
+          "id": 17,
+          "restaurantId": 1,
+          "name": "دوغ قوطی خوشگوار",
+          "images": [
+            "https://cdn.snappfood.ir/641x641/cdn/93/50/product_image/zoodfood/64d24763c8991.jpg"
+          ],
+          "price": 17000,
+          "discount": "",
+          "rate": 4.7,
+          "desc": "۳۳۰ میلی لیتر",
+          "numberRemaining": "",
+          "categoryId": [
+            11
+          ],
+          "foodsComments": []
+        },
+        {
+          "id": 18,
+          "restaurantId": 1,
+          "name": "نوشابه قوطی",
+          "images": [
+            "https://cdn.snappfood.ir/641x641/cdn/93/50/product_image/zoodfood/64d247610ffef.jpg"
+          ],
+          "price": 18000,
+          "discount": "",
+          "rate": 4.7,
+          "desc": "۳۳۰ میلی لیتر",
+          "numberRemaining": "",
+          "categoryId": [
+            11
+          ],
+          "foodsComments": []
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "رستوران عمارت لاله",
+      "restaurantCategory": [
+        "ایرانی",
+        "کباب"
+      ],
+      "restaurantCategoryId": [
+        1,
+        3
+      ],
+      "address": "خیابان کارگر شمالی، بالاتر از بلوار کشاورز، نبش کوچه ارجمند ، پلاک ۱، رستوران عمارت لاله",
+      "logo": "https://cdn.snappfood.ir/media/cache/vendor_logo/uploads/images/vendors/logos/5b62e74fe412e.jpg",
+      "workingHours": "باز امروز از ساعت ۱۱ تا ۲۳",
+      "paymentMethod": "آنلاین، اعتبار جایزه خرید",
+      "minimumCart": 160000,
+      "rate": 4.3,
+      "totalPoints": 14307,
+      "totalComments": 2346,
+      "discount": 20,
+      "proUsers": "",
+      "coupon": [
+        {
+          "title": "مخصوص سفارش اول",
+          "value": "ماست و خیار رایگان"
+        },
+        {
+          "title": "مخصوص سفارش دوم",
+          "value": "سالاد فصل رایگان"
+        }
+      ],
+      "image": "https://cdn.snappfood.ir/300x200/uploads/images/vendor-cover-app-review/2/43.jpg",
+      "freeDelivery": false,
+      "delivery": {
+        "icon": "/images/icons/Home/express.svg",
+        "type": " اسنپ‌اکسپرس",
+        "price": 11300,
+        "snappfoodDelivery": true
+      },
+      "restaurantComments": [
+        {
+          "id": 1,
+          "name": "مصی",
+          "date": "۱۷ دی ۱۴۰۲",
+          "rate": 3,
+          "comment": "ماهی کبابی بدون برنج ارسال شده بود",
+          "orderTags": [
+            "چلو ماهی قزل آلا کبابی",
+            "خوراک کباب کوبیده اقتصادی",
+            "نوشابه خانواده کوکا کولا"
+          ],
+          "snappfoodAnswer": "مصی مجد عزیز، از همراهی شما سپاس‌گزاریم و خوشحالیم که نظرتان را با ما در میان گذاشتید. مورد ذکرشده بررسی می‌شود",
+          "restaurantManagerAnswer": ""
+        },
+        {
+          "id": 2,
+          "name": "طهورا",
+          "date": "۱۶ دی ۱۴۰۲",
+          "rate": 5,
+          "comment": "همه چی عالییییی",
+          "orderTags": [
+            "سینی عمارت"
+          ],
+          "snappfoodAnswer": "",
+          "restaurantManagerAnswer": ""
+        },
+        {
+          "id": 3,
+          "name": "عارفه",
+          "date": "۱۶ دی ۱۴۰۲",
+          "rate": 3,
+          "comment": "خیلی سسش کم بود و مرغم خشک بود درکل متوسط",
+          "orderTags": [
+            "زرشک پلو با مرغ (ران)"
+          ],
+          "snappfoodAnswer": "",
+          "restaurantManagerAnswer": ""
+        },
+        {
+          "id": 4,
+          "name": "شیده",
+          "date": "۱۶ آبان ۱۴۰۲",
+          "rate": 4,
+          "comment": "همه چیز عالی ! چه کمیت و چه کیفیت فقط به قسمت توضیحات توجهی نشده بود",
+          "orderTags": [
+            "چلو ماهی قزل آلا کبابی",
+            "نوشابه خانواده سون آپ"
+          ],
+          "snappfoodAnswer": "",
+          "restaurantManagerAnswer": ""
+        }
+      ],
+      "restCatsMenu": [
+        {
+          "id": 1,
+          "name": "کوپن‌ها"
+        },
+        {
+          "id": 2,
+          "name": "پر‌طرفدارها"
+        },
+        {
+          "id": 3,
+          "name": "سینی"
+        },
+        {
+          "id": 4,
+          "name": "چلو کباب"
+        },
+        {
+          "id": 5,
+          "name": "خوراک"
+        },
+        {
+          "id": 6,
+          "name": "نوشیدنی"
+        }
+      ],
+      "foods": [
+        {
+          "id": 1,
+          "restaurantId": 2,
+          "name": "سینی مخصوص",
+          "images": [
+            "https://cdn.snappfood.ir/641x641/cdn/28/00/9/product_image/zoodfood/656c56d8966b5.jpg"
+          ],
+          "price": 1384000,
+          "discount": "",
+          "rate": 4.5,
+          "desc": "یک سیخ برگ ۳۰۰ گرمی، یک سیخ لقمه ۳۰۰ گرمی، یک سیخ جوجه بدون استخوان ۳۰۰ گرمی، یک سیخ جوجه کامل با استخوان ۹۰۰ گرمی، ۴ عدد برنج قالبی",
+          "numberRemaining": "",
+          "categoryId": [
+            2,
+            3
+          ],
+          "foodsComments": [
+            {
+              "id": 1,
+              "name": "سیدامیر",
+              "date": "۱۴ دی ۱۴۰۲",
+              "rate": 4,
+              "comment": "سلام و ممنون غذا خوب بود شاد باشید",
+              "orderTags": [
+                "سینی مخصوص"
+              ],
+              "snappfoodAnswer": "",
+              "restaurantManagerAnswer": ""
+            },
+            {
+              "id": 2,
+              "name": "افسانه",
+              "date": "۱۰ آذر ۱۴۰۲",
+              "rate": 5,
+              "comment": "عالی",
+              "orderTags": [
+                "سینی مخصوص"
+              ],
+              "snappfoodAnswer": "",
+              "restaurantManagerAnswer": "دوست عزیز،ممنون از حسن انتخاب شما"
+            },
+            {
+              "id": 3,
+              "name": "فرزين",
+              "date": "۰۳ آذر ۱۴۰۲",
+              "rate": 5,
+              "comment": "مثل همیشه عالی",
+              "orderTags": [
+                "نوشابه خانواده زرد",
+                "سینی مخصوص"
+              ],
+              "snappfoodAnswer": "",
+              "restaurantManagerAnswer": ""
+            },
+            {
+              "id": 4,
+              "name": "سعید",
+              "date": "۰۲ مرداد ۱۴۰۲",
+              "rate": 3.5,
+              "comment": "قیمتش به نسبت بالاست ، ولی حداقل غذای خوبی تحویل میدن",
+              "orderTags": [
+                "سینی مخصوص عمارت",
+                "کاسه کباب عمارت (دو نفره)"
+              ],
+              "snappfoodAnswer": "",
+              "restaurantManagerAnswer": "نوش جان"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "restaurantId": 2,
+          "name": "خوراک سینی عمارت",
+          "images": [
+            "https://cdn.snappfood.ir/641x641/cdn/28/00/9/product_image/zoodfood/656da193565af.jpg"
+          ],
+          "price": 930000,
+          "discount": "",
+          "rate": 4.1,
+          "desc": "یک سیخ جوجه کباب با استخوان ۹۰۰ گرمی، یک سیخ جوجه کباب ممتاز سینه مرغ ۳۰۰ گرمی، ۲ سیخ کباب کوبیده گوشت گوسفندی ۱۵۰ گرمی، ۳۰۰ گرم ران مرغ سرخ شده",
+          "numberRemaining": "",
+          "categoryId": [
+            2,
+            3
+          ],
+          "foodsComments": []
+        },
+        {
+          "id": 3,
+          "restaurantId": 2,
+          "name": "چلو کباب چنجه گوسفندی",
+          "images": [
+            "https://cdn.snappfood.ir/641x641/cdn/28/00/9/product_image/zoodfood/656da1960576e.jpg"
+          ],
+          "price": 490000,
+          "discount": "",
+          "rate": 4.5,
+          "desc": "یک سیخ کباب چنجه گوشت مغز راسته گوسفندی ۲۰۰ گرمی، ۳۰۰ گرم برنج ایرانی",
+          "numberRemaining": "",
+          "categoryId": [
+            4,
+            1
+          ],
+          "foodsComments": [
+            {
+              "id": 1,
+              "name": "eli",
+              "date": "۲۳ آذر ۱۴۰۲",
+              "rate": 5,
+              "comment": "سلام وقت بخیر، خسته نباشید،والا با شرایط این دوره و زمانه فوق العاده بود، سپاسگزارم.",
+              "orderTags": [
+                "چلو کباب وزیری",
+                "چلو کباب چنجه گوسفندی"
+              ],
+              "snappfoodAnswer": "",
+              "restaurantManagerAnswer": "دوست عزیز،ممنون از حسن انتخاب شما"
+            },
+            {
+              "id": 2,
+              "name": "نیما",
+              "date": "۲۱ دی ۱۴۰۱",
+              "rate": 4.5,
+              "comment": "سلام خوشمزه و تازه بود فقط غذا به کاغذ کف کارتون چسبیده بود",
+              "orderTags": [
+                "چلو کباب چنجه گوسفندی"
+              ],
+              "snappfoodAnswer": "",
+              "restaurantManagerAnswer": "سلام نوش جان حتما بررسی می شود و در سفارشات بعدی تکرار نمی شود."
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "restaurantId": 2,
+          "name": "چلو کباب ششلیک",
+          "images": [
+            "https://cdn.snappfood.ir/641x641/cdn/28/00/9/product_image/zoodfood/656c5281890f2.jpg"
+          ],
+          "price": 870000,
+          "discount": "",
+          "rate": 4,
+          "desc": "۵۰۰ گرم راسته گوسفندی، چلو کره",
+          "numberRemaining": "",
+          "categoryId": [
+            3
+          ],
+          "foodsComments": [
+            {
+              "id": 1,
+              "name": "آشتيانى ",
+              "date": "۱۱ دی ۱۴۰۲",
+              "rate": 5,
+              "comment": "پیک خوش برخورد. غذا کمی سرد بود.",
+              "orderTags": [
+                "چلو کباب ششلیک",
+                "سالاد کلم"
+              ],
+              "snappfoodAnswer": "دكتر آشتيانى عزیز، عذرخواهی ما را برای سرد بودن غذای ارسالی پذیرا باشید؛ تحویل سفارش شمابر عهده سرویس اکسپرس بوده است و این مورد حتماً پیگیری می شود. از همراهی شما سپاسگزاریم",
+              "restaurantManagerAnswer": ""
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "restaurantId": 2,
+          "name": "خوراک کباب کوبیده اقتصادی",
+          "images": [
+            "https://cdn.snappfood.ir/641x641/cdn/28/00/9/product_image/zoodfood/656c54e288e22.jpg"
+          ],
+          "price": 180000,
+          "discount": "",
+          "rate": 4.2,
+          "desc": "یک سیخ کباب کوبیده گوشت گوسفندی ۱۵۰ گرمی، دورچین: سیب زمینی سرخ کرده، گوجه کبابی، فلفل کبابی، لیمو ترش، نان لواش",
+          "numberRemaining": "",
+          "categoryId": [
+            4,
+            2
+          ],
+          "foodsComments": [
+            {
+              "id": 1,
+              "name": "علیرضا",
+              "date": "۱۱ دی ۱۴۰۲",
+              "rate": 5,
+              "comment": "عالی",
+              "orderTags": [
+                "خوراک کباب کوبیده اقتصادی",
+                "سالاد کلم",
+                "نوشابه خانواده کوکا کولا"
+              ],
+              "snappfoodAnswer": "",
+              "restaurantManagerAnswer": ""
+            },
+            {
+              "id": 2,
+              "name": "فاطمه",
+              "date": "۰۸ دی ۱۴۰۲",
+              "rate": 3,
+              "comment": "کیفیت غدا مثل همیشه نبود",
+              "orderTags": [
+                "نوشابه قوطی کوکا کولا",
+                "خوراک کباب کوبیده اقتصادی"
+              ],
+              "snappfoodAnswer": "",
+              "restaurantManagerAnswer": ""
+            },
+            {
+              "id": 3,
+              "name": "مصی",
+              "date": "۳۰ آذر ۱۴۰۲",
+              "rate": 3.5,
+              "comment": "ماهی کبابی بدون برنج ارسال شده بود",
+              "orderTags": [
+                "خوراک کباب کوبیده اقتصادی"
+              ],
+              "snappfoodAnswer": "مصی مجد عزیز، از همراهی شما سپاس‌گزاریم و خوشحالیم که نظرتان را با ما در میان گذاشتید. مورد ذکرشده بررسی می‌شود.",
+              "restaurantManagerAnswer": ""
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "restaurantId": 2,
+          "name": "خوراک کباب برگ",
+          "images": [
+            "https://cdn.snappfood.ir/641x641/cdn/28/00/9/vendor/6378a14678e7d.jpeg"
+          ],
+          "price": 480000,
+          "discount": "",
+          "rate": 4.1,
+          "desc": "یک سیخ کباب برگ گوشت راسته گوسفندی ۲۰۰ گرمی، دورچین: سیب زمینی سرخ کرده، گوجه، فلفل کبابی، لیموترش، نان لواش",
+          "numberRemaining": "",
+          "categoryId": [
+            4
+          ],
+          "foodsComments": [
+            {
+              "id": 1,
+              "name": "سارینا",
+              "date": "۱۱ دی ۱۴۰۲",
+              "rate": 5,
+              "comment": "عالی",
+              "orderTags": [
+                "سالاد کلم",
+                "نوشابه خانواده کوکا کولا",
+                "خوراک کباب برگ"
+              ],
+              "snappfoodAnswer": "",
+              "restaurantManagerAnswer": ""
+            },
+            {
+              "id": 2,
+              "name": "محمدرضا",
+              "date": "۰۸ دی ۱۴۰۲",
+              "rate": 4.5,
+              "comment": "خوب بود ولی کیفیت همیشگیو نداش",
+              "orderTags": [
+                "نوشابه قوطی کوکا کولا",
+                "خوراک کباب برگ"
+              ],
+              "snappfoodAnswer": "",
+              "restaurantManagerAnswer": "دوست عزیز،ممنون از حسن انتخاب شما"
+            },
+            {
+              "id": 3,
+              "name": "زهرا",
+              "date": "۳۰ آذر ۱۴۰۲",
+              "rate": 5,
+              "comment": "تشکر بابت زحمات شما",
+              "orderTags": [
+                "خوراک کباب برگ"
+              ],
+              "snappfoodAnswer": "",
+              "restaurantManagerAnswer": ""
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "restaurantId": 2,
+          "name": "نوشابه خانواده",
+          "images": [
+            "https://cdn.snappfood.ir/641x641/cdn/93/50/product_image/zoodfood/64d2476217edc.jpg"
+          ],
+          "price": 27000,
+          "discount": "",
+          "rate": 4.5,
+          "desc": "۱.۵ لیتر",
+          "numberRemaining": "",
+          "categoryId": [
+            6
+          ],
+          "foodsComments": []
+        },
+        {
+          "id": 8,
+          "restaurantId": 2,
+          "name": "دوغ قوطی خوشگوار",
+          "images": [
+            "https://cdn.snappfood.ir/641x641/cdn/93/50/product_image/zoodfood/64d24763c8991.jpg"
+          ],
+          "price": 17000,
+          "discount": "",
+          "rate": 4.7,
+          "desc": "۳۳۰ میلی لیتر",
+          "numberRemaining": "",
+          "categoryId": [
+            6
+          ],
+          "foodsComments": []
+        },
+        {
+          "id": 9,
+          "restaurantId": 2,
+          "name": "نوشابه قوطی",
+          "images": [
+            "https://cdn.snappfood.ir/641x641/cdn/93/50/product_image/zoodfood/64d247610ffef.jpg"
+          ],
+          "price": 18000,
+          "discount": "",
+          "rate": 4.7,
+          "desc": "۳۳۰ میلی لیتر",
+          "numberRemaining": "",
+          "categoryId": [
+            6
+          ],
+          "foodsComments": []
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "کترینگ صدرسان (فاطمی)",
+      "restaurantCategory": [
+        "ایرانی",
+        "کباب",
+        "سنتی"
+      ],
+      "restaurantCategoryId": [
+        1,
+        3,
+        13
+      ],
+      "address": "خیابان حجاب، روبه روی خانه والیبال، پلاک ۲۱، کترینگ صدرسان (فاطمی)",
+      "logo": "https://cdn.snappfood.ir/media/cache/vendor_logo/uploads/images/vendors/logos/659e59da89811.jpg",
+      "workingHours": "باز امروز از ساعت ۱۰:۳۰ تا ۲۲:۰۰",
+      "paymentMethod": "آنلاین، اعتبار جایزه خرید",
+      "minimumCart": 150000,
+      "rate": 4.4,
+      "totalPoints": 54251,
+      "totalComments": 7145,
+      "discount": 10,
+      "proUsers": true,
+      "coupon": [
+        {
+          "title": "مخصوص سفارش اول",
+          "value": "۵٪ تخفیف"
+        }
+      ],
+      "image": "https://cdn.snappfood.ir/300x200/uploads/images/vendors/covers/5bb9afb785e64.jpg",
+      "freeDelivery": false,
+      "delivery": {
+        "icon": "/images/icons/Home/courier.svg",
+        "type": "پیک فروشنده",
+        "price": 9000,
+        "snappfoodDelivery": false
+      },
+      "restaurantComments": [
+        {
+          "id": 1,
+          "name": "سید کسرا",
+          "date": "۱۷ دی ۱۴۰۲",
+          "rate": 5,
+          "comment": "متاسفانه بر خلاف همیشه که از غذا لذت می برم، این ته چین اصلا خوشمزه نبود و افراط در زرد چوبه موج میزد",
+          "orderTags": [
+            "ته چین مرغ",
+            "نوشابه خانواده کوکا کولا"
+          ],
+          "snappfoodAnswer": "",
+          "restaurantManagerAnswer": ""
+        },
+        {
+          "id": 2,
+          "name": "بهرام",
+          "date": "۱۶ دی ۱۴۰۲",
+          "rate": 5,
+          "comment": "عالی",
+          "orderTags": [
+            "چلو کوبیده ( اقتصادی)",
+            "قاشق و چنگال",
+            "نوشابه قوطی کوکا کولا"
+          ],
+          "snappfoodAnswer": "",
+          "restaurantManagerAnswer": ""
+        },
+        {
+          "id": 3,
+          "name": "سوده",
+          "date": "۱۶ دی ۱۴۰۲",
+          "rate": 5,
+          "comment": "طعم عالی، کیفیت خوب، ارسال به موقع.ممنون از شما",
+          "orderTags": [
+            "خوراک جوجه کباب مخصوص",
+            "سالاد کلم",
+            "نوشابه قوطی کوکا کولا زیرو"
+          ],
+          "snappfoodAnswer": "",
+          "restaurantManagerAnswer": ""
+        },
+        {
+          "id": 4,
+          "name": "جانیار",
+          "date": "۱۶ آبان ۱۴۰۲",
+          "rate": 4,
+          "comment": "سرد شده بود بااینکه زود سفارش دادم حدود ساعت ۷ ولی دیر رسید و سرد ولی کیفیت خوب بود چندتا سفارش رو ندید به یه پیک لطفا",
+          "orderTags": [
+            "دوغ شیشه ای آبعلی",
+            "چلو جوجه کباب مخصوص"
+          ],
+          "snappfoodAnswer": "جانیار علیخانی عزیز، عذرخواهی ما را برای تاخیر به وجود آمده پذیرا باشید؛ تحویل سفارش شما بر عهده سرویس اکسپرس بوده است و این مورد حتماً پیگیری میشود. از همراهی شما سپاسگزاریم.",
+          "restaurantManagerAnswer": ""
+        }
+      ],
+      "restCatsMenu": [
+        {
+          "id": 1,
+          "name": "کوپن‌ها"
+        },
+        {
+          "id": 2,
+          "name": "پر‌طرفدارها"
+        },
+        {
+          "id": 3,
+          "name": "چلوکباب ها"
+        },
+        {
+          "id": 4,
+          "name": "منوی ته چین"
+        },
+        {
+          "id": 5,
+          "name": "خورشتها"
+        },
+        {
+          "id": 6,
+          "name": "پیش غذاها"
+        },
+        {
+          "id": 7,
+          "name": "نوشیدنی"
+        }
+      ],
+      "foods": [
+        {
+          "id": 1,
+          "restaurantId": 3,
+          "name": "چلو جوجه کباب مخصوص",
+          "images": [
+            "https://cdn.snappfood.ir/641x641/cdn/10/79/1/vendor/5de0f34838d34.jpg"
+          ],
+          "price": 215000,
+          "discount": 10,
+          "rate": 4.4,
+          "desc": "یک سیخ سینه مرغ زعفرانی ۳۰۰ گرمی ، ۳۵۰ گرم برنج ایرانی ، کره حیوانی،گوجه کبابی",
+          "numberRemaining": 1,
+          "categoryId": [
+            2,
+            3
+          ],
+          "foodsComments": [
+            {
+              "id": 1,
+              "name": "سهیلا",
+              "date": "۱۶ دی ۱۴۰۲",
+              "rate": 5,
+              "comment": "عالی بود خوشمزه تازه",
+              "orderTags": [
+                "چلو جوجه کباب مخصوص",
+                "نوشابه خانواده کوکا کولا"
+              ],
+              "snappfoodAnswer": "",
+              "restaurantManagerAnswer": ""
+            },
+            {
+              "id": 2,
+              "name": "علی",
+              "date": "۱۲ دی ۱۴۰۲",
+              "rate": 5,
+              "comment": "عالی بود مثل همیشه",
+              "orderTags": [
+                "چلو جوجه کباب مخصوص",
+                "چلو کباب کوبیده ۲سیخ",
+                "ماست موسیر"
+              ],
+              "snappfoodAnswer": "",
+              "restaurantManagerAnswer": ""
+            },
+            {
+              "id": 3,
+              "name": "حنانه",
+              "date": "۱۶ دی ۱۴۰۲",
+              "rate": 5,
+              "comment": "همه چیز عالی مخصوصا پیکی که غذا رو آورد با صبوریشون آدرسی که کمی اشتباه وارد کرده بودم رو پیدا کردن. غذا هم فوق العاده",
+              "orderTags": [
+                "چلو جوجه کباب مخصوص"
+              ],
+              "snappfoodAnswer": "",
+              "restaurantManagerAnswer": "حنانه عزیز سلام صدرسان از قبول زحمت بابت شرکت در نظرسنجی از شما تشکر می نماید همچنین بسیار خرسندیم که کیفیت و خدمات ما باعث جلب رضایت شما شده است"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "restaurantId": 3,
+          "name": "چلوکباب لقمه",
+          "images": [
+            "https://cdn.snappfood.ir/641x641/cdn/10/79/1/vendor/62e104b54c996.jpeg"
+          ],
+          "price": 229000,
+          "discount": 10,
+          "rate": 4.3,
+          "desc": "یک سیخ کباب ۲۰۰ گرمی با گوشت گوساله و گوسفندی، ۴۰۰ گرم برنج اعلا ایرانی، کره حیوانی، گوجه کبابی",
+          "numberRemaining": "",
+          "categoryId": [
+            3,
+            2
+          ],
+          "foodsComments": [
+            {
+              "id": 1,
+              "name": "فاطمه",
+              "date": "۱۴ دی ۱۴۰۲",
+              "rate": 5,
+              "comment": "سلام وقت بخیر، خسته نباشید،والا با شرایط این دوره و زمانه فوق العاده بود، سپاسگزارم.",
+              "orderTags": [
+                "چلوکباب لقمه",
+                "ماست و خیار"
+              ],
+              "snappfoodAnswer": "",
+              "restaurantManagerAnswer": ""
+            },
+            {
+              "id": 2,
+              "name": "ریبوار",
+              "date": "۱۰ آذر ۱۴۰۲",
+              "rate": 5,
+              "comment": "عالی",
+              "orderTags": [
+                "چلوکباب لقمه"
+              ],
+              "snappfoodAnswer": "",
+              "restaurantManagerAnswer": "دوست عزیز،ممنون از حسن انتخاب شما"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "restaurantId": 3,
+          "name": "ته چین مرغ",
+          "images": [
+            "https://cdn.snappfood.ir/641x641/cdn/10/79/1/vendor/64cb89fd49ece.jpeg"
+          ],
+          "price": 210000,
+          "discount": 10,
+          "rate": 4,
+          "desc": "۵۰۰ گرم ته چین زعفرانی با برنج اعلا ، ۳۰ زرشگ ، ۱۲۰ گرم مرغ ریش ریش شده طعم دار",
+          "numberRemaining": "",
+          "categoryId": [
+            4,
+            2
+          ],
+          "foodsComments": [
+            {
+              "id": 1,
+              "name": "eli",
+              "date": "۲۳ آذر ۱۴۰۲",
+              "rate": 4,
+              "comment": "قبلا بقیه غذا ها رو‌سفارش داده بودن خیلی راضی بودم. ولی ته چین اونی نبود که توقع داشتم",
+              "orderTags": [
+                "ته چین مرغ"
+              ],
+              "snappfoodAnswer": "",
+              "restaurantManagerAnswer": "دوست عزیز،ممنون از حسن انتخاب شما"
+            },
+            {
+              "id": 2,
+              "name": "شیرین",
+              "date": "۲۱ دی ۱۴۰۱",
+              "rate": 4.5,
+              "comment": "عالیییییی نگم براتون",
+              "orderTags": [
+                "ته چین مرغ",
+                "دوغ خانواده"
+              ],
+              "snappfoodAnswer": "",
+              "restaurantManagerAnswer": "سلام نوش جان حتما بررسی می شود و در سفارشات بعدی تکرار نمی شود."
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "restaurantId": 3,
+          "name": "چلوخورشت قیمه سیب زمینی",
+          "images": [
+            "https://cdn.snappfood.ir/641x641/cdn/10/79/1/vendor/621ce535a9791.jpeg"
+          ],
+          "price": 165000,
+          "discount": "",
+          "rate": 4.3,
+          "desc": "۴۰۰ گرم برنج اعلا ایرانی ،۸۰ گرم گوشت ران گوسفند ،سیب زمینی تازه ،ته چین زعفرانی",
+          "numberRemaining": "",
+          "categoryId": [
+            5
+          ],
+          "foodsComments": [
+            {
+              "id": 1,
+              "name": "علیرضا",
+              "date": "۱۱ دی ۱۴۰۲",
+              "rate": 5,
+              "comment": "عالی",
+              "orderTags": [
+                "چلوخورشت قیمه سیب زمینی",
+                "سالاد کلم"
+              ],
+              "snappfoodAnswer": "",
+              "restaurantManagerAnswer": ""
+            },
+            {
+              "id": 2,
+              "name": "فاطمه",
+              "date": "۰۸ دی ۱۴۰۲",
+              "rate": 4.5,
+              "comment": "مثل همیشه عالی",
+              "orderTags": [
+                "نوشابه قوطی کوکا کولا",
+                "چلوخورشت قیمه سیب زمینی"
+              ],
+              "snappfoodAnswer": "",
+              "restaurantManagerAnswer": ""
+            },
+            {
+              "id": 3,
+              "name": "غزل",
+              "date": "۳۰ آذر ۱۴۰۲",
+              "rate": 5,
+              "comment": "پیک و غذا و قیمت عالی همه چی درجه یک",
+              "orderTags": [
+                "چلوخورشت قیمه سیب زمینی"
+              ],
+              "snappfoodAnswer": "",
+              "restaurantManagerAnswer": ""
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "restaurantId": 3,
+          "name": "چلو خورشت قورمه سبزی",
+          "images": [
+            "https://cdn.snappfood.ir/641x641/cdn/10/79/1/product_image/zoodfood/5eba3da5cfef3.jpg"
+          ],
+          "price": 165000,
+          "discount": "",
+          "rate": 4.2,
+          "desc": "۴۰۰ گرم برنج اعلا ایرانی ،۸۰ گرم گوشت ران گوسفند ته چین زعفرانی",
+          "numberRemaining": 5,
+          "categoryId": [
+            5,
+            2
+          ],
+          "foodsComments": [
+            {
+              "id": 1,
+              "name": "فاطمه",
+              "date": "۱۱ دی ۱۴۰۲",
+              "rate": 5,
+              "comment": "عالی",
+              "orderTags": [
+                "چلو خورشت قورمه سبزی",
+                "سالاد کلم",
+                "نوشابه خانواده کوکا کولا"
+              ],
+              "snappfoodAnswer": "",
+              "restaurantManagerAnswer": ""
+            },
+            {
+              "id": 2,
+              "name": "شبنم",
+              "date": "۰۸ دی ۱۴۰۲",
+              "rate": 4.5,
+              "comment": "عالی ترین قرمه سبزی بود که خوردم",
+              "orderTags": [
+                "نوشابه قوطی کوکا کولا",
+                "چلو خورشت قورمه سبزی"
+              ],
+              "snappfoodAnswer": "",
+              "restaurantManagerAnswer": ""
+            },
+            {
+              "id": 3,
+              "name": "ندا",
+              "date": "۳۰ آذر ۱۴۰۲",
+              "rate": 4.5,
+              "comment": "گرم. سریییع. وقتی سفارشم رسید غافلگیر شدم انتطار نداشتم اینقدر زود بیاد",
+              "orderTags": [
+                "چلو خورشت قورمه سبزی"
+              ],
+              "snappfoodAnswer": "",
+              "restaurantManagerAnswer": ""
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "restaurantId": 3,
+          "name": "سالاد شیرازی",
+          "images": [
+            "https://cdn.snappfood.ir/641x641/cdn/10/79/1/vendor/62dfc17f6ee98.jpeg"
+          ],
+          "price": 21000,
+          "discount": "",
+          "rate": 4.4,
+          "desc": "۱۳۰ گرم خیار و گوجه و پیاز تازه و روغن زیتون",
+          "numberRemaining": "",
+          "categoryId": [
+            6
+          ],
+          "foodsComments": [
+            {
+              "id": 1,
+              "name": "سارینا",
+              "date": "۱۱ دی ۱۴۰۲",
+              "rate": 5,
+              "comment": "عالی",
+              "orderTags": [
+                "چلو جوجه کباب",
+                "سالاد شیرازی",
+                "نوشابه خانواده کوکا کولا"
+              ],
+              "snappfoodAnswer": "",
+              "restaurantManagerAnswer": ""
+            },
+            {
+              "id": 2,
+              "name": "محمدرضا",
+              "date": "۰۸ دی ۱۴۰۲",
+              "rate": 4.5,
+              "comment": "خوب بود ولی کیفیت همیشگیو نداش",
+              "orderTags": [
+                "سالاد شیرازی",
+                "خوراک جوجه کباب مخصوص"
+              ],
+              "snappfoodAnswer": "",
+              "restaurantManagerAnswer": "دوست عزیز،ممنون از حسن انتخاب شما"
+            },
+            {
+              "id": 3,
+              "name": "حدیثه",
+              "date": "۳۰ آذر ۱۴۰۲",
+              "rate": 5,
+              "comment": "به توضیحات توجه نشده بود سالاد شیرازی بی مزه بود خوب نبود خورشت و برنج خوب بود",
+              "orderTags": [
+                "سالاد شیرازی",
+                "چلو خورشت قورمه سبزی (اقتصادی)"
+              ],
+              "snappfoodAnswer": "",
+              "restaurantManagerAnswer": "حدیثه عزیز سلام صدرسان از قبول زحمت بابت شرکت در نظرسنجی از شما تشکر می نماید عذرخواهی صمیمانه مارا بابت مشکل پیش امده پذیرا باشید این مورد حتما پیگیری خواهد شد"
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "restaurantId": 3,
+          "name": "زیتون پرورده",
+          "images": [
+            "https://cdn.snappfood.ir/641x641/cdn/10/79/1/vendor/62fcce0e7b76f.jpeg"
+          ],
+          "price": 39000,
+          "discount": "",
+          "rate": 4.4,
+          "desc": "۱۴۰ گرم زیتون پرورده اعلا محلی",
+          "numberRemaining": "",
+          "categoryId": [
+            6
+          ],
+          "foodsComments": []
+        },
+        {
+          "id": 8,
+          "restaurantId": 3,
+          "name": "نوشابه خانواده",
+          "images": [
+            "https://cdn.snappfood.ir/641x641/cdn/93/50/product_image/zoodfood/64d2476217edc.jpg"
+          ],
+          "price": 27000,
+          "discount": "",
+          "rate": 4.5,
+          "desc": "۱.۵ لیتر",
+          "numberRemaining": "",
+          "categoryId": [
+            7
+          ],
+          "foodsComments": []
+        },
+        {
+          "id": 9,
+          "restaurantId": 3,
+          "name": "دوغ قوطی خوشگوار",
+          "images": [
+            "https://cdn.snappfood.ir/641x641/cdn/93/50/product_image/zoodfood/64d24763c8991.jpg"
+          ],
+          "price": 17000,
+          "discount": "",
+          "rate": 4.7,
+          "desc": "۳۳۰ میلی لیتر",
+          "numberRemaining": "",
+          "categoryId": [
+            7
+          ],
+          "foodsComments": []
+        },
+        {
+          "id": 10,
+          "restaurantId": 3,
+          "name": "نوشابه قوطی",
+          "images": [
+            "https://cdn.snappfood.ir/641x641/cdn/93/50/product_image/zoodfood/64d247610ffef.jpg"
+          ],
+          "price": 18000,
+          "discount": "",
+          "rate": 4.7,
+          "desc": "۳۳۰ میلی لیتر",
+          "numberRemaining": "",
+          "categoryId": [
+            7
+          ],
+          "foodsComments": []
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "ساندویچ ۹۹",
+      "restaurantCategory": [
+        "فست‌فود",
+        "ساندویچ",
+        "برگر"
+      ],
+      "restaurantCategoryId": [
+        2,
+        5,
+        6
+      ],
+      "address": "میدان انقلاب، ضلع جنوب شرقی، پلاک ۱۹، ساندویچ ۹۹",
+      "logo": "https://cdn.snappfood.ir/media/cache/vendor_logo/uploads/images/vendors/logos/5e6745c9b2ec0.JPG",
+      "workingHours": "باز امروز از ساعت ۸ تا ۲۳",
+      "paymentMethod": "آنلاین",
+      "minimumCart": 20000,
+      "rate": 4.5,
+      "totalPoints": 17019,
+      "totalComments": 2139,
+      "discount": 25,
+      "proUsers": true,
+      "coupon": [
+        {
+          "title": "مخصوص سفارش اول",
+          "value": "۵٪ تخفیف"
+        }
+      ],
+      "image": "https://cdn.snappfood.ir/300x200/uploads/images/vendors/covers/652506ecc86b4.jpg",
+      "freeDelivery": false,
+      "delivery": {
+        "icon": "/images/icons/Home/express.svg",
+        "type": "اسنپ‌اکسپرس",
+        "price": 10600,
+        "snappfoodDelivery": true
+      },
+      "restaurantComments": [
+        {
+          "id": 1,
+          "name": "eli",
+          "date": "۲۳ آذر ۱۴۰۲",
+          "rate": 5,
+          "comment": "سلام وقت بخیر، خسته نباشید،والا با شرایط این دوره و زمانه فوق العاده بود، سپاسگزارم.",
+          "orderTags": [
+            "ساندویچ فیله استیک گریل فرانسوی",
+            "سس رنچ"
+          ],
+          "snappfoodAnswer": "",
+          "restaurantManagerAnswer": "دوست عزیز،ممنون از حسن انتخاب شما"
+        },
+        {
+          "id": 2,
+          "name": "شیرین",
+          "date": "۲۱ دی ۱۴۰۱",
+          "rate": 4.5,
+          "comment": "نسبت به دفعه قبلی که از این رستوران سفارش دادیم پیشرفت کرده بود.خیلی خوشمزه تر و با بسته بندی بهتر بود.",
+          "orderTags": [
+            "ساندویچ فیله استیک گریل فرانسوی",
+            "ساندویچ تنوری مخصوص ۹۹"
+          ],
+          "snappfoodAnswer": "",
+          "restaurantManagerAnswer": "ممنون از توجه وانتخاب مجدد از مجموعه ۹۹، امیدداریم که با انرژی مثبت شما پیشرفت بیشتری داشته باشیم"
+        },
+        {
+          "id": 3,
+          "name": "آرمین",
+          "date": "۰۳ آذر ۱۴۰۲",
+          "rate": 5,
+          "comment": "مثل همیشه عالی",
+          "orderTags": [
+            "کلاسیک برگر ذغالی ۹۹",
+            "پک کارد و چنگال"
+          ],
+          "snappfoodAnswer": "",
+          "restaurantManagerAnswer": "دوست عزیز،ممنون از حسن انتخاب شما"
+        },
+        {
+          "id": 4,
+          "name": "مهرناز",
+          "date": "۰۳ دی ۱۴۰۲",
+          "rate": 4,
+          "comment": "خوشمزه بود مرسی",
+          "orderTags": [
+            "دبل برگر ذغالی مخصوص",
+            "ساندویچ استیک مرغ",
+            "پک کارد و چنگال",
+            "نوشابه قوطی اسپرایت"
+          ],
+          "snappfoodAnswer": "",
+          "restaurantManagerAnswer": "درود به شما ، که همیشه ۹۹ رو انتخاب میکنید ، با انرژی مثبت شما امید داریم بتوانیم رضایت شمارو همیشه جلب کنیم."
+        }
+      ],
+      "restCatsMenu": [
+        {
+          "id": 1,
+          "name": "آف‌ تایم"
+        },
+        {
+          "id": 2,
+          "name": "کوپن‌ها"
+        },
+        {
+          "id": 3,
+          "name": "پر‌طرفدارها"
+        },
+        {
+          "id": 4,
+          "name": "برگر"
+        },
+        {
+          "id": 5,
+          "name": "ساندویچ"
+        },
+        {
+          "id": 6,
+          "name": "سالاد و پیش غذا"
+        },
+        {
+          "id": 7,
+          "name": "نوشیدنی"
+        }
+      ],
+      "foods": [
+        {
+          "id": 1,
+          "restaurantId": 4,
+          "name": "دبل برگر ذغالی مخصوص",
+          "images": [
+            "https://cdn.snappfood.ir/641x641/cdn/48/22/2/product_image/zoodfood/64c3d43679b20.jpg"
+          ],
+          "price": 188000,
+          "discount": 25,
+          "rate": 4.6,
+          "desc": "۲ عدد برگر دست ساز گوشت مخلوط گوسفندی و گوساله ۱۵۰ گرمی، گوجه، کاهو، خیارشور، نان گرد کنجدی",
+          "numberRemaining": 4,
+          "categoryId": [
+            3,
+            4,
+            1
+          ],
+          "foodsComments": [
+            {
+              "id": 1,
+              "name": "سینا",
+              "date": "۱۶ دی ۱۴۰۲",
+              "rate": 5,
+              "comment": "چندین سری خرید کردم از کیفیت غذاشون راضی هستم. به توضیحات هم دقت میکنند",
+              "orderTags": [
+                "دبل برگر ذغالی مخصوص",
+                "سیب زمینی سرخ شده",
+                "نوشابه خانواده کوکا کولا"
+              ],
+              "snappfoodAnswer": "",
+              "restaurantManagerAnswer": ""
+            },
+            {
+              "id": 2,
+              "name": "زکیه",
+              "date": "۱۲ دی ۱۴۰۲",
+              "rate": 5,
+              "comment": "چرا عکس همبرگر با نان گرد میزارید ولی با نان ساندویچ میفرستید؟ چه حرکتیه این ؟ من اصلا همبرگر با نان ساندویچ دوست نداشتم !",
+              "orderTags": [
+                "دبل برگر ذغالی مخصوص"
+              ],
+              "snappfoodAnswer": "",
+              "restaurantManagerAnswer": ""
+            },
+            {
+              "id": 3,
+              "name": "سید علی",
+              "date": "۱۶ دی ۱۴۰۲",
+              "rate": 5,
+              "comment": "شیلا جان عاشقت شدم تو خیلی خوشمزه‌ای، تو زیباترین چیزی هستی که تا حالا خوردم",
+              "orderTags": [
+                "دبل برگر ذغالی مخصوص",
+                "سس تند آمازون"
+              ],
+              "snappfoodAnswer": "",
+              "restaurantManagerAnswer": "نوش جان"
+            },
+            {
+              "id": 4,
+              "name": "مهرناز",
+              "date": "۰۳ دی ۱۴۰۲",
+              "rate": 4,
+              "comment": "خوشمزه بود مرسی",
+              "orderTags": [
+                "دبل برگر ذغالی مخصوص",
+                "ساندویچ استیک مرغ",
+                "پک کارد و چنگال",
+                "نوشابه قوطی اسپرایت"
+              ],
+              "snappfoodAnswer": "",
+              "restaurantManagerAnswer": "درود به شما ، که همیشه ۹۹ رو انتخاب میکنید ، با انرژی مثبت شما امید داریم بتوانیم رضایت شمارو همیشه جلب کنیم."
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "restaurantId": 4,
+          "name": "کلاسیک برگر ذغالی ۹۹",
+          "images": [
+            "https://cdn.snappfood.ir/641x641/cdn/48/22/2/product_image/zoodfood/632b1c5ca477b.jpg"
+          ],
+          "price": 158000,
+          "discount": 25,
+          "rate": 4.3,
+          "desc": "یک عدد برگر دست ساز مخلوط گوشت گوساله و گوسفندی ۱۵۰ گرمی، کاهو، گوجه، خیارشور، نان گرد، یک بسته چیپس سنتی",
+          "numberRemaining": "3",
+          "categoryId": [
+            3,
+            4,
+            1
+          ],
+          "foodsComments": [
+            {
+              "id": 1,
+              "name": "فاطمه",
+              "date": "۱۴ دی ۱۴۰۲",
+              "rate": 5,
+              "comment": "سلام وقت بخیر، خسته نباشید،والا با شرایط این دوره و زمانه فوق العاده بود، سپاسگزارم.",
+              "orderTags": [
+                "کلاسیک برگر ذغالی ۹۹",
+                "سوپر کمبو",
+                "سیب زمینی سرخ شده"
+              ],
+              "snappfoodAnswer": "",
+              "restaurantManagerAnswer": ""
+            },
+            {
+              "id": 2,
+              "name": "ریبوار",
+              "date": "۱۰ آذر ۱۴۰۲",
+              "rate": 5,
+              "comment": "عالی",
+              "orderTags": [
+                "کلاسیک برگر ذغالی ۹۹"
+              ],
+              "snappfoodAnswer": "",
+              "restaurantManagerAnswer": "دوست عزیز،ممنون از حسن انتخاب شما"
+            },
+            {
+              "id": 3,
+              "name": "آرمین",
+              "date": "۰۳ آذر ۱۴۰۲",
+              "rate": 5,
+              "comment": "مثل همیشه عالی",
+              "orderTags": [
+                "کلاسیک برگر ذغالی ۹۹",
+                "پک کارد و چنگال"
+              ],
+              "snappfoodAnswer": "",
+              "restaurantManagerAnswer": "دوست عزیز،ممنون از حسن انتخاب شما"
+            },
+            {
+              "id": 4,
+              "name": "سعید",
+              "date": "۰۲ مرداد ۱۴۰۲",
+              "rate": 3.5,
+              "comment": "نمیدونم چرا دوبار یجا سفارش میدی سومین بار اینطوریه غذا درست سرخ نشده بود تازه هرچی تخفیف داده بودن اینسری دوبرابر گرفتن",
+              "orderTags": [
+                "کلاسیک برگر ذغالی ۹۹",
+                "سیب زمینی سرخ شده"
+              ],
+              "snappfoodAnswer": "",
+              "restaurantManagerAnswer": ""
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "restaurantId": 4,
+          "name": "ساندویچ فیله استیک گریل فرانسوی",
+          "images": [
+            "https://cdn.snappfood.ir/641x641/cdn/48/22/2/vendor/64d8e64000465.jpeg"
+          ],
+          "price": 198000,
+          "discount": "",
+          "rate": 4.4,
+          "desc": "۲۰۰ گرم فیله گوشت فرآوری شده، کاهو، گوجه، خیارشور، سس مخصوص کنجدی، جعفری، نان باگت",
+          "numberRemaining": "",
+          "categoryId": [
+            3,
+            5
+          ],
+          "foodsComments": [
+            {
+              "id": 1,
+              "name": "eli",
+              "date": "۲۳ آذر ۱۴۰۲",
+              "rate": 5,
+              "comment": "سلام وقت بخیر، خسته نباشید،والا با شرایط این دوره و زمانه فوق العاده بود، سپاسگزارم.",
+              "orderTags": [
+                "ساندویچ فیله استیک گریل فرانسوی",
+                "سس رنچ"
+              ],
+              "snappfoodAnswer": "",
+              "restaurantManagerAnswer": "دوست عزیز،ممنون از حسن انتخاب شما"
+            },
+            {
+              "id": 2,
+              "name": "شیرین",
+              "date": "۲۱ دی ۱۴۰۱",
+              "rate": 4.5,
+              "comment": "نسبت به دفعه قبلی که از این رستوران سفارش دادیم پیشرفت کرده بود.خیلی خوشمزه تر و با بسته بندی بهتر بود.",
+              "orderTags": [
+                "ساندویچ فیله استیک گریل فرانسوی",
+                "ساندویچ تنوری مخصوص ۹۹"
+              ],
+              "snappfoodAnswer": "",
+              "restaurantManagerAnswer": "ممنون از توجه وانتخاب مجدد از مجموعه ۹۹، امیدداریم که با انرژی مثبت شما پیشرفت بیشتری داشته باشیم"
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "restaurantId": 4,
+          "name": "ساندویچ کالباس دبل مخصوص سرد ۹۹",
+          "images": [
+            "https://cdn.snappfood.ir/641x641/cdn/48/22/2/product_image/zoodfood/63e1e89b0e087.jpg"
+          ],
+          "price": 128000,
+          "discount": 25,
+          "rate": 4.4,
+          "desc": "۲۲۰ گرم ژامبون خشک ۶۰%، کاهو، گوجه، خیارشور، جعفری، نان باگت کنجدی",
+          "numberRemaining": 3,
+          "categoryId": [
+            1,
+            3,
+            5
+          ],
+          "foodsComments": [
+            {
+              "id": 1,
+              "name": "علیرضا",
+              "date": "۱۱ دی ۱۴۰۲",
+              "rate": 5,
+              "comment": "عالی",
+              "orderTags": [
+                "ساندویچ کالباس دبل مخصوص سرد ۹۹",
+                "سالاد کلم"
+              ],
+              "snappfoodAnswer": "",
+              "restaurantManagerAnswer": "نوش جان"
+            },
+            {
+              "id": 2,
+              "name": "فاطمه",
+              "date": "۰۸ دی ۱۴۰۲",
+              "rate": 3,
+              "comment": "گوشت شور بود",
+              "orderTags": [
+                "نوشابه قوطی کوکا کولا",
+                "ساندویچ کالباس دبل مخصوص سرد ۹۹"
+              ],
+              "snappfoodAnswer": "",
+              "restaurantManagerAnswer": ""
+            },
+            {
+              "id": 3,
+              "name": "غزل",
+              "date": "۳۰ آذر ۱۴۰۲",
+              "rate": 5,
+              "comment": "بسیار عالی و باکیفیت",
+              "orderTags": [
+                "ساندویچ کالباس دبل مخصوص سرد ۹۹"
+              ],
+              "snappfoodAnswer": "",
+              "restaurantManagerAnswer": ""
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "restaurantId": 4,
+          "name": "ساندویچ کوکتل پنیر دار هلندی",
+          "images": [
+            "https://cdn.snappfood.ir/641x641/cdn/48/22/2/product_image/zoodfood/63e1e8ac6fb84.jpg"
+          ],
+          "price": 232000,
+          "discount": 25,
+          "rate": 3.5,
+          "desc": "گوشت مرغ تنوری، سس آلفردو، پیاز سرخ شده، سس خامه، سس سیر، پنیر مخصوص",
+          "numberRemaining": "",
+          "categoryId": [
+            5
+          ],
+          "foodsComments": [
+            {
+              "id": 1,
+              "name": "علیرضا",
+              "date": "۱۱ دی ۱۴۰۲",
+              "rate": 5,
+              "comment": "عالی",
+              "orderTags": [
+                "ساندویچ کوکتل پنیر دار هلندی",
+                "سالاد کلم",
+                "نوشابه خانواده کوکا کولا"
+              ],
+              "snappfoodAnswer": "",
+              "restaurantManagerAnswer": ""
+            },
+            {
+              "id": 2,
+              "name": "فاطمه",
+              "date": "۰۸ دی ۱۴۰۲",
+              "rate": 3,
+              "comment": "بسته بندی نایلونی باعت شده بود نان نرم شده و اون کیفیت قبل رو نداشته باشه",
+              "orderTags": [
+                "نوشابه قوطی کوکا کولا",
+                "ساندویچ کوکتل پنیر دار هلندی"
+              ],
+              "snappfoodAnswer": "",
+              "restaurantManagerAnswer": ""
+            },
+            {
+              "id": 3,
+              "name": "محمد",
+              "date": "۳۰ آذر ۱۴۰۲",
+              "rate": 3.5,
+              "comment": "در توضیح گفته شده ۴ عدد کوکتل ولی ۳ تا بود و جنس مرغوبی هم نبود",
+              "orderTags": [
+                "ساندویچ کوکتل پنیر دار هلندی"
+              ],
+              "snappfoodAnswer": "محمد نمازی عزیز، از همراهی شما سپاس‌گزاریم و خوشحالیم که نظرتان را با ما در میان گذاشتید. مورد ذکرشده بررسی می‌شود.",
+              "restaurantManagerAnswer": ""
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "restaurantId": 4,
+          "name": "سالاد کلم",
+          "images": [
+            "https://cdn.snappfood.ir/641x641/cdn/93/50/product_image/zoodfood/64d248c7c9ead.jpg",
+            "https://cdn.snappfood.ir/641x641/cdn/93/50/product_image/vendor/5ef35314b1750.jpg"
+          ],
+          "price": 32000,
+          "discount": "",
+          "rate": 4.7,
+          "desc": "کلم، هویج، کشمش، سس مخصوص",
+          "numberRemaining": "",
+          "categoryId": [
+            6
+          ],
+          "foodsComments": [
+            {
+              "id": 1,
+              "name": "علی",
+              "date": "۱۱ دی ۱۴۰۲",
+              "rate": 4.7,
+              "comment": "طعم عالی، کیفیت خوب، ارسال به موقع.ممنون از شما",
+              "orderTags": [
+                "همبرگر",
+                "سالاد کلم",
+                "نوشابه خانواده کوکا کولا",
+                "ساندویچ هات داگ مرگز با قارچ و پنیر"
+              ],
+              "snappfoodAnswer": "",
+              "restaurantManagerAnswer": ""
+            },
+            {
+              "id": 2,
+              "name": "علیرضا",
+              "date": "۰۸ دی ۱۴۰۲",
+              "rate": 5,
+              "comment": "ميشه بي كيفيت بشيد يعني ؟ عالي هستين سالهاي سال",
+              "orderTags": [
+                "سالاد کلم",
+                "همبرگر"
+              ],
+              "snappfoodAnswer": "",
+              "restaurantManagerAnswer": "دوست عزیز،ممنون از حسن انتخاب شما"
+            },
+            {
+              "id": 3,
+              "name": "فواد",
+              "date": "۳۰ آذر ۱۴۰۲",
+              "rate": 5,
+              "comment": "تشکر بابت زحمات شما",
+              "orderTags": [
+                "همبرگر",
+                "سالاد کلم"
+              ],
+              "snappfoodAnswer": "",
+              "restaurantManagerAnswer": ""
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "restaurantId": 4,
+          "name": "زیتون پرورده",
+          "images": [
+            "https://cdn.snappfood.ir/641x641/cdn/10/79/1/vendor/62fcce0e7b76f.jpeg"
+          ],
+          "price": 39000,
+          "discount": "",
+          "rate": 4.4,
+          "desc": "۱۴۰ گرم زیتون پرورده اعلا محلی",
+          "numberRemaining": "",
+          "categoryId": [
+            6
+          ],
+          "foodsComments": []
+        },
+        {
+          "id": 8,
+          "restaurantId": 4,
+          "name": "نوشابه خانواده",
+          "images": [
+            "https://cdn.snappfood.ir/641x641/cdn/93/50/product_image/zoodfood/64d2476217edc.jpg"
+          ],
+          "price": 27000,
+          "discount": "",
+          "rate": 4.5,
+          "desc": "۱.۵ لیتر",
+          "numberRemaining": "",
+          "categoryId": [
+            7
+          ],
+          "foodsComments": []
+        },
+        {
+          "id": 9,
+          "restaurantId": 4,
+          "name": "دوغ قوطی خوشگوار",
+          "images": [
+            "https://cdn.snappfood.ir/641x641/cdn/93/50/product_image/zoodfood/64d24763c8991.jpg"
+          ],
+          "price": 17000,
+          "discount": "",
+          "rate": 4.7,
+          "desc": "۳۳۰ میلی لیتر",
+          "numberRemaining": "",
+          "categoryId": [
+            7
+          ],
+          "foodsComments": []
+        },
+        {
+          "id": 10,
+          "restaurantId": 4,
+          "name": "نوشابه قوطی",
+          "images": [
+            "https://cdn.snappfood.ir/641x641/cdn/93/50/product_image/zoodfood/64d247610ffef.jpg"
+          ],
+          "price": 18000,
+          "discount": "",
+          "rate": 4.7,
+          "desc": "۳۳۰ میلی لیتر",
+          "numberRemaining": "",
+          "categoryId": [
+            7
+          ],
+          "foodsComments": []
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "الین سوشی",
+      "restaurantCategory": [
+        "بین‌الملل",
+        "آسیایی",
+        "سنتی",
+        "ساندویچ",
+        "صبحانه"
+      ],
+      "restaurantCategoryId": [
+        11,
+        6,
+        10,
+        13
+      ],
+      "address": "میدان ولی عصر، خیابان ورشو، خیابان حافظ، پلاک ۵۱۹، طبقه همکف، الین سوشی",
+      "logo": "https://cdn.snappfood.ir/media/cache/vendor_logo/uploads/images/vendors/logos/6224f60a4e24b.png",
+      "workingHours": "باز امروز از ساعت ۱۹ تا ۲۳",
+      "paymentMethod": "آنلاین، اعتبار جایزه خرید",
+      "minimumCart": 100000,
+      "rate": 4.4,
+      "totalPoints": 7412,
+      "totalComments": 1188,
+      "discount": "",
+      "proUsers": "",
+      "coupon": "",
+      "image": "https://cdn.snappfood.ir/300x200/uploads/images/vendors/covers/64971da230bc3.jpeg",
+      "freeDelivery": false,
+      "delivery": {
+        "icon": "/images/icons/Home/courier.svg",
+        "type": "پیک فروشنده",
+        "price": 22000,
+        "snappfoodDelivery": false
+      },
+      "restaurantComments": [
+        {
+          "id": 1,
+          "name": "رضانیا",
+          "date": "۱۱ دی ۱۴۰۲",
+          "rate": 5,
+          "comment": "خوشمزه و حرفه ای بود",
+          "orderTags": [
+            "نودل الین با میگو",
+            "بال مرغ کنجدی هشت تکه"
+          ],
+          "snappfoodAnswer": "",
+          "restaurantManagerAnswer": ""
+        },
+        {
+          "id": 2,
+          "name": "ریبوار",
+          "date": "۱۰ آذر ۱۴۰۲",
+          "rate": 5,
+          "comment": "عالی",
+          "orderTags": [
+            "ناگویا رول"
+          ],
+          "snappfoodAnswer": "",
+          "restaurantManagerAnswer": "دوست عزیز،ممنون از حسن انتخاب شما"
+        },
+        {
+          "id": 3,
+          "name": "غزل",
+          "date": "۳۰ آذر ۱۴۰۲",
+          "rate": 4.5,
+          "comment": "همه چی عالی و خوشمزه مثل همیشه",
+          "orderTags": [
+            "سلمن ماکی رول با سلمن اسموکی"
+          ],
+          "snappfoodAnswer": "",
+          "restaurantManagerAnswer": ""
+        },
+        {
+          "id": 4,
+          "name": "مهرناز",
+          "date": "۰۳ دی ۱۴۰۲",
+          "rate": 4,
+          "comment": "خوشمزه بود مرسی",
+          "orderTags": [
+            "دراگون رول چهار تکه",
+            "نودل الین با سبزیجات"
+          ],
+          "snappfoodAnswer": "",
+          "restaurantManagerAnswer": ""
+        }
+      ],
+      "restCatsMenu": [
+        {
+          "id": 1,
+          "name": "کوپن‌ها"
+        },
+        {
+          "id": 2,
+          "name": "پر‌طرفدارها"
+        },
+        {
+          "id": 3,
+          "name": "سوشی"
+        },
+        {
+          "id": 4,
+          "name": "ماکی رول"
+        },
+        {
+          "id": 5,
+          "name": "غذای اصلی"
+        },
+        {
+          "id": 6,
+          "name": "نودل"
+        },
+        {
+          "id": 7,
+          "name": "قهوه سرد"
+        }
+      ],
+      "foods": [
+        {
+          "id": 1,
+          "restaurantId": 5,
+          "name": "دراگون رول",
+          "images": [
+            "https://cdn.snappfood.ir/641x641/cdn/67/17/1/vendor/619959e8dd781.jpeg",
+            "https://cdn.snappfood.ir/641x641/cdn/67/17/1/vendor/603bf5f100a0d.jpeg",
+            "https://cdn.snappfood.ir/641x641/cdn/67/17/1/vendor/619957cac923b.jpeg"
+          ],
+          "price": 275000,
+          "discount": "",
+          "rate": 4.3,
+          "desc": "میگو تمپورا، آووکادو، سالمون، سس مخصوص",
+          "numberRemaining": "",
+          "categoryId": [
+            2,
+            3
+          ],
+          "foodsComments": [
+            {
+              "id": 1,
+              "name": "نگار",
+              "date": "۱۶ دی ۱۴۰۲",
+              "rate": 5,
+              "comment": "عالی بود خوشمزه تازه",
+              "orderTags": [
+                "دراگون رول چهار تکه",
+                "سس سویا",
+                "سلمن آووکادو رول چهار تکه"
+              ],
+              "snappfoodAnswer": "",
+              "restaurantManagerAnswer": ""
+            },
+            {
+              "id": 2,
+              "name": "زکیه",
+              "date": "۱۲ دی ۱۴۰۲",
+              "rate": 5,
+              "comment": "عالی بود مثل همیشه",
+              "orderTags": [
+                "دراگون رول چهار تکه",
+                "نودل الین با سبزیجات"
+              ],
+              "snappfoodAnswer": "",
+              "restaurantManagerAnswer": ""
+            },
+            {
+              "id": 3,
+              "name": "سید علی",
+              "date": "۱۶ دی ۱۴۰۲",
+              "rate": 3.5,
+              "comment": "غذاها خوشمزه نبودن اصلا،مگه اینکه غذاهای دریایی دوست داشته باشین.وگرنه واقعا بدمزه ایت براتون",
+              "orderTags": [
+                "دراگون رول چهار تکه",
+                "چاپ استیک"
+              ],
+              "snappfoodAnswer": "",
+              "restaurantManagerAnswer": ""
+            },
+            {
+              "id": 4,
+              "name": "مهرناز",
+              "date": "۰۳ دی ۱۴۰۲",
+              "rate": 4,
+              "comment": "خوشمزه بود مرسی",
+              "orderTags": [
+                "دراگون رول چهار تکه",
+                "نودل الین با سبزیجات"
+              ],
+              "snappfoodAnswer": "",
+              "restaurantManagerAnswer": ""
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "restaurantId": 5,
+          "name": "ناگویا رول",
+          "images": [
+            "https://cdn.snappfood.ir/641x641/cdn/67/17/1/vendor/63a83a0c2100f.jpeg"
+          ],
+          "price": 314000,
+          "discount": "",
+          "rate": 4.5,
+          "desc": "ماهی سالمون، آووکادو، پنیر فیلادلفیا فیلادلفیا، توبیکو",
+          "numberRemaining": "",
+          "categoryId": [
+            3,
+            2
+          ],
+          "foodsComments": [
+            {
+              "id": 1,
+              "name": "فاطمه",
+              "date": "۱۴ دی ۱۴۰۲",
+              "rate": 5,
+              "comment": "سلام وقت بخیر، خسته نباشید،والا با شرایط این دوره و زمانه فوق العاده بود، سپاسگزارم.",
+              "orderTags": [
+                "ناگویا رول",
+                "فوجی رول چهار تکه"
+              ],
+              "snappfoodAnswer": "",
+              "restaurantManagerAnswer": ""
+            },
+            {
+              "id": 2,
+              "name": "ریبوار",
+              "date": "۱۰ آذر ۱۴۰۲",
+              "rate": 5,
+              "comment": "عالی",
+              "orderTags": [
+                "ناگویا رول"
+              ],
+              "snappfoodAnswer": "",
+              "restaurantManagerAnswer": "دوست عزیز،ممنون از حسن انتخاب شما"
+            },
+            {
+              "id": 3,
+              "name": "آرمین",
+              "date": "۰۳ آذر ۱۴۰۲",
+              "rate": 5,
+              "comment": "مثل همیشه عالی",
+              "orderTags": [
+                "ناگویا رول",
+                "لیموناد طبیعی"
+              ],
+              "snappfoodAnswer": "",
+              "restaurantManagerAnswer": "دوست عزیز،ممنون از حسن انتخاب شما"
+            },
+            {
+              "id": 4,
+              "name": "سعید",
+              "date": "۰۲ مرداد ۱۴۰۲",
+              "rate": 3.5,
+              "comment": "عالی بود البته سوشی میگو از ماهی بهتر بود",
+              "orderTags": [
+                "ناگویا رول",
+                "فوجی رول چهار تکه"
+              ],
+              "snappfoodAnswer": "",
+              "restaurantManagerAnswer": ""
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "restaurantId": 5,
+          "name": "کاپا ماکی",
+          "images": [
+            "https://cdn.snappfood.ir/641x641/cdn/67/17/1/vendor/604b05e2ddc21.jpeg"
+          ],
+          "price": 278000,
+          "discount": "",
+          "rate": 3.9,
+          "desc": "خیار، جلبک، برنج مخصوص",
+          "numberRemaining": "",
+          "categoryId": [
+            4
+          ],
+          "foodsComments": [
+            {
+              "id": 1,
+              "name": "eli",
+              "date": "۲۳ آذر ۱۴۰۲",
+              "rate": 5,
+              "comment": "سلام وقت بخیر، خسته نباشید،والا با شرایط این دوره و زمانه فوق العاده بود، سپاسگزارم.",
+              "orderTags": [
+                "کاپا ماکی",
+                "بیف چاپسویی"
+              ],
+              "snappfoodAnswer": "",
+              "restaurantManagerAnswer": "دوست عزیز،ممنون از حسن انتخاب شما"
+            },
+            {
+              "id": 2,
+              "name": "شیرین",
+              "date": "۲۱ دی ۱۴۰۱",
+              "rate": 4.5,
+              "comment": "بسیار بی‌کیفیت بود با طعم بسیار بد همه دور ریخته شد",
+              "orderTags": [
+                "کاپا ماکی"
+              ],
+              "snappfoodAnswer": "",
+              "restaurantManagerAnswer": "سلام نوش جان حتما بررسی می شود و در سفارشات بعدی تکرار نمی شود."
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "restaurantId": 5,
+          "name": "سلمن ماکی رول با سلمن اسموکی",
+          "images": [
+            "https://cdn.snappfood.ir/641x641/cdn/67/17/1/vendor/62de78e6e34ce.jpeg"
+          ],
+          "price": 489000,
+          "discount": "",
+          "rate": 4.7,
+          "desc": "ماهی سالمون، جلبک، برنج مخصوص",
+          "numberRemaining": "",
+          "categoryId": [
+            4,
+            2
+          ],
+          "foodsComments": [
+            {
+              "id": 1,
+              "name": "علیرضا",
+              "date": "۱۱ دی ۱۴۰۲",
+              "rate": 5,
+              "comment": "عالی",
+              "orderTags": [
+                "سلمن ماکی رول با سلمن اسموکی",
+                "ماهی مرکب سوخاری",
+                "کرانچی رول چهار تکه"
+              ],
+              "snappfoodAnswer": "",
+              "restaurantManagerAnswer": ""
+            },
+            {
+              "id": 2,
+              "name": "فاطمه",
+              "date": "۰۸ دی ۱۴۰۲",
+              "rate": 4,
+              "comment": "خیلی لذیذ بود ممنون",
+              "orderTags": [
+                "سلمن ماکی رول با سلمن اسموکی",
+                "ترشی کیمچی بزرگ (۲۰۰ گرم)"
+              ],
+              "snappfoodAnswer": "",
+              "restaurantManagerAnswer": ""
+            },
+            {
+              "id": 3,
+              "name": "غزل",
+              "date": "۳۰ آذر ۱۴۰۲",
+              "rate": 4.5,
+              "comment": "همه چی عالی و خوشمزه مثل همیشه",
+              "orderTags": [
+                "سلمن ماکی رول با سلمن اسموکی"
+              ],
+              "snappfoodAnswer": "",
+              "restaurantManagerAnswer": ""
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "restaurantId": 5,
+          "name": "بیف تریاکی",
+          "images": [
+            "https://cdn.snappfood.ir/641x641/cdn/67/17/1/vendor/603bf22dee650.jpeg"
+          ],
+          "price": 302000,
+          "discount": "",
+          "rate": 4.5,
+          "desc": "۱۱۰ گرم فیله گوساله، قارچ، سس تریاکی، برنج بخارپز",
+          "numberRemaining": "",
+          "categoryId": [
+            5,
+            2
+          ],
+          "foodsComments": [
+            {
+              "id": 1,
+              "name": "علیرضا",
+              "date": "۱۱ دی ۱۴۰۲",
+              "rate": 5,
+              "comment": "عالی",
+              "orderTags": [
+                "بیف تریاکی",
+                "ناگویا رول چهار تکه",
+                "سس سویا"
+              ],
+              "snappfoodAnswer": "",
+              "restaurantManagerAnswer": ""
+            },
+            {
+              "id": 2,
+              "name": "سعیده",
+              "date": "۰۸ دی ۱۴۰۲",
+              "rate": 3,
+              "comment": "تاخیر در ارسال و سرد بودن غذا",
+              "orderTags": [
+                "بیف تریاکی",
+                "سوپ میسو"
+              ],
+              "snappfoodAnswer": "سعیده محبوبی عزیز، عذرخواهی ما را برای سرد بودن غذای ارسالی پذیرا باشید؛ تحویل سفارش شمابر عهده سرویس اکسپرس بوده است و این مورد حتماً پیگیری می شود. از همراهی شما سپاسگزاریم.",
+              "restaurantManagerAnswer": ""
+            },
+            {
+              "id": 3,
+              "name": "غزل",
+              "date": "۳۰ آذر ۱۴۰۲",
+              "rate": 4.5,
+              "comment": "مرسی که به توضیحات توجه کردید",
+              "orderTags": [
+                "بیف تریاکی"
+              ],
+              "snappfoodAnswer": "",
+              "restaurantManagerAnswer": ""
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "restaurantId": 5,
+          "name": "برنج سرخ شده با میگو",
+          "images": [
+            "https://cdn.snappfood.ir/641x641/cdn/67/17/1/vendor/603bf2e938215.jpeg"
+          ],
+          "price": 320000,
+          "discount": "",
+          "rate": 4.8,
+          "desc": "۱۰۰ گرم میگو، برنج ژاپنی، سس مخصوص، سبزیجات شامل کدو، هویج، پیازچه، کاهو، جوانه ماش",
+          "numberRemaining": "",
+          "categoryId": [
+            5
+          ],
+          "foodsComments": [
+            {
+              "id": 1,
+              "name": "سارینا",
+              "date": "۱۱ دی ۱۴۰۲",
+              "rate": 5,
+              "comment": "عالی",
+              "orderTags": [
+                "برنج سرخ شده با میگو",
+                "سس تند و شیرین"
+              ],
+              "snappfoodAnswer": "",
+              "restaurantManagerAnswer": ""
+            },
+            {
+              "id": 2,
+              "name": "محمدرضا",
+              "date": "۰۸ دی ۱۴۰۲",
+              "rate": 3.5,
+              "comment": "خوب بود ولی کیفیت همیشگیو نداش",
+              "orderTags": [
+                "برنج سرخ شده با میگو",
+                "خوراک میگو تایلندی"
+              ],
+              "snappfoodAnswer": "",
+              "restaurantManagerAnswer": "دوست عزیز،ممنون از حسن انتخاب شما"
+            },
+            {
+              "id": 3,
+              "name": "زهرا",
+              "date": "۳۰ آذر ۱۴۰۲",
+              "rate": 5,
+              "comment": "تشکر بابت زحمات شما",
+              "orderTags": [
+                "برنج سرخ شده با میگو"
+              ],
+              "snappfoodAnswer": "",
+              "restaurantManagerAnswer": ""
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "restaurantId": 5,
+          "name": "نودل الین با گوشت",
+          "images": [
+            "https://cdn.snappfood.ir/641x641/cdn/67/17/1/vendor/616eac4d68a85.jpeg"
+          ],
+          "price": 302000,
+          "discount": "",
+          "rate": 4.4,
+          "desc": "۱۱۰ گرم گوشت گوساله، نودل، فلفل دلمه ای، هویج، کلم، قارچ، کدو، سیر، زنجبیل، سس مخصوص",
+          "numberRemaining": "",
+          "categoryId": [
+            6
+          ],
+          "foodsComments": [
+            {
+              "id": 1,
+              "name": "sima",
+              "date": "۱۱ دی ۱۴۰۲",
+              "rate": 5,
+              "comment": "عالی",
+              "orderTags": [
+                "نودل الین با گوشت",
+                "اسپشیال رول ده تکه",
+                "پیراشکی ژاپنی دو تکه"
+              ],
+              "snappfoodAnswer": "",
+              "restaurantManagerAnswer": ""
+            },
+            {
+              "id": 2,
+              "name": "علیرضا",
+              "date": "۰۸ دی ۱۴۰۲",
+              "rate": 4.5,
+              "comment": "خوب بود ولی کیفیت همیشگیو نداش",
+              "orderTags": [
+                "نودل الین با گوشت"
+              ],
+              "snappfoodAnswer": "",
+              "restaurantManagerAnswer": ""
+            },
+            {
+              "id": 3,
+              "name": "نگار",
+              "date": "۳۰ آذر ۱۴۰۲",
+              "rate": 5,
+              "comment": "تشکر بابت زحمات شما",
+              "orderTags": [
+                "نودل الین با گوشت",
+                "سوپ نودل با مرغ"
+              ],
+              "snappfoodAnswer": "",
+              "restaurantManagerAnswer": "دوست عزیز،ممنون از حسن انتخاب شما"
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "restaurantId": 5,
+          "name": "نودل الین با میگو",
+          "images": [
+            "https://cdn.snappfood.ir/641x641/cdn/67/17/1/vendor/6120f3c2a72b3.jpeg"
+          ],
+          "price": 320000,
+          "discount": "",
+          "rate": 4.4,
+          "desc": "۱۰۰ گرم میگو، نودل، فلفل دلمه ای، هویج، کلم، قارچ، کدو، سیر، زنجبیل، سس مخصوص",
+          "numberRemaining": "",
+          "categoryId": [
+            6,
+            2
+          ],
+          "foodsComments": [
+            {
+              "id": 1,
+              "name": "رضانیا",
+              "date": "۱۱ دی ۱۴۰۲",
+              "rate": 5,
+              "comment": "خوشمزه و حرفه ای بود",
+              "orderTags": [
+                "نودل الین با میگو",
+                "بال مرغ کنجدی هشت تکه"
+              ],
+              "snappfoodAnswer": "",
+              "restaurantManagerAnswer": ""
+            },
+            {
+              "id": 2,
+              "name": "armita",
+              "date": "۳۰ آذر ۱۴۰۲",
+              "rate": 5,
+              "comment": "تشکر بابت زحمات شما",
+              "orderTags": [
+                "نودل الین با میگو"
+              ],
+              "snappfoodAnswer": "",
+              "restaurantManagerAnswer": "دوست عزیز،ممنون از حسن انتخاب شما"
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "restaurantId": 5,
+          "name": "آیس امریکانو",
+          "images": [
+            "https://cdn.snappfood.ir/641x641/cdn/67/17/1/vendor/62deb6968ae04.jpeg"
+          ],
+          "price": 60000,
+          "discount": "",
+          "rate": 4.5,
+          "desc": "۲۵۰ میلی لیتر شامل ۴۰ میلی لیتر قهوه ۷۰% عربیکا ۳۰% روبوستا و یخ",
+          "numberRemaining": "",
+          "categoryId": [
+            7,
+            2
+          ],
+          "foodsComments": []
+        },
+        {
+          "id": 10,
+          "restaurantId": 5,
+          "name": "آیس کارامل ماکیاتو",
+          "images": [
+            "https://cdn.snappfood.ir/641x641/cdn/67/17/1/vendor/62de86a96d542.jpeg"
+          ],
+          "price": 90000,
+          "discount": "",
+          "rate": 5,
+          "desc": "۲۵۰ میلی لیتر شامل ۴۰ میلی لیترقهوه ۷۰%عربیکا ۳۰% روبوستا شیر یخ و سیروپ کارامل",
+          "numberRemaining": "",
+          "categoryId": [
+            7,
+            2
+          ],
+          "foodsComments": [
+            {
+              "id": 1,
+              "name": "سیاوش",
+              "date": "۱۱ دی ۱۴۰۲",
+              "rate": 5,
+              "comment": "واقعا لذیذ",
+              "orderTags": [
+                "آیس کارامل ماکیاتو",
+                "شیک شکلات",
+                "آیس لته"
+              ],
+              "snappfoodAnswer": "",
+              "restaurantManagerAnswer": "شما تاج سر هستید"
+            },
+            {
+              "id": 2,
+              "name": "sima",
+              "date": "۰۸ دی ۱۴۰۲",
+              "rate": 5,
+              "comment": "مثل همیشه عالی و خوشمزه",
+              "orderTags": [
+                "آیس کارامل ماکیاتو"
+              ],
+              "snappfoodAnswer": "",
+              "restaurantManagerAnswer": "دوست عزیز،ممنون از حسن انتخاب شما"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "رستوران وزرا",
+      "restaurantCategory": [
+        "ایرانی",
+        "کباب",
+        "ماهی"
+      ],
+      "restaurantCategoryId": [
+        1,
+        3
+      ],
+      "address": "میدان پاستور بالاتر از میدان پاستور، پلاک۱,۰۱۷، رستوران وزرا",
+      "logo": "https://cdn.snappfood.ir/media/cache/vendor_logo/uploads/images/vendors/logos/5e219d08ab9ef.jpg",
+      "workingHours": "باز امروز از ساعت ۱۹ تا ۲۲",
+      "paymentMethod": "آنلاین، اعتبار جایزه خرید",
+      "minimumCart": 60000,
+      "rate": 4.3,
+      "totalPoints": 10384,
+      "totalComments": 2061,
+      "discount": "",
+      "proUsers": true,
+      "coupon": "",
+      "image": "https://cdn.snappfood.ir/300x200/uploads/images/vendor-cover-app-review/2/53.jpg",
+      "freeDelivery": false,
+      "delivery": {
+        "icon": "/images/icons/Home/courier.svg",
+        "type": " پیک فروشنده",
+        "price": 30000,
+        "snappfoodDelivery": true
+      },
+      "restaurantComments": [
+        {
+          "id": 1,
+          "name": "مصی",
+          "date": "۱۷ دی ۱۴۰۲",
+          "rate": 3,
+          "comment": "ماهی کبابی بدون برنج ارسال شده بود",
+          "orderTags": [
+            "چلو ماهی قزل آلا کبابی",
+            "خوراک کباب کوبیده اقتصادی",
+            "نوشابه خانواده کوکا کولا"
+          ],
+          "snappfoodAnswer": "مصی مجد عزیز، از همراهی شما سپاس‌گزاریم و خوشحالیم که نظرتان را با ما در میان گذاشتید. مورد ذکرشده بررسی می‌شود",
+          "restaurantManagerAnswer": ""
+        },
+        {
+          "id": 2,
+          "name": "طهورا",
+          "date": "۱۶ دی ۱۴۰۲",
+          "rate": 5,
+          "comment": "همه چی عالییییی",
+          "orderTags": [
+            "سینی عمارت"
+          ],
+          "snappfoodAnswer": "",
+          "restaurantManagerAnswer": ""
+        },
+        {
+          "id": 3,
+          "name": "عارفه",
+          "date": "۱۶ دی ۱۴۰۲",
+          "rate": 3,
+          "comment": "خیلی سسش کم بود و مرغم خشک بود درکل متوسط",
+          "orderTags": [
+            "زرشک پلو با مرغ (ران)"
+          ],
+          "snappfoodAnswer": "",
+          "restaurantManagerAnswer": ""
+        },
+        {
+          "id": 4,
+          "name": "شیده",
+          "date": "۱۶ آبان ۱۴۰۲",
+          "rate": 4,
+          "comment": "همه چیز عالی ! چه کمیت و چه کیفیت فقط به قسمت توضیحات توجهی نشده بود",
+          "orderTags": [
+            "چلو ماهی قزل آلا کبابی",
+            "نوشابه خانواده سون آپ"
+          ],
+          "snappfoodAnswer": "",
+          "restaurantManagerAnswer": ""
+        }
+      ],
+      "restCatsMenu": [
+        {
+          "id": 1,
+          "name": "آف‌ تایم"
+        },
+        {
+          "id": 2,
+          "name": "پر‌طرفدارها"
+        },
+        {
+          "id": 3,
+          "name": "منوی اقتصادی"
+        },
+        {
+          "id": 4,
+          "name": "چلو کباب"
+        },
+        {
+          "id": 5,
+          "name": "خورشت"
+        },
+        {
+          "id": 6,
+          "name": "نوشیدنی"
+        }
+      ],
+      "foods": [
+        {
+          "id": 1,
+          "restaurantId": 6,
+          "name": "چلوکباب لقمه مخصوص اقتصادی",
+          "images": [
+            "https://cdn.snappfood.ir/641x641/cdn/49/02/2/product_image/zoodfood/6559ff5af3790.jpeg"
+          ],
+          "price": 120000,
+          "discount": "",
+          "rate": 4.6,
+          "desc": "یک سیخ کباب کوبیده مخلوط گوشت گوساله و گوسفندی ۱۳۰ گرم، ۳۵۰ گرم برنج ایرانی، دورچین: ته چین، گوجه کبابی",
+          "numberRemaining": "",
+          "categoryId": [
+            2,
+            3
+          ],
+          "foodsComments": [
+            {
+              "id": 1,
+              "name": "سیدامیر",
+              "date": "۱۴ دی ۱۴۰۲",
+              "rate": 4,
+              "comment": "سلام و ممنون غذا خوب بود شاد باشید",
+              "orderTags": [
+                "چلوکباب لقمه مخصوص اقتصادی"
+              ],
+              "snappfoodAnswer": "",
+              "restaurantManagerAnswer": ""
+            },
+            {
+              "id": 2,
+              "name": "افسانه",
+              "date": "۱۰ آذر ۱۴۰۲",
+              "rate": 5,
+              "comment": "عالی",
+              "orderTags": [
+                "چلوکباب لقمه مخصوص اقتصادی"
+              ],
+              "snappfoodAnswer": "",
+              "restaurantManagerAnswer": "دوست عزیز،ممنون از حسن انتخاب شما"
+            },
+            {
+              "id": 3,
+              "name": "فرزين",
+              "date": "۰۳ آذر ۱۴۰۲",
+              "rate": 5,
+              "comment": "مثل همیشه عالی",
+              "orderTags": [
+                "نوشابه خانواده زرد",
+                "چلوکباب لقمه مخصوص اقتصادی"
+              ],
+              "snappfoodAnswer": "",
+              "restaurantManagerAnswer": ""
+            },
+            {
+              "id": 4,
+              "name": "سعید",
+              "date": "۰۲ مرداد ۱۴۰۲",
+              "rate": 3.5,
+              "comment": "قیمتش به نسبت بالاست ، ولی حداقل غذای خوبی تحویل میدن",
+              "orderTags": [
+                "چلوکباب لقمه مخصوص اقتصادی",
+                "چلو خورشت قورمه سبزی"
+              ],
+              "snappfoodAnswer": "",
+              "restaurantManagerAnswer": "نوش جان"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "restaurantId": 6,
+          "name": "چلو جوجه کباب مخصوص اقتصادی",
+          "images": [
+            "https://cdn.snappfood.ir/641x641/cdn/49/02/2/product_image/zoodfood/6559ff52c47fd.jpeg"
+          ],
+          "price": 120000,
+          "discount": 25,
+          "rate": 4.1,
+          "desc": "یک سیخ جوجه کباب سینه مرغ زعفرانی ۱۸۰ گرم، ۳۵۰ گرم برنج ایرانی، دورچین: ته چین، گوجه کبابی",
+          "numberRemaining": 2,
+          "categoryId": [
+            2,
+            3,
+            1
+          ],
+          "foodsComments": [
+            {
+              "id": 1,
+              "name": "eli",
+              "date": "۲۳ آذر ۱۴۰۲",
+              "rate": 5,
+              "comment": "این ۴ امین باره سفارش می‌دیم واقعا حجم غذا و قیمتش مناسبه رفتار کارکنان هم خیلی خوب بود دورچین و بسته بندی هم خوب بود",
+              "orderTags": [
+                "چلو جوجه کباب مخصوص اقتصادی",
+                "خوراک کباب لقمه ممتاز"
+              ],
+              "snappfoodAnswer": "",
+              "restaurantManagerAnswer": "سپاس فراوان"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "restaurantId": 6,
+          "name": "چلو کباب مخلوط کاسه ای",
+          "images": [
+            "https://cdn.snappfood.ir/641x641/cdn/49/02/2/vendor/62af3ef39e3ba.jpeg"
+          ],
+          "price": 270000,
+          "discount": 25,
+          "rate": 4.5,
+          "desc": "یک پرس برنج، یک سیخ جوجه ران، یک سیخ لقمه، گوجه، کره محلی، کنجد",
+          "numberRemaining": 3,
+          "categoryId": [
+            4,
+            1
+          ],
+          "foodsComments": [
+            {
+              "id": 1,
+              "name": "eli",
+              "date": "۲۳ آذر ۱۴۰۲",
+              "rate": 5,
+              "comment": "کیفیت و حجم غذا عالی بود ‌‌کم نذاشته بودن",
+              "orderTags": [
+                "چلو کباب مخلوط کاسه ای",
+                "نوشابه خانواده کولاکولا"
+              ],
+              "snappfoodAnswer": "",
+              "restaurantManagerAnswer": "دوست عزیز،ممنون از حسن انتخاب شما"
+            },
+            {
+              "id": 2,
+              "name": "نیما",
+              "date": "۲۱ دی ۱۴۰۱",
+              "rate": 4.5,
+              "comment": "از این رستوران اصلا توقع همچنین برنجی نداشتم افتضاح و شفته … چرا آخه ؟ چرا همچین برنجی برای مشتری میفرستین ؟ آبروم رفت جلوی مهمونام ، کاسه کباب خوب بود ولی برنجش قابل خوردن نبود .",
+              "orderTags": [
+                "چلو کباب مخلوط کاسه ای"
+              ],
+              "snappfoodAnswer": "",
+              "restaurantManagerAnswer": "سلام نوش جان حتما بررسی می شود و در سفارشات بعدی تکرار نمی شود."
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "restaurantId": 6,
+          "name": "چلو کباب مخصوص وزرا",
+          "images": [
+            "https://cdn.snappfood.ir/641x641/cdn/49/02/2/vendor/5ded15cf192ae.jpeg"
+          ],
+          "price": 180000,
+          "discount": "",
+          "rate": 4.1,
+          "desc": "یک سیخ جوجه کباب سینه مرغ ۱۸۰ گرمی، یک سیخ کباب کوبیده مخلوط گوشت گوساله و گوسفندی ۱۴۰ گرمی، ۳۵۰ گرم برنج ایرانی، دورچین: ته چین، گوجه کبابی",
+          "numberRemaining": "",
+          "categoryId": [
+            4
+          ],
+          "foodsComments": [
+            {
+              "id": 1,
+              "name": "آشتيانى ",
+              "date": "۱۱ دی ۱۴۰۲",
+              "rate": 4,
+              "comment": "پیک خوش برخورد. غذا کمی سرد بود.",
+              "orderTags": [
+                "چلو کباب مخصوص وزرا",
+                "سالاد کلم"
+              ],
+              "snappfoodAnswer": "دكتر آشتيانى عزیز، عذرخواهی ما را برای سرد بودن غذای ارسالی پذیرا باشید؛ تحویل سفارش شمابر عهده سرویس اکسپرس بوده است و این مورد حتماً پیگیری می شود. از همراهی شما سپاسگزاریم",
+              "restaurantManagerAnswer": ""
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "restaurantId": 6,
+          "name": "چلو خورشت قیمه سیب زمینی",
+          "images": [
+            "https://cdn.snappfood.ir/641x641/cdn/49/02/2/vendor/5e20bf045e134.jpeg"
+          ],
+          "price": 100000,
+          "discount": "",
+          "rate": 3.7,
+          "desc": "۳۵۰ گرم خورشت قسمه سیب زمینی، ۷۰ گرم گوشت گوساله (۲ تکه)، سیب زمینی سرخ شده، ۳۵۰ گرم برنج ایرانی",
+          "numberRemaining": "",
+          "categoryId": [
+            5,
+            2
+          ],
+          "foodsComments": [
+            {
+              "id": 1,
+              "name": "علیرضا",
+              "date": "۱۱ دی ۱۴۰۲",
+              "rate": 5,
+              "comment": "عالی",
+              "orderTags": [
+                "چلو خورشت قیمه سیب زمینی",
+                "سالاد کلم",
+                "نوشابه خانواده کوکا کولا"
+              ],
+              "snappfoodAnswer": "",
+              "restaurantManagerAnswer": ""
+            },
+            {
+              "id": 2,
+              "name": "فاطمه",
+              "date": "۰۸ دی ۱۴۰۲",
+              "rate": 3,
+              "comment": "کیفیت غدا مثل همیشه نبود",
+              "orderTags": [
+                "نوشابه قوطی کوکا کولا",
+                "چلو خورشت قیمه سیب زمینی"
+              ],
+              "snappfoodAnswer": "",
+              "restaurantManagerAnswer": ""
+            },
+            {
+              "id": 3,
+              "name": "مصی",
+              "date": "۳۰ آذر ۱۴۰۲",
+              "rate": 3.5,
+              "comment": "من چهارتا ماست موسیر سفارش دادم بهم ندادن",
+              "orderTags": [
+                "چلو خورشت قیمه سیب زمینی",
+                "ماست موسیر"
+              ],
+              "snappfoodAnswer": "مصی مجد عزیز، از همراهی شما سپاس‌گزاریم و خوشحالیم که نظرتان را با ما در میان گذاشتید. مورد ذکرشده بررسی می‌شود.",
+              "restaurantManagerAnswer": ""
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "restaurantId": 6,
+          "name": "چلو خورشت قیمه بادمجان",
+          "images": [
+            "https://cdn.snappfood.ir/641x641/cdn/49/02/2/vendor/5dc2ed4c7689d.jpg"
+          ],
+          "price": 100000,
+          "discount": "",
+          "rate": 3.8,
+          "desc": "۳۵۰ گرم خورشت قیمه بادمجان، ۷۰ گرم گوشت گوساله (۲ تکه)، بادمجان سرخ کرده تکه ای، ۳۵۰ گرم برنج ایرانی",
+          "numberRemaining": "",
+          "categoryId": [
+            5
+          ],
+          "foodsComments": [
+            {
+              "id": 1,
+              "name": "سارینا",
+              "date": "۱۱ دی ۱۴۰۲",
+              "rate": 5,
+              "comment": "عالی",
+              "orderTags": [
+                "سالاد کلم",
+                "نوشابه خانواده کوکا کولا",
+                "چلو خورشت قیمه بادمجان"
+              ],
+              "snappfoodAnswer": "",
+              "restaurantManagerAnswer": ""
+            },
+            {
+              "id": 2,
+              "name": "محمدرضا",
+              "date": "۰۸ دی ۱۴۰۲",
+              "rate": 4.5,
+              "comment": "خوب بود ولی کیفیت همیشگیو نداش",
+              "orderTags": [
+                "نوشابه قوطی کوکا کولا",
+                "چلو خورشت قیمه بادمجان"
+              ],
+              "snappfoodAnswer": "",
+              "restaurantManagerAnswer": "دوست عزیز،ممنون از حسن انتخاب شما"
+            },
+            {
+              "id": 3,
+              "name": "زهرا",
+              "date": "۳۰ آذر ۱۴۰۲",
+              "rate": 5,
+              "comment": "تشکر بابت زحمات شما",
+              "orderTags": [
+                "چلو خورشت قیمه بادمجان"
+              ],
+              "snappfoodAnswer": "",
+              "restaurantManagerAnswer": ""
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "restaurantId": 6,
+          "name": "نوشابه خانواده",
+          "images": [
+            "https://cdn.snappfood.ir/641x641/cdn/93/50/product_image/zoodfood/64d2476217edc.jpg"
+          ],
+          "price": 27000,
+          "discount": "",
+          "rate": 4.5,
+          "desc": "۱.۵ لیتر",
+          "numberRemaining": "",
+          "categoryId": [
+            6
+          ],
+          "foodsComments": []
+        },
+        {
+          "id": 8,
+          "restaurantId": 6,
+          "name": "دوغ قوطی خوشگوار",
+          "images": [
+            "https://cdn.snappfood.ir/641x641/cdn/93/50/product_image/zoodfood/64d24763c8991.jpg"
+          ],
+          "price": 17000,
+          "discount": "",
+          "rate": 4.7,
+          "desc": "۳۳۰ میلی لیتر",
+          "numberRemaining": "",
+          "categoryId": [
+            6
+          ],
+          "foodsComments": []
+        },
+        {
+          "id": 9,
+          "restaurantId": 6,
+          "name": "نوشابه قوطی",
+          "images": [
+            "https://cdn.snappfood.ir/641x641/cdn/93/50/product_image/zoodfood/64d247610ffef.jpg"
+          ],
+          "price": 18000,
+          "discount": "",
+          "rate": 4.7,
+          "desc": "۳۳۰ میلی لیتر",
+          "numberRemaining": "",
+          "categoryId": [
+            6
+          ],
+          "foodsComments": []
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "name": "تله پیتزا (میدان جمهوری)",
+      "restaurantCategory": [
+        "فست‌فود",
+        "سوخاری",
+        "ساندویچ",
+        "برگر"
+      ],
+      "restaurantCategoryId": [
+        2,
+        7,
+        5,
+        6
+      ],
+      "address": "جمهوری، خیابان شهید حمیدرضا چنگیزی، خیابان نواب صفوی، پلاک ۵۶۹، تله پیتزا (میدان جمهوری)",
+      "logo": "https://cdn.snappfood.ir/media/cache/vendor_logo/uploads/images/vendors/logos/64c4e64e5d559.png",
+      "workingHours": "باز امروز از ساعت ۱۱ تا ۲۳",
+      "paymentMethod": "آنلاین، اعتبار جایزه خرید",
+      "minimumCart": 50000,
+      "rate": 4.1,
+      "totalPoints": 13119,
+      "totalComments": 1898,
+      "discount": 30,
+      "proUsers": "",
+      "coupon": "",
+      "image": "https://cdn.snappfood.ir/300x200/uploads/images/vendors/covers/65183ef62e562.jpg",
+      "freeDelivery": false,
+      "delivery": {
+        "icon": "/images/icons/Home/courier.svg",
+        "type": "پیک فروشنده",
+        "price": 11900,
+        "snappfoodDelivery": false
+      },
+      "restaurantComments": [
+        {
+          "id": 1,
+          "name": "نگار",
+          "date": "۱۶ دی ۱۴۰۲",
+          "rate": 5,
+          "comment": "عالی بود خوشمزه تازه",
+          "orderTags": [
+            "ساندویچ هات داگ",
+            "سیب زمینی سرخ شده",
+            "نوشابه خانواده کوکا کولا"
+          ],
+          "snappfoodAnswer": "",
+          "restaurantManagerAnswer": ""
+        },
+        {
+          "id": 2,
+          "name": "ریبوار",
+          "date": "۱۰ آذر ۱۴۰۲",
+          "rate": 5,
+          "comment": "عالی",
+          "orderTags": [
+            "ساندویچ فیله سوخاری"
+          ],
+          "snappfoodAnswer": "",
+          "restaurantManagerAnswer": "دوست عزیز،ممنون از حسن انتخاب شما"
+        },
+        {
+          "id": 3,
+          "name": "سید علی",
+          "date": "۱۶ دی ۱۴۰۲",
+          "rate": 3,
+          "comment": "هربار با سفارش هات داگ پنیری شما هات داگ ساده ارسال میکنید.میشه دلیلش رو توضیح بدید؟!!!",
+          "orderTags": [
+            "ساندویچ هات داگ"
+          ],
+          "snappfoodAnswer": "",
+          "restaurantManagerAnswer": "دوست عزیز عذر خواهی ما را بابت قصور پیش آمده پذیرا باشید نظرات شما به بخش کنترل کیفیت ارجاع داده می شود"
+        },
+        {
+          "id": 4,
+          "name": "فاطمه",
+          "date": "۰۸ دی ۱۴۰۲",
+          "rate": 5,
+          "comment": "واقعا میشه گفت کیفیت خوب و حجم‌قابل قبولی داره همه چی‌من که بار هزارمه از تله سفارش میدم",
+          "orderTags": [
+            "نوشابه قوطی کوکا کولا",
+            "چیکن استریپس ۴ تکه"
+          ],
+          "snappfoodAnswer": "",
+          "restaurantManagerAnswer": ""
+        }
+      ],
+      "restCatsMenu": [
+        {
+          "id": 1,
+          "name": "آف‌ تایم"
+        },
+        {
+          "id": 2,
+          "name": "پر‌طرفدارها"
+        },
+        {
+          "id": 3,
+          "name": "ساندویچ"
+        },
+        {
+          "id": 4,
+          "name": "برگر"
+        },
+        {
+          "id": 5,
+          "name": "سوخاری"
+        },
+        {
+          "id": 6,
+          "name": "سالاد و پیش غذا"
+        },
+        {
+          "id": 7,
+          "name": "نوشیدنی"
+        }
+      ],
+      "foods": [
+        {
+          "id": 1,
+          "restaurantId": 7,
+          "name": "ساندویچ هات داگ",
+          "images": [
+            "https://cdn.snappfood.ir/641x641/cdn/26/45/72/vendor/6346968957b8b.jpeg",
+            "https://cdn.snappfood.ir/641x641/cdn/26/45/72/vendor/630b1cb6cb4c8.jpeg"
+          ],
+          "price": 119900,
+          "discount": 30,
+          "rate": 4.7,
+          "desc": "نان باگت، هات داگ ۹۰ درصد گوشت، خیارشور، گوجه، سس مخصوص، جعفری",
+          "numberRemaining": 1,
+          "categoryId": [
+            2,
+            3,
+            1
+          ],
+          "foodsComments": [
+            {
+              "id": 1,
+              "name": "نگار",
+              "date": "۱۶ دی ۱۴۰۲",
+              "rate": 5,
+              "comment": "عالی بود خوشمزه تازه",
+              "orderTags": [
+                "ساندویچ هات داگ",
+                "سیب زمینی سرخ شده",
+                "نوشابه خانواده کوکا کولا"
+              ],
+              "snappfoodAnswer": "",
+              "restaurantManagerAnswer": ""
+            },
+            {
+              "id": 2,
+              "name": "زکیه",
+              "date": "۱۲ دی ۱۴۰۲",
+              "rate": 5,
+              "comment": "عالی بود مثل همیشه",
+              "orderTags": [
+                "ساندویچ هات داگ",
+                "لقمه سوخاری اسپایسی"
+              ],
+              "snappfoodAnswer": "",
+              "restaurantManagerAnswer": "نوش جان ممنون از حسن انتخاب شما دوست عزیز"
+            },
+            {
+              "id": 3,
+              "name": "سید علی",
+              "date": "۱۶ دی ۱۴۰۲",
+              "rate": 3,
+              "comment": "هربار با سفارش هات داگ پنیری شما هات داگ ساده ارسال میکنید.میشه دلیلش رو توضیح بدید؟!!!",
+              "orderTags": [
+                "ساندویچ هات داگ"
+              ],
+              "snappfoodAnswer": "",
+              "restaurantManagerAnswer": "دوست عزیز عذر خواهی ما را بابت قصور پیش آمده پذیرا باشید نظرات شما به بخش کنترل کیفیت ارجاع داده می شود"
+            },
+            {
+              "id": 4,
+              "name": "مهرناز",
+              "date": "۰۳ دی ۱۴۰۲",
+              "rate": 4,
+              "comment": "خوشمزه بود مرسی",
+              "orderTags": [
+                "ساندویچ هات داگ",
+                "پک کارد و چنگال",
+                "نوشابه قوطی اسپرایت"
+              ],
+              "snappfoodAnswer": "",
+              "restaurantManagerAnswer": ""
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "restaurantId": 7,
+          "name": "ساندویچ فیله سوخاری",
+          "images": [
+            "https://cdn.snappfood.ir/641x641/cdn/26/45/72/vendor/630b1d4733b77.jpeg"
+          ],
+          "price": 229900,
+          "discount": "30",
+          "rate": 3.8,
+          "desc": "فیله سوخاری، سس مخصوص، کاهو، پنیر چدار، جعفری، سس باربیکیو",
+          "numberRemaining": "",
+          "categoryId": [
+            3
+          ],
+          "foodsComments": [
+            {
+              "id": 1,
+              "name": "فاطمه",
+              "date": "۱۴ دی ۱۴۰۲",
+              "rate": 5,
+              "comment": "سلام وقت بخیر، خسته نباشید،والا با شرایط این دوره و زمانه فوق العاده بود، سپاسگزارم.",
+              "orderTags": [
+                "نان سیر",
+                "ساندویچ فیله سوخاری",
+                "سیب زمینی سرخ شده"
+              ],
+              "snappfoodAnswer": "",
+              "restaurantManagerAnswer": ""
+            },
+            {
+              "id": 2,
+              "name": "ریبوار",
+              "date": "۱۰ آذر ۱۴۰۲",
+              "rate": 5,
+              "comment": "عالی",
+              "orderTags": [
+                "ساندویچ فیله سوخاری"
+              ],
+              "snappfoodAnswer": "",
+              "restaurantManagerAnswer": "دوست عزیز،ممنون از حسن انتخاب شما"
+            },
+            {
+              "id": 3,
+              "name": "آرمین",
+              "date": "۰۳ آذر ۱۴۰۲",
+              "rate": 5,
+              "comment": "مثل همیشه عالی",
+              "orderTags": [
+                "استرامبولی رست بیف",
+                "پک کارد و چنگال",
+                "ساندویچ فیله سوخاری"
+              ],
+              "snappfoodAnswer": "",
+              "restaurantManagerAnswer": "دوست عزیز،ممنون از حسن انتخاب شما"
+            },
+            {
+              "id": 4,
+              "name": "سعید",
+              "date": "۰۲ مرداد ۱۴۰۲",
+              "rate": 3.5,
+              "comment": "همه چی خوب و خوشمزه ، عالی تنها یکی از جعبه ها به خاطر سس غذا به کاغذ روغنی زیری چسبیده بود ، بقیه همه چی خوب",
+              "orderTags": [
+                "ساندویچ فیله سوخاری",
+                "سیب زمینی سرخ شده"
+              ],
+              "snappfoodAnswer": "",
+              "restaurantManagerAnswer": ""
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "restaurantId": 7,
+          "name": "چیزبرگر",
+          "images": [
+            "https://cdn.snappfood.ir/641x641/cdn/26/45/72/vendor/634691e0e57f4.jpeg",
+            "https://cdn.snappfood.ir/641x641/cdn/26/45/72/vendor/630b1df3e6da2.jpeg"
+          ],
+          "price": 229900,
+          "discount": 30,
+          "rate": 4.6,
+          "desc": "یک عدد همبرگر دست ساز ، دو عدد پنیر ورقه ای چدار، نان گرد مخصوص برگر، دو عدد سس کچاپ ساشه",
+          "numberRemaining": "",
+          "categoryId": [
+            4,
+            2
+          ],
+          "foodsComments": [
+            {
+              "id": 1,
+              "name": "eli",
+              "date": "۲۳ آذر ۱۴۰۲",
+              "rate": 5,
+              "comment": "سلام وقت بخیر، خسته نباشید،والا با شرایط این دوره و زمانه فوق العاده بود، سپاسگزارم.",
+              "orderTags": [
+                "چیزبرگر"
+              ],
+              "snappfoodAnswer": "",
+              "restaurantManagerAnswer": "دوست عزیز،ممنون از حسن انتخاب شما"
+            },
+            {
+              "id": 2,
+              "name": "شیرین",
+              "date": "۲۱ دی ۱۴۰۱",
+              "rate": 4.5,
+              "comment": "نون استرامبولي بايد نازكتر باشه حس كردم مواد و گذاشتن لاي بربريولي بسيار بسيار لذيذ بود همبرگر هم لذيذ بود بسته بندي عالي بود متشكرم",
+              "orderTags": [
+                "چیزبرگر",
+                "استرامبولی چیکن آلفردو"
+              ],
+              "snappfoodAnswer": "",
+              "restaurantManagerAnswer": "سلام نوش جان حتما بررسی می شود و در سفارشات بعدی تکرار نمی شود."
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "restaurantId": 7,
+          "name": "ماشروم برگر",
+          "images": [
+            "https://cdn.snappfood.ir/641x641/cdn/26/45/72/vendor/630b1e0ae4dbd.jpeg"
+          ],
+          "price": 229900,
+          "discount": 30,
+          "rate": 4.2,
+          "desc": "یک عدد همبرگر دست ساز، قارچ اسلایسی، پنیر موزارلا، نان گرد مخصوص برگر، دو عدد سس کچاپ ساشه",
+          "numberRemaining": 6,
+          "categoryId": [
+            4,
+            1,
+            2
+          ],
+          "foodsComments": [
+            {
+              "id": 1,
+              "name": "علیرضا",
+              "date": "۱۱ دی ۱۴۰۲",
+              "rate": 5,
+              "comment": "عالی",
+              "orderTags": [
+                "ماشروم برگر",
+                "سالاد کلم",
+                "استرامبولی دونر استیک پنیری"
+              ],
+              "snappfoodAnswer": "",
+              "restaurantManagerAnswer": ""
+            },
+            {
+              "id": 2,
+              "name": "فاطمه",
+              "date": "۰۸ دی ۱۴۰۲",
+              "rate": 3,
+              "comment": "همه چی خوب بود ولی به توضیحات هم توجه داشته باشین ممنون خسته نباشید",
+              "orderTags": [
+                "نوشابه قوطی کوکا کولا",
+                "ماشروم برگر"
+              ],
+              "snappfoodAnswer": "",
+              "restaurantManagerAnswer": "دوست عزیز عذر خواهی ما را بابت قصور پیش آمده پذیرا باشید نظرات شما به بخش کنترل کیفیت ارجاع داده می شود"
+            },
+            {
+              "id": 3,
+              "name": "غزل",
+              "date": "۳۰ آذر ۱۴۰۲",
+              "rate": 3.5,
+              "comment": "خوب بود ولی سرد رسید",
+              "orderTags": [
+                "ماشروم برگر"
+              ],
+              "snappfoodAnswer": "",
+              "restaurantManagerAnswer": ""
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "restaurantId": 7,
+          "name": "چیکن استریپس ۴ تکه",
+          "images": [
+            "https://cdn.snappfood.ir/641x641/cdn/26/45/72/vendor/65281332b3ddd.jpeg",
+            "https://cdn.snappfood.ir/641x641/cdn/26/45/72/vendor/630b1dae79037.jpeg"
+          ],
+          "price": 259900,
+          "discount": 20,
+          "rate": 3.5,
+          "desc": "۴ تکه فیله مرغ، سیب زمینی، سالاد کلم، نان",
+          "numberRemaining": "",
+          "categoryId": [
+            5,
+            2
+          ],
+          "foodsComments": [
+            {
+              "id": 1,
+              "name": "علیرضا",
+              "date": "۱۱ دی ۱۴۰۲",
+              "rate": 5,
+              "comment": "عالی",
+              "orderTags": [
+                "چیکن استریپس ۴ تکه",
+                "سالاد کلم",
+                "نوشابه خانواده کوکا کولا"
+              ],
+              "snappfoodAnswer": "",
+              "restaurantManagerAnswer": ""
+            },
+            {
+              "id": 2,
+              "name": "فاطمه",
+              "date": "۰۸ دی ۱۴۰۲",
+              "rate": 5,
+              "comment": "واقعا میشه گفت کیفیت خوب و حجم‌قابل قبولی داره همه چی‌من که بار هزارمه از تله سفارش میدم",
+              "orderTags": [
+                "نوشابه قوطی کوکا کولا",
+                "چیکن استریپس ۴ تکه"
+              ],
+              "snappfoodAnswer": "",
+              "restaurantManagerAnswer": ""
+            },
+            {
+              "id": 3,
+              "name": "غزل",
+              "date": "۳۰ آذر ۱۴۰۲",
+              "rate": 3.5,
+              "comment": "خوب بود، فقط سالادش گرم بود، و یه مقدار سوخاری ها طرد نبودن، زیاد حرارت دیده بود خشک شده بود",
+              "orderTags": [
+                "چیکن استریپس ۴ تکه"
+              ],
+              "snappfoodAnswer": "",
+              "restaurantManagerAnswer": ""
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "restaurantId": 7,
+          "name": "لقمه سوخاری اسپایسی",
+          "images": [
+            "https://cdn.snappfood.ir/641x641/cdn/26/45/72/vendor/652813755bb64.jpeg",
+            "https://cdn.snappfood.ir/641x641/cdn/26/45/72/vendor/634692be5c782.jpeg"
+          ],
+          "price": 189900,
+          "discount": "",
+          "rate": 4.1,
+          "desc": "سینه مرغ سوخاری شده",
+          "numberRemaining": "",
+          "categoryId": [
+            5,
+            2
+          ],
+          "foodsComments": [
+            {
+              "id": 1,
+              "name": "سارینا",
+              "date": "۱۱ دی ۱۴۰۲",
+              "rate": 5,
+              "comment": "عالی",
+              "orderTags": [
+                "پیتزا گوشت و قارچ (۳۰ سانتی متری)",
+                "سالاد کلم",
+                "نوشابه خانواده کوکا کولا",
+                "لقمه سوخاری اسپایسی"
+              ],
+              "snappfoodAnswer": "",
+              "restaurantManagerAnswer": ""
+            },
+            {
+              "id": 2,
+              "name": "محمدرضا",
+              "date": "۰۸ دی ۱۴۰۲",
+              "rate": 4.5,
+              "comment": "خوب بود ولی کیفیت همیشگیو نداش",
+              "orderTags": [
+                "نوشابه قوطی کوکا کولا",
+                "لقمه سوخاری اسپایسی"
+              ],
+              "snappfoodAnswer": "",
+              "restaurantManagerAnswer": "دوست عزیز،ممنون از حسن انتخاب شما"
+            },
+            {
+              "id": 3,
+              "name": "زهرا",
+              "date": "۳۰ آذر ۱۴۰۲",
+              "rate": 5,
+              "comment": "تشکر بابت زحمات شما",
+              "orderTags": [
+                "لقمه سوخاری اسپایسی"
+              ],
+              "snappfoodAnswer": "",
+              "restaurantManagerAnswer": ""
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "restaurantId": 7,
+          "name": "سالاد کلم",
+          "images": [
+            "https://cdn.snappfood.ir/641x641/cdn/93/50/product_image/zoodfood/64d248c7c9ead.jpg",
+            "https://cdn.snappfood.ir/641x641/cdn/93/50/product_image/vendor/5ef35314b1750.jpg"
+          ],
+          "price": 32000,
+          "discount": "",
+          "rate": 4.7,
+          "desc": "کلم، هویج، کشمش، سس مخصوص",
+          "numberRemaining": "",
+          "categoryId": [
+            6
+          ],
+          "foodsComments": [
+            {
+              "id": 1,
+              "name": "علی",
+              "date": "۱۱ دی ۱۴۰۲",
+              "rate": 4.7,
+              "comment": "طعم عالی، کیفیت خوب، ارسال به موقع.ممنون از شما",
+              "orderTags": [
+                "همبرگر",
+                "سالاد کلم",
+                "نوشابه خانواده کوکا کولا",
+                "ساندویچ هات داگ مرگز با قارچ و پنیر"
+              ],
+              "snappfoodAnswer": "",
+              "restaurantManagerAnswer": ""
+            },
+            {
+              "id": 2,
+              "name": "علیرضا",
+              "date": "۰۸ دی ۱۴۰۲",
+              "rate": 5,
+              "comment": "ميشه بي كيفيت بشيد يعني ؟ عالي هستين سالهاي سال",
+              "orderTags": [
+                "سالاد کلم",
+                "همبرگر"
+              ],
+              "snappfoodAnswer": "",
+              "restaurantManagerAnswer": "دوست عزیز،ممنون از حسن انتخاب شما"
+            },
+            {
+              "id": 3,
+              "name": "فواد",
+              "date": "۳۰ آذر ۱۴۰۲",
+              "rate": 5,
+              "comment": "تشکر بابت زحمات شما",
+              "orderTags": [
+                "همبرگر",
+                "سالاد کلم"
+              ],
+              "snappfoodAnswer": "",
+              "restaurantManagerAnswer": ""
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "restaurantId": 7,
+          "name": "نوشابه خانواده",
+          "images": [
+            "https://cdn.snappfood.ir/641x641/cdn/93/50/product_image/zoodfood/64d2476217edc.jpg"
+          ],
+          "price": 27000,
+          "discount": "",
+          "rate": 4.5,
+          "desc": "۱.۵ لیتر",
+          "numberRemaining": "",
+          "categoryId": [
+            7
+          ],
+          "foodsComments": []
+        },
+        {
+          "id": 9,
+          "restaurantId": 7,
+          "name": "دوغ قوطی خوشگوار",
+          "images": [
+            "https://cdn.snappfood.ir/641x641/cdn/93/50/product_image/zoodfood/64d24763c8991.jpg"
+          ],
+          "price": 17000,
+          "discount": "",
+          "rate": 4.7,
+          "desc": "۳۳۰ میلی لیتر",
+          "numberRemaining": "",
+          "categoryId": [
+            7
+          ],
+          "foodsComments": []
+        },
+        {
+          "id": 10,
+          "restaurantId": 7,
+          "name": "نوشابه قوطی",
+          "images": [
+            "https://cdn.snappfood.ir/641x641/cdn/93/50/product_image/zoodfood/64d247610ffef.jpg"
+          ],
+          "price": 18000,
+          "discount": "",
+          "rate": 4.7,
+          "desc": "۳۳۰ میلی لیتر",
+          "numberRemaining": "",
+          "categoryId": [
+            7
+          ],
+          "foodsComments": []
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "name": "فست فود ویس لند(شعبه کشاورز)",
+      "restaurantCategory": [
+        "فست‌فود",
+        "پیتزا",
+        "سوخاری",
+        "برگر"
+      ],
+      "restaurantCategoryId": [
+        2,
+        4,
+        5,
+        7
+      ],
+      "address": "بلوار کشاورز، بین خیابان ۱۶ آذر و خیابان قدس، پلاک ۲۵۸، فست فود ویس لند(شعبه کشاورز)",
+      "logo": "https://cdn.snappfood.ir/media/cache/vendor_logo/uploads/images/vendors/logos/63ab007eed761.png",
+      "workingHours": "باز امروز از ساعت ۱۱ تا ۲۳",
+      "paymentMethod": "آنلاین، اعتبار جایزه خرید",
+      "minimumCart": 52000,
+      "rate": 4.4,
+      "totalPoints": 4112,
+      "totalComments": 416,
+      "discount": "",
+      "proUsers": true,
+      "coupon": "",
+      "image": "https://cdn.snappfood.ir/300x200/uploads/images/vendor-cover-app-review/11/19.jpg",
+      "freeDelivery": false,
+      "delivery": {
+        "icon": "/images/icons/Home/express.svg",
+        "type": "اسنپ‌اکسپرس",
+        "price": 11300,
+        "snappfoodDelivery": true
+      },
+      "restaurantComments": [
+        {
+          "id": 1,
+          "name": "لیلا",
+          "date": "۱۷ دی ۱۴۰۲",
+          "rate": 5,
+          "comment": "مثل همیشه عالی ، خیلی هم سریع رسید مرررسی واقعااا",
+          "orderTags": [
+            "پیتزا مخلوط (۲۳ سانتی‌ متری)",
+            "پیتزا فیتکس پپرونی ۲۳*۱۰ سانتی متری",
+            "نوشابه خانواده کوکا کولا"
+          ],
+          "snappfoodAnswer": "",
+          "restaurantManagerAnswer": ""
+        },
+        {
+          "id": 2,
+          "name": "بهرام",
+          "date": "۱۶ دی ۱۴۰۲",
+          "rate": 5,
+          "comment": "عالی",
+          "orderTags": [
+            "سالاد سزار با مرغ گریل",
+            "استرامبولی رست بیف",
+            "نوشابه قوطی کوکا کولا"
+          ],
+          "snappfoodAnswer": "",
+          "restaurantManagerAnswer": ""
+        },
+        {
+          "id": 3,
+          "name": "سوده",
+          "date": "۱۶ دی ۱۴۰۲",
+          "rate": 5,
+          "comment": "طعم عالی، کیفیت خوب، ارسال به موقع.ممنون از شما",
+          "orderTags": [
+            "چیکن کریسپی",
+            "سالاد کلم",
+            "نوشابه قوطی کوکا کولا زیرو"
+          ],
+          "snappfoodAnswer": "",
+          "restaurantManagerAnswer": ""
+        },
+        {
+          "id": 4,
+          "name": "همراه",
+          "date": "۱۶ آبان ۱۴۰۲",
+          "rate": 4,
+          "comment": "کلا پیتزاش خوشمزه و تازه بود، سالاد سزار خوب بود ولی نه عالی، سیب زمینی کنار پیتزا خشک و خیلی چرب و مونده بود.",
+          "orderTags": [
+            "سالاد سزار با مرغ سوخاری پنیری",
+            "پیتزا فیتکس مرغ و شوید ۲۳*۱۰ سانتی متری"
+          ],
+          "snappfoodAnswer": "همراه معتقدی عزیز، از همراهی شما سپاس‌گزاریم و خوشحالیم که نظرتان را با ما در میان گذاشتید. مورد ذکرشده بررسی می‌شود.",
+          "restaurantManagerAnswer": ""
+        }
+      ],
+      "restCatsMenu": [
+        {
+          "id": 1,
+          "name": "آف‌ تایم"
+        },
+        {
+          "id": 2,
+          "name": "پر‌طرفدارها"
+        },
+        {
+          "id": 3,
+          "name": "پیتزا"
+        },
+        {
+          "id": 4,
+          "name": "برگر"
+        },
+        {
+          "id": 5,
+          "name": "سوخاری"
+        },
+        {
+          "id": 6,
+          "name": "پاستا"
+        },
+        {
+          "id": 7,
+          "name": "سالاد و پیش غذا"
+        },
+        {
+          "id": 8,
+          "name": "نوشیدنی"
+        }
+      ],
+      "foods": [
+        {
+          "id": 1,
+          "restaurantId": 8,
+          "name": "پیتزا یونانی",
+          "images": [
+            "https://cdn.snappfood.ir/641x641/cdn/10/32/74/vendor/63b095edc9612.jpeg",
+            "https://cdn.snappfood.ir/641x641/cdn/10/32/74/vendor/63b095a8c9919.jpeg",
+            "https://cdn.snappfood.ir/641x641/cdn/10/32/74/vendor/61afc850e37bf.jpeg"
+          ],
+          "price": 295000,
+          "discount": 30,
+          "rate": 4.7,
+          "desc": "خمیر پیتزا آمریکایی ۲۴ سانتیمتری، گوشت چرخ کرده، قارچ، فلفل دلمه ای حلقه ای، پنیر مخصوص، سس مخصوص",
+          "numberRemaining": 2,
+          "categoryId": [
+            2,
+            3,
+            1
+          ],
+          "foodsComments": [
+            {
+              "id": 1,
+              "name": "نگار",
+              "date": "۱۶ دی ۱۴۰۲",
+              "rate": 5,
+              "comment": "عالی بود خوشمزه تازه",
+              "orderTags": [
+                "پیتزا یونانی",
+                "سیب زمینی سرخ شده",
+                "نوشابه خانواده کوکا کولا"
+              ],
+              "snappfoodAnswer": "",
+              "restaurantManagerAnswer": ""
+            },
+            {
+              "id": 2,
+              "name": "زکیه",
+              "date": "۱۲ دی ۱۴۰۲",
+              "rate": 5,
+              "comment": "عالی بود مثل همیشه",
+              "orderTags": [
+                "پیتزا یونانی",
+                "ساندویچ هات داگ مکزیکن",
+                "فرش ماشروم برگر",
+                "آلفردو چیز فرایز"
+              ],
+              "snappfoodAnswer": "",
+              "restaurantManagerAnswer": ""
+            },
+            {
+              "id": 3,
+              "name": "سید علی",
+              "date": "۱۶ دی ۱۴۰۲",
+              "rate": 5,
+              "comment": "شیلا جان عاشقت شدم تو خیلی خوشمزه‌ای، تو زیباترین چیزی هستی که تا حالا خوردم",
+              "orderTags": [
+                "پیتزا یونانی",
+                "مرغ سوخاری نرمال پنج تکه"
+              ],
+              "snappfoodAnswer": "",
+              "restaurantManagerAnswer": ""
+            },
+            {
+              "id": 4,
+              "name": "مهرناز",
+              "date": "۰۳ دی ۱۴۰۲",
+              "rate": 4,
+              "comment": "خوشمزه بود مرسی",
+              "orderTags": [
+                "پیتزا یونانی",
+                "فیله استریپس",
+                "پک کارد و چنگال",
+                "نوشابه قوطی اسپرایت"
+              ],
+              "snappfoodAnswer": "",
+              "restaurantManagerAnswer": ""
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "restaurantId": 8,
+          "name": "پیتزا پپرونی",
+          "images": [
+            "https://cdn.snappfood.ir/641x641/cdn/10/32/74/vendor/63b09422171cd.jpeg",
+            "https://cdn.snappfood.ir/641x641/cdn/10/32/74/vendor/63b09406441c1.jpeg",
+            "https://cdn.snappfood.ir/641x641/cdn/10/32/74/vendor/61afc87dc414c.jpeg"
+          ],
+          "price": 220000,
+          "discount": "",
+          "rate": 4.2,
+          "desc": "خمیر پیتزا آمریکایی ۲۴ سانتیمتری، پپرونی، قارچ، پنیر مخصوص، سس مخصوص",
+          "numberRemaining": "",
+          "categoryId": [
+            3,
+            2
+          ],
+          "foodsComments": [
+            {
+              "id": 1,
+              "name": "فاطمه",
+              "date": "۱۴ دی ۱۴۰۲",
+              "rate": 5,
+              "comment": "سلام وقت بخیر، خسته نباشید،والا با شرایط این دوره و زمانه فوق العاده بود، سپاسگزارم.",
+              "orderTags": [
+                "نان سیر",
+                "پیتزا پپرونی",
+                "سیب زمینی سرخ شده"
+              ],
+              "snappfoodAnswer": "",
+              "restaurantManagerAnswer": ""
+            },
+            {
+              "id": 2,
+              "name": "ریبوار",
+              "date": "۱۰ آذر ۱۴۰۲",
+              "rate": 5,
+              "comment": "عالی",
+              "orderTags": [
+                "پیتزا پپرونی"
+              ],
+              "snappfoodAnswer": "",
+              "restaurantManagerAnswer": "دوست عزیز،ممنون از حسن انتخاب شما"
+            },
+            {
+              "id": 3,
+              "name": "آرمین",
+              "date": "۰۳ آذر ۱۴۰۲",
+              "rate": 5,
+              "comment": "مثل همیشه عالی",
+              "orderTags": [
+                "سیب زمینی سرخ کرده",
+                "پک کارد و چنگال",
+                "پیتزا پپرونی"
+              ],
+              "snappfoodAnswer": "",
+              "restaurantManagerAnswer": "دوست عزیز،ممنون از حسن انتخاب شما"
+            },
+            {
+              "id": 4,
+              "name": "سعید",
+              "date": "۰۲ مرداد ۱۴۰۲",
+              "rate": 3.5,
+              "comment": "همه چی خوب و خوشمزه ، عالی تنها یکی از جعبه ها به خاطر سس غذا به کاغذ روغنی زیری چسبیده بود ، بقیه همه چی خوب",
+              "orderTags": [
+                "پیتزا چیکو",
+                "پیتزا پپرونی"
+              ],
+              "snappfoodAnswer": "",
+              "restaurantManagerAnswer": ""
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "restaurantId": 8,
+          "name": "رویال برگر ویس‌لند",
+          "images": [
+            "https://cdn.snappfood.ir/641x641/cdn/10/32/74/vendor/63b09f57bedb8.jpeg",
+            "https://cdn.snappfood.ir/641x641/cdn/10/32/74/vendor/61b47fed13927.jpeg"
+          ],
+          "price": 295000,
+          "discount": "",
+          "rate": 4.6,
+          "desc": "۱۵۰ گرم برگر گوشت، ۱۰۰ گرم سینه مرغ گریل شده، پنیر گودا، کاهو، گوجه، خیارشور، سیب زمینی رشته ای",
+          "numberRemaining": "",
+          "categoryId": [
+            4,
+            2
+          ],
+          "foodsComments": [
+            {
+              "id": 1,
+              "name": "eli",
+              "date": "۲۳ آذر ۱۴۰۲",
+              "rate": 5,
+              "comment": "سلام وقت بخیر، خسته نباشید،والا با شرایط این دوره و زمانه فوق العاده بود، سپاسگزارم.",
+              "orderTags": [
+                "رویال برگر ویس‌لند"
+              ],
+              "snappfoodAnswer": "",
+              "restaurantManagerAnswer": "دوست عزیز،ممنون از حسن انتخاب شما"
+            },
+            {
+              "id": 2,
+              "name": "شیرین",
+              "date": "۲۱ دی ۱۴۰۱",
+              "rate": 4.5,
+              "comment": "سلام خوشمزه و تازه بود فقط غذا به کاغذ کف کارتون چسبیده بود",
+              "orderTags": [
+                "رویال برگر ویس‌لند"
+              ],
+              "snappfoodAnswer": "",
+              "restaurantManagerAnswer": "سلام نوش جان حتما بررسی می شود و در سفارشات بعدی تکرار نمی شود."
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "restaurantId": 8,
+          "name": "چوریتسو برگر",
+          "images": [
+            "https://cdn.snappfood.ir/641x641/cdn/10/32/74/vendor/63b0a00e6059c.jpeg"
+          ],
+          "price": 295000,
+          "discount": 20,
+          "rate": 4.7,
+          "desc": "۱۵۰ گرم برگر گوشت، ۱۰۰ گرم سوسیس چوریتسو، پنیر ورقه ای، گوجه، خیارشور، کاهو، سیب زمینی رشته ای",
+          "numberRemaining": 3,
+          "categoryId": [
+            4,
+            1
+          ],
+          "foodsComments": [
+            {
+              "id": 1,
+              "name": "علیرضا",
+              "date": "۱۱ دی ۱۴۰۲",
+              "rate": 5,
+              "comment": "عالی",
+              "orderTags": [
+                "چوریتسو برگر",
+                "سالاد کلم"
+              ],
+              "snappfoodAnswer": "",
+              "restaurantManagerAnswer": ""
+            },
+            {
+              "id": 2,
+              "name": "فاطمه",
+              "date": "۰۸ دی ۱۴۰۲",
+              "rate": 3,
+              "comment": "گوشت  شور بود",
+              "orderTags": [
+                "نوشابه قوطی کوکا کولا",
+                "چوریتسو برگر"
+              ],
+              "snappfoodAnswer": "",
+              "restaurantManagerAnswer": ""
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "restaurantId": 8,
+          "name": "چیلیز",
+          "images": [
+            "https://cdn.snappfood.ir/641x641/cdn/10/32/74/vendor/63b0a0586bc96.jpeg",
+            "https://cdn.snappfood.ir/641x641/cdn/10/32/74/vendor/63b0a04b46c6e.jpeg"
+          ],
+          "price": 320000,
+          "discount": "",
+          "rate": 4.5,
+          "desc": "۲۵۰ گرم سینه مرغ سوخاری تند، ۱۰۰ گرم پپرونی، پنیر. سس مخصوص",
+          "numberRemaining": "",
+          "categoryId": [
+            5,
+            2
+          ],
+          "foodsComments": [
+            {
+              "id": 1,
+              "name": "علیرضا",
+              "date": "۱۱ دی ۱۴۰۲",
+              "rate": 5,
+              "comment": "عالی",
+              "orderTags": [
+                "چیلیز",
+                "سالاد کلم",
+                "نوشابه خانواده کوکا کولا"
+              ],
+              "snappfoodAnswer": "",
+              "restaurantManagerAnswer": ""
+            },
+            {
+              "id": 2,
+              "name": "امیررضا",
+              "date": "۰۸ دی ۱۴۰۲",
+              "rate": 3,
+              "comment": "به بخش نظرات توجه نکردند. تعداد تکه عای مرغ هم ۷ تا بود",
+              "orderTags": [
+                "نوشابه قوطی کوکا کولا",
+                "چیلیز"
+              ],
+              "snappfoodAnswer": "امیررضا دائی عزیز، از همراهی شما سپاس‌گزاریم و خوشحالیم که نظرتان را با ما در میان گذاشتید. مورد ذکرشده بررسی می‌شود.",
+              "restaurantManagerAnswer": ""
+            },
+            {
+              "id": 3,
+              "name": "غزل",
+              "date": "۳۰ آذر ۱۴۰۲",
+              "rate": 3.5,
+              "comment": "این سری کیفیت لازم رو نداشت و کمی سوخته بود قسمت هایی از مرغ",
+              "orderTags": [
+                "چیلیز"
+              ],
+              "snappfoodAnswer": "",
+              "restaurantManagerAnswer": ""
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "restaurantId": 8,
+          "name": "فیله استریپس",
+          "images": [
+            "https://cdn.snappfood.ir/641x641/cdn/10/32/74/vendor/63b0a0e5a0c95.jpeg",
+            "https://cdn.snappfood.ir/641x641/cdn/10/32/74/vendor/61bb784f28c8a.jpeg"
+          ],
+          "price": 230000,
+          "discount": "",
+          "rate": 4.3,
+          "desc": "۴ تکه فیله مرغ سوخاری شده ۶۰ گرمی، یک عدد سالاد کلم، ۸۰ گرم سیب زمینی سرخ کرده، سس مخصوص، یک عدد نان بروتچن",
+          "numberRemaining": "",
+          "categoryId": [
+            5
+          ],
+          "foodsComments": [
+            {
+              "id": 1,
+              "name": "سارینا",
+              "date": "۱۱ دی ۱۴۰۲",
+              "rate": 5,
+              "comment": "عالی",
+              "orderTags": [
+                "فیله استریپس",
+                "سالاد کلم",
+                "نوشابه خانواده کوکا کولا",
+                "پیتزا سوجوک (۳۰ سانتی متری)"
+              ],
+              "snappfoodAnswer": "",
+              "restaurantManagerAnswer": ""
+            },
+            {
+              "id": 2,
+              "name": "محمدرضا",
+              "date": "۰۸ دی ۱۴۰۲",
+              "rate": 4.5,
+              "comment": "خوب بود ولی کیفیت همیشگیو نداش",
+              "orderTags": [
+                "نوشابه قوطی کوکا کولا",
+                "فیله استریپس"
+              ],
+              "snappfoodAnswer": "",
+              "restaurantManagerAnswer": "دوست عزیز،ممنون از حسن انتخاب شما"
+            },
+            {
+              "id": 3,
+              "name": "زهرا",
+              "date": "۳۰ آذر ۱۴۰۲",
+              "rate": 5,
+              "comment": "تشکر بابت زحمات شما",
+              "orderTags": [
+                "فیله استریپس"
+              ],
+              "snappfoodAnswer": "",
+              "restaurantManagerAnswer": ""
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "restaurantId": 8,
+          "name": "پاستا پنه گوشت",
+          "images": [
+            "https://cdn.snappfood.ir/641x641/cdn/10/32/74/vendor/63b0a210bc131.jpeg",
+            "https://cdn.snappfood.ir/641x641/cdn/10/32/74/vendor/61a3bb9a9bc1f.jpeg"
+          ],
+          "price": 200000,
+          "discount": "",
+          "rate": 3.4,
+          "desc": "۱۰۰ گرم پنه، ۸۰ گرم گوشت، پنیر پارمزان، سس تای (تند) یا سس آلفردو",
+          "numberRemaining": "",
+          "categoryId": [
+            6
+          ],
+          "foodsComments": [
+            {
+              "id": 1,
+              "name": "نگار",
+              "date": "۳۰ آذر ۱۴۰۲",
+              "rate": 5,
+              "comment": "تشکر بابت زحمات شما",
+              "orderTags": [
+                "پاستا پنه گوشت",
+                "نوشابه قوطی اسپرایت"
+              ],
+              "snappfoodAnswer": "",
+              "restaurantManagerAnswer": "دوست عزیز،ممنون از حسن انتخاب شما"
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "restaurantId": 8,
+          "name": "پاستا پنه مرغ",
+          "images": [
+            "https://cdn.snappfood.ir/641x641/cdn/10/32/74/vendor/63b0a22eaedcd.jpeg",
+            "https://cdn.snappfood.ir/641x641/cdn/10/32/74/vendor/61a3abfd15d8c.jpeg"
+          ],
+          "price": 170000,
+          "discount": "",
+          "rate": 4.2,
+          "desc": "مرغ تنوری، سس آلفردو، پنیر مخصوص، پیاز سرخ شده، سیب زمینی سرخ شده",
+          "numberRemaining": "",
+          "categoryId": [
+            6,
+            2
+          ],
+          "foodsComments": [
+            {
+              "id": 1,
+              "name": "لعيا",
+              "date": "۰۸ دی ۱۴۰۲",
+              "rate": 4.5,
+              "comment": "غذا عالی بود ولی سیب زمینی کنارش متاسفانه بیات و مونده بود!",
+              "orderTags": [
+                "نوشابه قوطی کوکا کولا",
+                "پاستا پنه مرغ",
+                "سیب زمینی سرخ کرده"
+              ],
+              "snappfoodAnswer": "",
+              "restaurantManagerAnswer": ""
+            },
+            {
+              "id": 2,
+              "name": "armita",
+              "date": "۳۰ آذر ۱۴۰۲",
+              "rate": 5,
+              "comment": "تشکر بابت زحمات شما",
+              "orderTags": [
+                "پاستا پنه مرغ",
+                "نوشابه قوطی اسپرایت"
+              ],
+              "snappfoodAnswer": "",
+              "restaurantManagerAnswer": "دوست عزیز،ممنون از حسن انتخاب شما"
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "restaurantId": 8,
+          "name": "نان سیر",
+          "images": [
+            "https://cdn.snappfood.ir/641x641/cdn/10/32/74/vendor/63b0a330c83f6.jpeg",
+            "https://cdn.snappfood.ir/641x641/cdn/10/32/74/vendor/63b0a31ebb065.jpeg",
+            "https://cdn.snappfood.ir/641x641/cdn/10/32/74/vendor/63a571850cfd8.jpeg"
+          ],
+          "price": 85000,
+          "discount": "",
+          "rate": 4.2,
+          "desc": "خمیر پیتزا ۱۲ سانتیمتری، کره، روغن سیر، پنیر پیتزا",
+          "numberRemaining": "",
+          "categoryId": [
+            7,
+            2
+          ],
+          "foodsComments": [
+            {
+              "id": 1,
+              "name": "لعيا",
+              "date": "۰۸ دی ۱۴۰۲",
+              "rate": 4.5,
+              "comment": "غذا عالی بود ولی سیب زمینی کنارش متاسفانه بیات و مونده بود!",
+              "orderTags": [
+                "نان سیر",
+                "پاستا پنه مرغ",
+                "سیب زمینی سرخ کرده"
+              ],
+              "snappfoodAnswer": "",
+              "restaurantManagerAnswer": ""
+            },
+            {
+              "id": 2,
+              "name": "armita",
+              "date": "۳۰ آذر ۱۴۰۲",
+              "rate": 5,
+              "comment": "تشکر بابت زحمات شما",
+              "orderTags": [
+                "پاستا پنه مرغ",
+                "نوشابه قوطی اسپرایت",
+                "نان سیر"
+              ],
+              "snappfoodAnswer": "",
+              "restaurantManagerAnswer": "دوست عزیز،ممنون از حسن انتخاب شما"
+            }
+          ]
+        },
+        {
+          "id": 10,
+          "restaurantId": 8,
+          "name": "سالاد کلم",
+          "images": [
+            "https://cdn.snappfood.ir/641x641/cdn/93/50/product_image/zoodfood/64d248c7c9ead.jpg",
+            "https://cdn.snappfood.ir/641x641/cdn/93/50/product_image/vendor/5ef35314b1750.jpg"
+          ],
+          "price": 32000,
+          "discount": "",
+          "rate": 4.7,
+          "desc": "کلم، هویج، کشمش، سس مخصوص",
+          "numberRemaining": "",
+          "categoryId": [
+            7
+          ],
+          "foodsComments": []
+        },
+        {
+          "id": 11,
+          "restaurantId": 8,
+          "name": "نوشابه خانواده",
+          "images": [
+            "https://cdn.snappfood.ir/641x641/cdn/93/50/product_image/zoodfood/64d2476217edc.jpg"
+          ],
+          "price": 27000,
+          "discount": "",
+          "rate": 4.5,
+          "desc": "۱.۵ لیتر",
+          "numberRemaining": "",
+          "categoryId": [
+            11
+          ],
+          "foodsComments": []
+        },
+        {
+          "id": 12,
+          "restaurantId": 8,
+          "name": "دوغ قوطی خوشگوار",
+          "images": [
+            "https://cdn.snappfood.ir/641x641/cdn/93/50/product_image/zoodfood/64d24763c8991.jpg"
+          ],
+          "price": 17000,
+          "discount": "",
+          "rate": 4.7,
+          "desc": "۳۳۰ میلی لیتر",
+          "numberRemaining": "",
+          "categoryId": [
+            11
+          ],
+          "foodsComments": []
+        },
+        {
+          "id": 13,
+          "restaurantId": 8,
+          "name": "نوشابه قوطی",
+          "images": [
+            "https://cdn.snappfood.ir/641x641/cdn/93/50/product_image/zoodfood/64d247610ffef.jpg"
+          ],
+          "price": 18000,
+          "discount": "",
+          "rate": 4.7,
+          "desc": "۳۳۰ میلی لیتر",
+          "numberRemaining": "",
+          "categoryId": [
+            11
+          ],
+          "foodsComments": []
+        }
+      ]
+    }
+  ],
+  "restaurantCategory": [
+    {
+      "id": 1,
+      "categoryId": "",
+      "isShowInHome": true,
+      "isShowInMenu": true,
+      "name": "ایرانی",
+      "img": "https://cdn.snappfood.ir/uploads/images/tags/website_image_irani_1.jpg",
+      "logo": "https://cdn.snappfood.ir/uploads/images/tags/website_image_irani_1.jpg"
+    },
+    {
+      "id": 2,
+      "categoryId": "",
+      "isShowInHome": true,
+      "isShowInMenu": true,
+      "name": "فست فود",
+      "img": "https://cdn.snappfood.ir/uploads/images/tags/website_image_fastfood_1.jpg",
+      "logo": "https://cdn.snappfood.ir/uploads/images/tags/website_image_fastfood_1.jpg"
+    },
+    {
+      "id": 3,
+      "categoryId": 1,
+      "isShowInHome": true,
+      "isShowInMenu": true,
+      "name": "کباب",
+      "img": "https://cdn.snappfood.ir/uploads/images/tags/website_image_kebab_1.jpg",
+      "logo": "https://cdn.snappfood.ir/uploads/images/tags/website_image_kebab_1.jpg"
+    },
+    {
+      "id": 4,
+      "categoryId": 2,
+      "isShowInHome": true,
+      "isShowInMenu": false,
+      "name": "پیتزا",
+      "img": "https://cdn.snappfood.ir/uploads/images/tags/website_image_pizza_1.jpg",
+      "logo": "https://cdn.snappfood.ir/uploads/images/tags/new_icons/pizza.png"
+    },
+    {
+      "id": 5,
+      "categoryId": 2,
+      "isShowInHome": true,
+      "isShowInMenu": false,
+      "name": "برگر",
+      "img": "https://cdn.snappfood.ir/uploads/images/tags/website_image_burger_1.jpg",
+      "logo": " https://cdn.snappfood.ir/uploads/images/tags/new_icons/new_burger.png"
+    },
+    {
+      "id": 6,
+      "categoryId": 2,
+      "isShowInHome": true,
+      "isShowInMenu": false,
+      "name": "ساندویچ",
+      "img": "https://cdn.snappfood.ir/uploads/images/tags/website_image_sandwich_1.jpg",
+      "logo": "https://cdn.snappfood.ir/uploads/images/tags/new_icons/sandwich.png"
+    },
+    {
+      "id": 7,
+      "categoryId": 2,
+      "isShowInHome": true,
+      "isShowInMenu": false,
+      "name": "سوخاری",
+      "img": "https://cdn.snappfood.ir/uploads/images/tags/website_image_sokhari_1.jpg",
+      "logo": "https://cdn.snappfood.ir/uploads/images/tags/new_icons/fried.png"
+    },
+    {
+      "id": 8,
+      "categoryId": 2,
+      "isShowInHome": true,
+      "isShowInMenu": false,
+      "name": "پاستا",
+      "img": "https://cdn.snappfood.ir/uploads/images/tags/website_image_italy_1.jpg",
+      "logo": "https://cdn.snappfood.ir/uploads/images/tags/new_icons/pasta.png"
+    },
+    {
+      "id": 9,
+      "categoryId": "",
+      "isShowInHome": true,
+      "isShowInMenu": true,
+      "name": "سالاد",
+      "img": "https://cdn.snappfood.ir/uploads/images/tags/website_image_salad_1.jpg",
+      "logo": "https://cdn.snappfood.ir/uploads/images/tags/website_image_salad_1.jpg"
+    },
+    {
+      "id": 10,
+      "categoryId": "",
+      "isShowInHome": true,
+      "isShowInMenu": true,
+      "name": "دریایی",
+      "img": "https://cdn.snappfood.ir/uploads/images/tags/website_image_seafood_1.jpg",
+      "logo": "https://cdn.snappfood.ir/uploads/images/tags/website_image_seafood_1.jpg"
+    },
+    {
+      "id": 11,
+      "categoryId": "",
+      "isShowInHome": true,
+      "isShowInMenu": true,
+      "name": "بین الملل",
+      "img": "https://cdn.snappfood.ir/uploads/images/tags/website_image_asian_1.jpg",
+      "logo": "https://cdn.snappfood.ir/uploads/images/tags/website_image_asian_1.jpg"
+    },
+    {
+      "id": 12,
+      "categoryId": 1,
+      "isShowInHome": true,
+      "isShowInMenu": false,
+      "name": "گیلانی",
+      "img": "https://cdn.snappfood.ir/uploads/images/tags/website_image_gilani_1.jpg",
+      "logo": "https://cdn.snappfood.ir/uploads/images/tags/new_icons/guilan.png"
+    },
+    {
+      "id": 13,
+      "categoryId": 1,
+      "isShowInHome": false,
+      "isShowInMenu": false,
+      "name": "سنتی",
+      "img": "",
+      "logo": "https://cdn.snappfood.ir/uploads/images/tags/aash.png"
+    },
+    {
+      "id": 14,
+      "categoryId": 1,
+      "isShowInHome": false,
+      "isShowInMenu": false,
+      "name": "پلوی ایرانی",
+      "img": "",
+      "logo": "https://cdn.snappfood.ir/uploads/images/tags/poloye-irani.png"
+    },
+    {
+      "id": 15,
+      "categoryId": 1,
+      "isShowInHome": false,
+      "isShowInMenu": false,
+      "name": "خورشت",
+      "img": "",
+      "logo": ""
+    },
+    {
+      "id": 16,
+      "categoryId": 1,
+      "isShowInHome": false,
+      "isShowInMenu": false,
+      "name": "مرغ",
+      "img": "",
+      "logo": "https://cdn.snappfood.ir/uploads/images/tags/morgh.png"
+    },
+    {
+      "id": 17,
+      "categoryId": 3,
+      "isShowInHome": false,
+      "isShowInMenu": false,
+      "name": "کباب گوشت",
+      "img": "",
+      "logo": "https://cdn.snappfood.ir/uploads/images/tags/kabab.png"
+    },
+    {
+      "id": 18,
+      "categoryId": 3,
+      "isShowInHome": false,
+      "isShowInMenu": false,
+      "name": "جوجه کباب",
+      "img": "",
+      "logo": "https://cdn.snappfood.ir/uploads/images/tags/jooje.png"
+    },
+    {
+      "id": 19,
+      "categoryId": 2,
+      "isShowInHome": false,
+      "isShowInMenu": false,
+      "name": "استیک",
+      "img": "",
+      "logo": "https://cdn.snappfood.ir/uploads/images/tags/jooje.png"
+    }
+  ],
+  "services": [
+    {
+      "id": 1,
+      "title": "رستوران",
+      "img": "https://cdn.snappfood.ir/uploads/images/review-app/icons/count/desktop_1_603508bf202d8_img_st_food.png",
+      "href": "/"
+    },
+    {
+      "id": 2,
+      "title": "سوپرمارکت",
+      "img": "https://cdn.snappfood.ir/uploads/images/review-app/icons/count/desktop_4_603508a14ab73_img_st_supermarket.png",
+      "href": "/"
+    },
+    {
+      "id": 3,
+      "title": "کافه",
+      "img": "https://cdn.snappfood.ir/uploads/images/review-app/icons/count/desktop_2_603508b330711_img_st_cafe.png",
+      "href": "/"
+    },
+    {
+      "id": 4,
+      "title": "شیرینی",
+      "img": "https://cdn.snappfood.ir/uploads/images/review-app/icons/count/desktop_3_603508a95b9be_img_st_sweet.png",
+      "href": "/"
+    },
+    {
+      "id": 5,
+      "title": "نانوایی",
+      "img": "https://cdn.snappfood.ir/uploads/images/review-app/icons/count/desktop_5_60350898c61b5_img_st_bakery.png",
+      "href": "/"
+    },
+    {
+      "id": 6,
+      "title": "میوه",
+      "img": "https://cdn.snappfood.ir/uploads/images/review-app/icons/count/desktop_6_6035088cbcde4_img_st_fruit.png",
+      "href": "/"
+    },
+    {
+      "id": 7,
+      "title": "پروتئین",
+      "img": "https://cdn.snappfood.ir/uploads/images/review-app/icons/count/desktop_11_603507afc9a32_img_st_meat.png",
+      "href": "/"
+    },
+    {
+      "id": 8,
+      "title": "آبمیوه بستنی",
+      "img": "https://cdn.snappfood.ir/uploads/images/review-app/icons/count/desktop_8_6035087b463a3_img_st_icecream.png",
+      "href": "/"
+    },
+    {
+      "id": 9,
+      "title": "آجیل",
+      "img": "https://cdn.snappfood.ir/uploads/images/review-app/icons/count/desktop_7_60350883d6e43_img_st_nut.png",
+      "href": "/"
+    },
+    {
+      "id": 10,
+      "title": "سایر",
+      "img": "https://cdn.snappfood.ir/uploads/images/review-app/icons/count/desktop_9_603b811b1d540_img_st_other2.png",
+      "href": "/"
+    }
+  ],
+  "cities": [
+    "تهران",
+    "مشهد",
+    "کرج",
+    "اصفهان",
+    "شیراز",
+    "تبریز",
+    "قم",
+    "اهواز",
+    "ارومیه",
+    "رشت",
+    "یزد",
+    "قزوین",
+    "کرمان",
+    "همدان",
+    "اردبیل",
+    "گرگان",
+    "ساری",
+    "کرمانشاه",
+    "زنجان",
+    "اسلامشهر",
+    "اراک",
+    "بندرعباس",
+    "بوشهر",
+    "بجنورد",
+    "خرم آباد",
+    "یاسوج",
+    "نیشابور",
+    "شاهین شهر",
+    "کاشان",
+    "بیرجند",
+    "بابل",
+    "لاهیجان",
+    "مرودشت",
+    "قائم شهر",
+    "ایلام",
+    "سنندج",
+    "پاکدشت",
+    "دزفول",
+    "سمنان",
+    "زاهدان",
+    "آمل",
+    "سبزوار",
+    "شاهرود",
+    "آبادان",
+    "بابلسر",
+    "نجف آباد",
+    "گنبد کاووس",
+    "شهرکرد",
+    "ورامین",
+    "پردیس",
+    "کیش",
+    "شهریار",
+    "اندیشه",
+    "شهر قدس",
+    "تربت حیدریه",
+    "مراغه",
+    "خمینی شهر",
+    "بندر انزلی",
+    "رباط کریم",
+    "پرند",
+    "شهر ری",
+    "بروجرد",
+    "قرچک",
+    "ساوه",
+    "بروجرد",
+    "سپاهان شهر",
+    "اندیمشک",
+    "هشتگرد",
+    "صدرا",
+    "لواسان",
+    "لنگرود",
+    "محمود آباد",
+    "قوچان",
+    "نسیم شهر",
+    "بهارستان",
+    "مرند",
+    "نوشهر",
+    "فولادشهر",
+    "سیرجان",
+    "رفسنجان",
+    "رامسر",
+    "ملارد",
+    "نور",
+    "سهند",
+    "چالوس",
+    "خوی",
+    "دماوند",
+    "رودهن",
+    "سلمان شهر",
+    "مارلیک",
+    "بومهن",
+    "گرمدره",
+    "تنکابن",
+    "کازرون",
+    "طرقبه",
+    "داراب",
+    "قشم",
+    "فلاورجان",
+    "ملایر",
+    "خرمشهر",
+    "زرین شهر",
+    "زابل",
+    "درود",
+    "باقر شهر",
+    "چهارمحال بختیاری",
+    "فریدونکنار",
+    "چابهار",
+    "رویان",
+    "شوشتر",
+    "اسکو",
+    "شهرضا",
+    "بهشهر",
+    "میاندوآب",
+    "جیرفت",
+    "نکا",
+    "لار",
+    "کلارآباد",
+    "فومن",
+    "آستانه اشرفیه",
+    "خمین",
+    "صومعه سرا",
+    "مبارکه",
+    "گرمسار",
+    "میبد",
+    "سرخ رود",
+    "رودهن",
+    "بروجن",
+    "لرستان",
+    "آران بیدگل",
+    "آستارا",
+    "رودسر",
+    "تربت جام",
+    "نقده",
+    "جاجرود",
+    "ویلاشهر",
+    "طبس",
+    "سنگر",
+    "علی آباد کتول",
+    "کردکوی",
+    "ایزدشهر",
+    "فشم",
+    "نطنز",
+    "سراب",
+    "تفت",
+    "فسا",
+    "ماسال",
+    "تفرش",
+    "خشت سر",
+    "نی ریز",
+    "بم",
+    "آبیک",
+    "رامهرمز",
+    "شیرگاه",
+    "کنگاور"
+  ]
+}
