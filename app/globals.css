@@ -2,3 +2,64 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  direction: rtl;
+  scroll-behavior: smooth;
+}
+
+@font-face {
+  font-family: "IRANSansWeb-Regular";
+  src: url(/fonts/IRANSansWeb.woff2);
+  font-display: block;
+}
+
+@font-face {
+  font-family: "SnappWeb2-Regular";
+  src: url(/fonts/SnappWeb2.0-Regular.woff);
+  font-display: block;
+}
+
+.ltr{
+  direction: ltr;
+}
+.rtl{
+  direction: rtl;
+}
+.text-shadow{
+  text-shadow:rgba(0, 0, 0, 0.24) 0px 1px 0px
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 14px;
+  background-color: #f4f4f4;
+}
+
+::-webkit-scrollbar-button {
+  display: none;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background-color: #0000;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background-color: #babac0;
+  border: 3px solid #fff;
+  border-radius: 16px;
+  -webkit-transition: all .2s linear;
+  transition: all .2s linear;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background-color: #a0a0a5;
+  border: 3px solid #f4f4f4;
+}
+::-webkit-scrollbar-track:hover {
+  background-color: #f4f4f4;
+}
