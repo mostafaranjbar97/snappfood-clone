@@ -63,3 +63,7 @@ html {
 ::-webkit-scrollbar-track:hover {
   background-color: #f4f4f4;
 }
+
+.btn{
+  padding: 6px 1px ;
+}
