@@ -1,10 +1,11 @@
+import Header from "@/components/Header/Header";
 
 
 export default function Home() {
   return (
     <>
       <main>
-        <p className="p-0.5">ali</p>
+        <Header/>
       </main>
     </>
   )

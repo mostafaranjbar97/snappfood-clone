@@ -116,7 +116,7 @@ module.exports = {
         "borders-lg": "0.375rem",
       },
       borderRadius: {
-        "xlg": ".625rem",
+        "xlg": "0.625rem",
         "offtime": "0.25rem 0.25rem 7.5rem;"
       },
 
