@@ -8,7 +8,6 @@ const SOCIAL = ["twitter", "telegram", "linkedin", "instagram", "aparat"]
 function Footer() {
     return (
         <footer className='box-border w-full p-12 bg-surface-main'>
-
             <button className='group fixed right-4 bottom-4 z-10 rotate-[360deg] transition-transform duration-300 ease-in flex justify-center items-center box-border w-12 h-12 rounded-[50%]  bg-accent-main bg-clip-padding  border-border-sm border-accent-alphaLight shadow-shadows-medium hover:bg-accent-light focus:bg-surface-main focus:z-[1001] active:bg-surface-main active:z-[1001]'>
                 <Image width={24} height={24} src={"/icons/footer/support.svg"} className='overflow-hidden group-focus:hidden' />
                 <Image width={14} height={14} src={"/icons/footer/exit-support.svg"} className='overflow-hidden hidden group-focus:block ' />
@@ -37,7 +36,6 @@ function Footer() {
                                     </Link>
                                 </div>)
                             })}
-
                         </div>
                     </div>
                 </div>
