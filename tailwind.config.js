@@ -111,9 +111,9 @@ module.exports = {
       },
       borderWidth: {
         "border-xs":"0.0625rem",
-        "borders-sm": "0.09375rem",
-        "borders-md": "0.1875rem",
-        "borders-lg": "0.375rem",
+        "border-sm": "0.09375rem",
+        "border-md": "0.1875rem",
+        "border-lg": "0.375rem",
       },
       borderRadius: {
         "xlg": "0.625rem",
