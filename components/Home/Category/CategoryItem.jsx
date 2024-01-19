@@ -4,7 +4,7 @@ import React from 'react'
 
 function CategoryItem() {
   return (
-  <div className="basis-1/2 max-w-[50%] p-1 tablet:basis-1/3 tablet:max-w-[1/3] laptop:basis-1/4 laptop:max-w-[1/4] desktop:basis-1/6 desktop:max-w-[1/6] ">
+  <div className="basis-1/2 max-w-[50%] p-4 box-border tablet:basis-1/3 tablet:max-w-[1/3] laptop:basis-1/4 laptop:max-w-[1/4] desktop:basis-1/6 desktop:max-w-[1/6] ">
     <Link href={"/"} className="bg-transparent">
       <div className="relative p-[0.1875rem] h-[5.9375rem] border border-white rounded-xl shadow-shadows-high cursor-pointer transition-all ease-in-out duration-200 flex bg-white hover:shadow-shadows-medium">
         <img src={"https://cdn.snappfood.ir/uploads/images/tags/website_image_irani_1.jpg"}  alt={"ایرانی"} className="rounded-xl w-full h-full object-cover" />
