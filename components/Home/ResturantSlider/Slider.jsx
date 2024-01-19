@@ -4,11 +4,11 @@ import 'swiper/css/navigation';
 
 // Import Swiper styles
 import 'swiper/css';
+import SliderCard from './SliderCard';
 import { useCallback, useRef } from 'react';
 import Image from 'next/image';
-import FoodPartyCard from './FoodPartyCard';
 
-function FoodPartySlider()  {
+function Slider()  {
     const sliderRef = useRef(null);
 
   const handlePrev = useCallback(() => {
@@ -24,11 +24,8 @@ function FoodPartySlider()  {
   }, []);
 
   return (
-
-    <div className='w-full tablet:w-4/5 relative'>
-        <Swiper  
+    <Swiper 
     ref={sliderRef}
-
       spaceBetween={16}
 
       breakpoints={{
@@ -38,7 +35,7 @@ function FoodPartySlider()  {
         },
         600: {
           slidesPerView: 2,
-          slidesPerGroup: 2
+          slidesPerGroup: 1
         },
         960: {
           slidesPerView: 3,
@@ -52,44 +49,53 @@ function FoodPartySlider()  {
       onSlideChange={() => console.log('slide change')}
       onSwiper={(swiper) => console.log(swiper)}
     >
-    <SwiperSlide>
-        <FoodPartyCard/>
-    </SwiperSlide>
-    <SwiperSlide>
-    <FoodPartyCard/>
-    </SwiperSlide>
-    <SwiperSlide>
-    <FoodPartyCard/>
-    </SwiperSlide>
-    <SwiperSlide>
-    <FoodPartyCard/>
-    </SwiperSlide>
-    <SwiperSlide>
-    <FoodPartyCard/>
-    </SwiperSlide>
-    <SwiperSlide>
-    <FoodPartyCard/>
-    </SwiperSlide>
+      <SwiperSlide>
         
-   
-    <div className="prev-arrow -left-3 absolute top-[45%] b-0 z-[30000] h-8 opacity-100 scale-100 transition-all ease-in-out duration-500 hidden laptop:block " onClick={handleNext} >
+        <SliderCard/>
+
+      </SwiperSlide>
+      <SwiperSlide>
+      
+      <SliderCard/>
+
+      </SwiperSlide>
+      <SwiperSlide>
+       
+      <SliderCard/>
+
+      </SwiperSlide>
+      <SwiperSlide>
+       
+      <SliderCard/>
+
+      </SwiperSlide>
+      <SwiperSlide>
+       
+      <SliderCard/>
+
+      </SwiperSlide>
+      <SwiperSlide>
+        
+      <SliderCard/>
+
+      </SwiperSlide>
+
+
+      <div className="prev-arrow -left-6 absolute top-[55%] b-0 z-20 h-8 opacity-100 scale-100 transition-all ease-in-out duration-500 hidden laptop:block " onClick={handleNext} >
         <button className='inline-flex justify-center items-center box-border size-12 rounded-[50%] border-border-sm border-accent-alphaLight bg-white bg-clip-padding shadow-shadows-medium active:bg-accent-alphaMedium'>
-            <Image width={9} height={16} src={"/icons/home/left-purple2.svg"} />
+            <Image width={9} height={16} src={"/icons/home/left-purple.svg"} />
         </button>
       </div>
-      <div className="next-arrow -right-3 absolute top-[45%] b-0 z-[30000] h-8 opacity-100 scale-100 transition-all ease-in-out duration-500 hidden laptop:block " onClick={handlePrev} >
+      <div className="next-arrow -right-6 absolute top-[55%] b-0 z-50 h-8 opacity-100 scale-100 transition-all ease-in-out duration-500 hidden laptop:block " onClick={handlePrev} >
         <button className='inline-flex justify-center items-center box-border size-12 rounded-[50%] border-border-sm border-accent-alphaLight bg-white bg-clip-padding shadow-shadows-medium active:bg-accent-alphaMedium'>
             <Image width={9} height={16} src={"/icons/home/right-purple.svg"} />
         </button>
       </div>
-      
-    </Swiper>    
-    </div>
-    
+    </Swiper>
 
 
 
   );
 };
 
-export default FoodPartySlider
+export default Slider
