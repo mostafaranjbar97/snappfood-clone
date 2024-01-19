@@ -67,3 +67,14 @@ html {
 button{
   padding: 1px 6px ;
 }
+
+.bg-food-party{
+  background: radial-gradient(100% 303.06% at 0% 0%, rgb(252, 95, 153) 0%, rgb(225, 36, 146) 100%);
+}
+.rounded-food-party{
+  border-radius: 0.25rem 0.25rem 7.5rem;
+}
+
+.text-shadow-food-party{
+  text-shadow:rgba(0, 0, 0, 0.24) 0px 1px 0px
+}
