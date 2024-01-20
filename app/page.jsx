@@ -11,6 +11,7 @@ import NewAddressModal from "@/components/Modal/NewAddressModal";
 import OrderCommentModal from "@/components/Modal/OrderCommentModal";
 import OrderInvoiceModal from "@/components/Modal/OrderInvoiceModal";
 import OrderModal from "@/components/Modal/OrderModal";
+import SupportModal from "@/components/Modal/SupportModal";
 
 
 export default function Home() {
@@ -31,6 +32,7 @@ export default function Home() {
         {/* <OrderInvoiceModal/> */}
         {/* <AddressModal/> */}
         {/* <NewAddressModal/> */}
+        <SupportModal/>
       </main>
       <Cities/>
       <Footer/>
