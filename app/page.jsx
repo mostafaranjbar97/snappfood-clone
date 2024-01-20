@@ -6,6 +6,7 @@ import DownloadSection from "@/components/Home/DownloadSection/DownloadSection";
 import FoodParty from "@/components/Home/FoodParty/FoodParty";
 import ResturantSlider from "@/components/Home/ResturantSlider/ResturantSlider";
 import VendorRegister from "@/components/Home/VendorRegister/VendorRegister";
+import OrderModal from "@/components/Modal/OrderModal";
 
 
 export default function Home() {
@@ -21,6 +22,7 @@ export default function Home() {
         <ResturantSlider/>
         <DownloadSection/>
         <VendorRegister/>
+        <OrderModal/>
       </main>
       <Cities/>
       <Footer/>
