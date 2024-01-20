@@ -84,12 +84,7 @@ button{
   to {    background-color: #40404066;  }
 }
 
-@keyframes modal-animation-order {
+@keyframes modal-animation2 {
   from {       transform: translate3d(0px, -2rem, 0px);  }
-  to {        transform: translateZ(0px);  }
-}
-
-@keyframes modal-animation-order-comment {
-  from {       transform: translate3d(0px, -2rem, 0px)  }
   to {        transform: translateZ(0px);  }
 }
