@@ -7,6 +7,7 @@ import FoodParty from "@/components/Home/FoodParty/FoodParty";
 import ResturantSlider from "@/components/Home/ResturantSlider/ResturantSlider";
 import VendorRegister from "@/components/Home/VendorRegister/VendorRegister";
 import OrderCommentModal from "@/components/Modal/OrderCommentModal";
+import OrderInvoiceModal from "@/components/Modal/OrderInvoiceModal";
 import OrderModal from "@/components/Modal/OrderModal";
 
 
@@ -24,7 +25,8 @@ export default function Home() {
         <DownloadSection/>
         <VendorRegister/>
         {/* <OrderModal/> */}
-        <OrderCommentModal/>
+        {/* <OrderCommentModal/> */}
+        <OrderInvoiceModal/>
       </main>
       <Cities/>
       <Footer/>
