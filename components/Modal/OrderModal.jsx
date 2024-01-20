@@ -6,7 +6,7 @@ function OrderModal() {
   return (
     <div>
     <div className='flex justify-center items-center fixed inset-0 z-[1000] animate-[0.3s_ease_0s_1_normal_forwards_running_modal-animation]'>  
-    <div className='absolute left-0 w-[21vw] min-w-[25rem] min-h-[100vh] px-4 overflow-auto bg-white shadow-shadows-modal animate-[0.3s_cubic-bezier(0.4,0,0,1.5)_0s_1_normal_forwards_running_modal-animation-order] max-h-[90vh]'>
+    <div className='absolute left-0 w-[21vw] min-w-[17.8125rem] min-h-[100vh] px-4 overflow-auto bg-white shadow-shadows-modal animate-[0.3s_cubic-bezier(0.4,0,0,1.5)_0s_1_normal_forwards_running_modal-animation-order] max-h-[90vh] tablet:min-w-[18.75rem] laptop:min-w-[25rem]'>
         <div className='flex flex-col mt-4 '>
             <p className='font-iransans font-bold text-xs inline-block text-carbon-light'>سفارش‌های پیشین</p>
             <div className='mt-3  border-carbon-alphaMedium border-t-border-xs border-l-border-xs border-r-border-xs rounded-t-xl '>
