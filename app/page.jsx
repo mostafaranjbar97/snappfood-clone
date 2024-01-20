@@ -37,7 +37,7 @@ export default function Home() {
         <SearchModal/>
       </main>
       <Cities/>
-      <Footer/>
+      
     </>
   )
 }
