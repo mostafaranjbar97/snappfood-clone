@@ -45,7 +45,7 @@ function SliderCard() {
                                     <div className='flex items-center'>
                                         <div className='flex flex-col items-start'>
                                             <span className='font-iransans font-bold text-xs text-carbon-main inline-block'> ۵,۰۰۰ 
-                                                <span className='font-iransans text-xs text-carbon-main inline-block'>تومان</span>
+                                                <span className='font-iransans font-normal text-xs text-carbon-main inline-block'>تومان</span>
                                             </span>
                                         </div>
                                     </div>
