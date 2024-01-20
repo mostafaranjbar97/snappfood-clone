@@ -7,6 +7,7 @@ import FoodParty from "@/components/Home/FoodParty/FoodParty";
 import ResturantSlider from "@/components/Home/ResturantSlider/ResturantSlider";
 import VendorRegister from "@/components/Home/VendorRegister/VendorRegister";
 import AddressModal from "@/components/Modal/AddressModal";
+import NewAddressModal from "@/components/Modal/NewAddressModal";
 import OrderCommentModal from "@/components/Modal/OrderCommentModal";
 import OrderInvoiceModal from "@/components/Modal/OrderInvoiceModal";
 import OrderModal from "@/components/Modal/OrderModal";
@@ -28,7 +29,8 @@ export default function Home() {
         {/* <OrderModal/> */}
         {/* <OrderCommentModal/> */}
         {/* <OrderInvoiceModal/> */}
-        <AddressModal/>
+        {/* <AddressModal/> */}
+        {/* <NewAddressModal/> */}
       </main>
       <Cities/>
       <Footer/>
