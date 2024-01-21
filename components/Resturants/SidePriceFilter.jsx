@@ -28,7 +28,7 @@ function SidePriceFilter() {
             <div  className='z-10 w-[7.3125rem] p-2.5 flex justify-center items-center' id={3} onClick={handler}>
                 <p className={clsx( 'font-iransans text-sm inline-block ',getSearch==3 ? 'text-accent2-main' : 'text-carbon-main' )}>متوسط</p>
             </div>
-            <div id='4' className='z-10 w-[7.3125rem] p-2.5 flex justify-center items-center' onClick={(e)=>console.log(e)}>
+            <div id='4' className='z-10 w-[7.3125rem] p-2.5 flex justify-center items-center' onClick={(e)=>{console.log(e)}}>
                 <p className={clsx( 'font-iransans text-sm inline-block ',getSearch==4 ? 'text-accent2-main' : 'text-carbon-main' )}>گران</p>
             </div>
         </div>

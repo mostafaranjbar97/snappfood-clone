@@ -2,6 +2,7 @@ import React from 'react'
 import SideCategory from './SideCategory'
 import { fetchData } from '@/libs/fetchData';
 import SidePriceFilter from './SidePriceFilter';
+import SideFilter from './SideFilter';
 
 async function Sidebar() {
     const { restaurantCategory }=await fetchData();
@@ -12,6 +13,7 @@ async function Sidebar() {
             <nav className='min-h-[9.375rem] flex flex-col'>
                 <SideCategory restaurantCategory={restaurantCategory}/>
                 <SidePriceFilter/>
+                <SideFilter/>
             </nav>
         </div>
     </aside>
