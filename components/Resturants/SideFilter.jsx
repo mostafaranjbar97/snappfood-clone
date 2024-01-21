@@ -45,7 +45,7 @@ function SideFilter() {
                 </label>
             </div>
 
-            <div className='border-b border-b-carbon-alphaLight min-h-[3.4375rem] flex justify-between items-center'>
+            <div className=' min-h-[3.4375rem] flex justify-between items-center'>
                 <span className='font-iransans text-sm text-carbon-main inline-block'>خوش‌قیمت</span>
                 <label htmlFor="" className='flex items-center select-none ltr'>
                     <input type="checkbox" className='hidden p-0 box-border' />
