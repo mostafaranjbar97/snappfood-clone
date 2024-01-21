@@ -4997,7 +4997,7 @@
   "restaurantCategory": [
     {
       "id": 1,
-      "categoryId": "",
+      "categoryId": 0,
       "isShowInHome": true,
       "isShowInMenu": true,
       "name": "ایرانی",
@@ -5006,7 +5006,7 @@
     },
     {
       "id": 2,
-      "categoryId": "",
+      "categoryId": 0,
       "isShowInHome": true,
       "isShowInMenu": true,
       "name": "فست فود",
@@ -5015,7 +5015,7 @@
     },
     {
       "id": 3,
-      "categoryId": 1,
+      "categoryId": 0,
       "isShowInHome": true,
       "isShowInMenu": true,
       "name": "کباب",

@@ -18,7 +18,7 @@ import SupportModal from "@/components/Modal/SupportModal";
 export default function Home() {
   return (
     <>
-      <Header/>
+    
       <main className="p-4 pt-0 grow box-border w-full max-w-[85.375rem] mx-auto tablet:p-6 laptop:p-10">
         <Category/>
         <FoodParty/>
@@ -36,7 +36,7 @@ export default function Home() {
         {/* <SupportModal/> */}
         <SearchModal/>
       </main>
-      <Cities/>
+      {/* <Cities/> */}
       
     </>
   )
