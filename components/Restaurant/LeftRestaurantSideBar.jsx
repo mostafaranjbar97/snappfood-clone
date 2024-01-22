@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import React from 'react'
 import DeliveryInfoModal from '../Modal/DeliveryInfoModal'
+import Cart from './Cart'
 
 function LeftRestaurantSideBar() {
   return (
@@ -28,6 +29,7 @@ function LeftRestaurantSideBar() {
                     </div>
                 </div>
             </div>
+            <Cart/>
         </div>
     </aside>
   )
