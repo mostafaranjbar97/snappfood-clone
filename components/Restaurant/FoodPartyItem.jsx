@@ -1,9 +1,9 @@
 import Image from 'next/image'
 import React from 'react'
 
-function FoodCard() {
+function FoodPartyItem() {
   return (
-    <div className='w-full border-border-xs border-surface-dark box-border p-0 max-w-full basis-full laptop:max-w-[50%] laptop:basis-1/2'>
+    <div className='w-full border-border-xs border-surface-dark box-border max-w-full basis-full laptop:max-w-[50%] laptop:basis-1/2'>
         <section className='box-border h-full py-4 flex flex-col'>
             <div className='px-4 cursor-pointer flex'>
                 <div className='flex flex-col pt-4 pl-4 grow'>
@@ -15,6 +15,15 @@ function FoodCard() {
                 </div>
             </div>
             <div className='flex flex-col'>
+                <div className='px-4'>
+                    <div className='mt-4'>
+                        <p className='mb-2 font-iransans font-bold text-sm inline-block text-carbon-main'>۱۰</p>
+                        <p className='mb-2 font-iransans text-xs inline-block text-carbon-main'>عدد باقی مانده</p>
+                        <div className='mb-2 h-0.5 bg-surface-dark w-full rtl'>
+                            <div className='w-full h-full bg-inactive-dark text-right transition-all'></div>
+                        </div>
+                    </div>
+                </div>
                 <footer className='mt-2 flex justify-between items-center group'>
                     <div className='px-3 w-full min-h-[3.5625rem] transition-all duration-300 flex justify-between items-center hover:bg-surface-main'>
                         <div className='flex items-start flex-col'>
@@ -45,4 +54,4 @@ function FoodCard() {
   )
 }
 
-export default FoodCard
+export default FoodPartyItem
