@@ -1,4 +1,5 @@
 
+import RestaurantInfoModal from '@/components/Modal/RestaurantInfoModal'
 import CategorySectionsContainer from '@/components/Restaurant/CategorySectionsContainer'
 import LeftRestaurantSideBar from '@/components/Restaurant/LeftRestaurantSideBar'
 import RightRestaurantSideBar from '@/components/Restaurant/RightRestaurantSideBar'
@@ -14,6 +15,9 @@ function Resturants() {
                     <CategorySectionsContainer/>
                 </section>
                 <LeftRestaurantSideBar/>
+                <div>
+                    <RestaurantInfoModal/>
+                </div>
            </div>
         </main>
     
