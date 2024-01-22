@@ -1,5 +1,6 @@
 
 import CategorySectionsContainer from '@/components/Restaurant/CategorySectionsContainer'
+import LeftRestaurantSideBar from '@/components/Restaurant/LeftRestaurantSideBar'
 import RightRestaurantSideBar from '@/components/Restaurant/RightRestaurantSideBar'
 import React from 'react'
 
@@ -12,6 +13,7 @@ function Resturants() {
                 <section className='max-w-full basis-full box-border p-4 tablet:max-w-[50%] tablet:basis-6/12 ' >
                     <CategorySectionsContainer/>
                 </section>
+                <LeftRestaurantSideBar/>
            </div>
         </main>
     
