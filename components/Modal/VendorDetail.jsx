@@ -1,12 +1,13 @@
 import Image from 'next/image'
 import React from 'react'
+import CommentItem from './CommentItem'
 
 function VendorDetail() {
   return (
     <div className='h-[calc(90vh-16rem)] overflow-y-auto'>
         <div className='h-[6.75rem] flex'>
             <div className='pr-5 pb-4 flex justify-end flex-col'>
-                <p className='font-iransans font-bold text-2xl inline-block text-carbon-main flex'>
+                <p className='font-iransans font-bold text-2xl  text-carbon-main flex'>
                     <Image width={20} height={20} src={"/icons/modal/rate-star.svg"} className='ml-2'/>
                     ۴.۳
                 </p>
@@ -22,37 +23,37 @@ function VendorDetail() {
             <div className='pb-4 flex justify-end items-end flex-col '>
 
                 <div className='flex items-center mt-[0.3125rem] '>
-                    <Image width={12} height={12} src={"/icons/modal/rate-star.svg"} className='pr-2'/>
-                    <Image width={12} height={12} src={"/icons/modal/rate-star.svg"} className='pr-2'/>
-                    <Image width={12} height={12} src={"/icons/modal/rate-star.svg"} className='pr-2'/>
-                    <Image width={12} height={12} src={"/icons/modal/rate-star.svg"} className='pr-2'/>
-                    <Image width={12} height={12} src={"/icons/modal/rate-star.svg"} className='pr-2'/>
+                    <Image width={12} height={12} src={"/icons/modal/gray-star.svg"} className=''/>
+                    <Image width={12} height={12} src={"/icons/modal/gray-star.svg"} className='mr-2'/>
+                    <Image width={12} height={12} src={"/icons/modal/gray-star.svg"} className='mr-2'/>
+                    <Image width={12} height={12} src={"/icons/modal/gray-star.svg"} className='mr-2'/>
+                    <Image width={12} height={12} src={"/icons/modal/gray-star.svg"} className='mr-2'/>
                     <div className='w-[25.25rem] h-0.5 mr-4 bg-surface-dark rounded flex after:w-[60%] after:bg-[rgb(2,137,10)] after:rounded-lg after:shadow-shadows-small '></div>
                 </div>
 
                 <div className='flex items-center mt-[0.3125rem] '>
-                    <Image width={12} height={12} src={"/icons/modal/rate-star.svg"} className='pr-2'/>
-                    <Image width={12} height={12} src={"/icons/modal/rate-star.svg"} className='pr-2'/>
-                    <Image width={12} height={12} src={"/icons/modal/rate-star.svg"} className='pr-2'/>
-                    <Image width={12} height={12} src={"/icons/modal/rate-star.svg"} className='pr-2'/>
+                    <Image width={12} height={12} src={"/icons/modal/gray-star.svg"} className='mr-2'/>
+                    <Image width={12} height={12} src={"/icons/modal/gray-star.svg"} className='mr-2'/>
+                    <Image width={12} height={12} src={"/icons/modal/gray-star.svg"} className='mr-2'/>
+                    <Image width={12} height={12} src={"/icons/modal/gray-star.svg"} className='mr-2'/>
                     <div className='w-[25.25rem] h-0.5 mr-4 bg-surface-dark rounded flex after:w-[60%] after:bg-[rgb(104,195,66)] after:rounded-lg after:shadow-shadows-small '></div>
                 </div>
 
                 <div className='flex items-center mt-[0.3125rem] '>
-                    <Image width={12} height={12} src={"/icons/modal/rate-star.svg"} className='pr-2'/>
-                    <Image width={12} height={12} src={"/icons/modal/rate-star.svg"} className='pr-2'/>
-                    <Image width={12} height={12} src={"/icons/modal/rate-star.svg"} className='pr-2'/>
+                    <Image width={12} height={12} src={"/icons/modal/gray-star.svg"} className='mr-2'/>
+                    <Image width={12} height={12} src={"/icons/modal/gray-star.svg"} className='mr-2'/>
+                    <Image width={12} height={12} src={"/icons/modal/gray-star.svg"} className='mr-2'/>
                     <div className='w-[25.25rem] h-0.5 mr-4 bg-surface-dark rounded flex after:w-[11%] after:bg-[rgb(171,232,35)] after:rounded-lg after:shadow-shadows-small '></div>
                 </div>
 
                 <div className='flex items-center mt-[0.3125rem] '>
-                    <Image width={12} height={12} src={"/icons/modal/rate-star.svg"} className='pr-2'/>
-                    <Image width={12} height={12} src={"/icons/modal/rate-star.svg"} className='pr-2'/>
+                    <img width={12} height={12} src={"/icons/modal/gray-star.svg"} className='mr-2'/>
+                    <img width={12} height={12} src={"/icons/modal/gray-star.svg"} className='mr-2'/>
                     <div className='w-[25.25rem] h-0.5 mr-4 bg-surface-dark rounded flex after:w-[3%] after:bg-[rgb(254,157,7)] after:rounded-lg after:shadow-shadows-small '></div>
                 </div>
 
                 <div className='flex items-center mt-[0.3125rem] '>
-                    <Image width={12} height={12} src={"/icons/modal/rate-star.svg"} className='pr-2'/>
+                    <Image width={12} height={12} src={"/icons/modal/gray-star.svg"} className='mr-2 '/>
                     <div className='w-[25.25rem] h-0.5 mr-4 bg-surface-dark rounded flex after:w-[6%] after:bg-[rgb(254,57,0)] after:rounded-lg after:shadow-shadows-small '></div>
                 </div>
             </div>
@@ -73,6 +74,13 @@ function VendorDetail() {
                     </div>
                 </div>
             </div>
+        </div>
+
+        <div className='flex flex-col'>
+            <CommentItem/>
+            <CommentItem/>
+            <CommentItem/>
+            <CommentItem/>
         </div>
 
     </div>
