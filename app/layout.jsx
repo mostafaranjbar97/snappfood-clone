@@ -2,6 +2,8 @@
 import Footer from '@/components/Footer/Footer'
 import './globals.css'
 import Header from '@/components/Header/Header'
+import Services from '@/components/Header/Services'
+import Navbar from '@/components/Header/Navbar'
 
 
 export const metadata = {
@@ -12,8 +14,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="fa">
-      <body>
-        {/* <Header/> */}
+      <body>     
+        <Header/>
+        <Navbar/>
         {children}
         <Footer/>
       </body>

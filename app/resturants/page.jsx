@@ -8,7 +8,7 @@ import React from 'react'
 function Resturants() {
   return (
     <>
-        {/* <BreadCrumbs/>     */}
+        <BreadCrumbs/>    
         <main className='p-6 box-border w-full grow max-w-[85.375rem] mx-auto'>
            <Sort/>
            <div className='box-border w-[calc(100%+2rem)] -m-4 flex flex-wrap'>

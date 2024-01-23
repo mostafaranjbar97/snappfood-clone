@@ -3,7 +3,7 @@ import Link from 'next/link'
 import React from 'react'
 
 function Header() {
-  return (
+  return ( 
     <div className='sticky transition-all duration-300 translate-y-0 top-0 right-0 left-0 z-[999] w-full flex flex-col'>
         <header className='w-full bg-white shadow-shadows-small flex flex-col'>
             <div className='relative animate-[auto_ease_0s_1_normal_none_running_none_!important] w-full top-0 right-0 left-0 bg-white box-border h-[4.5rem] p-4 flex justify-between items-center'>
@@ -37,81 +37,8 @@ function Header() {
                     </div>
                 </div>
             </div>
-            <nav className='mt-4 overflow-x-auto flex'>
-
-                <Link className='grow' href={"/"} title='رستوران' >
-                    <div className='min-w-[5.5rem] pb-4 cursor-pointer flex justify-center items-center flex-col'>
-                        <img src="https://cdn.snappfood.ir/uploads/images/review-app/icons/count/desktop_1_603508bf202d8_img_st_food.png" alt="رستوران" className='mb-4 w-10 h-10' />
-                        <span className='font-iransans text-xs text-carbon-light inline-block'>رستوران</span>
-                    </div>
-                </Link>
-
-                <Link className='grow' href={"/"} title='رستوران' >
-                    <div className='min-w-[5.5rem] pb-4 cursor-pointer flex justify-center items-center flex-col'>
-                        <img src="https://cdn.snappfood.ir/uploads/images/review-app/icons/count/desktop_1_603508bf202d8_img_st_food.png" alt="رستوران" className='mb-4 w-10 h-10' />
-                        <span className='font-iransans text-xs text-carbon-light inline-block'>رستوران</span>
-                    </div>
-                </Link>
-
-                <Link className='grow' href={"/"} title='رستوران' >
-                    <div className='min-w-[5.5rem] pb-4 cursor-pointer flex justify-center items-center flex-col'>
-                        <img src="https://cdn.snappfood.ir/uploads/images/review-app/icons/count/desktop_1_603508bf202d8_img_st_food.png" alt="رستوران" className='mb-4 w-10 h-10' />
-                        <span className='font-iransans text-xs text-carbon-light inline-block'>رستوران</span>
-                    </div>
-                </Link>
-
-                <Link className='grow' href={"/"} title='رستوران' >
-                    <div className='min-w-[5.5rem] pb-4 cursor-pointer flex justify-center items-center flex-col'>
-                        <img src="https://cdn.snappfood.ir/uploads/images/review-app/icons/count/desktop_1_603508bf202d8_img_st_food.png" alt="رستوران" className='mb-4 w-10 h-10' />
-                        <span className='font-iransans text-xs text-carbon-light inline-block'>رستوران</span>
-                    </div>
-                </Link>
-
-                <Link className='grow' href={"/"} title='رستوران' >
-                    <div className='min-w-[5.5rem] pb-4 cursor-pointer flex justify-center items-center flex-col'>
-                        <img src="https://cdn.snappfood.ir/uploads/images/review-app/icons/count/desktop_1_603508bf202d8_img_st_food.png" alt="رستوران" className='mb-4 w-10 h-10' />
-                        <span className='font-iransans text-xs text-carbon-light inline-block'>رستوران</span>
-                    </div>
-                </Link>
-
-                <Link className='grow' href={"/"} title='رستوران' >
-                    <div className='min-w-[5.5rem] pb-4 cursor-pointer flex justify-center items-center flex-col'>
-                        <img src="https://cdn.snappfood.ir/uploads/images/review-app/icons/count/desktop_1_603508bf202d8_img_st_food.png" alt="رستوران" className='mb-4 w-10 h-10' />
-                        <span className='font-iransans text-xs text-carbon-light inline-block'>رستوران</span>
-                    </div>
-                </Link>
-
-                <Link className='grow' href={"/"} title='رستوران' >
-                    <div className='min-w-[5.5rem] pb-4 cursor-pointer flex justify-center items-center flex-col'>
-                        <img src="https://cdn.snappfood.ir/uploads/images/review-app/icons/count/desktop_1_603508bf202d8_img_st_food.png" alt="رستوران" className='mb-4 w-10 h-10' />
-                        <span className='font-iransans text-xs text-carbon-light inline-block'>رستوران</span>
-                    </div>
-                </Link>
-
-                <Link className='grow' href={"/"} title='رستوران' >
-                    <div className='min-w-[5.5rem] pb-4 cursor-pointer flex justify-center items-center flex-col'>
-                        <img src="https://cdn.snappfood.ir/uploads/images/review-app/icons/count/desktop_1_603508bf202d8_img_st_food.png" alt="رستوران" className='mb-4 w-10 h-10' />
-                        <span className='font-iransans text-xs text-carbon-light inline-block'>رستوران</span>
-                    </div>
-                </Link>
-
-                <Link className='grow' href={"/"} title='رستوران' >
-                    <div className='min-w-[5.5rem] pb-4 cursor-pointer flex justify-center items-center flex-col'>
-                        <img src="https://cdn.snappfood.ir/uploads/images/review-app/icons/count/desktop_1_603508bf202d8_img_st_food.png" alt="رستوران" className='mb-4 w-10 h-10' />
-                        <span className='font-iransans text-xs text-carbon-light inline-block'>رستوران</span>
-                    </div>
-                </Link>
-
-                <Link className='grow' href={"/"} title='رستوران' >
-                    <div className='min-w-[5.5rem] pb-4 cursor-pointer flex justify-center items-center flex-col'>
-                        <img src="https://cdn.snappfood.ir/uploads/images/review-app/icons/count/desktop_1_603508bf202d8_img_st_food.png" alt="رستوران" className='mb-4 w-10 h-10' />
-                        <span className='font-iransans text-xs text-carbon-light inline-block'>رستوران</span>
-                    </div>
-                </Link>
-                
-            </nav>
         </header>
-    </div>
+        </div>
   )
 }
 

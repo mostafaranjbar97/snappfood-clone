@@ -34,9 +34,9 @@ export default function Home() {
         {/* <AddressModal/> */}
         {/* <NewAddressModal/> */}
         {/* <SupportModal/> */}
-        <SearchModal/>
+        {/* <SearchModal/> */}
       </main>
-      {/* <Cities/> */}
+      <Cities/>
       
     </>
   )

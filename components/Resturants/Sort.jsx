@@ -13,10 +13,10 @@ function Sort() {
         </select> */}
         <div></div>
         <div className='rtl relative box-border text-base leading-6'>
-            <span className='z-[9999] h-px w-px absolute whitespace-nowrap'></span>
+            <span className='z-[99] h-px w-px absolute whitespace-nowrap'></span>
             <div className='flex items-center justify-between rounded-md bg-white flex-wrap min-h-[38px] relative box-border w-[200px] h-12 transition-all border border-carbon-alphaLight outline-0 hover:border-[rgb(179,179,179)] focus:shadow-[rgb(38,132,255)_0px_0px_0px_1px]'>
                 <div className='flex items-center flex-wrap grow shrink basis-0 py-0.5 px-2 relative overflow-hidden box-border'>
-                    <div className='text-[rgb(128,128,128)] mx-0.5 absolute top-1/2 -translate-y-1/2 box-border max-w-[calc(100%-8px)] overflow-hidden text-ellipsis whitespace-nowrap opacity-100 z-[1000]'>به ترتیب پیش‌فرض</div>
+                    <div className='text-[rgb(128,128,128)] mx-0.5 absolute top-1/2 -translate-y-1/2 box-border max-w-[calc(100%-8px)] overflow-hidden text-ellipsis whitespace-nowrap opacity-100 z-[10]'>به ترتیب پیش‌فرض</div>
                     <div className='m-0.5 py-0.5 box-border'>
                         <div className='inline-block'>
                             <input type="text" name="" id="" className='w-0.5 bg-[0px_center] opacity-100 box-content ' />
