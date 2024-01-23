@@ -14,7 +14,7 @@ import React from 'react'
 
   return (
     
-    <nav className={clsx('pt-4 overflow-x-auto flex bg-white', !isHomePage ? "shadow-shadows-small-r" : "shadow-shadows-small", isHomePage && "sticky top-[84px] right-0 left-0 w-full", !(isHomePage||isRestaurantsPage) && "hidden")}>
+    <nav className={clsx('pt-4 z-20 overflow-x-auto flex bg-white', !isHomePage ? "shadow-shadows-small-r" : "shadow-shadows-small", isHomePage && "sticky top-[72px] right-0 left-0 w-full", !(isHomePage||isRestaurantsPage) && "hidden")}>
     {services.map((item) => (
                 <Link href={"/"} className='grow ' key={item.id}>
                     <div className='min-w-[5.5rem] pb-4 cursor-pointer flex justify-center items-center flex-col'>
