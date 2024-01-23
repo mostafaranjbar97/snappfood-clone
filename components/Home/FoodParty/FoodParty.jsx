@@ -49,7 +49,7 @@ async function FoodParty() {
                 </Link>
             </div>
           
-            <FoodPartySlider/>
+            <FoodPartySlider restaurants={restaurants}/>
             
         
 {/* 

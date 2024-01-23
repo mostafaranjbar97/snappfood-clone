@@ -8,7 +8,7 @@ import { useCallback, useRef } from 'react';
 import Image from 'next/image';
 import FoodPartyCard from './FoodPartyCard';
 
-function FoodPartySlider()  {
+function FoodPartySlider({restaurants})  {
     const sliderRef = useRef(null);
 
   const handlePrev = useCallback(() => {
@@ -22,6 +22,14 @@ function FoodPartySlider()  {
     sliderRef.current.swiper.slideNext();
     console.log(sliderRef.current.swiper.activeIndex)
   }, []);
+
+  const foods=restaurants.map((res)=>res.foods)
+    const food=foods.flat()
+    const offtime=food.filter((food)=>food.numberRemaining!=="")
+    // const restaurantId=offtime.map((food)=>food.restaurantId)
+    const takhfif2=restaurants.filter((res)=>res.id==offtime.map((food)=>{food.restaurantId}) )
+    const takhfif=offtime.map((food,index)=>restaurants.filter((res)=>res.id==food.restaurantId)).flat()
+    // console.log(takhfif)
 
   return (
 
@@ -52,7 +60,22 @@ function FoodPartySlider()  {
       onSlideChange={() => console.log('slide change')}
       onSwiper={(swiper) => console.log(swiper)}
     >
-    <SwiperSlide>
+
+  {offtime.map((food,index)=>{
+            return(
+              <SwiperSlide>
+                  <FoodPartyCard food={food} takhfif={takhfif} index={index}/>
+              </SwiperSlide>
+                // <div>
+                //     <p>name:{food.name}</p>
+                //     <p>numberRemaining:{food.numberRemaining}</p>
+                //     <p>price:{food.price}</p>
+                //     <p>resturant id :{food.restaurantId}</p>
+                //     <p>resturant:{takhfif[index].name}</p>
+                // </div>
+            )
+        })}
+    {/* <SwiperSlide>
         <FoodPartyCard/>
     </SwiperSlide>
     <SwiperSlide>
@@ -69,7 +92,7 @@ function FoodPartySlider()  {
     </SwiperSlide>
     <SwiperSlide>
     <FoodPartyCard/>
-    </SwiperSlide>
+    </SwiperSlide> */}
         
    
     <div className="prev-arrow -left-3 absolute top-[45%] b-0 z-[30000] h-8 opacity-100 scale-100 transition-all ease-in-out duration-500 hidden laptop:block " onClick={handleNext} >

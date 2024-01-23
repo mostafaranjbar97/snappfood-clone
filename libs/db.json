@@ -1870,8 +1870,8 @@
           "images": [
             "https://cdn.snappfood.ir/641x641/cdn/10/79/1/product_image/zoodfood/5eba3da5cfef3.jpg"
           ],
-          "price": 165000,
-          "discount": "",
+          "price": "165000",
+          "discount": 15,
           "rate": 4.2,
           "desc": "۴۰۰ گرم برنج اعلا ایرانی ،۸۰ گرم گوشت ران گوسفند ته چین زعفرانی",
           "numberRemaining": 5,
