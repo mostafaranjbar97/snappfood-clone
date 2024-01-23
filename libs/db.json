@@ -5172,43 +5172,43 @@
       "id": 1,
       "title": "رستوران",
       "img": "https://cdn.snappfood.ir/uploads/images/review-app/icons/count/desktop_1_603508bf202d8_img_st_food.png",
-      "href": "/"
+      "href": "/resturants"
     },
     {
       "id": 2,
       "title": "سوپرمارکت",
       "img": "https://cdn.snappfood.ir/uploads/images/review-app/icons/count/desktop_4_603508a14ab73_img_st_supermarket.png",
-      "href": "/"
+      "href": "/supermarket"
     },
     {
       "id": 3,
       "title": "کافه",
       "img": "https://cdn.snappfood.ir/uploads/images/review-app/icons/count/desktop_2_603508b330711_img_st_cafe.png",
-      "href": "/"
+      "href": "/cafe"
     },
     {
       "id": 4,
       "title": "شیرینی",
       "img": "https://cdn.snappfood.ir/uploads/images/review-app/icons/count/desktop_3_603508a95b9be_img_st_sweet.png",
-      "href": "/"
+      "href": "/sweet"
     },
     {
       "id": 5,
       "title": "نانوایی",
       "img": "https://cdn.snappfood.ir/uploads/images/review-app/icons/count/desktop_5_60350898c61b5_img_st_bakery.png",
-      "href": "/"
+      "href": "/bakery"
     },
     {
       "id": 6,
       "title": "میوه",
       "img": "https://cdn.snappfood.ir/uploads/images/review-app/icons/count/desktop_6_6035088cbcde4_img_st_fruit.png",
-      "href": "/"
+      "href": "/fruit"
     },
     {
       "id": 7,
       "title": "پروتئین",
       "img": "https://cdn.snappfood.ir/uploads/images/review-app/icons/count/desktop_11_603507afc9a32_img_st_meat.png",
-      "href": "/"
+      "href": "/meat"
     },
     {
       "id": 8,
@@ -5220,13 +5220,13 @@
       "id": 9,
       "title": "آجیل",
       "img": "https://cdn.snappfood.ir/uploads/images/review-app/icons/count/desktop_7_60350883d6e43_img_st_nut.png",
-      "href": "/"
+      "href": "/icecream"
     },
     {
       "id": 10,
       "title": "سایر",
       "img": "https://cdn.snappfood.ir/uploads/images/review-app/icons/count/desktop_9_603b811b1d540_img_st_other2.png",
-      "href": "/"
+      "href": "/other"
     }
   ],
   "cities": [
