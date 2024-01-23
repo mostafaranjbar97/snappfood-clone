@@ -43,7 +43,7 @@ function RestaurantInfo() {
             </div>
 
             <div className='flex items-center flex-col'>
-                <Image width={19} height={14} src={"/icons/modal/shopping-cart.png"} />
+                <Image width={19} height={19} src={"/icons/modal/shopping-cart.png"} />
                 <p className='mt-2.5 mb-1 font-iransans text-xs inline-block text-carbon-main'>حداقل سبد خرید</p>
                 <span className='font-iransans text-sm inline-block text-carbon-main font-bold'> ۲۰,۰۰۰ 
                     <span className='font-iransans text-xs inline-block text-carbon-main'>تومان</span>

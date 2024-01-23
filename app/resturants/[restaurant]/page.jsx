@@ -1,4 +1,5 @@
 
+import FoodInfoModal from '@/components/Modal/FoodInfoModal'
 import RestaurantInfoModal from '@/components/Modal/RestaurantInfoModal'
 import CategorySectionsContainer from '@/components/Restaurant/CategorySectionsContainer'
 import LeftRestaurantSideBar from '@/components/Restaurant/LeftRestaurantSideBar'
@@ -16,7 +17,8 @@ function Resturants() {
                 </section>
                 <LeftRestaurantSideBar/>
                 <div>
-                    <RestaurantInfoModal/>
+                    {/* <RestaurantInfoModal/> */}
+                    <FoodInfoModal/>
                 </div>
            </div>
         </main>

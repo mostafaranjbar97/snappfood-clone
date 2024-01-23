@@ -17,11 +17,11 @@ function CommentItem() {
                 <p className='mb-3 font-iransans text-sm inline-block text-carbon-main'>ظرف بسته بندی بر خلاف ظرف های یک کلیویی که  مقاوم و عایق هستند، گیاهی بود.</p>
                 <div className='flex flex-wrap'>
 
-                    <div className='h-5 py-1 px-1.5 text-2xs bg-surface-dark rounded-md mb-2 ml-2 flex justify-center items-center'>
+                    <div className=' py-1 px-1.5 text-2xs bg-surface-dark rounded-md mb-2 ml-2 flex justify-center items-center'>
                         <p className='font-iransans text-2xs inline-block text-carbon-main'>حلیم  یک پرس (۴۰۰ تا ۵۰۰ گرم)</p>
                     </div>
 
-                    <div className='h-5 py-1 px-1.5 text-2xs bg-surface-dark rounded-md mb-2 ml-2 flex justify-center items-center'>
+                    <div className=' py-1 px-1.5 text-2xs bg-surface-dark rounded-md mb-2 ml-2 flex justify-center items-center'>
                         <p className='font-iransans text-2xs inline-block text-carbon-main'>حلیم  یک پرس (۴۰۰ تا ۵۰۰ گرم)</p>
                     </div>
 
