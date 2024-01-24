@@ -25,7 +25,9 @@ function BreadCrumbs({restaurants,restaurantCategory}) {
   if(search==3 || kabab.filter((cat)=>cat.id ==search).length>0 ) {
     search=3
   } 
-  console.log("restaurantId",restaurantId)
+
+  // console.log("restaurantId",restaurantId)
+  
   return (
     <div className='mt-[1.5625rem] pr-5 flex items-center'>
         <Link href={"/"} className='flex items-center cursor-pointer ml-2.5'>
