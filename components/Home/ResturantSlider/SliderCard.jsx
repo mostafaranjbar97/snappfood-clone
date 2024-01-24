@@ -5,7 +5,7 @@ import React from 'react'
 function SliderCard({restaurant}) {
 
      restaurant.restaurantCategory.length=3
-     const restaurantCategory=restaurant.restaurantCategory.join(",")
+     const restaurantCategory=restaurant.restaurantCategory.join(", ")
      let copon3
      if(restaurant.coupon){
         const copon=restaurant.coupon.map((coupon)=>` ${coupon.value} ${coupon.title}`)
