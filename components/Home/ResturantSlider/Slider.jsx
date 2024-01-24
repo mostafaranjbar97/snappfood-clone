@@ -14,13 +14,13 @@ function Slider({restaurants})  {
   const handlePrev = useCallback(() => {
     if (!sliderRef.current) return;
     sliderRef.current.swiper.slidePrev();
-    console.log(sliderRef.current.swiper.activeIndex)
+    // console.log(sliderRef.current.swiper.activeIndex)
   }, []);
 
   const handleNext = useCallback(() => {
     if (!sliderRef.current) return;
     sliderRef.current.swiper.slideNext();
-    console.log(sliderRef.current.swiper.activeIndex)
+    // console.log(sliderRef.current.swiper.activeIndex)
   }, []);
 
   return (
@@ -46,49 +46,18 @@ function Slider({restaurants})  {
           slidesPerGroup: 4
         },
       }}
-      onSlideChange={() => console.log('slide change')}
-      onSwiper={(swiper) => console.log(swiper)}
+      // onSlideChange={() => console.log('slide change')}
+      // onSwiper={(swiper) => console.log(swiper)}
     >
 
-{restaurants.map((res)=>{
-  return(
+    {restaurants.map((res)=>{
+      return(
 
-    <SwiperSlide key={res.id}>
-        <SliderCard restaurant={res}/>
-      </SwiperSlide>
-  )
-})}
-      {/* <SwiperSlide>
-        
-        <SliderCard/>
-
-      </SwiperSlide>
-      <SwiperSlide>
-      
-      <SliderCard/>
-
-      </SwiperSlide>
-      <SwiperSlide>
-       
-      <SliderCard/>
-
-      </SwiperSlide>
-      <SwiperSlide>
-       
-      <SliderCard/>
-
-      </SwiperSlide>
-      <SwiperSlide>
-       
-      <SliderCard/>
-
-      </SwiperSlide>
-      <SwiperSlide>
-        
-      <SliderCard/>
-
-      </SwiperSlide> */}
-
+        <SwiperSlide key={res.id}>
+            <SliderCard restaurant={res}/>
+          </SwiperSlide>
+      )
+    })}
 
       <div className="prev-arrow -left-6 absolute top-[55%] b-0 z-20 h-8 opacity-100 scale-100 transition-all ease-in-out duration-500 hidden laptop:block " onClick={handleNext} >
         <button className='inline-flex justify-center items-center box-border size-12 rounded-[50%] border-border-sm border-accent-alphaLight bg-white bg-clip-padding shadow-shadows-medium active:bg-accent-alphaMedium'>
