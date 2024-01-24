@@ -6,7 +6,7 @@ async function Category() {
 
   const {restaurantCategory} = await fetchData()
   const categoryShowInHome=restaurantCategory.filter((cat)=>cat.isShowInHome==true)
-  console.log(categoryShowInHome)
+
   return (
     <div className='flex flex-col mb-16'>
         <p className='font-iransans font-bold text-base inline-block text-carbon-light mb-8'>دسته بندی ها</p>

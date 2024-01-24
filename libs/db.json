@@ -1093,7 +1093,8 @@
       "name": "رستوران عمارت لاله",
       "restaurantCategory": [
         "ایرانی",
-        "کباب"
+        "کباب",
+        "سنتی"
       ],
       "restaurantCategoryId": [
         1,
@@ -1559,13 +1560,8 @@
       "totalPoints": 54251,
       "totalComments": 7145,
       "discount": 10,
-      "proUsers": true,
-      "coupon": [
-        {
-          "title": "مخصوص سفارش اول",
-          "value": "۵٪ تخفیف"
-        }
-      ],
+      "proUsers": 5,
+      "coupon": "",
       "image": "https://cdn.snappfood.ir/300x200/uploads/images/vendors/covers/5bb9afb785e64.jpg",
       "freeDelivery": false,
       "delivery": {
@@ -2071,7 +2067,7 @@
       "totalPoints": 17019,
       "totalComments": 2139,
       "discount": 25,
-      "proUsers": true,
+      "proUsers": 10,
       "coupon": [
         {
           "title": "مخصوص سفارش اول",
@@ -3273,8 +3269,17 @@
       "totalPoints": 10384,
       "totalComments": 2061,
       "discount": "",
-      "proUsers": true,
-      "coupon": "",
+      "proUsers": "",
+      "coupon": [
+        {
+          "title": "مخصوص سفارش اول",
+          "value": "۱۷٪ تخفیف"
+        },
+        {
+          "title": "مخصوص سفارش سوم",
+          "value": "۵٪ تخفیف"
+        }
+      ],
       "image": "https://cdn.snappfood.ir/300x200/uploads/images/vendor-cover-app-review/2/53.jpg",
       "freeDelivery": false,
       "delivery": {
@@ -4332,7 +4337,7 @@
       "totalPoints": 4112,
       "totalComments": 416,
       "discount": "",
-      "proUsers": true,
+      "proUsers": 7,
       "coupon": "",
       "image": "https://cdn.snappfood.ir/300x200/uploads/images/vendor-cover-app-review/11/19.jpg",
       "freeDelivery": false,

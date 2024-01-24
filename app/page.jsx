@@ -13,19 +13,28 @@ import OrderInvoiceModal from "@/components/Modal/OrderInvoiceModal";
 import OrderModal from "@/components/Modal/OrderModal";
 import SearchModal from "@/components/Modal/SearchModal";
 import SupportModal from "@/components/Modal/SupportModal";
+import { fetchData } from "@/libs/fetchData";
 
 
-export default function Home() {
+export default async function Home() {
+
+    const {restaurants}= await fetchData()
+    const cat=["پیشنهاد کاربران","تازه‌ها در اسنپ‌فود","برترین‌ها","جایزه خرید","مزه‌های خاص","دارای تخفیف","یک تجربه جدید","دارای کوپن","فقط در اسنپ‌فود"]
+
   return (
     <>
     
       <main className="p-4 pt-0 grow box-border w-full max-w-[85.375rem] mx-auto tablet:p-6 laptop:p-10">
         <Category/>
         <FoodParty/>
-        <ResturantSlider/>
-        <ResturantSlider/>
-        <ResturantSlider/>
-        <ResturantSlider/>
+        {
+          cat.map((cat)=>{
+            return(
+              <ResturantSlider title={cat} restaurants={restaurants}/>
+            )
+          })
+        }
+        
         <DownloadSection/>
         <VendorRegister/>
         {/* <OrderModal/> */}

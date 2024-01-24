@@ -8,7 +8,7 @@ import SliderCard from './SliderCard';
 import { useCallback, useRef } from 'react';
 import Image from 'next/image';
 
-function Slider()  {
+function Slider({restaurants})  {
     const sliderRef = useRef(null);
 
   const handlePrev = useCallback(() => {
@@ -49,7 +49,16 @@ function Slider()  {
       onSlideChange={() => console.log('slide change')}
       onSwiper={(swiper) => console.log(swiper)}
     >
-      <SwiperSlide>
+
+{restaurants.map((res)=>{
+  return(
+
+    <SwiperSlide key={res.id}>
+        <SliderCard restaurant={res}/>
+      </SwiperSlide>
+  )
+})}
+      {/* <SwiperSlide>
         
         <SliderCard/>
 
@@ -78,7 +87,7 @@ function Slider()  {
         
       <SliderCard/>
 
-      </SwiperSlide>
+      </SwiperSlide> */}
 
 
       <div className="prev-arrow -left-6 absolute top-[55%] b-0 z-20 h-8 opacity-100 scale-100 transition-all ease-in-out duration-500 hidden laptop:block " onClick={handleNext} >
