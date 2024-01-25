@@ -18,7 +18,7 @@ async function Restaurant() {
            <div className='box-border w-[calc(100%+2rem)] -m-4 flex flex-wrap'>
                 <RightRestaurantSideBar restaurants={restaurants}/>
                 <section className='max-w-full basis-full box-border p-4 tablet:max-w-[50%] tablet:basis-6/12 ' >
-                    <CategorySectionsContainer/>
+                    <CategorySectionsContainer restaurants={restaurants}/>
                 </section>
                 <LeftRestaurantSideBar/>
                 <div>

@@ -23,7 +23,7 @@ function SideFoodCategory({restaurants}) {
           restaurant.restCatsMenu.map((cat)=>{
             if(cat.name=="فودپارتی"){
               return (
-                <p id={cat.id} onClick={selectCatHandler} className={clsx('mb-4  py-0.5 px-3 text-sm cursor-pointer  font-iransans inline-block ',selectCat==cat.id ? "border-r-2 border-r-carbon-main laptop:border-l-carbon-main  laptop:border-l-2 laptop:border-r-0 font-bold text-carbon-main" : "text-carbon-light")}>
+                <p id={cat.id} key={cat.id} onClick={selectCatHandler} className={clsx('mb-4  py-0.5 px-3 text-sm cursor-pointer  font-iransans inline-block ',selectCat==cat.id ? "border-r-2 border-r-carbon-main laptop:border-l-carbon-main  laptop:border-l-2 laptop:border-r-0 font-bold text-carbon-main" : "text-carbon-light")}>
                   <span id={cat.id} className='relative flex items-center'>فود پارتی
                       <Image  id={cat.id} width={20} height={20} src={"/icons/restaurant/foodparty.svg"} className='ml-2'/> 
                   </span>
