@@ -17,7 +17,7 @@
       ],
       "address": "خیابان انقلاب، ضلع شمال غربی چهار راه ولی عصر، پیتزا شیلا (چهارراه ولیعصر)",
       "logo": "https://cdn.snappfood.ir/media/cache/vendor_logo/uploads/images/vendors/logos/5e425b4af195e.jpg",
-      "workingHours": "باز امروز از ساعت ۱۰:۳۰ تا ۲۲:۰۰",
+      "workingHours": "امروز از ساعت ۱۰:۳۰ تا ۲۲:۰۰",
       "paymentMethod": "آنلاین",
       "minimumCart": 140000,
       "rate": 4.7,
@@ -1102,7 +1102,7 @@
       ],
       "address": "خیابان کارگر شمالی، بالاتر از بلوار کشاورز، نبش کوچه ارجمند ، پلاک ۱، رستوران عمارت لاله",
       "logo": "https://cdn.snappfood.ir/media/cache/vendor_logo/uploads/images/vendors/logos/5b62e74fe412e.jpg",
-      "workingHours": "باز امروز از ساعت ۱۱ تا ۲۳",
+      "workingHours": "امروز از ساعت ۱۱ تا ۲۳",
       "paymentMethod": "آنلاین، اعتبار جایزه خرید",
       "minimumCart": 160000,
       "rate": 4.0,
@@ -1310,7 +1310,7 @@
           "numberRemaining": "",
           "categoryId": [
             4,
-            1
+            2
           ],
           "foodsComments": [
             {
@@ -1554,7 +1554,7 @@
       ],
       "address": "خیابان حجاب، روبه روی خانه والیبال، پلاک ۲۱، کترینگ صدرسان (فاطمی)",
       "logo": "https://cdn.snappfood.ir/media/cache/vendor_logo/uploads/images/vendors/logos/659e59da89811.jpg",
-      "workingHours": "باز امروز از ساعت ۱۰:۳۰ تا ۲۲:۰۰",
+      "workingHours": "امروز از ساعت ۱۰:۳۰ تا ۲۲:۰۰",
       "paymentMethod": "آنلاین، اعتبار جایزه خرید",
       "minimumCart": 150000,
       "rate": 4.8,
@@ -1631,7 +1631,7 @@
       "restCatsMenu": [
         {
           "id": 1,
-          "name": "کوپن‌ها"
+          "name": "فودپارتی"
         },
         {
           "id": 2,
@@ -1672,6 +1672,7 @@
           "desc": "یک سیخ سینه مرغ زعفرانی ۳۰۰ گرمی ، ۳۵۰ گرم برنج ایرانی ، کره حیوانی،گوجه کبابی",
           "numberRemaining": 1,
           "categoryId": [
+            1,
             2,
             3
           ],
@@ -1874,6 +1875,7 @@
           "desc": "۴۰۰ گرم برنج اعلا ایرانی ،۸۰ گرم گوشت ران گوسفند ته چین زعفرانی",
           "numberRemaining": 5,
           "categoryId": [
+            1,
             5,
             2
           ],
@@ -2062,7 +2064,7 @@
       ],
       "address": "میدان انقلاب، ضلع جنوب شرقی، پلاک ۱۹، ساندویچ ۹۹",
       "logo": "https://cdn.snappfood.ir/media/cache/vendor_logo/uploads/images/vendors/logos/5e6745c9b2ec0.JPG",
-      "workingHours": "باز امروز از ساعت ۸ تا ۲۳",
+      "workingHours": "امروز از ساعت ۸ تا ۲۳",
       "paymentMethod": "آنلاین",
       "minimumCart": 20000,
       "rate": 4.5,
@@ -2626,7 +2628,7 @@
       ],
       "address": "میدان ولی عصر، خیابان ورشو، خیابان حافظ، پلاک ۵۱۹، طبقه همکف، الین سوشی",
       "logo": "https://cdn.snappfood.ir/media/cache/vendor_logo/uploads/images/vendors/logos/6224f60a4e24b.png",
-      "workingHours": "باز امروز از ساعت ۱۹ تا ۲۳",
+      "workingHours": "امروز از ساعت ۱۹ تا ۲۳",
       "paymentMethod": "آنلاین، اعتبار جایزه خرید",
       "minimumCart": 100000,
       "rate": 3.5,
@@ -3266,7 +3268,7 @@
       ],
       "address": "میدان پاستور بالاتر از میدان پاستور، پلاک۱,۰۱۷، رستوران وزرا",
       "logo": "https://cdn.snappfood.ir/media/cache/vendor_logo/uploads/images/vendors/logos/5e219d08ab9ef.jpg",
-      "workingHours": "باز امروز از ساعت ۱۹ تا ۲۲",
+      "workingHours": "امروز از ساعت ۱۹ تا ۲۲",
       "paymentMethod": "آنلاین، اعتبار جایزه خرید",
       "minimumCart": 60000,
       "rate": 4.3,
@@ -3736,7 +3738,7 @@
       ],
       "address": "جمهوری، خیابان شهید حمیدرضا چنگیزی، خیابان نواب صفوی، پلاک ۵۶۹، تله پیتزا (میدان جمهوری)",
       "logo": "https://cdn.snappfood.ir/media/cache/vendor_logo/uploads/images/vendors/logos/64c4e64e5d559.png",
-      "workingHours": "باز امروز از ساعت ۱۱ تا ۲۳",
+      "workingHours": "امروز از ساعت ۱۱ تا ۲۳",
       "paymentMethod": "آنلاین، اعتبار جایزه خرید",
       "minimumCart": 50000,
       "rate": 4.1,
@@ -4336,7 +4338,7 @@
       ],
       "address": "بلوار کشاورز، بین خیابان ۱۶ آذر و خیابان قدس، پلاک ۲۵۸، فست فود ویس لند(شعبه کشاورز)",
       "logo": "https://cdn.snappfood.ir/media/cache/vendor_logo/uploads/images/vendors/logos/63ab007eed761.png",
-      "workingHours": "باز امروز از ساعت ۱۱ تا ۲۳",
+      "workingHours": "امروز از ساعت ۱۱ تا ۲۳",
       "paymentMethod": "آنلاین، اعتبار جایزه خرید",
       "minimumCart": 52000,
       "rate": 4.4,
