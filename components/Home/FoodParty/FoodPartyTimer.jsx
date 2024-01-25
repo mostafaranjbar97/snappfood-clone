@@ -32,8 +32,7 @@ function FoodPartyTimer() {
       }, []);
 
   return (
-    <div className='p-[0.3125rem] flex flex-col justify-center items-center'>
-        <div className='flex justify-center items-center '>
+
             <div className='min-w-[2.625rem] ml-1.5 pt-0.5 drop-shadow-[rgba(0,0,0,0.24)_0px_1px_0px] flex justify-center'>
                 <span className='w-6 text-center font-iransans font-bold text-lg text-white inline-block'>{sec}</span>
                 <span className='w-2 text-center font-iransans font-bold text-lg text-white inline-block'>:</span>
@@ -41,9 +40,7 @@ function FoodPartyTimer() {
                 <span className='w-2 text-center font-iransans font-bold text-lg text-white inline-block'>:</span>
                 <span className='w-6 text-center font-iransans font-bold text-lg text-white inline-block'>{hour}</span>
             </div>
-            <Image width={18} height={18} src={"/icons/home/clock.svg"} className='drop-shadow-[rgba(0,0,0,0.24)_0px_1px_0px] '/>
-        </div>
-    </div>
+
   )
 }
 
