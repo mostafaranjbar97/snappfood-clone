@@ -14,10 +14,11 @@ function Sort() {
 
 
     let sortBy=["بالاترین امتیاز","نزدیک‌ترین","جدیدترین","ارزان‌ترین","عملکرد کلی","گران‌ترین"]
+    const initialInputText= getSort ? sortBy[getSort-1]: "به ترتیب پیش‌فرض"
     const inputRef = useRef(null);
     const [showMenu,setShowMenu]=useState(false)
     const [selectMenu,setSelectMenu]=useState()
-    const [inputText,setInputText]=useState("به ترتیب پیش‌فرض")
+    const [inputText,setInputText]=useState(initialInputText)
     const [inputValue,setInputValue]=useState("")
 
     const inputHandler=(e)=>{
