@@ -5,7 +5,7 @@ import FoodPartyTimer from '../Home/FoodParty/FoodPartyTimer'
 
 function FoodPartySection({restaurant,cat}) {
 
-    const foodPartyFood= restaurant.foods.filter((food)=>food.categoryId.includes(cat))
+    const foodPartyFood= restaurant.foods.filter((food)=>food.categoryId.includes(cat.id))
   return (
     <section className='mb-4 bg-white border-t-border-xs border-surface-dark rounded-t-lg'>
         <section className='scroll-mt-[4.375rem]'>
