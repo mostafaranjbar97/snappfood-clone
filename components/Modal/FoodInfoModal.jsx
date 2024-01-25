@@ -1,11 +1,17 @@
 'use client'
 import Image from 'next/image'
-import React from 'react'
+import React, { useState } from 'react'
 import CommentItem from './CommentItem'
+import clsx from 'clsx';
 
-function FoodInfoModal({isOpen,handleClose}) {
+function FoodInfoModal({isOpen,handleClose,food}) {
 
     if (!isOpen) return null;
+    const foodWithDiscount=((food.price)*(100-(food.discount)))/100
+    const [showImg,setShowImg]=useState(food.images[0])
+    const albumHandler=(e)=>{
+        setShowImg(e.target.src)
+    }
 
   return (
     <div >
@@ -21,31 +27,32 @@ function FoodInfoModal({isOpen,handleClose}) {
             <div className='w-[35vw] min-w-[20rem] max-w-[45rem] max-h-[calc(90vh-4rem)] overflow-y-scroll flex flex-col laptop:w-[90vw]'>
                 <div className='px-4 pb-4 flex justify-between flex-col laptop:flex-row'>
                     <div className='max-w-[17.5rem]'>
-                        <Image alt='فرش برگر' width={280} height={280} src={"https://cdn.snappfood.ir/641x641/cdn/27/89/4/product_image/zoodfood/64d75c3b48028.jpg"} className='rounded-lg '/>
+                        <Image alt={food.name} width={280} height={280} src={showImg} className='rounded-lg '/>
                         <div className='flex flex-wrap'>
-                            <div className='mt-1.5 ml-2 cursor-pointer'>
-                                <Image alt='فرش برگر' width={40} height={40} src={"https://cdn.snappfood.ir/641x641/cdn/27/89/4/product_image/zoodfood/64d75c3b48028.jpg"} className='rounded-lg opacity-100' />
-                            </div>
-                            <div className='mt-1.5 ml-2 cursor-pointer'>
-                                <Image alt='فرش برگر' width={40} height={40} src={"https://cdn.snappfood.ir/641x641/cdn/27/89/4/product_image/zoodfood/64d75c3b48028.jpg"} className='rounded-lg opacity-70' />
-                            </div>
-                            <div className='mt-1.5 ml-2 cursor-pointer'>
-                                <Image alt='فرش برگر' width={40} height={40} src={"https://cdn.snappfood.ir/641x641/cdn/27/89/4/product_image/zoodfood/64d75c3b48028.jpg"} className='rounded-lg opacity-70' />
-                            </div>
+                            {
+                                food.images.length>1 && food.images.map((img,index)=>{
+                                    return(
+                                        <div key={index} id={index} className='mt-1.5 ml-2 cursor-pointer' onClick={albumHandler}>
+                                            <Image alt={food.name} width={40} height={40} src={img} className={clsx('rounded-lg ',showImg==img ? "opacity-100" : "opacity-70")} />
+                                        </div>
+                                    )
+                                })
+                            }
+
                         </div>
                     </div>
                     <div className='w-auto flex justify-start flex-col laptop:w-[24rem]'>
 
                         <div className='mb-4 flex justify-between items-center'>
-                            <p className='font-bold font-iransans text-lg inline-block text-carbon-main w-80'>فرش برگر</p>
+                            <p className='font-bold font-iransans text-lg inline-block text-carbon-main w-80'>{food.name}</p>
                             <span className='border-border-xs border-surface-dark py-0.5 px-1.5 rounded flex flex-wrap'>
                                 <Image width={12} height={12} src={"/icons/modal/rate-star.svg"} className='ml-1 align-middle'/>
-                                <span className='font-bold font-iransans text-xs inline-block text-carbon-main'>۴.۶</span>
+                                <span className='font-bold font-iransans text-xs inline-block text-carbon-main'>{food.rate}</span>
                             </span>
                         </div>
 
                         <div className='mb-10 flex'>
-                            <p className='font-iransans text-sm inline-block text-carbon-main'>همبرگر با گوشت تازه، گوجه، خیارشور، کاهو، سس مخصوص</p>
+                            <p className='font-iransans text-sm inline-block text-carbon-main'>{food.desc}</p>
                         </div>
 
                         <div className='flex flex-col'>
@@ -53,14 +60,14 @@ function FoodInfoModal({isOpen,handleClose}) {
                                 <div className='flex items-start flex-col'>
                                     <div className='flex flex-col'>
                                         <div className='flex'>
-                                            <span className='flex items-center justify-center grow py-0.5 px-1 rounded bg-accent-alphaLight m-1 font-iransans font-bold text-xs text-accent-main'>۱۰
+                                            {food.discount && <span className='flex items-center justify-center grow py-0.5 px-1 rounded bg-accent-alphaLight m-1 font-iransans font-bold text-xs text-accent-main'>{food.discount}
                                                 <span className='mr-1'>
                                                     <Image width={8} height={10} src={"/icons/restaurant/percent.svg"} />
                                                 </span>
-                                            </span>
+                                            </span>}
                                             <div className='flex items-start flex-col '>
-                                                <s className='font-iransans text-xs inline-block text-inactive-dark'>۲۵۲,۰۰۰</s>
-                                                <span className='font-iransans font-bold text-sm inline-block text-carbon-main'> ۲۲۶,۸۰۰ 
+                                                <s className='font-iransans text-xs inline-block text-inactive-dark'>{foodWithDiscount}</s>
+                                                <span className='font-iransans font-bold text-sm inline-block text-carbon-main'> {food.price} 
                                                     <span className='font-iransans text-sm inline-block text-carbon-main'>تومان</span>
                                                 </span>
                                             </div>
@@ -75,14 +82,19 @@ function FoodInfoModal({isOpen,handleClose}) {
 
                     </div>
                 </div>
-                <div className='p-4 flex justify-between'>
+                {food.foodsComments.length>0 &&<div className='p-4 flex justify-between'>
                     <p className='font-iransans font-bold text-base inline-block text-carbon-light'>نظرات کاربران</p>
-                </div>
+                </div>}
 
                 <div className='flex flex-col'>
-                    <CommentItem/>
-                    <CommentItem/>
-                    <CommentItem/>
+                    {
+                        food.foodsComments.map((comment)=>{
+                            return(
+                                <CommentItem key={comment.id} comment={comment}/>
+                            )
+                        })
+                    }
+
                 </div>
             </div>
 

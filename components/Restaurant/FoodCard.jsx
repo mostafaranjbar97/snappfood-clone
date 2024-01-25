@@ -3,7 +3,7 @@ import Image from 'next/image'
 import React, { useState } from 'react'
 import FoodInfoModal from '../Modal/FoodInfoModal'
 
-function FoodCard({food}) {
+function FoodCard({food,restaurant}) {
 
     const [open, setOpen] = useState(false);
  
@@ -19,7 +19,7 @@ function FoodCard({food}) {
     
   return (
     <>
-        <FoodInfoModal isOpen={open} handleClose={handleClose}/>
+        <FoodInfoModal isOpen={open} handleClose={handleClose} food={food} />
         <div className='w-full border-border-xs border-surface-dark box-border p-0 max-w-full basis-full laptop:max-w-[50%] laptop:basis-1/2'>
             <section className='box-border h-full py-4 flex flex-col'>
                 <div className='px-4 cursor-pointer flex' onClick={handleOpen}>

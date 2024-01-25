@@ -12,7 +12,7 @@ function CategorySection({restaurant,cat}) {
           {
             restaurantfood.map((food)=>{
               return(
-                <FoodCard key={food.id} food={food}/>
+                <FoodCard key={food.id} food={food} restaurant={restaurant}/>
               )
             })
           }
