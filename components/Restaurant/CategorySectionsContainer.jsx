@@ -13,13 +13,18 @@ function CategorySectionsContainer({restaurants}) {
   return (
     <section className='bg-white border-border-xs border-surface-dark rounded-lg '>
 
-        {hasFoodParty && <FoodPartySection cat={1} restaurant={restaurant}/>}
+        {/* {hasFoodParty && <FoodPartySection cat={1} restaurant={restaurant}/>} */}
         {restaurant.restCatsMenu.map((cat,index)=>{
-          return(
-            <CategorySection key={index} cat={cat} restaurant={restaurant}/>
-          )
-        })
-      }
+          if(index==0){
+            return(
+              <FoodPartySection key={index} cat={cat} restaurant={restaurant}/>
+            )}else{
+              return(
+                <CategorySection key={index} cat={cat} restaurant={restaurant}/>
+              )
+            }
+          }
+      )}
     </section>
   )
 }
