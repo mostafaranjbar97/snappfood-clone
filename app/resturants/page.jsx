@@ -16,7 +16,7 @@ async function Resturants() {
            <Sort/>
            <div className='box-border w-[calc(100%+2rem)] -m-4 flex flex-wrap'>
             <Sidebar/>
-            <RestaurantsContainer/>
+            <RestaurantsContainer restaurants={restaurants}/>
            </div>
         </main>
     </>
