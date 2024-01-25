@@ -20,7 +20,7 @@ async function Restaurant() {
                 <section className='max-w-full basis-full box-border p-4 tablet:max-w-[50%] tablet:basis-6/12 ' >
                     <CategorySectionsContainer restaurants={restaurants}/>
                 </section>
-                <LeftRestaurantSideBar/>
+                <LeftRestaurantSideBar restaurants={restaurants}/>
                 <div>
                     {/* <RestaurantInfoModal/> */}
                     <FoodInfoModal/>

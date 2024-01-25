@@ -1,9 +1,16 @@
+'use client'
 import Image from 'next/image'
 import React from 'react'
 import DeliveryInfoModal from '../Modal/DeliveryInfoModal'
 import Cart from './Cart'
+import { useParams } from 'next/navigation'
 
-function LeftRestaurantSideBar() {
+function LeftRestaurantSideBar({restaurants}) {
+
+    const params=useParams()
+    const restaurant=restaurants.filter((res)=>res.id==Number(params.restaurant))[0]
+    const {delivery}=restaurant
+
   return (
     <aside className='max-w-full basis-full box-border p-4 laptop:max-w-[25%] laptop:basis-3/12'>
         <div className='sticky top-[5.5rem] transition-[top]'>
@@ -22,9 +29,10 @@ function LeftRestaurantSideBar() {
             <div className='mb-2 px-3 py-1 bg-white border border-carbon-alphaLight rounded-lg flex '>
                 <div className='flex items-center justify-between grow shrink basis-0 py-3' >
                     <div className='flex items-center'>
-                        <Image width={20} height={20} src={"/icons/restaurant/delivery-express.svg"} className='ml-4'/> 
-                        <p className='font-iransans text-xs inline-block text-carbon-main'>اسنپ‌اکسپرس</p> 
-                        <span className='mr-1 font-iransans text-xs font-bold inline-block text-carbon-main'>۱۲,۸۰۰</span>
+                        {delivery.type== "اسنپ‌اکسپرس" ? <Image width={20} height={20} src={"/icons/restaurant/delivery-express.svg"} className='ml-4'/> 
+                        : <Image width={20} height={20} src={"/icons/restaurant/delivery-courier.svg"} className='ml-4'/> }
+                        <p className='font-iransans text-xs inline-block text-carbon-main'>{delivery.type}</p> 
+                        <span className='mr-1 font-iransans text-xs font-bold inline-block text-carbon-main'>{delivery.price}</span>
                         <span className='mr-1 font-iransans text-xs  inline-block text-carbon-main'>تومان</span>
                     </div>
                 </div>
