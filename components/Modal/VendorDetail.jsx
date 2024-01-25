@@ -2,20 +2,20 @@ import Image from 'next/image'
 import React from 'react'
 import CommentItem from './CommentItem'
 
-function VendorDetail() {
+function VendorDetail({restaurant}) {
   return (
     <div className='h-[calc(90vh-16rem)] overflow-y-auto'>
         <div className='h-[6.75rem] flex'>
             <div className='pr-5 pb-4 flex justify-end flex-col'>
                 <p className='font-iransans font-bold text-2xl  text-carbon-main flex'>
                     <Image width={20} height={20} src={"/icons/modal/rate-star.svg"} className='ml-2'/>
-                    ۴.۳
+                    {restaurant.rate}
                 </p>
                 <p className='font-iransans text-xs inline-block text-inactive-dark'>
                 از مجموع
-                <span className='font-iransans font-bold text-xs inline-block text-carbon-main mx-1'>۲۲,۲۹۵</span>
+                <span className='font-iransans font-bold text-xs inline-block text-carbon-main mx-1'>{restaurant.totalPoints}</span>
                 امتیاز و 
-                <span className='font-iransans font-bold text-xs inline-block text-carbon-main mx-1'>۳,۹۲۷</span>
+                <span className='font-iransans font-bold text-xs inline-block text-carbon-main mx-1'>{restaurant.totalComments}</span>
                 نظر
                 </p>
             </div>
@@ -77,10 +77,14 @@ function VendorDetail() {
         </div>
 
         <div className='flex flex-col'>
-            <CommentItem/>
-            <CommentItem/>
-            <CommentItem/>
-            <CommentItem/>
+            {
+                restaurant.restaurantComments.map((comment)=>{
+                    return(
+                        <CommentItem key={comment.id} comment={comment}/>
+                    )
+                })
+            }
+            
         </div>
 
     </div>
