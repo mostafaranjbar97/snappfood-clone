@@ -33,8 +33,8 @@ function FoodPartyCard({food,takhfif,index}) {
                   </span>
                 </span>
                 <div className='mt-1 flex items-baseline'>
-                  <span className={clsx('font-iransans font-bold text-sm text-right  inline-block',food.numberRemaining >= 3 ? "text-carbon-main" : "text-alert-main" )}>{food.numberRemaining}</span>
-                  <span className={clsx('mr-1 font-iransans font-light text-xs text-right  inline-block',food.numberRemaining >= 3 ? "text-carbon-main" : "text-alert-main" )}>عدد باقی مانده</span>
+                  <span className={clsx('font-iransans font-bold text-sm text-right  inline-block',food.numberRemaining > 3 ? "text-carbon-main" : "text-alert-main" )}>{food.numberRemaining}</span>
+                  <span className={clsx('mr-1 font-iransans font-light text-xs text-right  inline-block',food.numberRemaining > 3 ? "text-carbon-main" : "text-alert-main" )}>عدد باقی مانده</span>
                 </div>
               </div>
               <div className='flex justify-center items-end flex-col'>
