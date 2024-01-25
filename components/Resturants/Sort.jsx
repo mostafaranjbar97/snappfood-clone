@@ -98,7 +98,7 @@ function Sort() {
                     {
                         sortBy.filter((sortItem)=>sortItem.includes(inputValue)).map((sortItem,index)=>{
                             return(
-                                <div key={index} id={index+1} onClick={selectMenuHandler} className='bg-transparent py-2 px-3 w-full box-border select-none hover:bg-[rgb(222,235,255)] active:bg-[rgb(178,212,255)] focus:bg-[rgb(38,132,255)] focus:text-white'>{sortItem}</div>
+                                <div key={index} id={index+1} onClick={selectMenuHandler} className={clsx((getSort && index==getSort-1)? 'bg-[rgb(222,235,255)]': 'bg-transparent',' py-2 px-3 w-full box-border select-none hover:bg-[rgb(151,172,212)] active:bg-[rgb(178,212,255)] focus:bg-[rgb(38,132,255)] focus:text-white')}>{sortItem}</div>
                             )
                         })
                     }
