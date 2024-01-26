@@ -15,7 +15,7 @@ function CategorySectionsContainer({restaurants}) {
 
         {/* {hasFoodParty && <FoodPartySection cat={1} restaurant={restaurant}/>} */}
         {restaurant.restCatsMenu.map((cat,index)=>{
-          if(index==0){
+          if(index==0 && hasFoodParty){
             return(
               <FoodPartySection key={index} cat={cat} restaurant={restaurant}/>
             )}else{
