@@ -4,6 +4,7 @@ import './globals.css'
 import Header from '@/components/Header/Header'
 import Services from '@/components/Header/Services'
 import Navbar from '@/components/Header/Navbar'
+import Providers from '@/redux/Provider'
 
 
 export const metadata = {
@@ -14,11 +15,14 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="fa">
-      <body>     
-        <Header/>
-        <Navbar/>
-        {children}
-        <Footer/>
+      <body> 
+        <Providers>
+          <Header/>
+          <Navbar/>
+          {children}
+          <Footer/>
+        </Providers>    
+       
       </body>
     </html>
   )

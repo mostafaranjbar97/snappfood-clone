@@ -11,7 +11,7 @@ function CategorySection({restaurant,cat}) {
     <>
     
 
-          {isCouponCategory ? <section className='scroll-mt-[4.375rem] p-4 box-border '>
+          {isCouponCategory ? <section className='scroll-mt-[4.375rem] p-4 box-border section'>
             <p className='h-12 text-carbon-main font-bold text-xs flex justify-center items-center font-iransans '>{cat.name}</p>
             <div className='box-border w-full flex flex-wrap min-h-[4.25rem] '>
               {
@@ -28,7 +28,7 @@ function CategorySection({restaurant,cat}) {
               }
             </div>
           </section> :
-          <section className='scroll-mt-[4.375rem] mt-8  first:mt-0'>
+          <section className='scroll-mt-[4.375rem] mt-8  first:mt-0 section'>
           {/* first item dont have mt-8 */}
           <p className='h-12 text-carbon-light font-bold text-xs flex justify-center items-center font-iransans '>{cat.name}</p>
           <div className='border-border-xs border-surface-dark w-full box-border flex flex-wrap  '>
