@@ -3,8 +3,23 @@ import Image from 'next/image'
 import React, { useState } from 'react'
 import CommentItem from './CommentItem'
 import clsx from 'clsx';
+import { useDispatch, useSelector } from 'react-redux';
+import { setCloseFoodInfoModal } from '@/redux/features/OpenFoodInfoModalSlice';
 
-function FoodInfoModal({isOpen,handleClose,food}) {
+
+function FoodInfoModal({food,isOpen}) {
+
+    // const openFoodInfoModal=useSelector((store)=>store.openFoodInfoModal)
+    // const {isOpen,foodId,catId,resId}=openFoodInfoModal
+    // const restaurant=restaurants.filter((res)=>res.id==resId)[0]
+    // const restaurantfood= restaurant.foods.filter((food)=>food.categoryId.includes(catId))
+    // const food =restaurantfood.filter((food)=>food.id==foodId)[0]
+
+    const dispatch=useDispatch()
+    const handleClose = () => {
+        dispatch(setCloseFoodInfoModal())
+      };
+
 
     if (!isOpen) return null;
     const foodWithDiscount=((food.price)*(100-(food.discount)))/100
@@ -66,7 +81,7 @@ function FoodInfoModal({isOpen,handleClose,food}) {
                                                 </span>
                                             </span>}
                                             <div className='flex items-start flex-col '>
-                                                <s className='font-iransans text-xs inline-block text-inactive-dark'>{foodWithDiscount}</s>
+                                                {food.discount &&<s className='font-iransans text-xs inline-block text-inactive-dark'>{foodWithDiscount}</s>}
                                                 <span className='font-iransans font-bold text-sm inline-block text-carbon-main'> {food.price} 
                                                     <span className='font-iransans text-sm inline-block text-carbon-main'>تومان</span>
                                                 </span>

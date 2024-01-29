@@ -33,7 +33,7 @@ function CategorySectionsContainer({restaurants}) {
     const targetSections = document.querySelectorAll(".section");
 
     const observer = new IntersectionObserver((entries) => {
-      console.log(entries);
+      // console.log(entries);
       entries.forEach((entry) => {
         if (entry.isIntersecting ) {
           dispatch(setIsVisibleSection(entry.target.getAttribute("id")))
@@ -49,10 +49,30 @@ function CategorySectionsContainer({restaurants}) {
     });
   }, []);
 
+  useEffect(() => {
+    const targetSections = document.querySelectorAll(".section");
+
+    const observer = new IntersectionObserver((entries) => {
+      // console.log(entries);
+      entries.forEach((entry) => {
+        if (entry.isIntersecting ) {
+          dispatch(setIsVisibleSection(entry.target.getAttribute("id")))
+        }
+      });
+    },{
+      
+      rootMargin: "-40%"
+});
+
+    targetSections.forEach((section) => {
+      observer.observe(section);
+    });
+  }, []);
+
   const params=useParams()
   const restaurant=restaurants.filter((res)=>res.id==Number(params.restaurant))[0]
   const hasFoodParty=restaurant.restCatsMenu.some((cat)=>cat.name=="فودپارتی")
-  console.log(hasFoodParty)
+  // console.log(hasFoodParty)
   return (
     <section className='bg-white border-border-xs border-surface-dark rounded-lg ' ref={listRef}>
         {/* {hasFoodParty && <FoodPartySection cat={1} restaurant={restaurant}/>} */}
