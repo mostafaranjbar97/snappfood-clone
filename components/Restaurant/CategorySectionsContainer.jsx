@@ -3,9 +3,12 @@ import React, { useEffect, useRef } from 'react'
 import CategorySection from './CategorySection'
 import FoodPartySection from './FoodPartySection'
 import { useParams } from 'next/navigation'
-import { useSelector } from 'react-redux'
+import { useDispatch, useSelector } from 'react-redux'
+import { setIsVisibleSection } from '@/redux/features/IsVisibleSectionSlice'
 
 function CategorySectionsContainer({restaurants}) {
+  const dispatch = useDispatch();
+
 
   const selectedCategory=useSelector((store)=>store.categorySelected)
 
@@ -18,7 +21,7 @@ function CategorySectionsContainer({restaurants}) {
     const sectionNode = listNode.querySelectorAll('.section')[index];
     sectionNode.scrollIntoView({
       behavior: 'smooth',
-      block: 'start'
+      block: 'center'
     });
   }
   
@@ -26,7 +29,26 @@ function CategorySectionsContainer({restaurants}) {
     scrollToIndex(selectedCategory-1)
   },[selectedCategory])
 
-  
+  useEffect(() => {
+    const targetSections = document.querySelectorAll(".section");
+
+    const observer = new IntersectionObserver((entries) => {
+      console.log(entries);
+      entries.forEach((entry) => {
+        if (entry.isIntersecting ) {
+          dispatch(setIsVisibleSection(entry.target.getAttribute("id")))
+        }
+      });
+    },{
+      
+      rootMargin: "-50% -50%"
+});
+
+    targetSections.forEach((section) => {
+      observer.observe(section);
+    });
+  }, []);
+
   const params=useParams()
   const restaurant=restaurants.filter((res)=>res.id==Number(params.restaurant))[0]
   const hasFoodParty=restaurant.restCatsMenu.some((cat)=>cat.name=="فودپارتی")
