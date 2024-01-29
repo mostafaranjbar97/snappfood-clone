@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
+import Profile from './Profile'
 
 function Header() {
   return ( 
@@ -27,10 +28,7 @@ function Header() {
                     <p className='ml-2 font-iransans font-normal text-base hidden text-inactive-dark laptop:inline-block'>جست‌وجو در اسنپ‌فود</p>
                 </div>
                 <div className='z-[999] flex items-center'>
-                    <div className='p-4 cursor-pointer select-none flex laptop:ml-[0.5625rem]'>
-                        <Image width={20} height={20} src={"/icons/header/user.svg"} className='ml-2'/>
-                    </div>
-                    <div className='relative w-0 h-0 laptop:ml-[0.5625rem]'></div>
+                    <Profile/>
                     <div className='mr-4 relative cursor-pointer select-none flex laptop:ml-[0.5625rem]'>
                         <Image width={20} height={20} src={"/icons/header/order.svg"} className='ml-2'/>
                         <p className='hidden ml-2 font-iransans font-bold text-carbon-main text-sm laptop:inline-block'>سفارش‌ها</p>

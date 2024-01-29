@@ -1,9 +1,9 @@
 import Image from 'next/image'
 import React from 'react'
 
-function DeliveryInfoModal({handleClose}) {
+function DeliveryInfoModal({handleClose,modalRef}) {
   return (
-    <div className='relative w-0 h-0' id='deliverymodal'>
+    <div ref={modalRef} className='relative w-0 h-0' >
         <div className='absolute -top-14 left-[-19.375rem] w-[19.375rem] min-h-12 shadow-shadows-high rounded-lg bg-white flex items-center flex-col overflow-hidden text-carbon-main p-0' >
         
             <div className='w-[calc(100%-32px)] py-3.5 grow flex justify-between items-center'>
