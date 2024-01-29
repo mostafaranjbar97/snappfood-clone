@@ -5,6 +5,8 @@ import Header from '@/components/Header/Header'
 import Services from '@/components/Header/Services'
 import Navbar from '@/components/Header/Navbar'
 import Providers from '@/redux/Provider'
+import ModalRoot from '@/components/Modal/ModalRoot'
+import { fetchData } from '@/libs/fetchData'
 
 
 export const metadata = {
@@ -12,7 +14,8 @@ export const metadata = {
   description: 'سفارش غذا با تخفیف از رستوران ها و فست فود های ایران. ارسال اکسپرس در سریع ترین زمان ممکن. خرید غذا با امکان مقایسه رستوران ها',
 }
 
-export default function RootLayout({ children }) {
+export default async function RootLayout({ children }) {
+  const {restaurants}= await fetchData()
   return (
     <html lang="fa">
       <body> 
@@ -21,6 +24,7 @@ export default function RootLayout({ children }) {
           <Navbar/>
           {children}
           <Footer/>
+          <ModalRoot restaurants={restaurants}/>
         </Providers>    
        
       </body>

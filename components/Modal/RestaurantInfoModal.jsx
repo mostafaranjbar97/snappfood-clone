@@ -1,8 +1,24 @@
+'use client'
 import React from 'react'
 import RestaurantInfo from './RestaurantInfo'
 import VendorDetail from './VendorDetail'
+import { useDispatch, useSelector } from 'react-redux';
+import { setCloseResInfoModalNumber } from '@/redux/features/OpenResInfoModalSlice';
 
-function RestaurantInfoModal({isOpen,handleClose,restaurant}) {
+function RestaurantInfoModal({restaurants}) {
+
+  
+  const openResInfoModal=useSelector((store)=>store.openResInfoModalNumber)
+  const {isOpen,isOpenNumber}=openResInfoModal
+  const dispatch=useDispatch()
+  const restaurant=restaurants.filter((res)=>res.id==isOpenNumber)[0]
+
+  const handleClose = () => {
+    dispatch(setCloseResInfoModalNumber(restaurant.id))
+  };
+
+ 
+
 
   if (!isOpen) return null;
   return (
