@@ -7,10 +7,21 @@ import FoodPartyTimer from '../Home/FoodParty/FoodPartyTimer';
 import Link from 'next/link';
 import { useDispatch } from 'react-redux';
 import { setCloseFoodPartyInfoModal } from '@/redux/features/ShowFoodPartyInfoModalSlice';
+import { addToCart } from '@/redux/features/CartSlice';
+import { useRouter } from 'next/navigation';
 
 function FoodPartyInfoModal({food,isOpen,restaurant}) {
 
+    const router=useRouter()
+
     const dispatch=useDispatch()
+
+    const handleAddToCart=()=>{
+        dispatch(addToCart(food))
+        router.push(`/resturants/${restaurant.id}`)
+        dispatch(setCloseFoodPartyInfoModal())
+    }
+
     const handleClose = () => {
         dispatch(setCloseFoodPartyInfoModal())
       };
@@ -87,7 +98,7 @@ function FoodPartyInfoModal({food,isOpen,restaurant}) {
                                                 </div>
                                             </div>
                                             <div className='flex items-center flex-col'>
-                                                <button className='h-[2.3125rem] text-sm flex justify-center items-center cursor-pointer box-border transition-all min-w-[6.6875rem] border-border-sm border-accent-alphaLight rounded-[3rem] bg-white bg-clip-padding font-iransans shadow-shadows-medium text-accent-main group-hover:text-white group-hover:bg-accent-main  group-active:bg-accent-dark group-active:text-white'>افزودن</button>
+                                                <button onClick={handleAddToCart} className='h-[2.3125rem] text-sm flex justify-center items-center cursor-pointer box-border transition-all min-w-[6.6875rem] border-border-sm border-accent-alphaLight rounded-[3rem] bg-white bg-clip-padding font-iransans shadow-shadows-medium text-accent-main group-hover:text-white group-hover:bg-accent-main  group-active:bg-accent-dark group-active:text-white'>افزودن</button>
                                             </div>
                                         </div>
                                     </div>

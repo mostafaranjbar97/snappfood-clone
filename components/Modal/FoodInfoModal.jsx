@@ -5,9 +5,10 @@ import CommentItem from './CommentItem'
 import clsx from 'clsx';
 import { useDispatch, useSelector } from 'react-redux';
 import { setCloseFoodInfoModal } from '@/redux/features/OpenFoodInfoModalSlice';
+import { addToCart, decreaseItem } from '@/redux/features/CartSlice';
 
 
-function FoodInfoModal({food,isOpen}) {
+function FoodInfoModal({food,isOpen,foodCount}) {
 
     // const openFoodInfoModal=useSelector((store)=>store.openFoodInfoModal)
     // const {isOpen,foodId,catId,resId}=openFoodInfoModal
@@ -15,7 +16,21 @@ function FoodInfoModal({food,isOpen}) {
     // const restaurantfood= restaurant.foods.filter((food)=>food.categoryId.includes(catId))
     // const food =restaurantfood.filter((food)=>food.id==foodId)[0]
 
+    
+
+
+   
+
     const dispatch=useDispatch()
+
+    const handleAddToCart=()=>{
+        dispatch(addToCart(food))
+    }
+
+    const decreaseItemCart=()=>{
+        dispatch(decreaseItem(food))
+    }
+
     const handleClose = () => {
         dispatch(setCloseFoodInfoModal())
       };
@@ -90,7 +105,17 @@ function FoodInfoModal({food,isOpen}) {
                                     </div>
                                 </div>
                                 <div className='flex items-center flex-col'>
-                                    <button className='h-[2.3125rem] text-sm flex justify-center items-center cursor-pointer box-border transition-all min-w-[6.6875rem] border-border-sm border-accent-alphaLight rounded-[3rem] bg-white bg-clip-padding font-iransans shadow-shadows-medium text-accent-main group-hover:text-white group-hover:bg-accent-main  group-active:bg-accent-dark group-active:text-white'>افزودن</button>
+                                {foodCount==0 ? <button onClick={handleAddToCart} className='h-[2.3125rem] text-sm flex justify-center items-center box-border transition-all min-w-[6.6875rem] border-border-sm border-accent-alphaLight rounded-[3rem] bg-white bg-clip-padding font-iransans shadow-shadows-medium text-accent-main group-hover:text-white group-hover:bg-accent-main  group-active:bg-accent-dark group-active:text-white'>افزودن</button>
+                                    : <div className='min-h-[2.3125rem] flex justify-center items-center'>
+                                        {foodCount==1 ? <button onClick={decreaseItemCart} className='min-w-8 w-8 h-8 text-sm flex justify-center items-center box-border transition-all border-border-sm border-transparent rounded-[50%] bg-transparent bg-clip-padding hover:bg-carbon-alphaLight hover:border-carbon-alphaLight  active:bg-carbon-alphaMedium active:border-carbon-alphaMedium'>
+                                            <Image width={12} height={14} src={"/icons/restaurant/remove-gray.svg"} />
+                                        </button>
+                                        : <button onClick={decreaseItemCart} className='min-w-8 flex justify-center items-center box-border transition-all w-8 h-8 border-border-sm border-accent-alphaLight rounded-[50%] bg-white bg-clip-padding shadow-shadows-medium font-bold text-lg text-accent-main hover:text-accent-dark  active:text-accent-dark active:bg-accent-alphaMedium rtl'>-</button>
+                                        }
+                                        <span className='w-12 text-center inline-block font-iransans font-bold text-sm text-carbon-main'>{foodCount}</span>
+                                        <button onClick={handleAddToCart} className='min-w-8 flex justify-center items-center box-border transition-all w-8 h-8 border-border-sm border-accent-alphaLight rounded-[50%] bg-white bg-clip-padding shadow-shadows-medium font-bold text-lg text-accent-main group-hover:text-white group-hover:bg-accent-main  group-active:bg-accent-dark group-active:text-white rtl'>+</button>
+                                    </div>
+                                }
                                 </div>
                             </div>
                         </div>
