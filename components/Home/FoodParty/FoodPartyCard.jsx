@@ -1,12 +1,20 @@
+import { setOpenFoodPartyInfoModal } from '@/redux/features/ShowFoodPartyInfoModalSlice';
 import clsx from 'clsx'
 import Image from 'next/image'
 import React from 'react'
+import { useDispatch } from 'react-redux';
 
 function FoodPartyCard({food,takhfif,index}) {
+
+  const dispatch = useDispatch();
+    const handleOpen = () => {
+        dispatch(setOpenFoodPartyInfoModal({foodId:food.id,resId:food.restaurantId}))
+    };
+
   const foodWithDiscount=((food.price)*(100-(food.discount)))/100
   return (
     <div className='ml-4 shrink-0 w-full h-full relative transform'>
-      <div className='box-border min-h-[23.125rem] mx-[0.1875rem] pb-6 px-6 pt-3 overflow-hidden bg-white cursor-pointer drop-shadow-[0_1px_0_rgba(58,61,66,0.06)] text-carbon-main shadow-shadows-small rounded-lg flex flex-col justify-between hover:shadow-shadows-high'>
+      <div onClick={handleOpen} className='box-border min-h-[23.125rem] mx-[0.1875rem] pb-6 px-6 pt-3 overflow-hidden bg-white cursor-pointer drop-shadow-[0_1px_0_rgba(58,61,66,0.06)] text-carbon-main shadow-shadows-small rounded-lg flex flex-col justify-between hover:shadow-shadows-high'>
         <h3 className='grow-0 grayscale-0 font-iransans font-medium text-2xs leading-3 text-carbon-main text-center inline-block '>{takhfif[index].name}</h3>
         <div className='grow-0 grayscale-0 text-center bg-transparent rounded-[4.5rem]'>
           <div>
