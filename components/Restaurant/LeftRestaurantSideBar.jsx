@@ -69,7 +69,7 @@ function LeftRestaurantSideBar({restaurants}) {
                     </div>
                 </div>
             </div>
-            <Cart/>
+            <Cart delivery={delivery}/>
         </div>
     </aside>
   )

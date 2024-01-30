@@ -3,6 +3,7 @@ import CategorySelectedSlice from "./features/CategorySelectedSlice";
 import IsVisibleSectionSlice from "./features/IsVisibleSectionSlice";
 import OpenResInfoModalSlice from "./features/OpenResInfoModalSlice";
 import OpenFoodInfoModalSlice from "./features/OpenFoodInfoModalSlice";
+import CartSlice from "./features/CartSlice";
 
 
 export const store = configureStore(
@@ -12,6 +13,7 @@ export const store = configureStore(
             isVisibleSection: IsVisibleSectionSlice,
             openResInfoModalNumber: OpenResInfoModalSlice,
             openFoodInfoModal: OpenFoodInfoModalSlice,
+            cart:CartSlice
         }
     }
 )
