@@ -4,6 +4,7 @@ import React, { useState } from 'react'
 import FoodInfoModal from '../Modal/FoodInfoModal'
 import { useDispatch } from 'react-redux';
 import { setOpenFoodInfoModal } from '@/redux/features/OpenFoodInfoModalSlice';
+import { addToCart } from '@/redux/features/CartSlice';
 
 
 function FoodCard({food,cat}) {
@@ -14,6 +15,10 @@ function FoodCard({food,cat}) {
     const handleOpen = () => {
         dispatch(setOpenFoodInfoModal({foodId:food.id,catId:cat.id,resId:food.restaurantId}))
     };
+
+    const handleAddToCart=()=>{
+        dispatch(addToCart(food))
+    }
 
 
     // const [open, setOpen] = useState(false);
@@ -53,17 +58,23 @@ function FoodCard({food,cat}) {
                                                 <Image width={8} height={10} src={"/icons/restaurant/percent.svg"} />
                                             </span>
                                         </span>}
-                                        <div className='flex items-start flex-col '>
-                                            {food.discount && <s className='font-iransans text-xs inline-block text-inactive-dark'>{foodWithDiscount}</s>}
-                                            <span className='font-iransans font-bold text-sm inline-block text-carbon-main'> {food.price} 
-                                                <span className='font-iransans font-normal mr-1 text-sm inline-block text-carbon-main'>تومان</span>
+                                        
+                                        {food.discount && <div className='flex flex-col items-start'>
+                                            <s className=' inline-block font-iransans text-xs text-inactive-dark'>{food.price}</s>
+                                            <span className='inline-block font-iransans font-bold text-sm text-carbon-main'> {foodWithDiscount} 
+                                                <span className='mr-1 inline-block font-iransans font-normal text-xs text-carbon-light' >تومان</span>
+                                            </span>
+                                        </div>}
+                                        <div className='flex flex-col items-start'>
+                                            <span className='inline-block font-iransans font-bold text-sm text-carbon-main'> {food.price} 
+                                                <span className='mr-1 inline-block font-iransans font-normal text-xs text-carbon-light' >تومان</span>
                                             </span>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div className='flex items-center flex-col'>
-                                <button className='h-[2.3125rem] text-sm flex justify-center items-center cursor-pointer box-border transition-all min-w-[6.6875rem] border-border-sm border-accent-alphaLight rounded-[3rem] bg-white bg-clip-padding font-iransans shadow-shadows-medium text-accent-main group-hover:text-white group-hover:bg-accent-main  group-active:bg-accent-dark group-active:text-white'>افزودن</button>
+                                <button onClick={handleAddToCart} className='h-[2.3125rem] text-sm flex justify-center items-center cursor-pointer box-border transition-all min-w-[6.6875rem] border-border-sm border-accent-alphaLight rounded-[3rem] bg-white bg-clip-padding font-iransans shadow-shadows-medium text-accent-main group-hover:text-white group-hover:bg-accent-main  group-active:bg-accent-dark group-active:text-white'>افزودن</button>
                             </div>
                         </div>
                     </footer>
