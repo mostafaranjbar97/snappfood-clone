@@ -4,6 +4,7 @@ import React from 'react'
 import CartItem from './CartItem'
 import { useDispatch, useSelector } from 'react-redux'
 import { clearCart } from '@/redux/features/CartSlice'
+import EmptyCart from './EmptyCart'
 
 function Cart({delivery}) {
     
@@ -24,6 +25,12 @@ function Cart({delivery}) {
 
      const resetCart=()=>{
         dispatch(clearCart())
+     }
+
+     if(cartCount==0) {
+        return(
+            <EmptyCart/>
+        )
      }
 
   return (
