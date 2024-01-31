@@ -4,6 +4,7 @@ import RestaurantInfoModal from './RestaurantInfoModal'
 import FoodInfoModal from './FoodInfoModal'
 import { useSelector } from 'react-redux'
 import FoodPartyInfoModal from './FoodPartyInfoModal'
+import AddressModal from './AddressModal'
 
 
 function ModalRoot({restaurants}) {
@@ -40,6 +41,7 @@ function ModalRoot({restaurants}) {
         <RestaurantInfoModal restaurants={restaurants} />
         <FoodInfoModal food={food} isOpen={isOpen} foodCount={foodCount}/>
         <FoodPartyInfoModal food={foodPartyFood} isOpen={showFoodPatyInfoModal.isOpen} restaurant={restaurant}/>
+        <AddressModal/>
     </div>
   )
 }

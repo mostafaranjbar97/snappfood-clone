@@ -5,6 +5,7 @@ import OpenResInfoModalSlice from "./features/OpenResInfoModalSlice";
 import OpenFoodInfoModalSlice from "./features/OpenFoodInfoModalSlice";
 import CartSlice from "./features/CartSlice";
 import ShowFoodPartyInfoModalSlice from "./features/ShowFoodPartyInfoModalSlice";
+import ShowAddressModalSlice from "./features/ShowAddressModalSlice";
 
 
 export const store = configureStore(
@@ -15,7 +16,8 @@ export const store = configureStore(
             openResInfoModalNumber: OpenResInfoModalSlice,
             openFoodInfoModal: OpenFoodInfoModalSlice,
             cart:CartSlice,
-            showFoodPartyInfoModal:ShowFoodPartyInfoModalSlice
+            showFoodPartyInfoModal:ShowFoodPartyInfoModalSlice,
+            showAddressModal:ShowAddressModalSlice
         }
     }
 )
