@@ -15,9 +15,9 @@ function CategorySection({restaurant,cat}) {
             <p className='h-12 text-carbon-main font-bold text-xs flex justify-center items-center font-iransans '>{cat.name}</p>
             <div className='box-border w-full flex flex-wrap min-h-[4.25rem] '>
               {
-                restaurant.coupon.map((coupon)=>{
+                restaurant.coupon.map((coupon,index)=>{
                   return(
-                    <div className=' min-w-[102px] ml-4 shrink-0 h-full mb-3 text-inactive-dark first:text-carbon-main first:bg-white rounded-md bg-surface-main border-surface-dark border-border-xs first:border-accent2-main '>
+                    <div key={index} className=' min-w-[102px] ml-4 shrink-0 h-full mb-3 text-inactive-dark first:text-carbon-main first:bg-white rounded-md bg-surface-main border-surface-dark border-border-xs first:border-accent2-main '>
                       <section className='box-border h-[3.25rem] py-2 px-3 rounded-md flex flex-col '>
                         <p className=' inline-block text-sm font-iransans'>{coupon.value}</p>
                         <p className=' inline-block text-xs font-iransans'>{coupon.title}</p>

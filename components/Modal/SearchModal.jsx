@@ -8,21 +8,27 @@ import { useDispatch } from 'react-redux'
 
 function SearchModal({ restaurants,restaurantCategory,showSearchModal }) {
 
-    
-    const {isOpen,history}=showSearchModal
-    if (!isOpen) return null;
+    const router=useRouter()
     const dispatch=useDispatch()
+    const params=useParams()
+    const inputRef = useRef();
+
+
+    const {isOpen,history}=showSearchModal
+    useEffect(() => {
+        setTimeout(()=>inputRef.current.focus(),50)
+    }, [isOpen]);
+    if (!isOpen) return null;
+
    
 
     const handleClose = () => {
         dispatch(hideSearchModal())
     };
 
-    const inputRef = useRef();
 
-    useEffect(() => {
-        setTimeout(()=>inputRef.current.focus(),50)
-    }, [isOpen]);
+
+
 
     const foods=restaurants.map((res)=>res.foods)
     const food=foods.flat()
@@ -38,7 +44,7 @@ function SearchModal({ restaurants,restaurantCategory,showSearchModal }) {
     const first5Restaurant=searchRestaurant.toSpliced(5)
     const searchCategory=restaurantCategory.filter((cat)=>cat.name.includes(searchTerm))
 
-    const params=useParams()
+
     const restaurantId= params.restaurant
     let searchFood
     if(restaurantId){
@@ -48,7 +54,7 @@ function SearchModal({ restaurants,restaurantCategory,showSearchModal }) {
     }
     
     console.log("searchFood",searchFood)
-    const router=useRouter()
+
     const addtohistoryHandler=(e)=>{
         if(e.key=="Enter"){
             dispatch(addToHistory(searchTerm))
@@ -86,7 +92,7 @@ function SearchModal({ restaurants,restaurantCategory,showSearchModal }) {
                         {
                             history.map((item,index)=>{
                                 return(
-                                    <div className='py-3.5 pr-5 pl-[1.125rem] cursor-pointer flex justify-between items-center'>
+                                    <div key={index} className='py-3.5 pr-5 pl-[1.125rem] cursor-pointer flex justify-between items-center'>
                                         <div className='flex'>
                                         <Image width={18} height={17} src={"/icons/modal/past-time-black.png"} className='ml-[1.125rem] '/>
                                         <p className='font-iransans text-sm inline-block text-carbon-main'>{item}</p>   
@@ -115,9 +121,9 @@ function SearchModal({ restaurants,restaurantCategory,showSearchModal }) {
                             <>
                                 {searchTerm && <div className='border-b border-b-surface-dark flex flex-col'>
                                     {
-                                        searchCategory.map((cat)=>{
+                                        searchCategory.map((cat,index)=>{
                                             return(
-                                                <Link className='' href={`/resturants/?cat=${cat.id}`} onClick={handleClose}>
+                                                <Link key={index} className='' href={`/resturants/?cat=${cat.id}`} onClick={handleClose}>
                                                     <div className='box-border p-5 flex items-center'>
                                                         <Image width={24} height={22} src={"/icons/modal/search-category.svg"} className='ml-4'/>
                                                         <div>
@@ -147,9 +153,9 @@ function SearchModal({ restaurants,restaurantCategory,showSearchModal }) {
                                         </Link>
                                     </div>
                                     {
-                                        first5Restaurant.map((res)=>{
+                                        first5Restaurant.map((res,index)=>{
                                             return(
-                                                <Link href={`/resturants/${res.id}`} onClick={handleClose}>
+                                                <Link key={index} href={`/resturants/${res.id}`} onClick={handleClose}>
                                                     <div className='p-5 box-border flex items-center'>
                                                         <Image width={24} height={18} src={"/icons/modal/shop.svg"} className='ml-4'/>
                                                         <div>
@@ -178,11 +184,11 @@ function SearchModal({ restaurants,restaurantCategory,showSearchModal }) {
                                     </div>
 
                                     {
-                                        first2Prodouct.map((prodouct)=>{
+                                        first2Prodouct.map((prodouct,index)=>{
                                             const restaurant=restaurants.filter((res)=>res.id==prodouct.restaurantId)[0]
                                             const foodWithDiscount=((prodouct.price)*(100-(prodouct.discount)))/100
                                             return(
-                                                <Link href={`/resturants/${restaurant.id}`} onClick={handleClose}>
+                                                <Link key={index} href={`/resturants/${restaurant.id}`} onClick={handleClose}>
                                                     <div className='box-border p-5 flex items-start flex-col border-b border-b-surface-dark'>
                                                         <div className='flex'>
                                                             <Image width={56} height={56} src={prodouct.images[0]} alt="" className='ml-4 rounded'/>

@@ -64,7 +64,7 @@ function FoodPartySlider({restaurants})  {
   {offtime.map((food,index)=>{
             return(
               <SwiperSlide>
-                  <FoodPartyCard food={food} takhfif={takhfif} index={index}/>
+                  <FoodPartyCard food={food} takhfif={takhfif} index={index}  key={index}/>
               </SwiperSlide>
                 // <div>
                 //     <p>name:{food.name}</p>

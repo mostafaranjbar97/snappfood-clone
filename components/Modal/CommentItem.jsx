@@ -18,9 +18,9 @@ function CommentItem({comment}) {
                 <div className='flex flex-wrap'>
 
                     {
-                        comment.orderTags.map((tag)=>{
+                        comment.orderTags.map((tag,index)=>{
                             return(
-                                <div className=' py-1 px-1.5 text-2xs bg-surface-dark rounded-md mb-2 ml-2 flex justify-center items-center'>
+                                <div className=' py-1 px-1.5 text-2xs bg-surface-dark rounded-md mb-2 ml-2 flex justify-center items-center' key={index}>
                                     <p className='font-iransans text-2xs inline-block text-carbon-main'>{tag}</p>
                                 </div>
                             )

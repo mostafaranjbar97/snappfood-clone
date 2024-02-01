@@ -9,7 +9,8 @@ import { addToCart, decreaseItem } from '@/redux/features/CartSlice';
 
 
 function FoodInfoModal({food,isOpen,foodCount}) {
-
+    const [showImg,setShowImg]=useState(food.images[0])
+    const dispatch=useDispatch()
     // const openFoodInfoModal=useSelector((store)=>store.openFoodInfoModal)
     // const {isOpen,foodId,catId,resId}=openFoodInfoModal
     // const restaurant=restaurants.filter((res)=>res.id==resId)[0]
@@ -21,7 +22,7 @@ function FoodInfoModal({food,isOpen,foodCount}) {
 
    
 
-    const dispatch=useDispatch()
+
 
     const handleAddToCart=()=>{
         dispatch(addToCart(food))
@@ -38,7 +39,7 @@ function FoodInfoModal({food,isOpen,foodCount}) {
 
     if (!isOpen) return null;
     const foodWithDiscount=((food.price)*(100-(food.discount)))/100
-    const [showImg,setShowImg]=useState(food.images[0])
+
     const albumHandler=(e)=>{
         setShowImg(e.target.src)
     }
