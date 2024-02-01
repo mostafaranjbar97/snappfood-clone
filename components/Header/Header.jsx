@@ -3,8 +3,9 @@ import Link from 'next/link'
 import React from 'react'
 import Profile from './Profile'
 import Address from './Address'
+import Search from './Search'
 
-function Header() {
+function Header({restaurants}) {
   return ( 
     <header className='sticky transition-all duration-300 translate-y-0 top-0 right-0 left-0 z-[999] w-full flex flex-col'>
         <div className='w-full bg-white  flex flex-col'>
@@ -15,10 +16,7 @@ function Header() {
                     </Link>
                    <Address/>
                 </div>
-                <div className='w-[10.5625rem] bg-white absolute left-0 h-12 p-4 m-auto rounded-xlg box-border flex items-center laptop:right-0 laptop:w-[29vw] laptop:bg-surface-dark '>
-                    <Image width={17} height={17} src={"/icons/header/search.svg"} className='ml-2'/>
-                    <p className='ml-2 font-iransans font-normal text-base hidden text-inactive-dark laptop:inline-block'>جست‌وجو در اسنپ‌فود</p>
-                </div>
+                <Search restaurants={restaurants}/>
                 <div className='z-[999] flex items-center'>
                     <Profile/>
                     <div className='mr-4 relative cursor-pointer select-none flex laptop:ml-[0.5625rem]'>

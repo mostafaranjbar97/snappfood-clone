@@ -15,16 +15,16 @@ export const metadata = {
 }
 
 export default async function RootLayout({ children }) {
-  const {restaurants}= await fetchData()
+  const {restaurants,restaurantCategory}= await fetchData()
   return (
     <html lang="fa">
       <body> 
         <Providers>
-          <Header/>
+          <Header restaurants={restaurants}/>
           <Navbar/>
           {children}
           <Footer/>
-          <ModalRoot restaurants={restaurants}/>
+          <ModalRoot restaurants={restaurants} restaurantCategory={restaurantCategory}/>
         </Providers>    
        
       </body>

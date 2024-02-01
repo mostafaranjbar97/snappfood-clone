@@ -5,9 +5,10 @@ import FoodInfoModal from './FoodInfoModal'
 import { useSelector } from 'react-redux'
 import FoodPartyInfoModal from './FoodPartyInfoModal'
 import AddressModal from './AddressModal'
+import SearchModal from './SearchModal'
 
 
-function ModalRoot({restaurants}) {
+function ModalRoot({restaurants,restaurantCategory}) {
 
   const openFoodInfoModal=useSelector((store)=>store.openFoodInfoModal)
   const {isOpen,foodId,catId,resId}=openFoodInfoModal
@@ -31,6 +32,7 @@ function ModalRoot({restaurants}) {
     foodPartyFood =restaurant.foods.filter((food)=>food.id==showFoodPatyInfoModal.foodId)[0]
   }
   
+  const showSearchModal=useSelector((store)=>store.searchModal)
 
 
 
@@ -42,6 +44,7 @@ function ModalRoot({restaurants}) {
         <FoodInfoModal food={food} isOpen={isOpen} foodCount={foodCount}/>
         <FoodPartyInfoModal food={foodPartyFood} isOpen={showFoodPatyInfoModal.isOpen} restaurant={restaurant}/>
         <AddressModal/>
+        <SearchModal showSearchModal={showSearchModal} restaurants={restaurants} restaurantCategory={restaurantCategory}/>
     </div>
   )
 }

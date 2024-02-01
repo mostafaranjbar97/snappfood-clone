@@ -6,6 +6,7 @@ import OpenFoodInfoModalSlice from "./features/OpenFoodInfoModalSlice";
 import CartSlice from "./features/CartSlice";
 import ShowFoodPartyInfoModalSlice from "./features/ShowFoodPartyInfoModalSlice";
 import ShowAddressModalSlice from "./features/ShowAddressModalSlice";
+import SearchModal from "./features/SearchModal";
 
 
 export const store = configureStore(
@@ -17,7 +18,8 @@ export const store = configureStore(
             openFoodInfoModal: OpenFoodInfoModalSlice,
             cart:CartSlice,
             showFoodPartyInfoModal:ShowFoodPartyInfoModalSlice,
-            showAddressModal:ShowAddressModalSlice
+            showAddressModal:ShowAddressModalSlice,
+            searchModal:SearchModal
         }
     }
 )
