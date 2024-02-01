@@ -1,8 +1,5 @@
 'use client'
 import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/css/navigation';
-
-// Import Swiper styles
 import 'swiper/css';
 import SliderCard from './SliderCard';
 import { useCallback, useEffect, useRef, useState } from 'react';
@@ -21,13 +18,11 @@ function Slider({restaurants})  {
   const handlePrev = useCallback(() => {
     if (!sliderRef.current) return;
     sliderRef.current.swiper.slidePrev();
-    // console.log(sliderRef.current.swiper.activeIndex)
   }, []);
 
   const handleNext = useCallback(() => {
     if (!sliderRef.current) return;
     sliderRef.current.swiper.slideNext();
-    // console.log(sliderRef.current.swiper.activeIndex)
   }, []);
 
   return (
@@ -53,8 +48,7 @@ function Slider({restaurants})  {
           slidesPerGroup: 4
         },
       }}
-      // onSlideChange={() => console.log('slide change')}
-      // onSwiper={(swiper) => console.log(swiper)}
+
       onReachBeginning={()=>{
         setIsFirst(true)
         console.log("first")

@@ -2,7 +2,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 import Slider from './Slider'
-import { fetchData } from '@/libs/fetchData'
+
 
  function ResturantSlider({title,restaurants}) {
     return (
