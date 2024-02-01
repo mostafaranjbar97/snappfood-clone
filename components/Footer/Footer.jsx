@@ -5,7 +5,8 @@ import Support from './Support'
 
 
 const SOCIAL = ["twitter", "telegram", "linkedin", "instagram", "aparat"]
-
+const FOOTER_LIST1=["درباره اسنپ‌فود","فرصت‌های شغلی","وبلاگ","قوانین سایت","حریم خصوصی","ثبت نام فروشندگان"]
+const FOOTER_LIST2=["تماس با اسنپ‌فود","پرسش‌های متداول","ثبت شکایات","اپلیکیشن موبایل"]
 function Footer() {
     return (
         <footer className='box-border w-full p-12 bg-surface-main'>
@@ -39,40 +40,28 @@ function Footer() {
                 </div>
                 <div className='p-10 grow'>
                     <div className='flex flex-col'>
-                        <Link href={"/"} className='m-2'>
-                            <p className='font-iransans text-xs text-carbon-main'>درباره اسنپ‌فود</p>
-                        </Link>
-                        <Link href={"/"} className='m-2'>
-                            <p className='font-iransans text-xs text-carbon-main'>فرصت‌های شغلی</p>
-                        </Link>
-                        <Link href={"/"} className='m-2'>
-                            <p className='font-iransans text-xs text-carbon-main'>وبلاگ</p>
-                        </Link>
-                        <Link href={"/"} className='m-2'>
-                            <p className='font-iransans text-xs text-carbon-main'>قوانین سایت</p>
-                        </Link>
-                        <Link href={"/"} className='m-2'>
-                            <p className='font-iransans text-xs text-carbon-main'>حریم خصوصی</p>
-                        </Link>
-                        <Link href={"/"} className='m-2'>
-                            <p className='font-iransans text-xs text-carbon-main'>ثبت نام فروشندگان</p>
-                        </Link>
+                        {
+                            FOOTER_LIST1.map((title, sectionIndex)=>{
+                                return (
+                                    <Link href={"/"} className='m-2'  key={sectionIndex}>
+                                        <p className='font-iransans text-xs text-carbon-main'>{title}</p>
+                                    </Link>
+                                )
+                            })
+                        }
                     </div>
                 </div>
                 <div className='p-10 grow'>
                     <div className='flex flex-col'>
-                        <Link href={"/"} className='m-2'>
-                            <p className='font-iransans text-xs text-carbon-main'>تماس با اسنپ‌فود</p>
-                        </Link>
-                        <Link href={"/"} className='m-2'>
-                            <p className='font-iransans text-xs text-carbon-main'>پرسش‌های متداول</p>
-                        </Link>
-                        <Link href={"/"} className='m-2'>
-                            <p className='font-iransans text-xs text-carbon-main'>ثبت شکایات</p>
-                        </Link>
-                        <Link href={"/"} className='m-2'>
-                            <p className='font-iransans text-xs text-carbon-main'>اپلیکیشن موبایل</p>
-                        </Link>
+                        {
+                            FOOTER_LIST2.map((title, sectionIndex)=>{
+                                return (
+                                    <Link href={"/"} className='m-2'  key={sectionIndex}>
+                                        <p className='font-iransans text-xs text-carbon-main'>{title}</p>
+                                    </Link>
+                                )
+                            })
+                        }
                     </div>
                 </div>
                 <div className='p-10 grow ltr box-border'>
