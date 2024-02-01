@@ -1,8 +1,14 @@
+'use state'
 import Image from 'next/image'
-import React from 'react'
+import React, { useState } from 'react'
 import CommentItem from './CommentItem'
+import clsx from 'clsx';
 
 function VendorDetail({restaurant}) {
+    const [sort,setSort]=useState(1);
+    const sortHandler = (e)=>{
+        e.target.tagName=="P" ? setSort(e.target.parentElement.id) : setSort(e.target.id)
+      }
   return (
     <div className='h-[calc(90vh-16rem)] overflow-y-auto'>
         <div className='h-[6.75rem] flex'>
@@ -65,12 +71,12 @@ function VendorDetail({restaurant}) {
             <div className='flex items-center'>
                 <span className='ml-2.5 font-iransans font-bold text-xs inline-block text-carbon-main'>به ترتیب</span>
                 <div className='relative bg-carbon-alphaLight rounded-xl cursor-pointer flex items-center'>
-                    <div className='absolute h-9 mr-0.5 bg-white rounded-xlg transition-all duration-100 w-[50%] translate-x-[-133px]'></div>
-                    <div className='z-[2] w-[7.3125rem] p-2.5 flex justify-center items-center'>
-                        <p className='font-iransans text-sm inline-block text-carbon-main'>جدیدترین</p>
+                    {/* <div className='absolute h-9 mr-0.5 bg-white rounded-xlg transition-all duration-100 w-[50%] translate-x-[-133px]'></div> */}
+                    <div onClick={sortHandler} id='1' className={clsx('z-[2] w-[7.3125rem] p-2.5 flex justify-center items-center border-2 border-carbon-alphaLight rounded-xl ',sort==1 ? 'text-accent2-main bg-white' : 'text-carbon-main bg-transparent')}>
+                        <p className='font-iransans text-sm inline-block '>جدیدترین</p>
                     </div>
-                    <div className='z-[2] w-[7.3125rem] p-2.5 flex justify-center items-center'>
-                        <p className='font-iransans text-sm inline-block text-accent2-main'>مرتبط‌ترین</p>
+                    <div onClick={sortHandler} id='2' className={clsx('z-[2] w-[7.3125rem] p-2.5 flex justify-center items-center border-2 border-carbon-alphaLight rounded-xl ',sort==2 ? 'text-accent2-main bg-white' : 'text-carbon-main  bg-transparent')}>
+                        <p className='font-iransans text-sm inline-block '>مرتبط‌ترین</p>
                     </div>
                 </div>
             </div>
