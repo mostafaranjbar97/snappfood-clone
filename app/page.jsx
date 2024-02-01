@@ -28,9 +28,9 @@ export default async function Home() {
         <Category/>
         <FoodParty/>
         {
-          cat.map((cat)=>{
+          cat.map((cat,index)=>{
             return(
-              <ResturantSlider title={cat} restaurants={restaurants}/>
+              <ResturantSlider key={index} title={cat} restaurants={restaurants}/>
             )
           })
         }
