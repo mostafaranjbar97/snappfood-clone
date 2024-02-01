@@ -14,7 +14,7 @@ function UserModal({modalRef}) {
                 </div>
             </div>
         </Link>
-        <button className='rtl min-h-12 justify-start flex pr-4 h-14 items-center cursor-pointer box-border min-w-[6.6875rem] rounded-md text-carbon-main w-full  transition-all'>
+        <button className='rtl min-h-12 justify-start flex pr-4 h-14 items-center cursor-pointer box-border min-w-[6.6875rem] rounded-md text-carbon-main w-full transition-all hover:bg-carbon-alphaLight active:bg-carbon-alphaMedium'>
             <div className='w-full flex justify-between '>
                 <div className='flex items-center'>
                     <Image width={20} height={20} src={"/icons/modal/snapp-club.svg"}  alt="snapp" className='ml-3.5'/>
@@ -29,7 +29,7 @@ function UserModal({modalRef}) {
                 </div>
             </div>
         </button>
-        <button className='rtl min-h-12 justify-start flex pr-4 h-14 items-center cursor-pointer box-border min-w-[6.6875rem] rounded-md text-carbon-main w-full  transition-all'>
+        <button className='rtl min-h-12 justify-start flex pr-4 h-14 items-center cursor-pointer box-border min-w-[6.6875rem] rounded-md text-carbon-main w-full  transition-all hover:bg-carbon-alphaLight active:bg-carbon-alphaMedium'>
             <div className='w-full flex justify-between '>
                 <div className='flex items-center'>
                     <Image width={17} height={16} src={"/icons/modal/wallet.svg"} alt="wallet" className='ml-4'/>
@@ -46,13 +46,13 @@ function UserModal({modalRef}) {
                 </div>
             </div>
         </button>
-        <button className='rtl min-h-12 justify-start flex pr-4 h-14 items-center cursor-pointer box-border min-w-[6.6875rem] rounded-md text-carbon-main w-full  transition-all '>
+        <button className='rtl min-h-12 justify-start flex pr-4 h-14 items-center cursor-pointer box-border min-w-[6.6875rem] rounded-md text-carbon-main w-full  transition-all hover:bg-carbon-alphaLight active:bg-carbon-alphaMedium'>
             <div className='flex items-center'>
                 <Image width={18} height={17} src={"/icons/modal/referral-menu.svg"} alt="referral" className='ml-4'/>
                 <p className='font-iransans text-sm text-carbon-main inline-block'>دعوت از دوستان</p>
             </div>
         </button>
-        <button className='rtl min-h-12 justify-start flex pr-4 h-14 items-center cursor-pointer box-border min-w-[6.6875rem] rounded-md text-carbon-main w-full transition-all'>
+        <button className='rtl min-h-12 justify-start flex pr-4 h-14 items-center cursor-pointer box-border min-w-[6.6875rem] rounded-md text-carbon-main w-full transition-all hover:bg-carbon-alphaLight active:bg-carbon-alphaMedium'>
             <div className='flex items-center'>
                 <Image width={18} height={18} src={"/icons/modal/logout.svg"} alt="logout" className='ml-4'/>
                 <p className='font-iransans text-sm text-carbon-main inline-block'>خروج</p>
