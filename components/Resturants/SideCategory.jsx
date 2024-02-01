@@ -74,7 +74,7 @@ import React from 'react'
             {
                 ( isparentCat || isFastfood || isIrani || isKebab ) ? 
                 <div onClick={()=>backHandler()} className='box-border h-12 p-[0.1875rem] text-right rounded-lg cursor-pointer bg-transparent transition-all flex items-center'>
-                    <Image width={11} height={12} src={"/icons/resturants/right-side.svg"} className='ml-[5px] mr-[17px]'/>
+                    <Image width={11} height={12} src={"/icons/resturants/right-side.svg"} alt='right' className='ml-[5px] mr-[17px]'/>
                     <div className='ml-2.5 flex items-center'>
                         <p className='mr-3 font-iransans text-sm inline-block text-carbon-main'>بازگشت</p>
                     </div>
@@ -109,7 +109,7 @@ import React from 'react'
                             <img src={cat.logo} alt={cat.name} className='w-8 h-8' />
                             <p className={clsx('mr-3 font-iransans text-sm inline-block text-carbon-main',cat.id==search && "font-bold")}>{cat.name}</p>
                         </div>
-                            {cat.categoryId === 0 && <Image width={11} height={12} src={"/icons/resturants/left-side.svg"} className='ml-2.5 mr-[17px]'/>}
+                            {cat.categoryId === 0 && <Image width={11} height={12} src={"/icons/resturants/left-side.svg"} alt='left' className='ml-2.5 mr-[17px]'/>}
                         </div>
                     </div>
                 )

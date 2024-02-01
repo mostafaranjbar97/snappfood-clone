@@ -37,20 +37,20 @@ function FoodPartyInfoModal({food,isOpen,restaurant}) {
                 <div className='w-[60vw] max-w-[45rem] m-auto  flex flex-col'>
                     <header className='py-4 px-6 flex justify-between bg-food-party'>
                         <div className='flex items-center'>
-                            <Image width={24} height={24} src={"/icons/restaurant/sparkler.svg"} />
+                            <Image width={24} height={24} src={"/icons/restaurant/sparkler.svg"}  alt="sparkle" />
                             <p className='font-iransans font-bold text-base text-white inline-block mr-2'>فود پارتی</p>
                         </div>
                         <div className='flex justify-center items-center flex-col'>
                             <div className='flex justify-center items-center'>
                                 <FoodPartyTimer/>
-                                <Image width={18} height={18} src={"/icons/home/clock.svg"} />
+                                <Image width={18} height={18} src={"/icons/home/clock.svg"}  alt="timer" />
                             </div>
                         </div>
                     </header>
                     <div className='bg-white rounded-t-xl'>
                         <div className='relative box-border w-full h-14 pl-14 flex justify-between items-center'>
                             <button className='w-14 h-14 flex justify-center items-center' onClick={handleClose} >
-                                <Image width={14} height={14} src={"/icons/modal/exit-modal.svg"}/>
+                                <Image width={14} height={14} src={"/icons/modal/exit-modal.svg"}  alt="close modal"/>
                             </button>
                             <p className='font-bold font-iransans text-sm inline-block text-carbon-main'></p>
                             <div></div>
@@ -69,7 +69,7 @@ function FoodPartyInfoModal({food,isOpen,restaurant}) {
                                             <h3 className='mb-2 font-iransans text-sm inline-block text-carbon-light'>{food.desc}</h3>
                                         </div>
                                         <span className='border-border-xs border-surface-dark py-0.5 px-1.5 rounded flex flex-wrap'>
-                                            <Image width={12} height={12} src={"/icons/modal/rate-star.svg"} className='ml-1 align-middle'/>
+                                            <Image width={12} height={12} src={"/icons/modal/rate-star.svg"} className='ml-1 align-middle' alt='rate'/>
                                             <span className='font-bold font-iransans text-xs inline-block text-carbon-main'>{food.rate}</span>
                                         </span>
                                     </div>
@@ -86,7 +86,7 @@ function FoodPartyInfoModal({food,isOpen,restaurant}) {
                                                 <div className='flex'>
                                                     <span className='flex items-center justify-center grow py-0.5 px-1 rounded bg-accent-alphaLight m-1 font-iransans font-bold text-xs text-accent-main'>{food.discount}
                                                         <span className='mr-1'>
-                                                            <Image width={8} height={10} src={"/icons/restaurant/percent.svg"} />
+                                                            <Image width={8} height={10} src={"/icons/restaurant/percent.svg"} alt='percent' />
                                                         </span>
                                                     </span>
                                                     <div className='flex items-start flex-col '>
@@ -111,7 +111,7 @@ function FoodPartyInfoModal({food,isOpen,restaurant}) {
                                         <Link href={`/resturants/${restaurant.id}`} onClick={handleClose}>
                                             <div className='flex items-center'>
                                                 <p className='font-bold font-iransans text-sm inline-block text-accent2-main'>{restaurant.name}</p>
-                                                <Image width={9} height={16} src={"/icons/modal/left-green.svg"} className='mr-4'/>
+                                                <Image width={9} height={16} src={"/icons/modal/left-green.svg"} alt='left' className='mr-4'/>
                                             </div>
                                         </Link>
                                     </div>

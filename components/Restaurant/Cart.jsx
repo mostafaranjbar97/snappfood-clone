@@ -41,7 +41,7 @@ function Cart({delivery}) {
                 <span className='font-iransans mr-1 text-sm inline-block text-carbon-light'>({cartCount})</span>
             </div>
             <button  type="button" onClick={resetCart} className='flex justify-center items-center box-border transition-all w-8 h-8 border-border-sm border-transparent rounded-[50%] bg-transparent bg-clip-padding hover:bg-accent-alphaLight active:bg-accent-alphaMedium'>
-                <Image width={12} height={14} src={"/icons/restaurant/remove.svg"}/>
+                <Image width={12} height={14} src={"/icons/restaurant/remove.svg"} alt="remove"/>
             </button>
         </div>
         {
@@ -97,7 +97,7 @@ function Cart({delivery}) {
                     <span className='font-iransans text-xs inline-block text-carbon-main'>مخصوص سفارش اول</span>
                 </div>
                 <button type="button" className='min-w-8 grow-0 shrink-0 basis-8 flex justify-center items-center box-border transition-all h-8 border-border-sm border-transparent rounded-[50%] bg-transparent bg-clip-padding  hover:bg-carbon-alphaLight active:bg-carbon-alphaMedium rtl'>
-                    <Image width={12} height={14} src={"/icons/restaurant/remove-gray.svg"}/>
+                    <Image width={12} height={14} src={"/icons/restaurant/remove-gray.svg"}  alt="Remove" />
                 </button>
             </div>
         </div>

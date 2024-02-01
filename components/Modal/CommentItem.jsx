@@ -9,7 +9,7 @@ function CommentItem({comment}) {
                 <p className='mt-1.5 overflow-hidden text-ellipsis whitespace-nowrap font-iransans font-bold text-sm inline-block text-carbon-main'>{comment.name}</p>
                 <p className='mt-1.5 font-iransans text-sm inline-block text-carbon-main'>{comment.date}</p>
                 <p className='w-12 py-0.5 px-1.5 text-center box-border border-border-xs border-surface-dark rounded mt-1.5 font-iransans text-sm inline-flex items-center justify-center text-carbon-main'>
-                    <Image width={12} height={12} src={"/icons/modal/rate-star.svg"} className='ml-[0.15625rem] align-middle'/>
+                    <Image width={12} height={12} src={"/icons/modal/rate-star.svg"} alt='rate' className='ml-[0.15625rem] align-middle'/>
                     {comment.rate}
                 </p>
             </div>
@@ -18,9 +18,9 @@ function CommentItem({comment}) {
                 <div className='flex flex-wrap'>
 
                     {
-                        comment.orderTags.map((tag)=>{
+                        comment.orderTags.map((tag,index)=>{
                             return(
-                                <div className=' py-1 px-1.5 text-2xs bg-surface-dark rounded-md mb-2 ml-2 flex justify-center items-center'>
+                                <div className=' py-1 px-1.5 text-2xs bg-surface-dark rounded-md mb-2 ml-2 flex justify-center items-center' key={index}>
                                     <p className='font-iransans text-2xs inline-block text-carbon-main'>{tag}</p>
                                 </div>
                             )

@@ -24,7 +24,7 @@ function OrderModal() {
                 <PrevOrderCard/>
             </div>
             <button className='h-[3.75rem] rounded-[3rem] mt-1 mx-auto flex justify-center items-center transition-all min-w-[6.6875rem] border-border-sm border-accent2-alphaLight bg-transparent bg-clip-padding shadow-shadows-medium font-iransans font-bold text-base hover:bg-accent2-alphaLight active:bg-accent2-alphaMedium'>
-              <Image width={17} height={18} src={"/icons/modal/past-time.png"}/>
+              <Image width={17} height={18} src={"/icons/modal/past-time.png"}  alt="past time" />
               <p className='mr-2 font-iransans font-bold text-sm inline-block text-accent2-main'>مشاهده همه سفارش‌ها</p>
             </button>
         </div>

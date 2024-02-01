@@ -2,7 +2,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 import Slider from './Slider'
-import { fetchData } from '@/libs/fetchData'
+
 
  function ResturantSlider({title,restaurants}) {
     return (
@@ -13,7 +13,7 @@ import { fetchData } from '@/libs/fetchData'
                 <Link href={"/resturants"} >
                     <div className='cursor-pointer flex items-center'>
                         <p className='font-iransans font-bold text-lg text-accent2-main inline-block'>مشاهده همه</p>
-                        <Image width={9} height={16} src={"/icons/home/left-green.svg"} className='mr-4'/> 
+                        <Image width={9} height={16} src={"/icons/home/left-green.svg"} alt="left" className='mr-4'/> 
                     </div>
                 </Link>
             </div>

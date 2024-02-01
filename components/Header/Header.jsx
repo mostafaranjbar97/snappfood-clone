@@ -13,7 +13,7 @@ function Header({restaurants}) {
             <div className='relative animate-[auto_ease_0s_1_normal_none_running_none_!important] w-full top-0 right-0 left-0 bg-white box-border h-[4.5rem] p-4 flex justify-between items-center'>
                 <div className='flex items-center'>
                     <Link href={"/"} className='ml-10 hidden tablet:block' >
-                        <Image width={68} height={34} src={"/icons/header/snappfood-logo.svg"} className='outline-none'/>
+                        <Image width={68} height={34} src={"/icons/header/snappfood-logo.svg"} alt='snappfood' className='outline-none'/>
                     </Link>
                    <Address/>
                 </div>

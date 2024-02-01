@@ -8,7 +8,7 @@ function NewAddressModal() {
             <div className='w-[90vw] max-w-[640px] bg-white shadow-shadows-modal rounded-xl max-h-[90vh] overflow-hidden animate-[0.3s_cubic-bezier(0.4,0,0,1.5)_0s_1_normal_forwards_running_modal-animation2]'>
                 <div className='relative box-border w-full h-14 pl-14 flex justify-between items-center'>
                     <button className='h-14 w-14 flex justify-center items-center'>
-                        <Image width={14} height={14} src={"/icons/modal/exit.svg"}/>
+                        <Image width={14} height={14} src={"/icons/modal/exit.svg"}  alt="Close" />
                     </button>
                     <p className='font-iransans font-bold text-sm inline-block text-carbon-main'>آدرس جدید</p>
                     <div></div>
@@ -32,7 +32,7 @@ function NewAddressModal() {
                                 <input type="text" className='p-3 rounded-md text-carbon-main rtl h-full w-full' name='address' placeholder='پلاک، طبقه، واحد'/>
                             </div>
                             <div className='flex items-center mt-1.5'>
-                                <Image width={12} height={18} src={"/icons/modal/warning.png"} />
+                                <Image width={12} height={18} src={"/icons/modal/warning.png"} alt='warning' />
                                 <p className='text-alert-main font-iransans text-2xs inline-block mr-0.5' >جزییات آدرس را تکمیل نکردید</p>
                             </div>
                         </section>

@@ -88,7 +88,7 @@ function Sort() {
                     </div>}
                     <span className='self-stretch my-2 w-px box-border bg-[rgb(204,204,204)]'></span>
                     <div className='openMenu flex transition-[color] text-[rgb(204,204,204)] p-2'>
-                        <Image width={8} height={5} src={"/icons/resturants/bottom-sort.svg"} />
+                        <Image width={8} height={5} src={"/icons/resturants/bottom-sort.svg"} alt='bottom'/>
                     </div>
                 </div>
             </div>

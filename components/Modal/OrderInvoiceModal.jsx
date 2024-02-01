@@ -20,7 +20,7 @@ function OrderInvoiceModal() {
         <div className='min-w-[25rem] bg-white shadow-shadows-modal rounded-xl max-h-[90vh] overflow-hidden animate-[0.3s_cubic-bezier(0.4,0,0,1.5)_0s_1_normal_forwards_running_modal-animation2]' onClick={(e)=>e.stopPropagation()}>
             <div className='relative w-full h-14 pl-14 box-border flex justify-between items-center'>
                 <button className='w-14 h-14 flex justify-center items-center'>
-                    <Image width={14} height={14} src={"/icons/modal/exit-modal.svg"}/>
+                    <Image width={14} height={14} src={"/icons/modal/exit-modal.svg"}  alt="close" />
                 </button>
                 <p className='font-iransans font-bold text-carbon-main text-sm inline-block'></p>
                 <div></div>
@@ -41,7 +41,7 @@ function OrderInvoiceModal() {
                                     </div>
                                 </div>
                             </div>
-                            <Image width={6} height={6} src={"/icons/modal/exit-modal.svg"} className='mr-0.5'/>
+                            <Image width={6} height={6} src={"/icons/modal/exit-modal.svg"} alt='exit' className='mr-0.5'/>
                             <span className='mr-0.5 text-carbon-light font-iransans text-sm inline-block'>۱</span>
                         </div>    
                     </div>
@@ -59,7 +59,7 @@ function OrderInvoiceModal() {
                                     </div>
                                 </div>
                             </div>
-                            <Image width={6} height={6} src={"/icons/modal/exit-modal.svg"} className='mr-0.5'/>
+                            <Image width={6} height={6} src={"/icons/modal/exit-modal.svg"} alt='exit' className='mr-0.5'/>
                             <span className='mr-0.5 text-carbon-light font-iransans text-sm inline-block'>۱</span>
                         </div>    
                     </div>

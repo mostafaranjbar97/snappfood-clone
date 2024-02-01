@@ -12,7 +12,7 @@ function RestaurantInfo({handleClose,restaurant}) {
     <div>
         <div className='py-[1.375rem] px-[1.625rem] flex justify-between'>
             <div className='cursor-pointer' onClick={handleClose}>
-                <Image width={14} height={14} src={"/icons/modal/exit-modal.svg"}/>
+                <Image width={14} height={14} src={"/icons/modal/exit-modal.svg"}  alt="close" />
             </div>
         </div>
         <div className='px-4 pb-4 flex justify-between'>
@@ -22,7 +22,7 @@ function RestaurantInfo({handleClose,restaurant}) {
                     <p className='mb-1 font-iransans font-bold text-xl inline-block text-carbon-main'>{restaurant.name}</p>
                     <p className='mb-1 font-iransans text-sm inline-block text-carbon-main'>{restaurantCategory}</p>
                     <p className='mb-1 font-iransans text-xs inline-block text-carbon-light'>
-                        <Image width={16} height={18} src={"/icons/modal/location.svg"} className='relative  ml-[0.3125rem] mb-1 inline-block'/>
+                        <Image width={16} height={18} src={"/icons/modal/location.svg"} alt='location' className='relative  ml-[0.3125rem] mb-1 inline-block'/>
                         {restaurant.address}
                     </p>
                 </div>
@@ -31,23 +31,23 @@ function RestaurantInfo({handleClose,restaurant}) {
         </div>
         <div className='my-2 flex justify-around'>
             <div className='flex flex-col items-center'>
-                <Image width={18} height={18} src={"/icons/modal/clock.svg"}/>
+                <Image width={18} height={18} src={"/icons/modal/clock.svg"}  alt="time"/>
                 <p className='mt-2.5 mb-1 font-iransans text-xs inline-block text-carbon-main'>ساعت کاری</p>
                 <p className='font-iransans text-xs flex text-carbon-main font-bold'>
                     <span className='font-iransans text-xs inline-block text-accent2-main font-bold ml-1'> باز </span>
                     {restaurant.workingHours}
-                    <Image width={11} height={9} src={"/icons/modal/bottom-info.svg"} className='top-[0.0625rem] relative mr-1' />
+                    <Image width={11} height={9} src={"/icons/modal/bottom-info.svg"} alt='bottom' className='top-[0.0625rem] relative mr-1' />
                 </p>
             </div>
 
             <div className='flex items-center flex-col'>
-                <Image width={19} height={14} src={"/icons/modal/payment.png"} />
+                <Image width={19} height={14} src={"/icons/modal/payment.png"}  alt="payment"/>
                 <p className='mt-2.5 mb-1 font-iransans text-xs inline-block text-carbon-main'>شیوه‌های پرداخت</p>
                 <p className='font-iransans text-xs inline-block text-carbon-main font-bold'>{restaurant.paymentMethod}</p>
             </div>
 
             <div className='flex items-center flex-col'>
-                <Image width={19} height={19} src={"/icons/modal/shopping-cart.png"} />
+                <Image width={19} height={19} src={"/icons/modal/shopping-cart.png"}   alt="cart"/>
                 <p className='mt-2.5 mb-1 font-iransans text-xs inline-block text-carbon-main'>حداقل سبد خرید</p>
                 <span className='font-iransans text-sm inline-block text-carbon-main font-bold'> {restaurant.minimumCart} 
                     <span className='font-iransans text-xs inline-block text-carbon-main'>تومان</span>

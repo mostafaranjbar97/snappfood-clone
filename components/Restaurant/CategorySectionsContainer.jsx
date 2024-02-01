@@ -88,7 +88,7 @@ function CategorySectionsContainer({restaurants}) {
         
         {(getSearch && results.length>0) && <section className='scroll-mt-[4.375rem]'>
           <div className='my-5 mr-[1.59375rem] flex justify-start items-center font-iransans +3text-base text-carbon-main'>
-            <Image width={9} height={16} src={"/icons/restaurant/right.svg"} className='ml-[1.59375rem]'/>
+            <Image width={9} height={16} src={"/icons/restaurant/right.svg"} alt="right" className='ml-[1.59375rem]'/>
             نتایج برای
             <p className='font-iransans font-bold text-base text-carbon-main inline-block'>«{searchTerm}»</p>
           </div>
@@ -106,7 +106,7 @@ function CategorySectionsContainer({restaurants}) {
           (getSearch && results.length==0)&& 
           <div className='flex items-center justify-center flex-col'>
             <div className='h-[50vh] flex items-center justify-center flex-col'>
-              <Image width={160} height={160} src={"/icons/restaurant/not-found.svg"}/>
+              <Image width={160} height={160} src={"/icons/restaurant/not-found.svg"}  alt="not found"/>
               <p className='font-iransans text-sm text-inactive-dark my-4 inline-block'>هیچ نتیجه‌ای یافت نشد!</p>
             </div>
           </div>

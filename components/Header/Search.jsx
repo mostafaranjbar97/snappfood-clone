@@ -40,7 +40,7 @@ function Search({restaurants}) {
 
   return (
     <div onClick={openHandler} className='w-[10.5625rem] bg-white absolute left-0 h-12 p-4 m-auto rounded-xlg box-border flex items-center laptop:right-0 laptop:w-[29vw] laptop:bg-surface-dark '>
-        <Image width={18} height={18} src={"/icons/header/search.svg"} className='ml-2'/>
+        <Image width={18} height={18} src={"/icons/header/search.svg"} alt='search' className='ml-2'/>
         {searchTerm ?  <p className='ml-2 font-iransans font-normal text-base hidden text-inactive-dark laptop:inline-block'>{searchTerm}</p>
         :
          <p className='ml-2 font-iransans font-normal text-base hidden text-inactive-dark laptop:inline-block'>جست‌وجو در {searchIn}</p>}
