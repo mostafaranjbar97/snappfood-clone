@@ -12,14 +12,16 @@ function SearchModal({ restaurants,restaurantCategory,showSearchModal }) {
     const dispatch=useDispatch()
     const params=useParams()
     const inputRef = useRef();
-
+    const [searchTerm,setSearchTerm]=useState("")
 
     const {isOpen,history}=showSearchModal
-    if (!isOpen) return null;
+    
     useEffect(() => {
-        setTimeout(()=>inputRef.current.focus(),50)
+        if (isOpen) {
+            inputRef.current.focus();
+        }  
     }, [isOpen]);
-
+    if (!isOpen) return null;
 
    
 
@@ -34,7 +36,7 @@ function SearchModal({ restaurants,restaurantCategory,showSearchModal }) {
     const foods=restaurants.map((res)=>res.foods)
     const food=foods.flat()
 
-    const [searchTerm,setSearchTerm]=useState("")
+
     const changeHandler=(e)=>{
         setSearchTerm(e.target.value)
         dispatch(setSearchTerms(e.target.value))

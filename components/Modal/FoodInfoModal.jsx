@@ -1,6 +1,6 @@
 'use client'
 import Image from 'next/image'
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import CommentItem from './CommentItem'
 import clsx from 'clsx';
 import { useDispatch, useSelector } from 'react-redux';
@@ -9,9 +9,14 @@ import { addToCart, decreaseItem } from '@/redux/features/CartSlice';
 
 
 function FoodInfoModal({food,isOpen,foodCount}) {
-    if (!isOpen) return null;
-    const [showImg,setShowImg]=useState(food.images[0])
+    
+    const [showImg,setShowImg]=useState()
     const dispatch=useDispatch()
+    useEffect(()=>{
+        if (isOpen) {
+        setShowImg(food.images[0])
+        }
+    },[isOpen])
     // const openFoodInfoModal=useSelector((store)=>store.openFoodInfoModal)
     // const {isOpen,foodId,catId,resId}=openFoodInfoModal
     // const restaurant=restaurants.filter((res)=>res.id==resId)[0]
@@ -24,7 +29,7 @@ function FoodInfoModal({food,isOpen,foodCount}) {
    
 
 
-
+    if (!isOpen) return null;
     const handleAddToCart=()=>{
         dispatch(addToCart(food))
     }
