@@ -4,7 +4,7 @@ import React, { useEffect, useState } from 'react'
 
 function FoodPartyTimer() {
 
-    const [day, setDay] = useState(0)
+
     const [hour, setHour] = useState(0)
     const [min, setMin] = useState(0)
     const [sec, setSec] = useState(0)
@@ -20,7 +20,7 @@ function FoodPartyTimer() {
         let minute=second*60;
         let hours = minute*60;
         let days=hours*24;
-        setDay(Math.floor(gap / days))
+
         setHour(Math.floor((gap % days) / hours))
         setMin(Math.floor((gap % hours) / minute))
         setSec(Math.floor((gap % minute) / second))

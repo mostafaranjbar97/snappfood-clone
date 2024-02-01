@@ -11,13 +11,6 @@ import FoodPartyTimer from './FoodPartyTimer';
 async function FoodParty() {
     const { restaurants } = await fetchData();
     
-    const foods=restaurants.map((res)=>res.foods)
-    const food=foods.flat()
-    const offtime=food.filter((food)=>food.numberRemaining!=="")
-    // const restaurantId=offtime.map((food)=>food.restaurantId)
-    const takhfif2=restaurants.filter((res)=>res.id==offtime.map((food)=>{food.restaurantId}) )
-    const takhfif=offtime.map((food,index)=>restaurants.filter((res)=>res.id==food.restaurantId)).flat()
-    // console.log(takhfif)
   return (
     <section className=' h-auto'>
         <div className='flex w-full flex-col px-10 pb-10 min-h-[23.125rem] mb-20 bg-food-party rounded-food-party tablet:py-[1.8125rem] tablet:pr-0 tablet:pl-10 tablet:flex-row tablet:flex-nowrap'>
@@ -41,22 +34,7 @@ async function FoodParty() {
                     </div>
                 </Link>
             </div>
-          
             <FoodPartySlider restaurants={restaurants}/>
-            
-        
-{/* 
-        {offtime.map((food,index)=>{
-            return(
-                <div>
-                    <p>name:{food.name}</p>
-                    <p>numberRemaining:{food.numberRemaining}</p>
-                    <p>price:{food.price}</p>
-                    <p>resturant id :{food.restaurantId}</p>
-                    <p>resturant:{takhfif[index].name}</p>
-                </div>
-            )
-        })} */}
     </div>
     </section>
     
