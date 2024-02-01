@@ -1,15 +1,21 @@
 'use client'
 import Image from 'next/image'
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import CommentItem from './CommentItem'
 import clsx from 'clsx';
 import FoodPartyTimer from '../Home/FoodParty/FoodPartyTimer';
 
 function FoodPartyFoodInfoModal({isOpen,handleClose,food,foodCount,handleAddToCart,decreaseItemCart}) {
-
+    const [showImg,setShowImg]=useState()
+    
+    
+    useEffect(()=>{
+        if (isOpen) {
+        setShowImg(food.images[0]);
+        }
+    },[isOpen])
     if (!isOpen) return null;
     const foodWithDiscount=((food.price)*(100-(food.discount)))/100
-    const [showImg,setShowImg]=useState(food.images[0])
     const albumHandler=(e)=>{
         setShowImg(e.target.src)
     }
