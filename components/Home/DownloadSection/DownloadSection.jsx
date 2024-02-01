@@ -13,7 +13,7 @@ function DownloadSection() {
                     <p className='text-xs text-carbon-light font-iransans font-bold inline-block'> برای دریافت لینک دانلود اپلیکیشن، شماره موبایلتان رو وارد کنید </p>
                     <form action=""  className='box-border mt-1.5 w-[35vw] min-w-[17.8125rem] max-w-[50%] h-12 overflow-hidden bg-white border border-carbon-alphaMedium rounded-md shadow-shadows-medium flex justify-between items-center'>
                         <div className='grow relative h-12 bg-white rounded-md box-border transition-[border] rtl '>
-                            <input type="text" placeholder='*********۰۹' name='cellphone' className='p-3 rtl w-full h-full rounded-md text-carbon-main box-border '/>
+                            <input type="text" placeholder='*********۰۹' name='cellphone' className='p-3 rtl w-full h-full rounded-md text-carbon-main box-border outline-0'/>
                         </div>
                         <button type='submit' className='ml-2 flex justify-center items-center box-border min-w-[6.6875rem] h-8 bg-accent-main text-white transition-all border-border-sm border-accent-main bg-clip-padding font-iransans font-bold rounded-md text-sm hover:bg-accent-light '>دریافت لینک</button>
                     </form>
