@@ -1,0 +1,52 @@
+import Footer from "@/components/Footer/Footer";
+import Header from "@/components/Header/Header";
+import Category from "@/components/Home/Category/Category";
+import Cities from "@/components/Home/Cities/Cities";
+import DownloadSection from "@/components/Home/DownloadSection/DownloadSection";
+import FoodParty from "@/components/Home/FoodParty/FoodParty";
+import ResturantSlider from "@/components/Home/ResturantSlider/ResturantSlider";
+import VendorRegister from "@/components/Home/VendorRegister/VendorRegister";
+import AddressModal from "@/components/Modal/AddressModal";
+import NewAddressModal from "@/components/Modal/NewAddressModal";
+import OrderCommentModal from "@/components/Modal/OrderCommentModal";
+import OrderInvoiceModal from "@/components/Modal/OrderInvoiceModal";
+import OrderModal from "@/components/Modal/OrderModal";
+import SearchModal from "@/components/Modal/SearchModal";
+import SupportModal from "@/components/Modal/SupportModal";
+import { fetchData } from "@/libs/fetchData";
+
+
+export default async function Home() {
+
+    const {restaurants}= await fetchData()
+    const cat=["پیشنهاد کاربران","تازه‌ها در اسنپ‌فود","برترین‌ها","جایزه خرید","مزه‌های خاص","دارای تخفیف","یک تجربه جدید","دارای کوپن","فقط در اسنپ‌فود"]
+
+  return (
+    <>
+    
+      <main className="p-4 pt-0 grow box-border w-full max-w-[85.375rem] mx-auto tablet:p-6 laptop:p-10">
+        <Category/>
+        <FoodParty/>
+        {
+          cat.map((cat)=>{
+            return(
+              <ResturantSlider title={cat} restaurants={restaurants}/>
+            )
+          })
+        }
+        
+        <DownloadSection/>
+        <VendorRegister/>
+        {/* <OrderModal/> */}
+        {/* <OrderCommentModal/> */}
+        {/* <OrderInvoiceModal/> */}
+        {/* <AddressModal/> */}
+        {/* <NewAddressModal/> */}
+        {/* <SupportModal/> */}
+        {/* <SearchModal/> */}
+      </main>
+      <Cities/>
+      
+    </>
+  )
+}
