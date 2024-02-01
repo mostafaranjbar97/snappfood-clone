@@ -9,7 +9,7 @@ function CommentItem({comment}) {
                 <p className='mt-1.5 overflow-hidden text-ellipsis whitespace-nowrap font-iransans font-bold text-sm inline-block text-carbon-main'>{comment.name}</p>
                 <p className='mt-1.5 font-iransans text-sm inline-block text-carbon-main'>{comment.date}</p>
                 <p className='w-12 py-0.5 px-1.5 text-center box-border border-border-xs border-surface-dark rounded mt-1.5 font-iransans text-sm inline-flex items-center justify-center text-carbon-main'>
-                    <Image width={12} height={12} src={"/icons/modal/rate-star.svg"} className='ml-[0.15625rem] align-middle'/>
+                    <Image width={12} height={12} src={"/icons/modal/rate-star.svg"} alt='rate' className='ml-[0.15625rem] align-middle'/>
                     {comment.rate}
                 </p>
             </div>

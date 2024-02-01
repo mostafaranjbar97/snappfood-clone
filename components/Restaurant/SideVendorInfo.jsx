@@ -32,7 +32,7 @@ function SideVendorInfo({restaurants}) {
                     <div className=''>
                         <div className='ml-2 flex flex-wrap'>
                             <span className='ml-2 flex'>
-                                <Image width={12} height={12} src={"/icons/home/rate-star.svg"} className='ml-1 align-middle'/>
+                                <Image width={12} height={12} src={"/icons/home/rate-star.svg"} alt="rate" className='ml-1 align-middle'/>
                                 <span className='font-iransans inline-block font-bold text-carbon-main text-xs'>{restaurant.rate}</span>
                             </span>
                             <p className='font-iransans text-xs text-inactive-dark inline-block'>({restaurant.totalPoints} امتیاز)</p>
@@ -47,7 +47,7 @@ function SideVendorInfo({restaurants}) {
         </header>
         <div className='flex flex-wrap items-center mb-6'>
             <button onClick={handleOpen} className='mt-2.5 flex justify-center items-center box-border transition-all min-w-[6.6875rem] w-full h-10 border-border-sm border-accent2-alphaLight rounded-[3rem] bg-white bg-clip-padding shadow-shadows-medium desktop:mt-0 text-accent2-main hover:text-accent2-dark active:text-accent2-dark active:bg-accent2-alphaMedium'>
-                <Image width={17} height={17} src={"/icons/restaurant/info.svg"}/>
+                <Image width={17} height={17} src={"/icons/restaurant/info.svg"}  alt="information"/>
                 <p className='inline-block font-iransans text-sm  mr-2'>اطلاعات و نظرات</p>
             </button>
         </div>

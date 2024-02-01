@@ -32,11 +32,11 @@ function BreadCrumbs({restaurants,restaurantCategory}) {
     <div className='mt-[1.5625rem] pr-5 flex items-center'>
         <Link href={"/"} className='flex items-center cursor-pointer ml-2.5'>
             <p className='ml-1 font-iransans text-2xs leading-3 text-inactive-dark inline-block'>اسنپ فود</p>
-            <Image width={5} height={16} src={"/icons/resturants/left-breadcrumb.svg"}/>
+            <Image width={5} height={16} src={"/icons/resturants/left-breadcrumb.svg"}  alt="back" />
         </Link>
         <Link href={"/resturants"} className='flex items-center cursor-pointer ml-2.5'>
             <p className= {clsx('ml-1 font-iransans text-2xs leading-3 inline-block', (search || restaurantId) ? "text-inactive-dark" :"text-carbon-main")}>رستوران</p>
-            {(search || restaurantId) && <Image width={5} height={16} src={"/icons/resturants/left-breadcrumb.svg"}/>}
+            {(search || restaurantId) && <Image width={5} height={16} src={"/icons/resturants/left-breadcrumb.svg"}  alt="back"/>}
         </Link>
         {search && <div className='flex'>
             <p className='font-iransans text-2xs leading-3 text-carbon-main inline-block'>{restaurantCategory[search-1].name}</p>

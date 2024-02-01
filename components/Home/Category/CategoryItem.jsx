@@ -10,7 +10,7 @@ function CategoryItem({data}) {
         <img src={data.img}  alt={data.name} className="rounded-xl w-full h-full object-cover" />
         <div className="absolute right-0 bottom-0 py-1 pr-4 pl-[0.8125rem] rounded-tl-xl rounded-br-xl bg-white flex items-center cursor-pointer transition-all ease-in-out duration-200 ">
           <p className="ml-[0.8125rem] font-iransans text-base text-carbon-main inline-block">{data.name}</p>
-          <Image src={"/icons/home/left-purple.svg"} width={7} height={11}  className="translate-x-0 transition-all ease-in-out duration-200 hover:-translate-x-0.5" />
+          <Image src={"/icons/home/left-purple.svg"} alt='left' width={7} height={11}  className="translate-x-0 transition-all ease-in-out duration-200 hover:-translate-x-0.5" />
         </div>
       </div>
     </Link>

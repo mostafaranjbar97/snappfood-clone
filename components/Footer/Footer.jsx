@@ -15,7 +15,7 @@ function Footer() {
                 <div className='p-10 grow'>
                     <div className='flex items-center'>
                         <Link href={"/"} >
-                            <Image width={81.65} height={41.73} src={"/icons/footer/logo.svg"} />
+                            <Image width={81.65} height={41.73} src={"/icons/footer/logo.svg"} alt='snappfood'/>
                         </Link>
                         <div className='mr-6 flex flex-col'>
                             <p className='mb-1 font-snapp font-bold text-lg text-accent-main'>اسنپ‌فود</p>
@@ -23,13 +23,13 @@ function Footer() {
                         </div>
                     </div>
                     <div className='mt-8 flex'>
-                        <Image width={81.65} height={41.73} src={"/icons/footer/nothing.svg"} className='invisible' />
+                        <Image width={81.65} height={41.73} src={"/icons/footer/nothing.svg"} className='invisible' alt='invisible'/>
                         <div className='mr-6 box-border flex -m-2 flex-wrap w-[calc(100%+5rem)] '>
                             {SOCIAL.map((item, index) => {
                                 return (<div className='box-border p-2 ' key={index}>
                                     <Link href={"/"} >
                                         <button className='flex justify-center items-center cursor-pointer transition-all box-border w-10 h-10 rounded-[50%] shadow-shadows-medium bg-clip-padding border-border-sm border-accent-alphaLight bg-surface-main hover:bg-white'>
-                                            <Image width={20} height={20} src={`/icons/footer/${item}.svg`} />
+                                            <Image width={20} height={20} src={`/icons/footer/${item}.svg`} alt='social' />
                                         </button>
                                     </Link>
                                 </div>)

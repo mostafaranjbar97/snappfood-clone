@@ -34,11 +34,11 @@ function PrevOrderCard() {
             </div>
             <div className='flex justify-center mt-3 mb-2'>
                 <button onClick={handleOpenInvoiceModal} className='flex justify-center items-center box-border grow shrink basis-0 h-8 ml-4 transition-all border-border-sm border-carbon-alphaMedium rounded-md min-w-[6.6875rem] text-carbon-main bg-carbon-alphaLight bg-clip-padding rtl hover:bg-carbon-alphaMedium active:bg-carbon-alphaHigh'>
-                    <Image width={17} height={18} src={"/icons/modal/alert.png"} className='grow-0 basis-auto shrink-0'/>
+                    <Image width={17} height={18} src={"/icons/modal/alert.png"} alt='alert' className='grow-0 basis-auto shrink-0'/>
                     <p className='mr-2 grow-0 basis-auto shrink-0 font-iransans font-bold text-sm inline-block text-carbon-main'>مشاهده فاکتور</p>
                 </button>
                 <button className='flex justify-center items-center box-border grow shrink basis-0 h-8 transition-all border-border-sm border-carbon-alphaMedium rounded-md min-w-[6.6875rem] text-carbon-main bg-carbon-alphaLight bg-clip-padding rtl hover:bg-carbon-alphaMedium active:bg-carbon-alphaHigh'>
-                    <Image width={16} height={16} src={"/icons/modal/refresh.svg"} className='grow-0 basis-auto shrink-0'/>
+                    <Image width={16} height={16} src={"/icons/modal/refresh.svg"} alt='refresh' className='grow-0 basis-auto shrink-0'/>
                     <p className='mr-2 grow-0 basis-auto shrink-0 font-iransans font-bold text-sm inline-block text-carbon-main'>سفارش مجدد</p>
                 </button>
             </div>

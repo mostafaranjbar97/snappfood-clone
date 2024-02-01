@@ -30,7 +30,7 @@ function SupportModal() {
                             <br />
                             <p className='font-iransans text-xs inline-block text-carbon-main pb-2'>ارسال نشدن اقلام، نارضایتی از کیفیت، لغو، تغییر آدرس تحویل و...</p>
                         </div>
-                        <Image width={5} height={16} src={"/icons/modal/left-support.svg"} />
+                        <Image width={5} height={16} src={"/icons/modal/left-support.svg"}  alt="arrow"/>
                     </button>
 
                     <button className=' w-full min-h-[60px] text-right bg-transparent border-b border-b-surface-dark flex justify-between items-center'>
@@ -39,7 +39,7 @@ function SupportModal() {
                             <br />
                             <p className='font-iransans text-xs inline-block text-carbon-main pb-2'>پرداخت ناموفق، عدم بازگشت وجه به کیف‌پول و...</p>
                         </div>
-                        <Image width={5} height={16} src={"/icons/modal/left-support.svg"} />
+                        <Image width={5} height={16} src={"/icons/modal/left-support.svg"}  alt="arrow"/>
                     </button>
                     
                     <button className=' w-full min-h-[60px] text-right bg-transparent border-b border-b-surface-dark flex justify-between items-center'>
@@ -48,7 +48,7 @@ function SupportModal() {
                             <br />
                             <p className='font-iransans text-xs inline-block text-carbon-main pb-2'>تخفیف، خطای اپلیکیشن و...</p>
                         </div>
-                        <Image width={5} height={16} src={"/icons/modal/left-support.svg"} />
+                        <Image width={5} height={16} src={"/icons/modal/left-support.svg"}  alt="arrow" />
                     </button>
 
                     <button className=' w-full min-h-[60px] text-right bg-transparent border-b border-b-surface-dark flex justify-between items-center'>
@@ -57,7 +57,7 @@ function SupportModal() {
                             <br />
                             
                         </div>
-                        <Image width={5} height={16} src={"/icons/modal/left-support.svg"} />
+                        <Image width={5} height={16} src={"/icons/modal/left-support.svg"}  alt="arrow" />
                     </button>
                     
                 </div>

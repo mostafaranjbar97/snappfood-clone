@@ -15,10 +15,11 @@ function SearchModal({ restaurants,restaurantCategory,showSearchModal }) {
 
 
     const {isOpen,history}=showSearchModal
+    if (!isOpen) return null;
     useEffect(() => {
         setTimeout(()=>inputRef.current.focus(),50)
     }, [isOpen]);
-    if (!isOpen) return null;
+
 
    
 
@@ -82,8 +83,8 @@ function SearchModal({ restaurants,restaurantCategory,showSearchModal }) {
             <div onClick={(e)=>e.stopPropagation()} className='fixed top-0 flex justify-center w-[31vw] min-w-[18.75rem] m-auto py-3 rounded-t-none rounded-xl max-h-[90vh] overflow-hidden animate-[0.3s_cubic-bezier(0.4,0,0,1.5)_0s_1_normal_forwards_running_modal-animation3]'>
                 <div className='w-[95%] flex flex-col'>
                     <div className='relative w-full'>
-                        {searchTerm ? <Image onClick={clearInputHandler} width={18} height={18} src={"/icons/modal/exit-search.svg"} className='absolute top-0 right-4 bottom-0 m-auto cursor-pointer'/> 
-                        : <Image width={18} height={18} src={"/icons/header/search-black.svg"} className='absolute top-0 right-4 bottom-0 m-auto '/>}
+                        {searchTerm ? <Image onClick={clearInputHandler} width={18} height={18} src={"/icons/modal/exit-search.svg"} alt="search" className='absolute top-0 right-4 bottom-0 m-auto cursor-pointer'/> 
+                        : <Image width={18} height={18} src={"/icons/header/search-black.svg"}  alt="search" className='absolute top-0 right-4 bottom-0 m-auto '/>}
                         <input onKeyUp={addtohistoryHandler} ref={inputRef} value={searchTerm} onChange={changeHandler} type="text" className='w-full box-border h-12 text-carbon-main rounded-xlg font-iransans text-base py-3 pr-10 pl-3 border-border-xs border-carbon-alphaHigh focus:border focus:border-carbon-main'/>
                     </div>
 
@@ -94,11 +95,11 @@ function SearchModal({ restaurants,restaurantCategory,showSearchModal }) {
                                 return(
                                     <div key={index} className='py-3.5 pr-5 pl-[1.125rem] cursor-pointer flex justify-between items-center'>
                                         <div className='flex'>
-                                        <Image width={18} height={17} src={"/icons/modal/past-time-black.png"} className='ml-[1.125rem] '/>
+                                        <Image width={18} height={17} src={"/icons/modal/past-time-black.png"} alt="time" className='ml-[1.125rem] '/>
                                         <p className='font-iransans text-sm inline-block text-carbon-main'>{item}</p>   
                                         </div>
                                         <button onClick={removeFromHistoryHandler} id={index} className='flex justify-center items-center transition-all border-transparent box-border w-8 h-8 rounded-[50%] bg-transparent bg-clip-padding border-border-sm hover:bg-accent-alphaLight hover:border-accent-alphaLight active:bg-accent-alphaMedium active:border-accent-alphaMedium'>
-                                            <Image id={index} width={12} height={14} src={"/icons/modal/exit.svg"} />
+                                            <Image id={index} width={12} height={14} src={"/icons/modal/exit.svg"} alt='exit' />
                                         </button>
                                     </div>
                                 )
@@ -109,7 +110,7 @@ function SearchModal({ restaurants,restaurantCategory,showSearchModal }) {
                             <span className='font-iransans text-sm inline-block text-carbon-light'>جستجو‌‌ی
                                 <p className='font-iransans font-bold text-sm inline-block text-carbon-main mr-1'>{searchTerm}</p>
                             </span>
-                            <Image width={12} height={12} src={"/icons/header/left.svg"} /> 
+                            <Image width={12} height={12} src={"/icons/header/left.svg"} alt='left' /> 
                         </div>}
 
                         
@@ -125,7 +126,7 @@ function SearchModal({ restaurants,restaurantCategory,showSearchModal }) {
                                             return(
                                                 <Link key={index} className='' href={`/resturants/?cat=${cat.id}`} onClick={handleClose}>
                                                     <div className='box-border p-5 flex items-center'>
-                                                        <Image width={24} height={22} src={"/icons/modal/search-category.svg"} className='ml-4'/>
+                                                        <Image width={24} height={22} src={"/icons/modal/search-category.svg"} alt="search" className='ml-4'/>
                                                         <div>
                                                             <span className='font-iransans text-sm text-carbon-light inline-block'>دسته‌بندی
                                                                 <p className='font-iransans font-bold text-sm text-carbon-main inline-block mr-1'>{cat.name}</p>
@@ -148,7 +149,7 @@ function SearchModal({ restaurants,restaurantCategory,showSearchModal }) {
                                                 مشاهده همه
                                                 ({searchRestaurant.length})
                                                 </span>
-                                                <Image width={12} height={12} src={"/icons/modal/left.svg"} />
+                                                <Image width={12} height={12} src={"/icons/modal/left.svg"}  alt="back" />
                                             </div>
                                         </Link>
                                     </div>
@@ -157,7 +158,7 @@ function SearchModal({ restaurants,restaurantCategory,showSearchModal }) {
                                             return(
                                                 <Link key={index} href={`/resturants/${res.id}`} onClick={handleClose}>
                                                     <div className='p-5 box-border flex items-center'>
-                                                        <Image width={24} height={18} src={"/icons/modal/shop.svg"} className='ml-4'/>
+                                                        <Image width={24} height={18} src={"/icons/modal/shop.svg"} alt="shop" className='ml-4'/>
                                                         <div>
                                                             <span className='font-iransans text-sm text-carbon-main inline-block'>{res.name}</span>
                                                         </div>
@@ -178,7 +179,7 @@ function SearchModal({ restaurants,restaurantCategory,showSearchModal }) {
                                                 مشاهده همه
                                                 ({searchProdouct.length})
                                                 </span>
-                                                <Image width={12} height={12} src={"/icons/modal/left.svg"} />
+                                                <Image width={12} height={12} src={"/icons/modal/left.svg"} alt="left" />
                                             </div>
                                         </Link>
                                     </div>
@@ -191,7 +192,7 @@ function SearchModal({ restaurants,restaurantCategory,showSearchModal }) {
                                                 <Link key={index} href={`/resturants/${restaurant.id}`} onClick={handleClose}>
                                                     <div className='box-border p-5 flex items-start flex-col border-b border-b-surface-dark'>
                                                         <div className='flex'>
-                                                            <Image width={56} height={56} src={prodouct.images[0]} alt="" className='ml-4 rounded'/>
+                                                            <Image width={56} height={56} src={prodouct.images[0]} alt="food" className='ml-4 rounded'/>
                                                             <div className='flex flex-col'>
                                                                 <span className='font-iransans font-bold text-xs text-carbon-main inline-block'>{prodouct.name}</span>
                                                                 <span className='font-iransans text-xs text-gray5-color inline-block mt-3'>{restaurant.name}</span>
@@ -215,7 +216,7 @@ function SearchModal({ restaurants,restaurantCategory,showSearchModal }) {
                                                                     {prodouct.discount &&<span className='pt-1.5 pb-0.5 leading-[0.625rem] text-sm flex justify-center items-center grow  px-1 rounded m-1 bg-accent-alphaLight font-iransans font-bold text-accent-main '>
                                                                         {prodouct.discount}
                                                                         <span className='mr-1'>
-                                                                            <Image width={8} height={10} src={"/icons/modal/percent.svg"}/>
+                                                                            <Image width={8} height={10} src={"/icons/modal/percent.svg"} alt="percent"/>
                                                                         </span>
                                                                     </span>}
                                                                     {prodouct.discount ? <div className='flex items-center'>

@@ -36,7 +36,7 @@ function FoodPartyCard({food,takhfif,index}) {
               <div className='flex flex-col'>
                 <span className='inline-block'>
                   <span className='ltr flex justify-end'>
-                    <Image width={12} height={12} src={"/icons/home/rate-star.svg"} className='mr-1 align-middle'/>
+                    <Image width={12} height={12} src={"/icons/home/rate-star.svg"} alt="rate" className='mr-1 align-middle'/>
                     <span className='font-iransans font-bold text-xs text-carbon-main inline-block'>{food.rate}</span>
                   </span>
                 </span>
@@ -49,7 +49,7 @@ function FoodPartyCard({food,takhfif,index}) {
                 <div className='ltr mb-1 flex justify-center items-center'>
                   <div className='mr-0.5 w-[1.8125rem] h-4 rounded-[0.25rem] bg-accent-main flex justify-center items-center'>
                     <span className='rtl mt-0.5 font-iransans font-bold text-xs text-white flex'>{food.discount}
-                    <Image width={7} height={8} src={"/icons/home/percent.svg"} className='mr-[0.1875rem]'/>
+                    <Image width={7} height={8} src={"/icons/home/percent.svg"} alt="percent" className='mr-[0.1875rem]'/>
                     </span>
                   </div>
                   <s className='mr-[0.1875rem] font-iransans text-xs text-inactive-dark inline-block'>{food.price}</s>

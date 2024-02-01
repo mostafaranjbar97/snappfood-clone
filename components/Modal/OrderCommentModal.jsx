@@ -21,10 +21,10 @@ function OrderCommentModal() {
         <div className='relative h-[40.25rem] bg-surface-main shadow-shadows-inset flex flex-col'>
           <div className='h-14 px-4 flex justify-between items-center '>
             <button className='flex justify-center items-center transition-all rtl rounded-[50%] box-border w-8 h-8 bg-transparent bg-clip-padding border-border-sm border-transparent hover:bg-carbon-alphaLight hover:border-carbon-alphaLight active:bg-carbon-alphaMedium active:border-carbon-alphaMedium'>
-              <Image width={14} height={14} src={"/icons/modal/exit-modal.svg"} />
+              <Image width={14} height={14} src={"/icons/modal/exit-modal.svg"}  alt="close"/>
             </button>
             <button className='flex justify-center items-center box-border min-w-[6.6875rem] h-8 border-border-sm border-transparent rounded-md bg-transparent transition-all rtl hover:bg-carbon-alphaLight hover:text-carbon-dark active:bg-carbon-alphaMedium active:text-carbon-dark'>
-              <Image width={20} height={20} src={"/icons/modal/factor.svg"} />
+              <Image width={20} height={20} src={"/icons/modal/factor.svg"} alt='factor'/>
               <p className='mr-2 font-bold text-sm font-iransans text-carbon-main inline-block'>جزئیات سفارش</p>
             </button>
           </div>
@@ -32,9 +32,9 @@ function OrderCommentModal() {
             <div className='mb-6 flex justify-center items-center flex-col'>
               <p className='font-iransans font-bold text-lg inline-block text-carbon-main'>امتیاز به سفارش از فست فود الو پیتزا </p>
               <div className='mt-1 flex'>
-                <Image width={18} height={18} src={"/icons/modal/calender.svg"} className='ml-1'/>
+                <Image width={18} height={18} src={"/icons/modal/calender.svg"} alt='calender' className='ml-1'/>
                 <p className='ml-8 font-iransans text-sm inline-block text-carbon-main'>دوشنبه، ۳۱ مرداد</p>
-                <Image width={18} height={18} src={"/icons/modal/time.svg"} className='ml-1'/>
+                <Image width={18} height={18} src={"/icons/modal/time.svg"} alt='time' className='ml-1'/>
                 <p className='ml-8 font-iransans text-sm inline-block text-carbon-main'>۲۰:۰۳</p>
               </div>
             </div>

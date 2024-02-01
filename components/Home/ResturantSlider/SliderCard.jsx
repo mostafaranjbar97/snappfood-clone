@@ -18,13 +18,13 @@ function SliderCard({restaurant}) {
         <Link href={`/resturants/${restaurant.id}`} title={restaurant.name} >
             <div className='h-[21.3125rem] bg-white flex justify-between box-border mb-8 pb-6 overflow-hidden cursor-pointer border-carbon-alphaLight border border-solid flex-col text-carbon-main shadow-shadows-small rounded-lg hover:shadow-shadows-high'>
                 <div className='h-[9.6875rem] min-h-[9.6875rem] max-h-[9.6875rem] relative shrink-0 grow flex items-end justify-center'>
-                    <img src={restaurant.image} className='object-cover w-full h-full'/>
+                    <img src={restaurant.image} className='object-cover w-full h-full'  alt={restaurant.name} />
                     <div className='absolute right-0 left-0 m-auto translate-y-5 h-[5.5rem] w-[5.5rem] bg-white rounded-xl shadow-shadows-high flex justify-center items-center'>
                         <img alt={restaurant.name} src={restaurant.logo} className='border-carbon-alphaLight border rounded-xl'/>
                     </div>
                     {(restaurant.coupon || restaurant.proUsers) &&<div className='absolute right-0 top-5 left-auto max-w-[calc(100%-26px)] py-1 pr-2 pl-3 bg-white rounded-l-2xl flex items-center'>
                         <span className='w-4 h-4'>
-                            <Image width={16} height={16} src={"/icons/home/coupon-badge.svg"} />
+                            <Image width={16} height={16} src={"/icons/home/coupon-badge.svg"}  alt="Coupon Badge" />
                         </span>
                         <span className='mr-[0.28125rem] pt-0.5 overflow-hidden font-medium whitespace-nowrap text-ellipsis font-iransans text-xs inline-block text-accent2-dark'>{copon4}</span>
                     </div>}
@@ -38,7 +38,7 @@ function SliderCard({restaurant}) {
                         <div className='mb-2'>
                             <div className='ml-2 flex'>
                                 <span className='ml-2 flex'>
-                                    <Image width={12} height={12} src={"/icons/home/rate-star.svg"} className='ml-1 align-middle'/>
+                                    <Image width={12} height={12} src={"/icons/home/rate-star.svg"} className='ml-1 align-middle' alt='rate'/>
                                     <span className='font-iransans font-bold text-xs text-carbon-main inline-block '>{restaurant.rate}</span>
                                 </span>
                                 <p className='font-iransans text-xs text-inactive-dark inline-block'>({restaurant.totalPoints} )</p>
@@ -49,7 +49,7 @@ function SliderCard({restaurant}) {
                     <div className='flex justify-center'>
                         <div className='px-[0.875rem] py-[0.6875rem] rounded-[4.5rem] bg-white shadow-shadows-small'>
                             <div className='flex'>
-                                <Image width={17} height={18} src={ restaurant.delivery.snappfoodDelivery===true ? "/icons/home/express.svg" : "/icons/home/courier.svg"} className='ml-2 align-middle'/>
+                                <Image width={17} height={18} src={ restaurant.delivery.snappfoodDelivery===true ? "/icons/home/express.svg" : "/icons/home/courier.svg"} className='ml-2 align-middle' alt='delivery'/>
                                 <p className='ml-2 font-iransans text-xs text-carbon-main inline-block'>{restaurant.delivery.type}</p>
                                 <div className='ml-2 flex flex-col'>
                                     <div className='flex items-center'>

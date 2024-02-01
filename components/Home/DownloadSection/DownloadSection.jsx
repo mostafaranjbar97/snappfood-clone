@@ -20,23 +20,23 @@ function DownloadSection() {
                 </div>
                 <div className='mb-10 leading-8 flex flex-wrap w-full desktop:w-[40.625rem] '>
                     <Link href={"/"} className='ml-4'>
-                        <Image width={135} height={41} src={"/icons/home/download-myket.svg"}/>
+                        <Image width={135} height={41} src={"/icons/home/download-myket.svg"}  alt="Download Myket" />
                     </Link>
                     <Link href={"/"} className='ml-4'>
-                        <Image width={135} height={41} src={"/icons/home/download-bazaar.svg"}/>
+                        <Image width={135} height={41} src={"/icons/home/download-bazaar.svg"}  alt="Download Bazaar" />
                     </Link>
                     <Link href={"/"} className='ml-4'>
-                        <Image width={135} height={41} src={"/icons/home/download-sibapp.svg"}/>
+                        <Image width={135} height={41} src={"/icons/home/download-sibapp.svg"}  alt="SibApp logo" />
                     </Link>
                     <div className='ml-4 relative inline-block'>
                         <Link href={"/"} className='w-full flex'>
-                            <Image width={135} height={41} src={"/icons/home/download-iapps.svg"}/>
+                            <Image width={135} height={41} src={"/icons/home/download-iapps.svg"}  alt="Download iApps" />
                         </Link>
                         <div className='absolute top-[-0.7rem] left-[50%] w-[18.75rem] bg-white px-2 py-[0.35625rem] shadow-shadows-medium rounded-lg -translate-x-1/2 -translate-y-full invisible opacity-0 transition-all'></div>
                     </div>
                 </div>
             </div>
-            <Image width={424} height={636} src={"https://snappfood.ir/static/images/img_app_mockup@2x.png"} className='hidden absolute left-[3.4375rem] -translate-y-[31%] overflow-clip laptop:block  '/>
+            <Image width={424} height={636} src={"https://snappfood.ir/static/images/img_app_mockup@2x.png"} alt='home' className='hidden absolute left-[3.4375rem] -translate-y-[31%] overflow-clip laptop:block  '/>
         </div>
     </section>
   )

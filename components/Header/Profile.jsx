@@ -43,7 +43,7 @@ function Profile() {
     <>
         <div className='hidden' onClick={handleClose}></div>
         <div className='p-4 cursor-pointer select-none flex laptop:ml-[0.5625rem]' onClick={handleOpen}>
-            <Image width={20} height={20} src={"/icons/header/user.svg"} className='ml-2'/>
+            <Image width={20} height={20} src={"/icons/header/user.svg"} alt='user' className='ml-2'/>
         </div>
         <div className='relative w-0 h-0 laptop:ml-[0.5625rem] usermodal'>
             {isOpen && <UserModal modalRef={modalRef}/>}

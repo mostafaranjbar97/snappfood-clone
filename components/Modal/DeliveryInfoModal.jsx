@@ -8,24 +8,24 @@ function DeliveryInfoModal({handleClose,modalRef}) {
         
             <div className='w-[calc(100%-32px)] py-3.5 grow flex justify-between items-center'>
                 <div className='flex items-center justify-center'>
-                    <Image width={18} height={18} src={"/icons/restaurant/time.svg"} className='ml-4'/>
+                    <Image width={18} height={18} src={"/icons/restaurant/time.svg"} alt='time' className='ml-4'/>
                     <p className='font-iransans text-xs inline-block text-carbon-main'>زمان دریافت سفارش</p>
                 </div>
                 <div className='size-5 cursor-pointer flex items-center justify-center' onClick={handleClose}>
-                    <Image width={12} height={16} src={"/icons/restaurant/top-green.svg"}/>
+                    <Image width={12} height={16} src={"/icons/restaurant/top-green.svg"} alt='top'/>
                 </div>
             </div>
 
             <div className='w-[calc(100%-32px)] py-3.5 grow flex justify-between items-center'>
                 <label htmlFor="" className='cursor-pointer flex items-center rtl'>
                     <input type="checkbox" className='hidden' /> 
-                    <Image width={20} height={20} src={"/icons/modal/check-delivery.svg"}/>
+                    <Image width={20} height={20} src={"/icons/modal/check-delivery.svg"} alt='check'/>
                     <div className='flex flex-col cursor-auto mr-[16.83px]'>
                         <p className='font-iransans font-bold text-xs inline-block text-carbon-main'>سریع‌ترین زمان ممکن</p>
                         <p className='font-iransans text-xs inline-block text-carbon-main'>ارسال سریع بعد از ثبت سفارش</p>
                     </div>
                 </label>
-                <Image width={20} height={20} src={"/icons/restaurant/fast-time.svg"} />
+                <Image width={20} height={20} src={"/icons/restaurant/fast-time.svg"} alt='time' />
             </div>
             
             <hr className='w-full border-t border-t-carbon-alphaLight' />
