@@ -1,11 +1,22 @@
+import { setHideSupportModal } from '@/redux/features/ShowModalSlice'
 import Image from 'next/image'
 import React from 'react'
+import { useDispatch, useSelector } from 'react-redux'
 
 function SupportModal() {
+    
+    const showModal=useSelector((store)=>store.showModal)
+    const {isOpenSupport}=showModal
+    const dispatch=useDispatch()
+    const handleClose=()=>{
+      dispatch(setHideSupportModal())
+    }
+    if(!isOpenSupport)return null;
+
   return (
     <div>
-        <div className='flex justify-center items-center fixed inset-0 z-[1000] animate-[0.3s_ease_0s_1_normal_forwards_running_modal-animation]'>
-            <div className='fixed right-4 bottom-[70px] w-[375px] h-[620px] bg-white shadow-shadows-modal rounded-xl max-h-[90vh] overflow-hidden animate-[0.3s_cubic-bezier(0.4,0,0,1.5)_0s_1_normal_forwards_running_modal-animation3]'>
+        <div className='flex justify-center items-center fixed inset-0 z-[1000] animate-[0.3s_ease_0s_1_normal_forwards_running_modal-animation]' onClick={handleClose}>
+            <div className='fixed right-4 bottom-[70px] w-[375px] h-[620px] bg-white shadow-shadows-modal rounded-xl max-h-[90vh] overflow-hidden animate-[0.3s_cubic-bezier(0.4,0,0,1.5)_0s_1_normal_forwards_running_modal-animation3]' onClick={(e)=>e.stopPropagation()}>
                 <div className='mt-2.5 px-[15px] '>
                     <div className='mt-[15px] mb-2.5    flex justify-between items-center flex-row-reverse'>
                         <div className='min-w-[30px]'></div>

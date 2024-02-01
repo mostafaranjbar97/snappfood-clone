@@ -9,6 +9,7 @@ import SearchModal from './SearchModal'
 import OrderModal from './OrderModal'
 import OrderCommentModal from './OrderCommentModal'
 import OrderInvoiceModal from './OrderInvoiceModal'
+import SupportModal from './SupportModal'
 
 
 function ModalRoot({restaurants,restaurantCategory}) {
@@ -51,6 +52,7 @@ function ModalRoot({restaurants,restaurantCategory}) {
         <OrderModal />
         <OrderCommentModal/>
         <OrderInvoiceModal/>
+        <SupportModal/>
     </div>
   )
 }
