@@ -6,6 +6,9 @@ import { useSelector } from 'react-redux'
 import FoodPartyInfoModal from './FoodPartyInfoModal'
 import AddressModal from './AddressModal'
 import SearchModal from './SearchModal'
+import OrderModal from './OrderModal'
+import OrderCommentModal from './OrderCommentModal'
+import OrderInvoiceModal from './OrderInvoiceModal'
 
 
 function ModalRoot({restaurants,restaurantCategory}) {
@@ -45,6 +48,9 @@ function ModalRoot({restaurants,restaurantCategory}) {
         <FoodPartyInfoModal food={foodPartyFood} isOpen={showFoodPatyInfoModal.isOpen} restaurant={restaurant}/>
         <AddressModal/>
         <SearchModal showSearchModal={showSearchModal} restaurants={restaurants} restaurantCategory={restaurantCategory}/>
+        <OrderModal />
+        <OrderCommentModal/>
+        <OrderInvoiceModal/>
     </div>
   )
 }

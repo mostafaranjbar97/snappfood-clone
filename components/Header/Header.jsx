@@ -4,6 +4,7 @@ import React from 'react'
 import Profile from './Profile'
 import Address from './Address'
 import Search from './Search'
+import Order from './Order'
 
 function Header({restaurants}) {
   return ( 
@@ -19,10 +20,7 @@ function Header({restaurants}) {
                 <Search restaurants={restaurants}/>
                 <div className='z-[999] flex items-center'>
                     <Profile/>
-                    <div className='mr-4 relative cursor-pointer select-none flex laptop:ml-[0.5625rem]'>
-                        <Image width={20} height={20} src={"/icons/header/order.svg"} className='ml-2'/>
-                        <p className='hidden ml-2 font-iransans font-bold text-carbon-main text-sm laptop:inline-block'>سفارش‌ها</p>
-                    </div>
+                    <Order/>
                 </div>
             </div>
         </div>

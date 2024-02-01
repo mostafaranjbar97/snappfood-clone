@@ -1,11 +1,23 @@
+'use client'
+import { setHideInvoiceModal } from '@/redux/features/ShowModalSlice'
 import Image from 'next/image'
 import React from 'react'
+import { useDispatch, useSelector } from 'react-redux'
 
 function OrderInvoiceModal() {
+
+    const showModal=useSelector((store)=>store.showModal)
+    const {isOpenOrderInvoiceModal}=showModal
+    const dispatch=useDispatch()
+    const handleClose=()=>{
+      dispatch(setHideInvoiceModal())
+    }
+    if(!isOpenOrderInvoiceModal)return null;
+
   return (
     <div>
-      <div className='flex inset-0 justify-center items-center fixed z-[3000] animate-[0.3s_ease_0s_1_normal_forwards_running_modal-animation]'>
-        <div className='min-w-[25rem] bg-white shadow-shadows-modal rounded-xl max-h-[90vh] overflow-hidden animate-[0.3s_cubic-bezier(0.4,0,0,1.5)_0s_1_normal_forwards_running_modal-animation2]'>
+      <div className='flex inset-0 justify-center items-center fixed z-[3000] animate-[0.3s_ease_0s_1_normal_forwards_running_modal-animation]' onClick={handleClose}>
+        <div className='min-w-[25rem] bg-white shadow-shadows-modal rounded-xl max-h-[90vh] overflow-hidden animate-[0.3s_cubic-bezier(0.4,0,0,1.5)_0s_1_normal_forwards_running_modal-animation2]' onClick={(e)=>e.stopPropagation()}>
             <div className='relative w-full h-14 pl-14 box-border flex justify-between items-center'>
                 <button className='w-14 h-14 flex justify-center items-center'>
                     <Image width={14} height={14} src={"/icons/modal/exit-modal.svg"}/>

@@ -7,6 +7,7 @@ import CartSlice from "./features/CartSlice";
 import ShowFoodPartyInfoModalSlice from "./features/ShowFoodPartyInfoModalSlice";
 import ShowAddressModalSlice from "./features/ShowAddressModalSlice";
 import SearchModal from "./features/SearchModal";
+import ShowModalSlice from "./features/ShowModalSlice";
 
 
 export const store = configureStore(
@@ -19,7 +20,8 @@ export const store = configureStore(
             cart:CartSlice,
             showFoodPartyInfoModal:ShowFoodPartyInfoModalSlice,
             showAddressModal:ShowAddressModalSlice,
-            searchModal:SearchModal
+            searchModal:SearchModal,
+            showModal:ShowModalSlice
         }
     }
 )

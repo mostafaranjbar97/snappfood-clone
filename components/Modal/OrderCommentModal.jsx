@@ -1,11 +1,23 @@
+'use client'
+import { setHideCommentModal } from '@/redux/features/ShowModalSlice'
 import Image from 'next/image'
 import React from 'react'
+import { useDispatch, useSelector } from 'react-redux'
 
 function OrderCommentModal() {
+
+  const showModal=useSelector((store)=>store.showModal)
+  const {isOpenOrderCommentModal}=showModal
+  const dispatch=useDispatch()
+  const handleClose=()=>{
+    dispatch(setHideCommentModal())
+  }
+  if(!isOpenOrderCommentModal)return null;
+
   return (
     <div>
-      <div className='flex inset-0 justify-center items-center fixed z-[2000] animate-[0.3s_ease_0s_1_normal_forwards_running_modal-animation]'>
-      <div className='w-[480px] h-[644px] overflow-auto bg-white shadow-shadows-modal rounded-xl animate-[0.3s_cubic-bezier(0.4,0,0,1.5)_0s_1_normal_forwards_running_modal-animation2] max-h-[90vh]'>
+      <div className='flex inset-0 justify-center items-center fixed z-[2000] animate-[0.3s_ease_0s_1_normal_forwards_running_modal-animation]' onClick={handleClose}>
+      <div className='w-[480px] h-[644px] overflow-auto bg-white shadow-shadows-modal rounded-xl animate-[0.3s_cubic-bezier(0.4,0,0,1.5)_0s_1_normal_forwards_running_modal-animation2] max-h-[90vh]' onClick={(e)=>e.stopPropagation()}>
         <div className='relative h-[40.25rem] bg-surface-main shadow-shadows-inset flex flex-col'>
           <div className='h-14 px-4 flex justify-between items-center '>
             <button className='flex justify-center items-center transition-all rtl rounded-[50%] box-border w-8 h-8 bg-transparent bg-clip-padding border-border-sm border-transparent hover:bg-carbon-alphaLight hover:border-carbon-alphaLight active:bg-carbon-alphaMedium active:border-carbon-alphaMedium'>
