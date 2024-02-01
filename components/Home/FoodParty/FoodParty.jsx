@@ -20,7 +20,7 @@ async function FoodParty() {
     // console.log(takhfif)
   return (
     <section className=' h-auto'>
-        <div className='z-1 flex w-full flex-col px-10 pb-10 min-h-[23.125rem] mb-20 bg-food-party rounded-food-party tablet:py-[1.8125rem] tablet:pr-0 tablet:pl-10 tablet:flex-row tablet:flex-nowrap'>
+        <div className='flex w-full flex-col px-10 pb-10 min-h-[23.125rem] mb-20 bg-food-party rounded-food-party tablet:py-[1.8125rem] tablet:pr-0 tablet:pl-10 tablet:flex-row tablet:flex-nowrap'>
             <div className='w-full py-[1.1875rem] flex flex-col justify-between items-center grow shrink-0 basis-[15%] tablet:w-[15%]'>
                 <div className='p-[0.3125rem] flex flex-col justify-center items-center'>
                     <div className='flex justify-center items-center '>
