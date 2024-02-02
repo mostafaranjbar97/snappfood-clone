@@ -14,12 +14,19 @@ function PriceTag({food}) {
                         <Image width={8} height={10} src={"/icons/restaurant/percent.svg"} alt='percent' />
                     </span>
                 </span>}
+                {food.discount ? <div className='flex items-start flex-col '>
+                    <s className='font-iransans text-xs inline-block text-inactive-dark'>{food.price}</s>
+                    <span className='font-iransans font-bold text-sm inline-block text-carbon-main'> {foodWithDiscount} 
+                        <span className='font-iransans text-sm inline-block text-carbon-main'>تومان</span>
+                    </span>
+                </div>
+                :
                 <div className='flex items-start flex-col '>
-                    {food.discount &&<s className='font-iransans text-xs inline-block text-inactive-dark'>{foodWithDiscount}</s>}
                     <span className='font-iransans font-bold text-sm inline-block text-carbon-main'> {food.price} 
                         <span className='font-iransans text-sm inline-block text-carbon-main'>تومان</span>
                     </span>
                 </div>
+                }
             </div>
         </div>
     </div>
