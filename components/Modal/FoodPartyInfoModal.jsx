@@ -1,20 +1,30 @@
 'use client'
 import Image from 'next/image'
-import React, { useState } from 'react'
+import React from 'react'
 import CommentItem from './CommentItem'
-import clsx from 'clsx';
-import FoodPartyTimer from '../Home/FoodParty/FoodPartyTimer';
 import Link from 'next/link';
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { setCloseFoodPartyInfoModal } from '@/redux/features/ShowFoodPartyInfoModalSlice';
 import { addToCart } from '@/redux/features/CartSlice';
 import { useRouter } from 'next/navigation';
+import PriceTag from './PriceTag';
+import FoodPartyHeader from './FoodPartyHeader';
+import CloseModal from './CloseModal';
 
-function FoodPartyInfoModal({food,isOpen,restaurant}) {
+function FoodPartyInfoModal({restaurants}) {
 
     const router=useRouter()
 
     const dispatch=useDispatch()
+
+    const showFoodPatyInfoModal=useSelector((store)=>store.showFoodPartyInfoModal)
+    const {isOpen}=showFoodPatyInfoModal
+    let restaurant ={}
+    let food={}
+    if(isOpen){
+      restaurant=restaurants.filter((res)=>res.id==showFoodPatyInfoModal.resId)[0]
+      food =restaurant.foods.filter((food)=>food.id==showFoodPatyInfoModal.foodId)[0]
+    }
 
     const handleAddToCart=()=>{
         dispatch(addToCart(food))
@@ -28,7 +38,7 @@ function FoodPartyInfoModal({food,isOpen,restaurant}) {
 
 
     if (!isOpen) return null;
-    const foodWithDiscount=((food.price)*(100-(food.discount)))/100
+
 
   return (
     <div >
@@ -36,24 +46,11 @@ function FoodPartyInfoModal({food,isOpen,restaurant}) {
             <div className=' bg-white shadow-shadows-modal rounded-xl max-h-[90vh] overflow-hidden animate-[0.3s_cubic-bezier(0.4,0,0,1.5)_0s_1_normal_forwards_running_modal-animation4]' onClick={(e)=>e.stopPropagation()}>
                 <div className='w-[60vw] max-w-[45rem] m-auto  flex flex-col'>
                     <header className='py-4 px-6 flex justify-between bg-food-party'>
-                        <div className='flex items-center'>
-                            <Image width={24} height={24} src={"/icons/restaurant/sparkler.svg"}  alt="sparkle" />
-                            <p className='font-iransans font-bold text-base text-white inline-block mr-2'>فود پارتی</p>
-                        </div>
-                        <div className='flex justify-center items-center flex-col'>
-                            <div className='flex justify-center items-center'>
-                                <FoodPartyTimer/>
-                                <Image width={18} height={18} src={"/icons/home/clock.svg"}  alt="timer" />
-                            </div>
-                        </div>
+                        <FoodPartyHeader/>
                     </header>
                     <div className='bg-white rounded-t-xl'>
                         <div className='relative box-border w-full h-14 pl-14 flex justify-between items-center'>
-                            <button className='w-14 h-14 flex justify-center items-center' onClick={handleClose} >
-                                <Image width={14} height={14} src={"/icons/modal/exit-modal.svg"}  alt="close modal"/>
-                            </button>
-                            <p className='font-bold font-iransans text-sm inline-block text-carbon-main'></p>
-                            <div></div>
+                            <CloseModal handleClose={handleClose}/>
                         </div>
                     </div>
                     <div className='max-h-[80vh] overflow-y-auto '>
@@ -82,21 +79,7 @@ function FoodPartyInfoModal({food,isOpen,restaurant}) {
                                             <div className='bg-inactive-dark h-0.5 w-full'></div>
                                         </div>
                                         <div className='mb-5 flex justify-between'>
-                                            <div className='flex flex-col'>
-                                                <div className='flex'>
-                                                    <span className='flex items-center justify-center grow py-0.5 px-1 rounded bg-accent-alphaLight m-1 font-iransans font-bold text-xs text-accent-main'>{food.discount}
-                                                        <span className='mr-1'>
-                                                            <Image width={8} height={10} src={"/icons/restaurant/percent.svg"} alt='percent' />
-                                                        </span>
-                                                    </span>
-                                                    <div className='flex items-start flex-col '>
-                                                        <s className='font-iransans text-xs inline-block text-inactive-dark'>{foodWithDiscount}</s>
-                                                        <span className='font-iransans font-bold text-sm inline-block text-carbon-main'> {food.price} 
-                                                            <span className='font-iransans text-sm inline-block text-carbon-main'>تومان</span>
-                                                        </span>
-                                                    </div>
-                                                </div>
-                                            </div>
+                                            <PriceTag food={food}/>      
                                             <div className='flex items-center flex-col'>
                                                 <button onClick={handleAddToCart} className='h-[2.3125rem] text-sm flex justify-center items-center cursor-pointer box-border transition-all min-w-[6.6875rem] border-border-sm border-accent-alphaLight rounded-[3rem] bg-white bg-clip-padding font-iransans shadow-shadows-medium text-accent-main group-hover:text-white group-hover:bg-accent-main  group-active:bg-accent-dark group-active:text-white'>افزودن</button>
                                             </div>

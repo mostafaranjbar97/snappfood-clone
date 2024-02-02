@@ -28,14 +28,6 @@ function ModalRoot({restaurants,restaurantCategory}) {
   }
   }
 
-  const showFoodPatyInfoModal=useSelector((store)=>store.showFoodPartyInfoModal)
-  let restaurant ={}
-  let foodPartyFood={}
-  if(showFoodPatyInfoModal.isOpen){
-    restaurant=restaurants.filter((res)=>res.id==showFoodPatyInfoModal.resId)[0]
-    foodPartyFood =restaurant.foods.filter((food)=>food.id==showFoodPatyInfoModal.foodId)[0]
-  }
-  
   const showSearchModal=useSelector((store)=>store.searchModal)
 
 
@@ -46,7 +38,7 @@ function ModalRoot({restaurants,restaurantCategory}) {
     <div>
         <RestaurantInfoModal restaurants={restaurants} />
         <FoodInfoModal food={food} isOpen={isOpen} foodCount={foodCount}/>
-        <FoodPartyInfoModal food={foodPartyFood} isOpen={showFoodPatyInfoModal.isOpen} restaurant={restaurant}/>
+        <FoodPartyInfoModal restaurants={restaurants}/>
         <AddressModal/>
         <SearchModal showSearchModal={showSearchModal} restaurants={restaurants} restaurantCategory={restaurantCategory}/>
         <OrderModal />
