@@ -8,6 +8,8 @@ import AddToCartBtn from './AddToCartBtn';
 import FoodComments from './FoodComments';
 import FoodPartyHeader from './FoodPartyHeader';
 import CloseModal from './CloseModal';
+import clsx from 'clsx';
+import RemainingFood from './RemainingFood';
 
 function FoodPartyFoodInfoModal({isOpen,handleClose,food,foodCount}) {
 
@@ -30,6 +32,9 @@ function FoodPartyFoodInfoModal({isOpen,handleClose,food,foodCount}) {
                     <div className='w-auto flex justify-start flex-col laptop:w-[24rem]'>
                     <FoodDescription food={food}/>
                         <div className='flex flex-col'>
+                            <div className='mt-4'>
+                                <RemainingFood food={food}/>
+                            </div>
                             <div className=' w-full min-h-[3.5625rem] transition-all duration-300 flex justify-between items-center hover:bg-surface-main group'>
                                 <PriceTag food={food}/>
                                 <AddToCartBtn foodCount={foodCount} food={food}/>

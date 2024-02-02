@@ -10,6 +10,8 @@ import { useRouter } from 'next/navigation';
 import PriceTag from './PriceTag';
 import FoodPartyHeader from './FoodPartyHeader';
 import CloseModal from './CloseModal';
+import clsx from 'clsx';
+import RemainingFood from './RemainingFood';
 
 function FoodPartyInfoModal({restaurants}) {
 
@@ -72,11 +74,7 @@ function FoodPartyInfoModal({restaurants}) {
                                     </div>
                                     <div className='flex flex-col'>
                                         <div className='mb-5'>
-                                            <div>
-                                                <p className='mb-2 font-bold font-iransans text-sm inline-block text-carbon-main'>{food.numberRemaining}</p>
-                                                <p className='mb-2 font-iransans text-sm inline-block text-carbon-main'>عدد باقی مانده</p>
-                                            </div>
-                                            <div className='bg-inactive-dark h-0.5 w-full'></div>
+                                           <RemainingFood food={food}/> 
                                         </div>
                                         <div className='mb-5 flex justify-between'>
                                             <PriceTag food={food}/>      
