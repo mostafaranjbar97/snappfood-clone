@@ -10,6 +10,7 @@ import OrderModal from './OrderModal'
 import OrderCommentModal from './OrderCommentModal'
 import OrderInvoiceModal from './OrderInvoiceModal'
 import SupportModal from './SupportModal'
+import RestaurantMapModal from './RestaurantMapModal'
 
 
 function ModalRoot({restaurants,restaurantCategory}) {
@@ -45,6 +46,7 @@ function ModalRoot({restaurants,restaurantCategory}) {
         <OrderCommentModal/>
         <OrderInvoiceModal/>
         <SupportModal/>
+        <RestaurantMapModal restaurants={restaurants}/>
     </div>
   )
 }

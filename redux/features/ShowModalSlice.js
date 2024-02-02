@@ -8,7 +8,9 @@ const ShowModalSlice = createSlice(
             isOpenOrder:false,
             isOpenSupport:false,
             isOpenOrderInvoiceModal:false,
-            isOpenOrderCommentModal:false
+            isOpenOrderCommentModal:false,
+            isOpenMapModal:false,
+            resIdMap:''
         },
         reducers:{
             setShowSupportModal:(state,action)=>{
@@ -35,8 +37,17 @@ const ShowModalSlice = createSlice(
             setHideCommentModal:(state,action)=>{
                 state.isOpenOrderCommentModal=false
                 },
+            setShowMapModal:(state,action)=>{
+                state.isOpenMapModal=true
+                },
+            setHideMapModal:(state,action)=>{
+                state.isOpenMapModal=false
+                },
+            addResIdToMap:(state, action) => {
+                state.resIdMap= action.payload
+                }
             },
     }
 )
 export default ShowModalSlice.reducer;
-export const {setShowSupportModal,setHideSupportModal,setShowOrderModal,setHideOrderModal,setShowInvoiceModal,setHideInvoiceModal,setShowCommentModal,setHideCommentModal} = ShowModalSlice.actions;
+export const {setShowSupportModal,setHideSupportModal,setShowOrderModal,setHideOrderModal,setShowInvoiceModal,setHideInvoiceModal,setShowCommentModal,setHideCommentModal,setShowMapModal,setHideMapModal,addResIdToMap} = ShowModalSlice.actions;

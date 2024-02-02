@@ -109,3 +109,6 @@ button{
   from {       transform: translate3d(0px, 2rem, 0px);  }
   to {        transform: translateZ(0px);  }
 }
+.leaflet-control{
+  display: none;
+}
