@@ -1,3 +1,4 @@
+'use client'
 import React from 'react'
 import CloseModal from './CloseModal'
 import MapModal from './MapModal'
