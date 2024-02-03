@@ -7,6 +7,7 @@ import Navbar from '@/components/Header/Navbar'
 import Providers from '@/redux/Provider'
 import ModalRoot from '@/components/Modal/ModalRoot'
 import { fetchData } from '@/libs/fetchData'
+import dynamic from 'next/dynamic'
 
 
 export const metadata = {
@@ -15,6 +16,9 @@ export const metadata = {
 }
 
 export default async function RootLayout({ children }) {
+  const ModalRoot = dynamic(() => import("@/components/Modal/ModalRoot"), {
+    ssr: false
+  });
   const {restaurants,restaurantCategory}= await fetchData()
   return (
     <html lang="fa">
@@ -25,8 +29,7 @@ export default async function RootLayout({ children }) {
           {children}
           <Footer/>
           <ModalRoot restaurants={restaurants} restaurantCategory={restaurantCategory}/>
-        </Providers>    
-       
+        </Providers>     
       </body>
     </html>
   )

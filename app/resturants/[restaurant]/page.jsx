@@ -4,9 +4,13 @@ import LeftRestaurantSideBar from '@/components/Restaurant/LeftRestaurantSideBar
 import RightRestaurantSideBar from '@/components/Restaurant/RightRestaurantSideBar'
 import BreadCrumbs from '@/components/Resturants/BreadCrumbs'
 import { fetchData } from '@/libs/fetchData'
+import dynamic from 'next/dynamic'
 import React from 'react'
 
 async function Restaurant() {
+  const RightRestaurantSideBar = dynamic(() => import("@/components/Restaurant/RightRestaurantSideBar"), {
+    ssr: false
+  });
 
   const {restaurants,restaurantCategory}= await fetchData()
   return (
