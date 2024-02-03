@@ -1,7 +1,7 @@
 'use client'
-import Image from 'next/image'
+
 import React from 'react'
-import { useDispatch} from 'react-redux';
+import { useDispatch, useSelector} from 'react-redux';
 import { setCloseFoodInfoModal } from '@/redux/features/OpenFoodInfoModalSlice';
 import AddToCartBtn from './AddToCartBtn';
 import PriceTag from './PriceTag';
@@ -11,9 +11,23 @@ import FoodDescription from './FoodDescription';
 import CloseModal from './CloseModal';
 
 
-function FoodInfoModal({food,isOpen,foodCount}) {
+function FoodInfoModal({restaurants}) {
     
     const dispatch=useDispatch()
+
+    const openFoodInfoModal=useSelector((store)=>store.openFoodInfoModal)
+    const {isOpen,foodId,catId,resId}=openFoodInfoModal
+    const {cart}=useSelector((store)=> store.cart)
+    let food={}
+    let foodCount=0
+    if(isOpen){
+        const restaurant=restaurants.filter((res)=>res.id==resId)[0]
+        const restaurantfood= restaurant.foods.filter((food)=>food.categoryId.includes(catId))
+        food =restaurantfood.filter((food)=>food.id==foodId)[0]
+        if(cart.filter((item)=>item.id==food.id).length>0){
+        foodCount=cart.filter((item)=> item.id == food.id)[0].count;
+    }
+    }
 
     if (!isOpen) return null;
 

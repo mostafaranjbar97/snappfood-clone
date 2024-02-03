@@ -1,24 +1,23 @@
 'use client'
 import { addToHistory, hideSearchModal, removeFromHistory, setResults, setSearchTerms } from '@/redux/features/SearchModal'
 import Image from 'next/image'
-import Link from 'next/link'
 import { useParams, useRouter } from 'next/navigation'
 import React, { useEffect, useRef, useState } from 'react'
-import { useDispatch } from 'react-redux'
+import { useDispatch, useSelector } from 'react-redux'
 import SearchHistory from './SearchHistory'
 import SearchInput from './SearchInput'
 import SearchByCat from './SearchByCat'
 import SearchByRes from './SearchByRes'
 import SearchByFood from './SearchByFood'
 
-function SearchModal({ restaurants,restaurantCategory,showSearchModal }) {
+function SearchModal({ restaurants,restaurantCategory}) {
 
     const router=useRouter()
     const dispatch=useDispatch()
     const params=useParams()
     const inputRef = useRef();
     const [searchTerm,setSearchTerm]=useState("")
-
+    const showSearchModal=useSelector((store)=>store.searchModal)
     const {isOpen,history}=showSearchModal
     
     useEffect(() => {
