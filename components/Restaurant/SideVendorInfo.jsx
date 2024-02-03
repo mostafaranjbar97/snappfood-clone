@@ -6,6 +6,7 @@ import React, { useState } from 'react'
 import RestaurantInfoModal from '../Modal/RestaurantInfoModal'
 import { useDispatch } from 'react-redux'
 import { setOpenResInfoModalNumber } from '@/redux/features/OpenResInfoModalSlice'
+import { separate } from '@/utils/separatePrice'
 
 function SideVendorInfo({restaurants}) {
 
@@ -35,7 +36,7 @@ function SideVendorInfo({restaurants}) {
                                 <Image width={12} height={12} src={"/icons/home/rate-star.svg"} alt="rate" className='ml-1 align-middle'/>
                                 <span className='font-iransans inline-block font-bold text-carbon-main text-xs'>{restaurant.rate}</span>
                             </span>
-                            <p className='font-iransans text-xs text-inactive-dark inline-block'>({restaurant.totalPoints} امتیاز)</p>
+                            <p className='font-iransans text-xs text-inactive-dark inline-block'>({separate(restaurant.totalPoints)} امتیاز)</p>
                         </div>
                     </div>
                     {restaurant.discount &&<span className='shrink-0 py-1 px-3 bg-white border border-carbon-alphaLight shadow-shadows-medium font-iransans inline-block text-sm text-accent-dark rounded-[2.5rem]'>{restaurant.discount}

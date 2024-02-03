@@ -5,6 +5,7 @@ import FoodInfoModal from '../Modal/FoodInfoModal'
 import { useDispatch, useSelector } from 'react-redux';
 import { setOpenFoodInfoModal } from '@/redux/features/OpenFoodInfoModalSlice';
 import { addToCart, decreaseItem } from '@/redux/features/CartSlice';
+import { separate } from '@/utils/separatePrice';
 
 
 function FoodCard({food,cat}) {
@@ -71,14 +72,14 @@ function FoodCard({food,cat}) {
                                         </span>}
                                         
                                         {food.discount ? <div className='flex flex-col items-start'>
-                                            <s className=' inline-block font-iransans text-xs text-inactive-dark'>{food.price}</s>
-                                            <span className='inline-block font-iransans font-bold text-sm text-carbon-main'> {foodWithDiscount} 
+                                            <s className=' inline-block font-iransans text-xs text-inactive-dark'>{separate(food.price)}</s>
+                                            <span className='inline-block font-iransans font-bold text-sm text-carbon-main'> {separate(foodWithDiscount)} 
                                                 <span className='mr-1 inline-block font-iransans font-normal text-xs text-carbon-light' >تومان</span>
                                             </span>
                                         </div>
                                         :
                                         <div className='flex flex-col items-start'>
-                                            <span className='inline-block font-iransans font-bold text-sm text-carbon-main'> {food.price} 
+                                            <span className='inline-block font-iransans font-bold text-sm text-carbon-main'> {separate(food.price)} 
                                                 <span className='mr-1 inline-block font-iransans font-normal text-xs text-carbon-light' >تومان</span>
                                             </span>
                                         </div>

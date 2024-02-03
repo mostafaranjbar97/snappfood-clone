@@ -1,5 +1,6 @@
 'use client'
 import { addToCart, clearCart, decreaseItem } from '@/redux/features/CartSlice'
+import { separate } from '@/utils/separatePrice'
 import Image from 'next/image'
 import React from 'react'
 import { useDispatch } from 'react-redux'
@@ -34,14 +35,14 @@ function CartItem(cartItem) {
                         </span>
                     </span>}
                     {food.discount ? <div className='flex flex-col items-start'>
-                        <s className=' inline-block font-iransans text-xs text-inactive-dark'>{food.price}</s>
-                        <span className='inline-block font-iransans font-bold text-sm text-carbon-main'> {foodWithDiscount} 
+                        <s className=' inline-block font-iransans text-xs text-inactive-dark'>{separate(food.price)}</s>
+                        <span className='inline-block font-iransans font-bold text-sm text-carbon-main'> {separate(foodWithDiscount)} 
                             <span className='mr-1 inline-block font-iransans font-normal text-xs text-carbon-light' >تومان</span>
                         </span>
                     </div>
                     :
                     <div className='flex flex-col items-start'>
-                        <span className='inline-block font-iransans font-bold text-sm text-carbon-main'> {food.price} 
+                        <span className='inline-block font-iransans font-bold text-sm text-carbon-main'> {separate(food.price)} 
                             <span className='mr-1 inline-block font-iransans font-normal text-xs text-carbon-light' >تومان</span>
                         </span>
                     </div>

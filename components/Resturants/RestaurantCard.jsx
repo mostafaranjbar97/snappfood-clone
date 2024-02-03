@@ -1,3 +1,4 @@
+import { separate } from '@/utils/separatePrice'
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
@@ -42,7 +43,7 @@ function RestaurantCard({restaurant}) {
                                     <Image width={12} height={12} src={"/icons/home/rate-star.svg"} alt='rate' className='ml-1 align-middle'/>
                                     <span className='font-iransans font-bold text-xs text-carbon-main inline-block '>{restaurant.rate}</span>
                                 </span>
-                                <p className='font-iransans text-xs text-inactive-dark inline-block'>({restaurant.totalPoints} امتیاز)</p>
+                                <p className='font-iransans text-xs text-inactive-dark inline-block'>({separate(restaurant.totalPoints)} امتیاز)</p>
                             </div>
                         </div>
                         <h3 className='mb-3 font-iransans text-xs text-inactive-dark inline-block'>{restaurantCategory}</h3>
@@ -55,7 +56,7 @@ function RestaurantCard({restaurant}) {
                                 <div className='ml-2 flex flex-col'>
                                     <div className='flex items-center'>
                                         <div className='flex flex-col items-start'>
-                                            <span className='font-iransans font-bold text-xs text-carbon-main inline-block'> {restaurant.delivery.price} 
+                                            <span className='font-iransans font-bold text-xs text-carbon-main inline-block'> {separate(restaurant.delivery.price)} 
                                                 <span className='font-iransans font-normal text-xs text-carbon-main inline-block'>تومان</span>
                                             </span>
                                         </div>

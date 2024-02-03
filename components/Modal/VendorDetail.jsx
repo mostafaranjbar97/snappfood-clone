@@ -4,6 +4,7 @@ import React from 'react'
 import CommentItem from './CommentItem'
 import VendorRate from './VendorRate';
 import SortComment from './SortComment';
+import { separate } from '@/utils/separatePrice';
 
 function VendorDetail({restaurant}) {
 
@@ -17,9 +18,9 @@ function VendorDetail({restaurant}) {
                 </p>
                 <p className='font-iransans text-xs inline-block text-inactive-dark'>
                 از مجموع
-                <span className='font-iransans font-bold text-xs inline-block text-carbon-main mx-1'>{restaurant.totalPoints}</span>
+                <span className='font-iransans font-bold text-xs inline-block text-carbon-main mx-1'>{separate(restaurant.totalPoints)}</span>
                 امتیاز و 
-                <span className='font-iransans font-bold text-xs inline-block text-carbon-main mx-1'>{restaurant.totalComments}</span>
+                <span className='font-iransans font-bold text-xs inline-block text-carbon-main mx-1'>{separate(restaurant.totalComments)}</span>
                 نظر
                 </p>
             </div>

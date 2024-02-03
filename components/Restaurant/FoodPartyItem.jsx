@@ -4,6 +4,7 @@ import React, { useState } from 'react'
 import FoodPartyFoodInfoModal from '../Modal/FoodPartyFoodInfoModal'
 import { useDispatch, useSelector } from 'react-redux'
 import { addToCart, decreaseItem } from '@/redux/features/CartSlice'
+import { separate } from '@/utils/separatePrice'
 
 function FoodPartyItem({food}) {
 
@@ -72,8 +73,8 @@ function FoodPartyItem({food}) {
                                             </span>
                                         </span>
                                         <div className='flex items-start flex-col '>
-                                            <s className='font-iransans text-xs inline-block text-inactive-dark'>{food.price}</s>
-                                            <span className='font-iransans font-bold text-sm inline-block text-carbon-main'> {foodWithDiscount} 
+                                            <s className='font-iransans text-xs inline-block text-inactive-dark'>{separate(food.price)}</s>
+                                            <span className='font-iransans font-bold text-sm inline-block text-carbon-main'> {separate(foodWithDiscount)} 
                                                 <span className='font-iransans text-sm font-normal inline-block text-carbon-main'>تومان</span>
                                             </span>
                                         </div>

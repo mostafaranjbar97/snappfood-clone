@@ -5,6 +5,7 @@ import CartItem from './CartItem'
 import { useDispatch, useSelector } from 'react-redux'
 import { clearCart } from '@/redux/features/CartSlice'
 import EmptyCart from './EmptyCart'
+import { separate } from '@/utils/separatePrice'
 
 function Cart({delivery}) {
     
@@ -56,7 +57,7 @@ function Cart({delivery}) {
                 <div className='flex items-center'>
                     <span className='font-iransans text-sm inline-block text-carbon-main'>هزینه بسته‌بندی</span>
                 </div>
-                <span className='font-iransans text-sm inline-block text-carbon-main'> {delivery.packagingCost} 
+                <span className='font-iransans text-sm inline-block text-carbon-main'> {separate(delivery.packagingCost)} 
                     <span className='font-iransans text-xs inline-block text-carbon-light mr-1'>تومان</span>
                 </span>
             </div>
@@ -65,7 +66,7 @@ function Cart({delivery}) {
                 <div className='flex items-center'>
                     <span className='font-iransans text-sm inline-block text-carbon-main'>هزینه ارسال</span>
                 </div>
-                <span className='font-iransans text-sm inline-block text-carbon-main'> {delivery.price} 
+                <span className='font-iransans text-sm inline-block text-carbon-main'> {separate(delivery.price)} 
                     <span className='font-iransans text-xs inline-block text-carbon-light mr-1'>تومان</span>
                 </span>
             </div>
@@ -74,7 +75,7 @@ function Cart({delivery}) {
                 <div className='flex items-center'>
                     <span className='font-iransans text-sm inline-block text-carbon-main'>سود شما از این خرید</span>
                 </div>
-                <span className='font-iransans text-sm inline-block text-carbon-main'> {totalDiscount} 
+                <span className='font-iransans text-sm inline-block text-carbon-main'> {separate(totalDiscount)} 
                     <span className='font-iransans text-xs inline-block text-carbon-light mr-1'>تومان</span>
                 </span>
             </div>
@@ -83,28 +84,16 @@ function Cart({delivery}) {
                 <div className='flex items-center'>
                     <span className='font-iransans text-sm inline-block text-carbon-main'>مجموع</span>
                 </div>
-                <span className='font-iransans text-sm inline-block text-carbon-main'> {totalPrice} 
+                <span className='font-iransans text-sm inline-block text-carbon-main'> {separate(totalPrice)} 
                     <span className='font-iransans text-xs inline-block text-carbon-light mr-1'>تومان</span>
                 </span>
             </div>
 
         </div>
 
-        <div className='border-b border-carbon-alphaLight flex flex-col'>
-            <div className='flex justify-between items-center'>
-                <div className='max-w-[calc(100%-2rem)] grow shrink basis-auto my-4'>
-                    <span className='block mb-1 font-iransans text-xs font-bold text-accent2-main'>۵٪ تخفیف</span>
-                    <span className='font-iransans text-xs inline-block text-carbon-main'>مخصوص سفارش اول</span>
-                </div>
-                <button type="button" className='min-w-8 grow-0 shrink-0 basis-8 flex justify-center items-center box-border transition-all h-8 border-border-sm border-transparent rounded-[50%] bg-transparent bg-clip-padding  hover:bg-carbon-alphaLight active:bg-carbon-alphaMedium rtl'>
-                    <Image width={12} height={14} src={"/icons/restaurant/remove-gray.svg"}  alt="Remove" />
-                </button>
-            </div>
-        </div>
-
         <div className='h-12 flex justify-between items-center'>
             <p className='font-iransans text-sm font-bold inline-block text-carbon-main'>قابل پرداخت</p>
-            <span className='font-iransans text-sm font-bold inline-block text-carbon-main'> {totalPrice} 
+            <span className='font-iransans text-sm font-bold inline-block text-carbon-main'> {separate(totalPrice)} 
                 <span className='font-iransans text-xs font-normal inline-block text-carbon-light mr-1'>تومان</span>
             </span>
         </div>

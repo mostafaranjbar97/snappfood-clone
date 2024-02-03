@@ -1,4 +1,5 @@
 import { setOpenFoodPartyInfoModal } from '@/redux/features/ShowFoodPartyInfoModalSlice';
+import { separate } from '@/utils/separatePrice';
 import clsx from 'clsx'
 import Image from 'next/image'
 import React from 'react'
@@ -22,7 +23,7 @@ function FoodPartyCard({food,restaurants}) {
             <div className='ml-2 inline-flex flex-col text-center grayscale-0'>
               <div className='inline-flex items-center '>
                 <div className='inline-flex items-start'>
-                  <span className='font-iransans text-2xs leading-3 text-carbon-main inline-block'> {restaurants[food.restaurantId-1].delivery.price} 
+                  <span className='font-iransans text-2xs leading-3 text-carbon-main inline-block'> {separate(restaurants[food.restaurantId-1].delivery.price)} 
                     <span className='font-iransans text-2xs leading-4 text-carbon-main inline-block mr-1'>تومان</span>
                   </span>
                 </div>
@@ -52,10 +53,10 @@ function FoodPartyCard({food,restaurants}) {
                     <Image width={7} height={8} src={"/icons/home/percent.svg"} alt="percent" className='mr-[0.1875rem]'/>
                     </span>
                   </div>
-                  <s className='mr-[0.1875rem] font-iransans text-xs text-inactive-dark inline-block'>{food.price}</s>
+                  <s className='mr-[0.1875rem] font-iransans text-xs text-inactive-dark inline-block'>{separate(food.price)}</s>
                 </div>
                 <div>
-                  <p className='font-iransans font-bold text-sm text-carbon-main inline-block'>{foodWithDiscount}</p>
+                  <p className='font-iransans font-bold text-sm text-carbon-main inline-block'>{separate(foodWithDiscount)}</p>
                   <p className='mr-0.5 font-iransans text-xs text-carbon-main inline-block'>تومان</p>
                 </div>
               </div>

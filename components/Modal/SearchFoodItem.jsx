@@ -1,3 +1,4 @@
+import { separate } from '@/utils/separatePrice'
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
@@ -21,7 +22,7 @@ function SearchFoodItem({prodouct,handleClose,restaurants}) {
                     <div className=' flex flex-col'>
                         <div className='flex items-center'>
                             <div className='flex items-start flex-col'>
-                            <span className=' text-carbon-main font-iransans text-xs inline-block'>  {restaurant.delivery.price}  
+                            <span className=' text-carbon-main font-iransans text-xs inline-block'>  {separate(restaurant.delivery.price)}  
                                 <span className=' text-carbon-light font-iransans text-xs inline-block'>تومان</span>
                             </span>
                             </div>
@@ -37,14 +38,14 @@ function SearchFoodItem({prodouct,handleClose,restaurants}) {
                             </span>
                         </span>}
                         {prodouct.discount ? <div className='flex items-center'>
-                            <s className='mx-1 font-iransans inline-block text-xs text-inactive-dark'>{prodouct.price}</s>
+                            <s className='mx-1 font-iransans inline-block text-xs text-inactive-dark'>{separate(prodouct.price)}</s>
                             <span className='font-iransans font-bold inline-block text-base text-carbon-main'> {foodWithDiscount} 
                                 <span className='font-iransans font-normal inline-block text-xs text-carbon-light'>تومان</span>
                             </span>
                         </div>
                         :
                         <div className='flex items-center'>
-                            <span className='font-iransans font-bold inline-block text-base text-carbon-main'> {prodouct.price} 
+                            <span className='font-iransans font-bold inline-block text-base text-carbon-main'> {separate(prodouct.price)} 
                                 <span className='font-iransans font-normal inline-block text-xs text-carbon-light'>تومان</span>
                             </span>
                         </div>}

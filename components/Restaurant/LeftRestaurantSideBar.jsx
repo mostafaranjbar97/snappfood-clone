@@ -4,6 +4,7 @@ import React, { useEffect, useRef, useState } from 'react'
 import DeliveryInfoModal from '../Modal/DeliveryInfoModal'
 import Cart from './Cart'
 import { useParams } from 'next/navigation'
+import { separate } from '@/utils/separatePrice'
 
 function LeftRestaurantSideBar({restaurants}) {
 
@@ -64,7 +65,7 @@ function LeftRestaurantSideBar({restaurants}) {
                         {delivery.type== "اسنپ‌اکسپرس" ? <Image width={20} height={20} src={"/icons/restaurant/delivery-express.svg"} alt="express" className='ml-4'/> 
                         : <Image width={20} height={20} src={"/icons/restaurant/delivery-courier.svg"} alt="courier" className='ml-4'/> }
                         <p className='font-iransans text-xs inline-block text-carbon-main'>{delivery.type}</p> 
-                        <span className='mr-1 font-iransans text-xs font-bold inline-block text-carbon-main'>{delivery.price}</span>
+                        <span className='mr-1 font-iransans text-xs font-bold inline-block text-carbon-main'>{separate(delivery.price)}</span>
                         <span className='mr-1 font-iransans text-xs  inline-block text-carbon-main'>تومان</span>
                     </div>
                 </div>
