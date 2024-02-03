@@ -4,11 +4,14 @@ import 'swiper/css';
 import { useCallback, useEffect, useRef, useState } from 'react';
 import Image from 'next/image';
 import FoodPartyCard from './FoodPartyCard';
+import { clearCart } from '@/redux/features/CartSlice';
+import { useDispatch } from 'react-redux';
 
 function FoodPartySlider({restaurants})  {
     const sliderRef = useRef(null);
     const [isFirst,setIsFirst]=useState(false)
     const [isLast,setIsLast]=useState(false)
+    const dispatch = useDispatch();
 
   const handlePrev = useCallback(() => {
     if (!sliderRef.current) return;
@@ -31,7 +34,12 @@ function FoodPartySlider({restaurants})  {
     const foods=restaurants.map((res)=>res.foods)
     const food=foods.flat()
     const offtime=food.filter((food)=>food.numberRemaining!=="")
+    
+    const resetCart=()=>{
+      dispatch(clearCart())
+   }
 
+   useEffect(()=>{resetCart()},[])
   return (
 
     <div className='w-full tablet:w-4/5 relative'>

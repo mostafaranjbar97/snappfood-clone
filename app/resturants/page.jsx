@@ -1,3 +1,4 @@
+export const dynamic = 'force-dynamic'
 import BreadCrumbs from '@/components/Resturants/BreadCrumbs'
 import RestaurantsContainer from '@/components/Resturants/RestaurantsContainer'
 import Sidebar from '@/components/Resturants/Sidebar'

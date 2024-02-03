@@ -1,16 +1,25 @@
 'use client'
-import React from 'react'
+import React, { useEffect } from 'react'
 import RestaurantCard from './RestaurantCard'
 import { usePathname, useRouter, useSearchParams } from 'next/navigation'
+import { useDispatch } from 'react-redux'
+import { clearCart } from '@/redux/features/CartSlice'
 
 function RestaurantsContainer({restaurants}) {
 
-  const router = useRouter()
+
   const searchParams = useSearchParams()
-  const pathname = usePathname()
+
   const getSort = searchParams.get("sort")
   const getFilters = searchParams.getAll("filters")
   const getCat = searchParams.get("cat")
+
+  const dispatch = useDispatch();
+    const resetCart=()=>{
+      dispatch(clearCart())
+   }
+
+   useEffect(()=>{resetCart()},[])
 
   if(getCat){
       // filter by category
