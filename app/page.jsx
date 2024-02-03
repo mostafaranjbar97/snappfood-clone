@@ -1,4 +1,4 @@
-
+export const dynamic = "force-dynamic";
 import Category from "@/components/Home/Category/Category";
 import Cities from "@/components/Home/Cities/Cities";
 import DownloadSection from "@/components/Home/DownloadSection/DownloadSection";
