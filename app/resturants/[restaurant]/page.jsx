@@ -1,4 +1,4 @@
-import FoodInfoModal from '@/components/Modal/FoodInfoModal'
+
 import CategorySectionsContainer from '@/components/Restaurant/CategorySectionsContainer'
 import LeftRestaurantSideBar from '@/components/Restaurant/LeftRestaurantSideBar'
 import RightRestaurantSideBar from '@/components/Restaurant/RightRestaurantSideBar'
@@ -19,9 +19,6 @@ async function Restaurant() {
                     <CategorySectionsContainer restaurants={restaurants}/>
                 </section>
                 <LeftRestaurantSideBar restaurants={restaurants}/>
-                <div>
-                    <FoodInfoModal/>
-                </div>
            </div>
         </main>
     </>
