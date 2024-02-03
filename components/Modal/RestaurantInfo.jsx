@@ -23,11 +23,11 @@ function RestaurantInfo({handleClose,restaurant}) {
                 <Image width={14} height={14} src={"/icons/modal/exit-modal.svg"}  alt="close" />
             </div>
         </div>
-        <div className='px-4 pb-4 flex justify-between'>
+        <div className='px-4 pb-4 flex justify-between flex-col laptop:flex-row'>
             <RestaurantDescription restaurant={restaurant} restaurantCategory={restaurantCategory}/>
             <MapContainer restaurant={restaurant}/>
         </div>
-        <div className='my-2 flex justify-around'>
+        <div className='my-2 flex justify-around space-y-2 flex-col tablet:flex-row tablet:space-y-0'>
             <OpenToWork restaurant={restaurant}/>
             <Payment restaurant={restaurant}/>
             <MinCart restaurant={restaurant}/>

@@ -42,7 +42,7 @@ function FoodInfoModal({restaurants}) {
             <div className='relative box-border w-full h-14 pl-14 flex justify-between items-center'>
                 <CloseModal handleClose={handleClose}/>
             </div>
-            <div className='w-[35vw] min-w-[20rem] max-w-[45rem] max-h-[calc(90vh-4rem)] overflow-y-scroll flex flex-col laptop:w-[90vw]'>
+            <div className='w-[35vw] min-w-[20rem] max-w-[45rem] max-h-[calc(90vh-4rem)] overflow-y-scroll flex flex-col tablet:w-[70vw] laptop:w-[90vw]'>
                 <div className='px-4 pb-4 flex justify-between flex-col laptop:flex-row'>
                 <ImageAlbum food={food} isOpen={isOpen}/>    
                     <div className='w-auto flex justify-start flex-col laptop:w-[24rem]'>

@@ -11,7 +11,7 @@ function MapContainer({restaurant}) {
         dispatch(setShowMapModal())
     };
   return (
-    <section className='min-w-[11.5rem] h-24 overflow-hidden bg-surface-dark rounded-lg'>
+    <section className='min-w-[11.5rem]  h-24 overflow-hidden bg-surface-dark rounded-lg mx-auto'>
         <section className='relative'>
             <Map restaurant={restaurant}/>
             <div className='absolute top-0 z-[4000] w-full h-full flex justify-center'>

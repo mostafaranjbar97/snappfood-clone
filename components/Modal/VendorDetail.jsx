@@ -8,8 +8,8 @@ import SortComment from './SortComment';
 function VendorDetail({restaurant}) {
 
   return (
-    <div className='h-[calc(90vh-16rem)] overflow-y-auto'>
-        <div className='h-[6.75rem] flex'>
+    <div className='h-[calc(90vh-16rem)] tablet:overflow-y-auto '>
+        <div className='h-[6.75rem]  hidden tablet:flex'>
             <div className='pr-5 pb-4 flex justify-end flex-col'>
                 <p className='font-iransans font-bold text-2xl  text-carbon-main flex'>
                     <Image width={20} height={20} src={"/icons/modal/rate-star.svg"} alt="rate" className='ml-2'/>
@@ -25,7 +25,7 @@ function VendorDetail({restaurant}) {
             </div>
             <VendorRate/>
         </div>
-        <div className='p-4 flex justify-between'>
+        <div className='p-4 flex justify-between flex-col tablet:flex-row'>
             <p className='font-iransans font-bold text-base inline-block text-carbon-main'>نظرات کاربران</p>
             <SortComment/>
         </div>

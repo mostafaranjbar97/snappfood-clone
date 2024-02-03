@@ -3,7 +3,7 @@ import React from 'react'
 
 function RestaurantDescription({restaurant,restaurantCategory}) {
   return (
-    <div className='flex'>
+    <div className='flex mb-4 laptop:mb-0'>
         <img src={restaurant.logo} alt={restaurant.name} className='w-24 h-24 ml-5 rounded-xl shadow-shadows-high' />
         <div className='flex justify-center flex-col'>
             <p className='mb-1 font-iransans font-bold text-xl inline-block text-carbon-main'>{restaurant.name}</p>

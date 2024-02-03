@@ -17,10 +17,10 @@ function OrderCommentModal() {
   return (
     <div>
       <div className='flex inset-0 justify-center items-center fixed z-[2000] animate-[0.3s_ease_0s_1_normal_forwards_running_modal-animation]' onClick={handleClose}>
-      <div className='w-[480px] h-[644px] overflow-auto bg-white shadow-shadows-modal rounded-xl animate-[0.3s_cubic-bezier(0.4,0,0,1.5)_0s_1_normal_forwards_running_modal-animation2] max-h-[90vh]' onClick={(e)=>e.stopPropagation()}>
+      <div className='w-[480px] max-w-[90vw] h-[644px] overflow-auto bg-white shadow-shadows-modal rounded-xl animate-[0.3s_cubic-bezier(0.4,0,0,1.5)_0s_1_normal_forwards_running_modal-animation2] max-h-[90vh]' onClick={(e)=>e.stopPropagation()}>
         <div className='relative h-[40.25rem] bg-surface-main shadow-shadows-inset flex flex-col'>
           <div className='h-14 px-4 flex justify-between items-center '>
-            <button className='flex justify-center items-center transition-all rtl rounded-[50%] box-border w-8 h-8 bg-transparent bg-clip-padding border-border-sm border-transparent hover:bg-carbon-alphaLight hover:border-carbon-alphaLight active:bg-carbon-alphaMedium active:border-carbon-alphaMedium'>
+            <button onClick={handleClose} className='flex justify-center items-center transition-all rtl rounded-[50%] box-border w-8 h-8 bg-transparent bg-clip-padding border-border-sm border-transparent hover:bg-carbon-alphaLight hover:border-carbon-alphaLight active:bg-carbon-alphaMedium active:border-carbon-alphaMedium'>
               <Image width={14} height={14} src={"/icons/modal/exit-modal.svg"}  alt="close"/>
             </button>
             <button className='flex justify-center items-center box-border min-w-[6.6875rem] h-8 border-border-sm border-transparent rounded-md bg-transparent transition-all rtl hover:bg-carbon-alphaLight hover:text-carbon-dark active:bg-carbon-alphaMedium active:text-carbon-dark'>

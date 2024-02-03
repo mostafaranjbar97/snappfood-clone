@@ -3,7 +3,7 @@ import React from 'react'
 const DAYS=["شنبه","یکشنبه","دوشنبه","سه‌شنبه","چهارشنبه","پنجشنبه","جمعه"]
 function WorkingHours() {
   return (
-    <div className='h-auto p-2 my-4 mx-6 opacity-100 border-border-xs border-surface-dark transition-all duration-200 ease-linear shadow-shadows-small rounded-lg flex overflow-hidden bg-white justify-around'>
+    <div className='h-auto p-2 my-4  opacity-100 border-border-xs border-surface-dark transition-all duration-200 ease-linear shadow-shadows-small rounded-lg flex overflow-hidden bg-white justify-around flex-col max-w-28 mx-auto tablet:flex-row tablet:mx-6 tablet:max-w-[90vw]'>
         {DAYS.map((day,index)=>{
             return(
                 <div key={index} className='flex justify-start items-center flex-col'>
