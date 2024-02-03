@@ -6,6 +6,9 @@ import Sort from '@/components/Resturants/Sort'
 import { fetchData } from '@/libs/fetchData'
 import React from 'react'
 
+export const metadata = {
+  title: 'سفارش آنلاین غذای ایرانی از رستوران ها | اسنپ فود',
+};
 async function Resturants() {
 
   const {restaurants,restaurantCategory}= await fetchData()

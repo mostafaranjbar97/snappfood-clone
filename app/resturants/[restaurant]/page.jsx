@@ -7,6 +7,12 @@ import { fetchData } from '@/libs/fetchData'
 import dynamic from 'next/dynamic'
 import React from 'react'
 
+export async function generateMetadata({ params }) {
+  const {restaurants} = await fetchData();
+  const res= restaurants.filter(res => res.id == params.restaurant)[0]
+ return {title :` ${res.name}-سفارش آنلاین غذا از ${res.name} | اسنپ فود`,}
+
+}
 async function Restaurant() {
   const RightRestaurantSideBar = dynamic(() => import("@/components/Restaurant/RightRestaurantSideBar"), {
     ssr: false
