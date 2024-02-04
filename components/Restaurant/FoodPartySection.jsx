@@ -2,6 +2,7 @@ import Image from 'next/image'
 import React from 'react'
 import FoodPartyItem from './FoodPartyItem'
 import FoodPartyTimer from '../Home/FoodParty/FoodPartyTimer'
+import FoodPartyHeader from '../Modal/FoodPartyHeader'
 
 function FoodPartySection({restaurant,cat}) {
 
@@ -10,16 +11,7 @@ function FoodPartySection({restaurant,cat}) {
     <section className='mb-4 bg-white border-t-border-xs border-surface-dark rounded-t-lg '>
         <section id={cat.id} className='scroll-mt-[4.375rem] section'>
             <div className='py-3.5 px-[1.625rem] rounded-t-lg flex justify-between bg-food-party '>
-                <div className='flex'>
-                    <Image width={24} height={24} src={"/icons/restaurant/sparkler.svg"}  alt="Sparkle" />
-                    <p className='font-iransans font-bold text-base text-white inline-block mr-1'>فود پارتی</p>
-                </div>
-                <div className='flex '>
-                    <div className='flex justify-center items-center'>
-                       <FoodPartyTimer/>
-                        <Image width={18} height={18} src={"/icons/home/clock.svg"} alt="clock" />
-                    </div>
-                </div>
+                <FoodPartyHeader/>
             </div>
 
             <div className='border-t-border-xs border-surface-dark w-full flex flex-wrap'>
