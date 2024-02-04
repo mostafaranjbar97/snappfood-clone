@@ -52,26 +52,32 @@ function RestaurantsContainer({restaurants}) {
 
   if(getSort){
     switch (getSort) {
+       // sort by rate
       case "1" :
         restaurants.sort((a, b)=> b.rate - a.rate)
         break;
 
+        // sort by distance
       case "2":
         restaurants.sort((a, b)=> a.distance - b.distance)
         break;
 
+          // sort by timeCreated
       case "3":
         restaurants.sort((a, b)=> new Date(b.timeCreated).getTime() - new Date(a.timeCreated).getTime())
         break;
   
+         // sort by delivery
       case "4":
         restaurants.sort((a, b)=> a.delivery.price - b.delivery.price)
         break; 
 
+       // sort by totalPoints
       case "5":
         restaurants.sort((a, b)=> b.totalPoints - a.totalPoints)
         break; 
 
+       // sort by delivery  
       case "6":
         restaurants.sort((a, b)=> b.delivery.price - a.delivery.price)
         break; 
