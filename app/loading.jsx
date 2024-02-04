@@ -4,7 +4,7 @@ const Loading = () => {
     return (
       <div>
         <div className="text-white flex justify-center items-center p-8 ">
-            <Image width={30} height={120} src={"/icons/loading/loading.svg"}/>
+            <Image width={120} height={30} src={"/icons/loading/loading.svg"}/>
         </div>
       </div>
     );
