@@ -1,3 +1,4 @@
+'use client'
 import { setOpenFoodInfoModal } from '@/redux/features/OpenFoodInfoModalSlice';
 import React from 'react'
 import { useDispatch } from 'react-redux';
