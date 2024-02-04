@@ -44,9 +44,9 @@ function SideFilter() {
         <div className='grow flex flex-col flex-wrap'>
 
             {
-                filterList.map((filterItem)=>{
+                filterList.map((filterItem,index)=>{
                     return(
-                        <div onClick={()=>queryHandler(filterItem.query)} className='border-b border-b-carbon-alphaLight min-h-[3.4375rem] flex justify-between items-center'>
+                        <div key={index} onClick={()=>queryHandler(filterItem.query)} className='border-b border-b-carbon-alphaLight min-h-[3.4375rem] flex justify-between items-center'>
                             <span className='font-iransans text-sm text-carbon-main inline-block'>{filterItem.name}</span>
                             <label htmlFor="checkbox" className='flex items-center select-none ltr' >
                                 <input name='checkbox' type="checkbox" className='hidden p-0 box-border' />
