@@ -1,13 +1,10 @@
 'use client'
-import { setOpenFoodInfoModal } from '@/redux/features/OpenFoodInfoModalSlice';
-import React from 'react'
-import { useDispatch } from 'react-redux';
 
-function FoodCardDescription({food,cat}) {
-    const dispatch = useDispatch();
-    const handleOpen = () => {
-        dispatch(setOpenFoodInfoModal({foodId:food.id,catId:cat.id,resId:food.restaurantId}))
-    };
+import React from 'react'
+
+
+function FoodCardDescription({food,handleOpen}) {
+
   return (
     <div className='px-4 cursor-pointer flex' onClick={handleOpen}>
         <div className='flex flex-col pt-4 pl-4 grow'>
