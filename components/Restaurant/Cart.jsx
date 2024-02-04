@@ -18,7 +18,7 @@ function Cart({delivery}) {
         const discount=current.price-foodWithDiscount
         return init + discount*current.count;
     },0)
-
+    const  total = cart.reduce( (init , current ) => init + (current.price * current.count), 0);
     const  totalPrice = cart.reduce( (init , current ) => init + (current.price * current.count)-totalDiscount+(delivery.packagingCost+delivery.price), 0);
     // console.log("cartCount",cartCount,cart,"cart")
 
@@ -33,6 +33,13 @@ function Cart({delivery}) {
             <EmptyCart/>
         )
      }
+
+    const cost_list=[
+        {title:"مجموع",cost:separate(total)},
+        {title:"هزینه ارسال",cost:separate(delivery.price)},
+        {title:"هزینه بسته‌بندی",cost:separate(delivery.packagingCost)},
+        {title:"سود شما از این خرید",cost:separate(totalDiscount)},
+     ]
 
   return (
     <form onSubmit={()=>console.log("submited")} className='box-border mt-2 px-4 pt-4 pb-3 bg-white rounded-lg border-border-xs border-carbon-alphaLight'>
@@ -53,41 +60,18 @@ function Cart({delivery}) {
 
         <div className='border-b border-carbon-alphaLight flex flex-col'>
 
-            <div className='h-8 flex justify-between items-center'>
-                <div className='flex items-center'>
-                    <span className='font-iransans text-sm inline-block text-carbon-main'>هزینه بسته‌بندی</span>
-                </div>
-                <span className='font-iransans text-sm inline-block text-carbon-main'> {separate(delivery.packagingCost)} 
-                    <span className='font-iransans text-xs inline-block text-carbon-light mr-1'>تومان</span>
-                </span>
-            </div>
-
-            <div className='h-8 flex justify-between items-center'>
-                <div className='flex items-center'>
-                    <span className='font-iransans text-sm inline-block text-carbon-main'>هزینه ارسال</span>
-                </div>
-                <span className='font-iransans text-sm inline-block text-carbon-main'> {separate(delivery.price)} 
-                    <span className='font-iransans text-xs inline-block text-carbon-light mr-1'>تومان</span>
-                </span>
-            </div>
+            {
+                cost_list.map((item,index)=>(
+                    <div key={index} className='h-8 flex justify-between items-center'>
+                        <div className='flex items-center'>
+                            <span className='font-iransans text-sm inline-block text-carbon-main'>{item.title}</span>
+                        </div>
+                        <span className='font-iransans text-sm inline-block text-carbon-main'> {item.cost} 
+                            <span className='font-iransans text-xs inline-block text-carbon-light mr-1'>تومان</span>
+                        </span>
+                    </div>))
+            }
             
-            <div className='h-8 flex justify-between items-center'>
-                <div className='flex items-center'>
-                    <span className='font-iransans text-sm inline-block text-carbon-main'>سود شما از این خرید</span>
-                </div>
-                <span className='font-iransans text-sm inline-block text-carbon-main'> {separate(totalDiscount)} 
-                    <span className='font-iransans text-xs inline-block text-carbon-light mr-1'>تومان</span>
-                </span>
-            </div>
-
-            <div className='h-8 flex justify-between items-center'>
-                <div className='flex items-center'>
-                    <span className='font-iransans text-sm inline-block text-carbon-main'>مجموع</span>
-                </div>
-                <span className='font-iransans text-sm inline-block text-carbon-main'> {separate(totalPrice)} 
-                    <span className='font-iransans text-xs inline-block text-carbon-light mr-1'>تومان</span>
-                </span>
-            </div>
 
         </div>
 
