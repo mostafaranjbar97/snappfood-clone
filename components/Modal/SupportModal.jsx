@@ -4,6 +4,10 @@ import Image from 'next/image'
 import React from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 
+const PROBLEMS_LIST=[{id:"1",title:"مشکل در سفارش",desc:"ارسال نشدن اقلام، نارضایتی از کیفیت، لغو، تغییر آدرس تحویل و..."},
+{id:"2",title:"مشکل در پرداخت و کیف‌پول",desc:"پرداخت ناموفق، عدم بازگشت وجه به کیف‌پول و..."},
+{id:"3",title:"سایر مشکلات",desc:"تخفیف، خطای اپلیکیشن و..."},
+{id:"4",title:"سوالات متداول",desc:""}]
 function SupportModal() {
     
     const showModal=useSelector((store)=>store.showModal)
@@ -25,41 +29,20 @@ function SupportModal() {
                         <button className='min-w-[30px] bg-transparent'></button>
                     </div>
 
-                    <button className=' w-full min-h-[60px] text-right bg-transparent border-b border-b-surface-dark flex justify-between items-center'>
-                        <div>
-                            <h4 className='font-iransans font-bold text-xs inline-block text-carbon-main py-2'>مشکل در سفارش</h4>
-                            <br />
-                            <p className='font-iransans text-xs inline-block text-carbon-main pb-2'>ارسال نشدن اقلام، نارضایتی از کیفیت، لغو، تغییر آدرس تحویل و...</p>
-                        </div>
-                        <Image width={5} height={16} src={"/icons/modal/left-support.svg"}  alt="arrow"/>
-                    </button>
-
-                    <button className=' w-full min-h-[60px] text-right bg-transparent border-b border-b-surface-dark flex justify-between items-center'>
-                        <div>
-                            <h4 className='font-iransans font-bold text-xs inline-block text-carbon-main py-2'>مشکل در پرداخت و کیف‌پول</h4>
-                            <br />
-                            <p className='font-iransans text-xs inline-block text-carbon-main pb-2'>پرداخت ناموفق، عدم بازگشت وجه به کیف‌پول و...</p>
-                        </div>
-                        <Image width={5} height={16} src={"/icons/modal/left-support.svg"}  alt="arrow"/>
-                    </button>
-                    
-                    <button className=' w-full min-h-[60px] text-right bg-transparent border-b border-b-surface-dark flex justify-between items-center'>
-                        <div>
-                            <h4 className='font-iransans font-bold text-xs inline-block text-carbon-main py-2'>سایر مشکلات</h4>
-                            <br />
-                            <p className='font-iransans text-xs inline-block text-carbon-main pb-2'>تخفیف، خطای اپلیکیشن و...</p>
-                        </div>
-                        <Image width={5} height={16} src={"/icons/modal/left-support.svg"}  alt="arrow" />
-                    </button>
-
-                    <button className=' w-full min-h-[60px] text-right bg-transparent border-b border-b-surface-dark flex justify-between items-center'>
-                        <div>
-                            <h4 className='font-iransans font-bold text-xs inline-block text-carbon-main py-2'>سوالات متداول</h4>
-                            <br />
-                            
-                        </div>
-                        <Image width={5} height={16} src={"/icons/modal/left-support.svg"}  alt="arrow" />
-                    </button>
+                    {
+                       PROBLEMS_LIST.map((problem)=>{
+                        return(
+                            <button key={problem.id} className=' w-full min-h-[60px] text-right bg-transparent border-b border-b-surface-dark flex justify-between items-center'>
+                                <div>
+                                    <h4 className='font-iransans font-bold text-xs inline-block text-carbon-main py-2'>{problem.title}</h4>
+                                    <br />
+                                    <p className='font-iransans text-xs inline-block text-carbon-main pb-2'>{problem.desc}</p>
+                                </div>
+                                <Image width={5} height={16} src={"/icons/modal/left-support.svg"}  alt="arrow"/>
+                            </button>
+                        )
+                       }) 
+                    }
                     
                 </div>
             </div>
