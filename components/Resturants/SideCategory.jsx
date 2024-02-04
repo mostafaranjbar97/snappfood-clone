@@ -106,7 +106,7 @@ import React from 'react'
                     <div key={index} className='my-1 flex flex-col'>
                         <div onClick={()=>queryHandler(cat.id)} className={clsx('box-border p-[0.1875rem] text-right  rounded-lg cursor-pointer flex justify-between items-center transition-all',cat.id==search ? "bg-carbon-alphaLight" : "bg-transparent")}>
                             <div className='flex items-center'>
-                            <img src={cat.logo} alt={cat.name} className='w-8 h-8' />
+                            <img src={cat.logo} alt={cat.name} className='w-8 h-8 rounded-[50%]' />
                             <p className={clsx('mr-3 font-iransans text-sm inline-block text-carbon-main',cat.id==search && "font-bold")}>{cat.name}</p>
                         </div>
                             {cat.categoryId === 0 && <Image width={11} height={12} src={"/icons/resturants/left-side.svg"} alt='left' className='ml-2.5 mr-[17px]'/>}
