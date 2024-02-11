@@ -26,6 +26,7 @@ function Slider({restaurants})  {
   }, []);
 
   return (
+    <div className='relative'>
     <Swiper 
     ref={sliderRef}
       spaceBetween={16}
@@ -76,17 +77,19 @@ function Slider({restaurants})  {
       )
     })}
 
-      {!isLast&&<div className="prev-arrow -left-6 absolute top-[55%] b-0 z-20 h-8 opacity-100 scale-100 transition-all ease-in-out duration-500 hidden laptop:block " onClick={handleNext} >
+      
+    </Swiper>
+    {!isLast&&<div className="prev-arrow -left-6 absolute top-[55%] b-0 z-10 h-8 opacity-100 scale-100 transition-all ease-in-out duration-500 hidden laptop:block " onClick={handleNext} >
         <button className='inline-flex justify-center items-center box-border size-12 rounded-[50%] border-border-sm border-accent-alphaLight bg-white bg-clip-padding shadow-shadows-medium active:bg-accent-alphaMedium'>
             <Image width={9} height={16} src={"/icons/home/left-purple.svg"} alt="left" />
         </button>
       </div>}
-      {!isFirst&&<div className="next-arrow -right-6 absolute top-[55%] b-0 z-50 h-8 opacity-100 scale-100 transition-all ease-in-out duration-500 hidden laptop:block " onClick={handlePrev} >
+      {!isFirst&&<div className="next-arrow -right-6 absolute top-[55%] b-0 z-10 h-8 opacity-100 scale-100 transition-all ease-in-out duration-500 hidden laptop:block " onClick={handlePrev} >
         <button className='inline-flex justify-center items-center box-border size-12 rounded-[50%] border-border-sm border-accent-alphaLight bg-white bg-clip-padding shadow-shadows-medium active:bg-accent-alphaMedium'>
             <Image width={9} height={16} src={"/icons/home/right-purple.svg"}  alt="right"/>
         </button>
       </div>}
-    </Swiper>
+    </div>
 
 
 

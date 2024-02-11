@@ -17,9 +17,9 @@ import Slider from './Slider'
                     </div>
                 </Link>
             </div>
-            <div className='relative'>
+
                 <Slider restaurants={restaurants}/>
-            </div>
+
         </section>
     </section>
   )
