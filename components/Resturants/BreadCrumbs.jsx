@@ -26,7 +26,6 @@ function BreadCrumbs({restaurants,restaurantCategory}) {
     search=3
   } 
 
-  // console.log("restaurantId",restaurantId)
   
   return (
     <div className='mt-[1.5625rem] pr-5 flex items-center'>

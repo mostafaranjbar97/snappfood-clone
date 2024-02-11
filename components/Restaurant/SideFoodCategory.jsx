@@ -3,7 +3,7 @@ import { setSelectCategory } from '@/redux/features/CategorySelectedSlice'
 import clsx from 'clsx'
 import Image from 'next/image'
 import { useParams } from 'next/navigation'
-import React, { useState } from 'react'
+import React from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 
 function SideFoodCategory({restaurants}) {

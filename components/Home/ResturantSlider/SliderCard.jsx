@@ -9,11 +9,11 @@ function SliderCard({restaurant}) {
      const restaurantCategory=restaurant.restaurantCategory.join(", ")
      let copon3
      if(restaurant.coupon){
-        const copon=restaurant.coupon.map((coupon)=>` ${coupon.value} ${coupon.title}`)
-        const copon2=copon.join(" و ")
-        copon3=copon2
+        const coupon=restaurant.coupon.map((coupon)=>` ${coupon.value} ${coupon.title}`)
+        const coupons=coupon.join(" و ")
+        copon3=coupons
      }
-     let copon4= restaurant.proUsers ? copon3 ? `${copon3} و ${restaurant.proUsers}% تخفیف ویژه کاربران PRO` : `${restaurant.proUsers}% تخفیف ویژه کاربران PRO` : copon3
+     let couponWithVip= restaurant.proUsers ? copon3 ? `${copon3} و ${restaurant.proUsers}% تخفیف ویژه کاربران PRO` : `${restaurant.proUsers}% تخفیف ویژه کاربران PRO` : copon3
   return (
     <div className='ml-4 shrink-0 w-full h-full transition-transform relative'>
         <Link href={`/resturants/${restaurant.id}`} title={restaurant.name} >
@@ -27,7 +27,7 @@ function SliderCard({restaurant}) {
                         <span className='w-4 h-4'>
                             <Image width={16} height={16} src={"/icons/home/coupon-badge.svg"}  alt="Coupon Badge" />
                         </span>
-                        <span className='mr-[0.28125rem] pt-0.5 overflow-hidden font-medium whitespace-nowrap text-ellipsis font-iransans text-xs inline-block text-accent2-dark'>{copon4}</span>
+                        <span className='mr-[0.28125rem] pt-0.5 overflow-hidden font-medium whitespace-nowrap text-ellipsis font-iransans text-xs inline-block text-accent2-dark'>{couponWithVip}</span>
                     </div>}
                     {restaurant.discount && <div className='absolute right-0 bottom-0 py-1 px-3 bg-white rounded-tl-2xl'>
                         <span className='font-iransans font-bold text-xs text-accent-dark'>%{restaurant.discount}</span>

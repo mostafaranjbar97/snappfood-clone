@@ -2,8 +2,7 @@
 
 import Image from 'next/image'
 import { useParams } from 'next/navigation'
-import React, { useState } from 'react'
-import RestaurantInfoModal from '../Modal/RestaurantInfoModal'
+import React from 'react'
 import { useDispatch } from 'react-redux'
 import { setOpenResInfoModalNumber } from '@/redux/features/OpenResInfoModalSlice'
 import { separate } from '@/utils/separatePrice'
@@ -16,12 +15,11 @@ function SideVendorInfo({restaurants}) {
     const dispatch = useDispatch();
     const handleOpen = () => {
         dispatch(setOpenResInfoModalNumber(restaurant.id))
-        console.log(restaurant.id,"restaurant.id")
     };
 
   return (
-    <>
-    {/* <RestaurantInfoModal restaurant={restaurant} handleClose={handleClose} isOpen={open}/> */}
+   
+
     <section>
         
         <header className='flex items-center pb-6 '>
@@ -53,7 +51,7 @@ function SideVendorInfo({restaurants}) {
             </button>
         </div>
     </section>
-    </>
+
     
   )
 }

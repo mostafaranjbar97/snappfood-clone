@@ -1,7 +1,5 @@
-import Image from 'next/image'
 import React from 'react'
 import FoodPartyItem from './FoodPartyItem'
-import FoodPartyTimer from '../Home/FoodParty/FoodPartyTimer'
 import FoodPartyHeader from '../Modal/FoodPartyHeader'
 
 function FoodPartySection({restaurant,cat}) {

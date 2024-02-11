@@ -66,7 +66,7 @@ import React from 'react'
         parentId=3
     } 
 
-    // console.log("mainCat",mainCat)
+
 
   return (
     <div className='mt-2 p-4 border border-carbon-alphaLight rounded-xl shadow-shadows-small flex flex-col'>

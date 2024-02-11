@@ -16,15 +16,11 @@ function FoodPartySlider({restaurants})  {
   const handlePrev = useCallback(() => {
     if (!sliderRef.current) return;
     sliderRef.current.swiper.slidePrev();
-    console.log(sliderRef.current.swiper.activeIndex)
-    console.log("isFirst",sliderRef.current.swiper.isBeginning)
   }, []);
 
   const handleNext = useCallback(() => {
     if (!sliderRef.current) return;
     sliderRef.current.swiper.slideNext();
-    console.log(sliderRef.current.swiper.activeIndex)
-    console.log("isLast",sliderRef.current.swiper.isEnd)
   }, []);
   useEffect(()=>{
     setIsFirst(sliderRef.current.swiper.isBeginning)

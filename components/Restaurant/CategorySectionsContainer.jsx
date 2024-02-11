@@ -26,7 +26,7 @@ function CategorySectionsContainer({restaurants}) {
 
   function scrollToIndex(index) {
     const listNode = listRef.current;
-    // This line assumes a particular DOM structure:
+
     const sectionNode = listNode.querySelectorAll('.section')[index];
     if(!getSearch){
       sectionNode.scrollIntoView({
@@ -45,7 +45,7 @@ function CategorySectionsContainer({restaurants}) {
     const targetSections = document.querySelectorAll(".section");
 
     const observer = new IntersectionObserver((entries) => {
-      // console.log(entries);
+
       entries.forEach((entry) => {
         if (entry.isIntersecting ) {
           dispatch(setIsVisibleSection(entry.target.getAttribute("id")))
@@ -65,7 +65,6 @@ function CategorySectionsContainer({restaurants}) {
     const targetSections = document.querySelectorAll(".section");
 
     const observer = new IntersectionObserver((entries) => {
-      // console.log(entries);
       entries.forEach((entry) => {
         if (entry.isIntersecting ) {
           dispatch(setIsVisibleSection(entry.target.getAttribute("id")))
@@ -82,7 +81,6 @@ function CategorySectionsContainer({restaurants}) {
   }, []);
 
 
-  // console.log(hasFoodParty)
   return (
     <section className='bg-white border-border-xs border-surface-dark rounded-lg ' ref={listRef}>
         

@@ -10,7 +10,7 @@ import { separate } from '@/utils/separatePrice'
 function Cart({delivery}) {
     
     const {cart}=useSelector((store)=> store.cart)
-    // console.log("cart",cart)
+
     const cartCount=cart.reduce((init,current)=>init=init+current.count,0)
     
     const totalDiscount=cart.reduce((init,current)=>{
@@ -20,7 +20,7 @@ function Cart({delivery}) {
     },0)
     const  total = cart.reduce( (init , current ) => init + (current.price * current.count), 0);
     const  totalPrice = cart.reduce( (init , current ) => init + (current.price * current.count)-totalDiscount+(delivery.packagingCost+delivery.price), 0);
-    // console.log("cartCount",cartCount,cart,"cart")
+
 
     const dispatch = useDispatch();
 

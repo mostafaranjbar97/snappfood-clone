@@ -11,27 +11,12 @@ function Search({restaurants}) {
 
     const {searchTerm}=useSelector((store)=>store.searchModal)
     
-    // console.log(pathname)
-    // console.log("params",params)
-    // /resturants
-    // /
-    // /resturants/id
-    let restaurantId
-    
-    // if(pathname.split("/").length>2) {restaurantId=pathname.split("/")[2]}
     let searchIn
 
     params.restaurant && (searchIn=restaurants[params.restaurant-1].name)
     pathname=="/" && (searchIn = "اسنپ‌فود")
     pathname=="/resturants" && (searchIn="رستوران")
-    // if(restaurantId>0){
-    //   searchIn=restaurants[restaurantId-1].name
-    // }
-    // if(pathname.split("/").length==2){
-    //   searchIn="رستوران"
-    // }else{
-    //   searchIn="اسنپ‌فود"
-    // }
+
 
     const dispatch=useDispatch()
     const openHandler=()=>{

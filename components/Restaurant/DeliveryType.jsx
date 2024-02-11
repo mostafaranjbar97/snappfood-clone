@@ -2,7 +2,6 @@
 import { separate } from '@/utils/separatePrice'
 import clsx from 'clsx'
 import Image from 'next/image'
-import { useParams } from 'next/navigation'
 import React from 'react'
 
 function DeliveryType({restaurant,marginLeft}) {

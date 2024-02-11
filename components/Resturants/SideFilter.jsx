@@ -3,7 +3,6 @@ import clsx from 'clsx'
 import { usePathname, useRouter, useSearchParams } from 'next/navigation'
 import React from 'react'
 
-// ?filters=has_coupon&filters=has_express&filters=has_discount&cat=2
 
 function SideFilter() {
     const router = useRouter()

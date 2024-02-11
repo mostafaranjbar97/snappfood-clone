@@ -52,11 +52,9 @@ function Slider({restaurants})  {
 
       onReachBeginning={()=>{
         setIsFirst(true)
-        console.log("first")
       }}
       onReachEnd={()=>{
         setIsLast(true)
-        console.log("last")
       }}
       onRealIndexChange={()=>{
         if (isFirst){

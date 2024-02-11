@@ -1,10 +1,8 @@
 'use client'
 import Image from 'next/image'
-import React, { useEffect, useRef, useState } from 'react'
-import DeliveryInfoModal from '../Modal/DeliveryInfoModal'
+import React from 'react'
 import Cart from './Cart'
 import { useParams } from 'next/navigation'
-import { separate } from '@/utils/separatePrice'
 import ReceiveTime from './ReceiveTime'
 import DeliveryType from './DeliveryType'
 

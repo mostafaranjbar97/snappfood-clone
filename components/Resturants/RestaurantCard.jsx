@@ -1,9 +1,6 @@
-import { separate } from '@/utils/separatePrice'
-import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 import DeliveryType from '../Restaurant/DeliveryType'
-import RestaurantDescription from './RestaurantCardDescription'
 import RestaurantCardDescription from './RestaurantCardDescription'
 import ResCardImage from './ResCardImage'
 

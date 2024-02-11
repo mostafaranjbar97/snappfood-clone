@@ -60,7 +60,7 @@ function SearchModal({ restaurants,restaurantCategory}) {
         searchFood=restaurantFood.filter((food)=>food.name.includes(searchTerm))
     }
     
-    console.log("searchFood",searchFood)
+
 
     const addtohistoryHandler=(e)=>{
         if(e.key=="Enter"){
